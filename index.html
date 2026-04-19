@@ -346,6 +346,14 @@
   </div>
 </div>
 
+<h2>💬 Meine Prompts (letzte 40)</h2>
+<div class="section-desc">Deine Chat-Anfragen und die Antworten der Agenten. Klick auf ▶ für Details.</div>
+<div class="card">
+  <div class="request-log" id="user-prompts">
+    <div class="loading">Lade Daten...</div>
+  </div>
+</div>
+
 <h2>📋 Request-Log</h2>
 <div class="section-desc">Alle Anfragen an die Agenten (User-Requests &amp; Scheduled Tasks)</div>
 <div class="card">
@@ -919,6 +927,53 @@ function renderQueue(jobs, running) {
   }
 }
 
+function renderUserPrompts(prompts) {
+  const el = document.getElementById('user-prompts');
+  if (!el) return;
+  if (!prompts || prompts.length === 0) {
+    el.innerHTML = '<div class="loading">Noch keine Prompts aufgezeichnet (nur ohne oeffentliches Dashboard sichtbar).</div>';
+    return;
+  }
+  // Neueste zuerst
+  prompts.sort((a, b) => (b.timestamp || '').localeCompare(a.timestamp || ''));
+  el.innerHTML = prompts.map((r, i) => {
+    const ts = r.timestamp ? new Date(r.timestamp) : null;
+    const timeStr = ts ? ts.toLocaleString('de-DE', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' }) : '-';
+    const statusCls = r.status === 'success' ? 'req-badge req-badge-success' : 'req-badge req-badge-error';
+    const statusTxt = r.status === 'success' ? 'OK' : 'ERR';
+    const dur = r.duration_seconds != null ? r.duration_seconds.toFixed(1) + 's' : '-';
+    const hasDetail = r.prompt || r.output;
+    const idSuffix = 'up-' + i;
+    const expandBtn = hasDetail ? `<button class="req-expand" onclick="toggleUserPromptDetail(${i})" id="btn-${idSuffix}">▶</button>` : '';
+    const prompt = (r.prompt || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const output = (r.output || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const detail = hasDetail ? `<div class="req-detail" id="detail-${idSuffix}" style="display:none">
+      ${prompt ? `<div class="req-detail-label">💬 Deine Frage</div><div class="req-detail-text">${prompt}</div>` : ''}
+      ${output ? `<div class="req-detail-label" style="margin-top:0.5rem">🤖 ${r.agent_emoji||''} ${r.agent_name||'Agent'} antwortete</div><div class="req-detail-text">${output}</div>` : ''}
+    </div>` : '';
+    return `<div class="req-entry">
+      <div class="req-row">
+        ${expandBtn}
+        <span class="req-time">💬 ${timeStr}</span>
+        <span class="req-agent" title="${r.agent_name || ''}">${r.agent_emoji || '🤖'}</span>
+        <span class="req-title" title="${(r.title || r.prompt || '').replace(/"/g, '&quot;').slice(0,200)}">${r.title || (r.prompt || '').slice(0,80) || '-'}</span>
+        <span class="req-duration">${dur}</span>
+        <span class="${statusCls}">${statusTxt}</span>
+      </div>
+      ${detail}
+    </div>`;
+  }).join('');
+}
+
+function toggleUserPromptDetail(i) {
+  const el = document.getElementById('detail-up-' + i);
+  const btn = document.getElementById('btn-up-' + i);
+  if (!el) return;
+  const open = el.style.display !== 'none';
+  el.style.display = open ? 'none' : 'block';
+  if (btn) btn.textContent = open ? '▶' : '▼';
+}
+
 function renderRequests(requests) {
   const el = document.getElementById('request-log');
   if (!requests || requests.length === 0) { el.innerHTML = '<div class="loading">Noch keine Requests aufgezeichnet</div>'; return; }
@@ -1002,6 +1057,7 @@ function render(data) {
   renderRetouren(data.retouren);
   renderShopping(data.shopping);
   renderLog(data.activity_log);
+  renderUserPrompts(data.user_prompts);
   renderRequests(data.request_log);
 
   document.getElementById('error-banner').style.display = 'none';
