@@ -1,0 +1,1338 @@
+{
+  "last_updated": "2026-04-19T17:17:17.286491",
+  "public": true,
+  "agents": [
+    {
+      "id": "assistant",
+      "name": "Persönlicher Assistent",
+      "emoji": "🤖",
+      "status": "success",
+      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "tools": [
+        "claude",
+        "bash",
+        "playwright"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "chrome_health",
+          "description": "Chrome Deep-Health-Check alle 30 Min (ergänzend zum Watchdog)",
+          "cron": "*/30 * * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 60,
+          "detail": "",
+          "last_run": "2026-04-19T17:00:33.969964",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 1.2,
+          "run_count": 1325
+        },
+        {
+          "id": "sensor_sweep",
+          "description": "Business-Sensoren (Gmail, Calendar, Lexware) alle 5 Minuten. Events gehen auf de",
+          "cron": "*/5 * * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 120,
+          "detail": "",
+          "last_run": "2026-04-19T17:15:40.909005",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 12.0,
+          "run_count": 68
+        },
+        {
+          "id": "unified_index_rebuild",
+          "description": "Baut data/unified_index.json neu (Cross-References zwischen Reminders, Retouren,",
+          "cron": "*/15 * * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 60,
+          "detail": "",
+          "last_run": "2026-04-19T17:15:44.265767",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 1.2,
+          "run_count": 21
+        },
+        {
+          "id": "ustva_check",
+          "description": "USt-VA Prüfung am 10. jedes Monats um 9 Uhr",
+          "cron": "0 9 10 * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 600,
+          "detail": "",
+          "last_run": "2026-04-10T09:02:52.500888",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 124.8,
+          "run_count": 1
+        },
+        {
+          "id": "escooter_versicherung",
+          "description": "E-Scooter Versicherungserinnerung am 10. Februar jedes Jahr",
+          "cron": "0 9 10 2 *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "mailcheck",
+      "name": "E-Mail Wächter",
+      "emoji": "📧",
+      "status": "success",
+      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "tools": [
+        "claude",
+        "bash",
+        "playwright"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "email_check",
+          "description": "E-Mail-Check + Aufgaben-Erkennung alle 5 Stunden",
+          "cron": "23 */5 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-19T16:36:46.732355",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 241.7,
+          "run_count": 229
+        },
+        {
+          "id": "retouren_check",
+          "description": "Täglicher Retouren-Check um 10 Uhr",
+          "cron": "0 10 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-19T10:01:31.799988",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 48.5,
+          "run_count": 8
+        }
+      ]
+    },
+    {
+      "id": "datasync",
+      "name": "Daten-Synchronizer",
+      "emoji": "🔄",
+      "status": "timeout",
+      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "tools": [
+        "claude",
+        "bash",
+        "playwright"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "sync_gmail",
+          "description": "Gmail-Sync alle 4 Stunden",
+          "cron": "30 */4 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-19T16:32:41.473836",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 110.1,
+          "run_count": 191
+        },
+        {
+          "id": "sync_calendar",
+          "description": "Kalender-Sync täglich 6 Uhr",
+          "cron": "0 6 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 600,
+          "detail": "",
+          "last_run": "2026-04-17T06:03:06.038465",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 159.2,
+          "run_count": 21
+        },
+        {
+          "id": "sync_contacts",
+          "description": "Kontakte-Sync wöchentlich Sonntag 3 Uhr",
+          "cron": "0 3 * * 0",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 600,
+          "detail": "",
+          "last_run": "2026-04-12T03:05:31.671819",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 308.2,
+          "run_count": 2
+        },
+        {
+          "id": "sync_drive",
+          "description": "Drive-Index täglich 4 Uhr",
+          "cron": "0 4 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-17T04:05:28.763092",
+          "last_status": "timeout",
+          "last_error": "error",
+          "last_duration_seconds": 307.3,
+          "run_count": 10
+        },
+        {
+          "id": "sync_conversations",
+          "description": "Konversations-Sync alle 6 Stunden in RAG",
+          "cron": "0 */6 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 120,
+          "detail": "",
+          "last_run": "2026-04-19T12:00:44.854971",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 3.0,
+          "run_count": 67
+        }
+      ]
+    },
+    {
+      "id": "taskprep",
+      "name": "Aufgaben-Vorbereiter",
+      "emoji": "📋",
+      "status": "success",
+      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "tools": [
+        "claude",
+        "bash",
+        "playwright"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "taskprep_morning",
+          "description": "Morgen-Briefing täglich 7 Uhr",
+          "cron": "0 7 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 420,
+          "detail": "",
+          "last_run": "2026-04-19T16:36:58.887709",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 9.8,
+          "run_count": 56
+        },
+        {
+          "id": "taskprep_precheck",
+          "description": "Vorbereitungs-Check alle 3h (9-20 Uhr)",
+          "cron": "0 */3 9-20 * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-19T15:00:32.742776",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 8.9,
+          "run_count": 106
+        },
+        {
+          "id": "taskprep_evening",
+          "description": "Abend-Review täglich 20 Uhr",
+          "cron": "0 20 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 600,
+          "detail": "",
+          "last_run": "2026-04-17T20:01:06.012481",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 51.3,
+          "run_count": 25
+        }
+      ]
+    },
+    {
+      "id": "contentradar",
+      "name": "Content Radar (News + Video)",
+      "emoji": "📡",
+      "status": "error",
+      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "tools": [
+        "claude",
+        "bash",
+        "playwright"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "daily_content",
+          "description": "Täglicher Content Radar (News + Videos) um 21 Uhr",
+          "cron": "0 21 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 3600,
+          "detail": "",
+          "last_run": "2026-04-17T21:18:11.776614",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 1053.6,
+          "run_count": 3
+        }
+      ]
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics Daily",
+      "emoji": "🦾",
+      "status": "success",
+      "description": "Tools: bash | Modell: sonnet",
+      "tools": [
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "daily_robotics",
+          "description": "Robotics Daily News um 19 Uhr",
+          "cron": "0 19 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 120,
+          "detail": "",
+          "last_run": "2026-04-17T19:01:51.147369",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 70.8,
+          "run_count": 5
+        }
+      ]
+    },
+    {
+      "id": "news_stocks",
+      "name": "News → Stock Impact",
+      "emoji": "📊",
+      "status": "success",
+      "description": "Tools: bash | Modell: sonnet",
+      "tools": [
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "news_stocks_morning",
+          "description": "News→Stock Morgen-Report um 08:00",
+          "cron": "0 8 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 180,
+          "detail": "",
+          "last_run": "2026-04-19T08:02:30.615989",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 92.8,
+          "run_count": 3
+        },
+        {
+          "id": "news_stocks_evening",
+          "description": "News→Stock Abend-Report um 19:00",
+          "cron": "0 19 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 180,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "freelance",
+      "name": "Freelance Projekt-Scanner",
+      "emoji": "💼",
+      "status": null,
+      "description": "Tools: bash, playwright | Modell: sonnet",
+      "tools": [
+        "bash",
+        "playwright"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "daily_freelance_scan",
+          "description": "Freelance Projekt-Scan Mo-Fr 08:00 (silent wenn nichts gefunden)",
+          "cron": "0 8 * * 1-5",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "name": "SEO & Crawler Optimizer",
+      "emoji": "🔍",
+      "status": "success",
+      "description": "Tools: bash, playwright | Modell: sonnet",
+      "tools": [
+        "bash",
+        "playwright"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "daily_seo",
+          "description": "Täglicher SEO-Check um 21:30 (nach Content Radar)",
+          "cron": "30 21 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-17T21:30:50.865684",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 29.9,
+          "run_count": 4
+        }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": "Shopping-Schnäppchenjäger",
+      "emoji": "🛒",
+      "status": null,
+      "description": "Tools: bash, playwright | Modell: sonnet",
+      "tools": [
+        "bash",
+        "playwright"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "daily_shopping",
+          "description": "Tägliche Shopping-Suche um 12 Uhr",
+          "cron": "0 12 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 600,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "steuer",
+      "name": "Steuer & Buchhaltung 2025",
+      "emoji": "📊",
+      "status": "success",
+      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "tools": [
+        "claude",
+        "bash",
+        "playwright"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "steuer_reminder",
+          "description": "Monatliche Steuer-Statusprüfung am 1. des Monats",
+          "cron": "0 9 1 * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-01T09:01:53.820207",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 78.4,
+          "run_count": 1
+        }
+      ]
+    },
+    {
+      "id": "stock_monitor",
+      "name": "Aktien-Crash-Monitor",
+      "emoji": "📉",
+      "status": "error",
+      "description": "Tools: bash | Modell: opus",
+      "tools": [
+        "bash"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "stock_crash_check",
+          "description": "Aktien-Crash-Check alle 30 Min (Mo-Fr 6-22 Uhr, ~1.000 Ticker)",
+          "cron": "*/30 6-22 * * 1-5",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-17T22:32:03.303022",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 85.5,
+          "run_count": 283
+        }
+      ]
+    },
+    {
+      "id": "stock_watchlist",
+      "name": "Aktien-Watchlist",
+      "emoji": "👁️",
+      "status": null,
+      "description": "Tools: bash | Modell: opus",
+      "tools": [
+        "bash"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "stock_watchlist_check",
+          "description": "Watchlist-Check alle 30 Min (Mo-Fr 9-22 Uhr, Xetra + NASDAQ Boersenzeit)",
+          "cron": "*/30 9-22 * * 1-5",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 120,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "data_analyst",
+      "name": "Datenanalyse-Agent",
+      "emoji": "🔬",
+      "status": "success",
+      "description": "Tools: claude, bash | Modell: opus",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "data_analysis",
+          "description": "Datenanalyse alle 4h (15 Min nach Gmail-Sync)",
+          "cron": "45 */4 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-19T16:47:07.647868",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 75.6,
+          "run_count": 57
+        }
+      ]
+    },
+    {
+      "id": "qa_agent",
+      "name": "Qualitätssicherung",
+      "emoji": "✅",
+      "status": "error",
+      "description": "Tools: claude, bash | Modell: sonnet",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "qa_contentradar",
+          "description": "QA Content Radar (30 Min nach daily_content)",
+          "cron": "30 21 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-12T21:31:36.576448",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 48.6,
+          "run_count": 2
+        },
+        {
+          "id": "qa_datasync",
+          "description": "QA Datensync (Mittags-Check)",
+          "cron": "0 12 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-12T12:01:34.340552",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 35.3,
+          "run_count": 2
+        },
+        {
+          "id": "qa_taskprep",
+          "description": "QA Taskprep (30 Min nach Morning-Briefing)",
+          "cron": "30 7 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-12T07:31:07.900779",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 47.7,
+          "run_count": 2
+        },
+        {
+          "id": "qa_mailcheck",
+          "description": "QA Mailcheck (Nachmittags-Check)",
+          "cron": "0 14 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-19T14:01:38.512415",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 42.2,
+          "run_count": 4
+        },
+        {
+          "id": "qa_stock_monitor",
+          "description": "QA Aktien-Monitor (Mo-Fr 18:00)",
+          "cron": "0 18 * * 1-5",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "qa_daily_report",
+          "description": "Täglicher Gesamt-QA-Report um 19 Uhr",
+          "cron": "0 19 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-12T19:01:31.439621",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 48.3,
+          "run_count": 2
+        },
+        {
+          "id": "qa_retrospective_sweep",
+          "description": "v0.55.0: Fallback-Sweep – nimmt die letzten 30 Einträge aus request_log.json, er",
+          "cron": "*/30 * * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 600,
+          "detail": "",
+          "last_run": "2026-04-19T17:00:55.074358",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 1.3,
+          "run_count": 4
+        },
+        {
+          "id": "qa_retrospective_daily_digest",
+          "description": "v0.55.0: Täglicher Retrospektive-Digest mit Lessons-Learned-Zusammenfassung und ",
+          "cron": "15 19 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "post_qa",
+      "name": "Post-Qualitätssicherung",
+      "emoji": "🔍",
+      "status": "success",
+      "description": "Tools: claude, bash | Modell: sonnet",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "daily_post_qa",
+          "description": "Post-QA um 22:30 (nach NewsRadar + VideoRadar)",
+          "cron": "30 22 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-11T22:31:37.594889",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 47.9,
+          "run_count": 2
+        }
+      ]
+    },
+    {
+      "id": "eufy_security",
+      "name": "eufy Security",
+      "emoji": "🔐",
+      "status": "error",
+      "description": "Tools: bash | Modell: opus",
+      "tools": [
+        "bash"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "eufy_weekday_schedule",
+          "description": "Di-Do: Alarm aus (disarmed), sonst: eufy-Zeitsteuerung (schedule). Stuendlich id",
+          "cron": "0 * * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 90,
+          "detail": "",
+          "last_run": "2026-04-19T17:02:00.731866",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 63.2,
+          "run_count": 3
+        }
+      ]
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb Manager",
+      "emoji": "🏠",
+      "status": null,
+      "description": "Tools: bash, playwright | Modell: sonnet",
+      "tools": [
+        "bash",
+        "playwright"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "airbnb_morning",
+          "description": "Airbnb Morgen-Check um 8 Uhr",
+          "cron": "0 8 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "airbnb_evening",
+          "description": "Airbnb Abend-Check um 20 Uhr",
+          "cron": "0 20 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "book_analysis",
+      "name": "Book Analysis Agent",
+      "emoji": "📚",
+      "status": null,
+      "description": "Tools: bash | Modell: haiku",
+      "tools": [
+        "bash"
+      ],
+      "model": "haiku",
+      "tasks": [
+        {
+          "id": "book_agent_night_tick",
+          "description": "Nachts 22-6 Uhr: indexiert Software-Bücher aus gdrive/2_Books in ChromaDB 'softw",
+          "cron": "0 22-23,0-5 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 2800,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "self_improvement",
+      "name": "Self-Improvement Analyzer",
+      "emoji": "🧪",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: opus",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "opus",
+      "tasks": [
+        {
+          "id": "nightly_self_audit",
+          "description": "Nächtlicher Selbst-Audit des Bots um 3 Uhr – schreibt Vorschläge nach data/impro",
+          "cron": "0 3 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 900,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "agent_id": "assistant",
+      "name": "Persönlicher Assistent",
+      "emoji": "🤖",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "mailcheck",
+      "name": "E-Mail Wächter",
+      "emoji": "📧",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "datasync",
+      "name": "Daten-Synchronizer",
+      "emoji": "🔄",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "data_analyst",
+      "name": "Datenanalyse-Agent",
+      "emoji": "🔬",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "qa_agent",
+      "name": "Qualitätssicherung",
+      "emoji": "✅",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "taskprep",
+      "name": "Aufgaben-Vorbereiter",
+      "emoji": "📋",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "newsradar",
+      "name": "newsradar",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "videoradar",
+      "name": "videoradar",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "post_qa",
+      "name": "Post-Qualitätssicherung",
+      "emoji": "🔍",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "contentradar",
+      "name": "Content Radar (News + Video)",
+      "emoji": "📡",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "seo",
+      "name": "SEO & Crawler Optimizer",
+      "emoji": "🔍",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "robotics",
+      "name": "Robotics Daily",
+      "emoji": "🦾",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "news_stocks",
+      "name": "News → Stock Impact",
+      "emoji": "📊",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    }
+  ],
+  "retouren": {
+    "pending_count": 0,
+    "total_amount": 0,
+    "last_scan": "2026-04-04 15:24",
+    "items": [
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": 246.49,
+        "payment_method": "Kreditkarte (DKB, Endziffern 811)",
+        "return_date": "2026-03-18",
+        "refund_deadline": "2026-04-01",
+        "status": "received",
+        "refund_date": "2026-03-25"
+      },
+      {
+        "shop": "Gymshark DE (Happy Returns)",
+        "product": "[item]",
+        "amount": 223.4,
+        "payment_method": "PayPal",
+        "return_date": "2026-03-16",
+        "refund_deadline": "2026-03-30",
+        "status": "received",
+        "refund_date": "2026-03-25"
+      },
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": 139.94,
+        "payment_method": "Bankkonto (vermutlich DKB)",
+        "return_date": "2026-03-26",
+        "refund_deadline": "2026-04-09",
+        "status": "received",
+        "refund_date": "2026-03-26"
+      },
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": null,
+        "payment_method": "Bankkonto (vermutlich DKB)",
+        "return_date": "2026-03-26",
+        "refund_deadline": "2026-04-09",
+        "status": "received",
+        "refund_date": "2026-03-26"
+      },
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": null,
+        "payment_method": "Bankkonto (vermutlich DKB)",
+        "return_date": "2026-03-31",
+        "refund_deadline": "2026-04-14",
+        "status": "received",
+        "refund_date": "2026-03-31"
+      },
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": null,
+        "payment_method": "Bankkonto (vermutlich DKB)",
+        "return_date": "2026-03-31",
+        "refund_deadline": "2026-04-14",
+        "status": "received",
+        "refund_date": "2026-03-31"
+      },
+      {
+        "shop": "BoohooMAN",
+        "product": "[item]",
+        "amount": null,
+        "payment_method": "PayPal",
+        "return_date": "2026-03-30",
+        "refund_deadline": "2026-04-13",
+        "status": "received",
+        "refund_date": "2026-04-04"
+      }
+    ]
+  },
+  "shopping": {
+    "product_count": 1,
+    "active_count": 1,
+    "searches_total": 1,
+    "products": []
+  },
+  "activity_log": [
+    {
+      "timestamp": "2026-04-19T17:15:44.265767",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (1.2s)"
+    },
+    {
+      "timestamp": "2026-04-19T17:15:40.909005",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (12.0s)"
+    },
+    {
+      "timestamp": "2026-04-19T17:02:00.731866",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-19T17:00:55.074358",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (1.3s)"
+    },
+    {
+      "timestamp": "2026-04-19T17:00:33.969964",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.2s)"
+    },
+    {
+      "timestamp": "2026-04-19T16:47:07.647868",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "success",
+      "message": "OK (75.6s)"
+    },
+    {
+      "timestamp": "2026-04-19T16:36:58.887709",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (9.8s)"
+    },
+    {
+      "timestamp": "2026-04-19T16:36:46.732355",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (241.7s)"
+    },
+    {
+      "timestamp": "2026-04-19T16:32:41.473836",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (110.1s)"
+    },
+    {
+      "timestamp": "2026-04-19T15:00:32.742776",
+      "agent": "taskprep_precheck",
+      "task": "taskprep_precheck",
+      "status": "success",
+      "message": "OK (8.9s)"
+    },
+    {
+      "timestamp": "2026-04-19T14:01:38.512415",
+      "agent": "qa_mailcheck",
+      "task": "qa_mailcheck",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-19T12:00:44.854971",
+      "agent": "sync_conversations",
+      "task": "sync_conversations",
+      "status": "success",
+      "message": "OK (3.0s)"
+    },
+    {
+      "timestamp": "2026-04-19T10:01:31.799988",
+      "agent": "retouren_check",
+      "task": "retouren_check",
+      "status": "success",
+      "message": "OK (48.5s)"
+    },
+    {
+      "timestamp": "2026-04-19T08:02:30.615989",
+      "agent": "news_stocks_morning",
+      "task": "news_stocks_morning",
+      "status": "success",
+      "message": "OK (92.8s)"
+    },
+    {
+      "timestamp": "2026-04-17T22:32:03.303022",
+      "agent": "stock_crash_check",
+      "task": "stock_crash_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-17T21:30:50.865684",
+      "agent": "daily_seo",
+      "task": "daily_seo",
+      "status": "success",
+      "message": "OK (29.9s)"
+    },
+    {
+      "timestamp": "2026-04-17T21:18:11.776614",
+      "agent": "daily_content",
+      "task": "daily_content",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-17T20:01:06.012481",
+      "agent": "taskprep_evening",
+      "task": "taskprep_evening",
+      "status": "success",
+      "message": "OK (51.3s)"
+    },
+    {
+      "timestamp": "2026-04-17T19:01:51.147369",
+      "agent": "daily_robotics",
+      "task": "daily_robotics",
+      "status": "success",
+      "message": "OK (70.8s)"
+    },
+    {
+      "timestamp": "2026-04-17T06:03:06.038465",
+      "agent": "sync_calendar",
+      "task": "sync_calendar",
+      "status": "success",
+      "message": "OK (159.2s)"
+    },
+    {
+      "timestamp": "2026-04-17T04:05:28.763092",
+      "agent": "sync_drive",
+      "task": "sync_drive",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-12T21:31:36.576448",
+      "agent": "qa_contentradar",
+      "task": "qa_contentradar",
+      "status": "success",
+      "message": "OK (48.6s)"
+    },
+    {
+      "timestamp": "2026-04-12T19:01:31.439621",
+      "agent": "qa_daily_report",
+      "task": "qa_daily_report",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-12T12:01:34.340552",
+      "agent": "qa_datasync",
+      "task": "qa_datasync",
+      "status": "success",
+      "message": "OK (35.3s)"
+    },
+    {
+      "timestamp": "2026-04-12T07:31:07.900779",
+      "agent": "qa_taskprep",
+      "task": "qa_taskprep",
+      "status": "success",
+      "message": "OK (47.7s)"
+    },
+    {
+      "timestamp": "2026-04-12T03:05:31.671819",
+      "agent": "sync_contacts",
+      "task": "sync_contacts",
+      "status": "success",
+      "message": "OK (308.2s)"
+    },
+    {
+      "timestamp": "2026-04-11T22:31:37.594889",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (47.9s)"
+    },
+    {
+      "timestamp": "2026-04-10T22:23:13.559536",
+      "agent": "qa_videoradar",
+      "task": "qa_videoradar",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T22:03:21.718356",
+      "agent": "daily_videos",
+      "task": "daily_videos",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T21:23:37.854284",
+      "agent": "qa_newsradar",
+      "task": "qa_newsradar",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T09:02:52.500888",
+      "agent": "ustva_check",
+      "task": "ustva_check",
+      "status": "success",
+      "message": "OK (124.8s)"
+    },
+    {
+      "timestamp": "2026-04-09T21:06:18.312547",
+      "agent": "daily_news",
+      "task": "daily_news",
+      "status": "success",
+      "message": "OK (349.2s)"
+    },
+    {
+      "timestamp": "2026-04-08T19:02:44.053686",
+      "agent": "daily_qa",
+      "task": "daily_qa",
+      "status": "success",
+      "message": "OK (107.7s)"
+    },
+    {
+      "timestamp": "2026-04-01T09:01:53.820207",
+      "agent": "steuer_reminder",
+      "task": "steuer_reminder",
+      "status": "success",
+      "message": "OK (78.4s)"
+    },
+    {
+      "timestamp": "2026-03-27T22:30:06.224005",
+      "agent": "stock_crash_monitor",
+      "task": "stock_crash_monitor",
+      "status": "success",
+      "message": "OK (1.4s)"
+    },
+    {
+      "timestamp": "2026-02-28T10:31:04.431015",
+      "agent": "claude_cpu_monitor",
+      "task": "claude_cpu_monitor",
+      "status": "timeout",
+      "message": "[error]"
+    }
+  ],
+  "request_log": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
+  "queued_jobs": []
+}

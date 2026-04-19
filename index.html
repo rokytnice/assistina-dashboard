@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistina Dashboard</title>
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --border: #30363d;
+    --text: #e6edf3; --dim: #8b949e; --accent: #58a6ff;
+    --green: #3fb950; --red: #f85149; --orange: #d29922; --purple: #bc8cff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 1rem; }
+
+  header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.5rem; }
+  header h1 { font-size: 1.5rem; }
+  header h1 span { color: var(--accent); }
+  .meta { color: var(--dim); font-size: 0.85rem; }
+  .meta .live { color: var(--green); }
+
+  .stats-bar { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .stat { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem 1rem; flex: 1; min-width: 120px; text-align: center; }
+  .stat .val { font-size: 1.5rem; font-weight: 700; }
+  .stat .lbl { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; }
+
+  h2 { font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; transition: border-color 0.2s; }
+  .card:hover { border-color: var(--accent); }
+  .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+  .card-title { font-weight: 600; font-size: 1rem; }
+  .card-title .emoji { margin-right: 0.5rem; }
+
+  /* Agent Info Button & Panel */
+  .info-btn { background: rgba(88,166,255,0.12); border: 1px solid rgba(88,166,255,0.3); color: var(--accent); width: 24px; height: 24px; border-radius: 50%; cursor: pointer; font-size: 0.75rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transition: all 0.2s; margin-left: 0.4rem; flex-shrink: 0; }
+  .info-btn:hover { background: rgba(88,166,255,0.25); border-color: var(--accent); transform: scale(1.1); }
+  .info-btn.active { background: var(--accent); color: var(--bg); }
+  .agent-desc { display: none; background: rgba(88,166,255,0.05); border: 1px solid var(--border); border-radius: 8px; padding: 0.65rem 0.85rem; margin-bottom: 0.75rem; font-size: 0.8rem; color: var(--dim); line-height: 1.5; animation: fadeIn 0.2s ease; }
+  .agent-desc.show { display: block; }
+  .agent-desc .desc-text { margin-bottom: 0.4rem; color: var(--text); }
+  .agent-desc .desc-meta { display: flex; gap: 0.75rem; flex-wrap: wrap; font-size: 0.72rem; }
+  .desc-tag { padding: 1px 7px; border-radius: 6px; font-size: 0.68rem; }
+  .desc-tag-tool { background: rgba(63,185,80,0.12); color: var(--green); }
+  .desc-tag-model { background: rgba(188,140,255,0.12); color: var(--purple); }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* Task Info */
+  .task-info-btn { background: rgba(210,153,34,0.12); border: 1px solid rgba(210,153,34,0.3); color: var(--orange); width: 20px; height: 20px; border-radius: 50%; cursor: pointer; font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transition: all 0.2s; margin-left: 0.3rem; flex-shrink: 0; vertical-align: middle; }
+  .task-info-btn:hover { background: rgba(210,153,34,0.3); transform: scale(1.1); }
+  .task-info-btn.active { background: var(--orange); color: var(--bg); }
+  .task-detail { display: none; background: rgba(210,153,34,0.05); border: 1px solid var(--border); border-radius: 6px; padding: 0.5rem 0.75rem; margin-top: 0.3rem; font-size: 0.75rem; color: var(--dim); line-height: 1.45; animation: fadeIn 0.2s ease; }
+  .task-detail.show { display: block; }
+  .task-detail .td-prompt { color: var(--text); white-space: pre-wrap; word-break: break-word; max-height: 200px; overflow-y: auto; font-family: monospace; font-size: 0.7rem; margin-bottom: 0.4rem; }
+  .task-detail .td-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .td-tag { padding: 1px 6px; border-radius: 5px; font-size: 0.65rem; }
+  .td-tag-type { background: rgba(88,166,255,0.12); color: var(--accent); }
+  .td-tag-silent { background: rgba(139,148,158,0.15); color: var(--dim); }
+  .td-tag-timeout { background: rgba(210,153,34,0.12); color: var(--orange); }
+
+  .badge { padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; }
+  .badge-success { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge-error { background: rgba(248,81,73,0.15); color: var(--red); }
+  .badge-timeout { background: rgba(210,153,34,0.15); color: var(--orange); }
+  .badge-running { background: rgba(88,166,255,0.15); color: var(--accent); animation: pulse 2s infinite; }
+  .badge-disabled { background: rgba(139,148,158,0.15); color: var(--dim); }
+
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+  .task-list { list-style: none; }
+  .task { padding: 0.5rem 0; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 0.25rem; }
+  .task:first-child { border-top: none; }
+  .task-name { font-weight: 500; font-size: 0.9rem; display: flex; justify-content: space-between; align-items: center; }
+  .task-meta { display: flex; gap: 1rem; font-size: 0.75rem; color: var(--dim); flex-wrap: wrap; }
+  .task-error { font-size: 0.75rem; color: var(--red); background: rgba(248,81,73,0.1); padding: 4px 8px; border-radius: 4px; margin-top: 2px; word-break: break-all; }
+
+  /* Retouren */
+  .retouren-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  .retouren-table th { text-align: left; padding: 0.5rem; color: var(--dim); font-weight: 500; border-bottom: 1px solid var(--border); }
+  .retouren-table td { padding: 0.5rem; border-bottom: 1px solid var(--border); }
+  .retouren-table tr:hover { background: rgba(88,166,255,0.05); }
+  .urgent { color: var(--red); font-weight: 600; }
+  .ok { color: var(--green); }
+
+  /* Shopping */
+  .shopping-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+  .shopping-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; }
+  .shopping-item.inactive { opacity: 0.5; }
+  .shopping-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; }
+  .shopping-name { font-weight: 600; font-size: 0.95rem; }
+  .shopping-badge { font-size: 0.7rem; padding: 2px 8px; border-radius: 99px; font-weight: 600; }
+  .shopping-badge.high { background: rgba(248,81,73,0.15); color: var(--red); }
+  .shopping-badge.normal { background: rgba(88,166,255,0.15); color: var(--accent); }
+  .shopping-badge.low { background: rgba(139,148,158,0.15); color: var(--dim); }
+  .shopping-price { display: flex; gap: 1rem; margin: 0.5rem 0; font-size: 0.85rem; }
+  .shopping-price .budget { color: var(--dim); }
+  .shopping-price .best { color: var(--green); font-weight: 600; }
+  .shopping-price .over-budget { color: var(--red); font-weight: 600; }
+  .shopping-notes { font-size: 0.75rem; color: var(--dim); margin-top: 0.4rem; line-height: 1.4; }
+  .shopping-meta { display: flex; gap: 1rem; margin-top: 0.5rem; font-size: 0.72rem; color: var(--dim); }
+  .shopping-offers { margin-top: 0.5rem; }
+  .shopping-offer { font-size: 0.8rem; padding: 0.3rem 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+  .shopping-offer:last-child { border-bottom: none; }
+  .shopping-offer a { color: var(--accent); text-decoration: none; }
+  .shopping-offer a:hover { text-decoration: underline; }
+  .shopping-summary { display: flex; gap: 2rem; margin-bottom: 1rem; font-size: 0.85rem; color: var(--dim); }
+
+  /* Activity log */
+  .log { max-height: 300px; overflow-y: auto; }
+  .log-entry { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); font-size: 0.8rem; display: flex; gap: 0.75rem; }
+  .log-entry:hover { background: rgba(88,166,255,0.05); }
+  .log-time { color: var(--dim); white-space: nowrap; min-width: 70px; }
+  .log-agent { color: var(--accent); min-width: 80px; }
+  .log-msg { flex: 1; }
+  .log-status-success { color: var(--green); }
+  .log-status-error { color: var(--red); }
+  .log-status-timeout { color: var(--orange); }
+
+  /* Content Links */
+  .content-links { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0.75rem; }
+  .content-link { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 0.85rem 1rem; display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--text); transition: border-color 0.2s, transform 0.15s; }
+  .content-link:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .content-link .cl-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .content-link .cl-info { display: flex; flex-direction: column; }
+  .content-link .cl-name { font-weight: 600; font-size: 0.9rem; }
+  .content-link .cl-desc { font-size: 0.72rem; color: var(--dim); }
+  .content-link .cl-url { font-size: 0.7rem; color: var(--accent); word-break: break-all; }
+  .section-desc { font-size: 0.8rem; color: var(--dim); margin-bottom: 0.75rem; }
+
+  /* Sessions */
+  .session-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1rem; transition: border-color 0.2s; }
+  .session-card:hover { border-color: var(--purple); }
+  .session-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+  .session-name { font-weight: 600; font-size: 0.95rem; }
+  .session-id { font-family: monospace; font-size: 0.75rem; color: var(--purple); background: rgba(188,140,255,0.1); padding: 2px 6px; border-radius: 4px; }
+  .session-meta { display: flex; gap: 1rem; font-size: 0.78rem; color: var(--dim); flex-wrap: wrap; }
+  .session-meta .size { color: var(--accent); }
+  .session-bar { height: 4px; border-radius: 2px; background: var(--border); margin-top: 0.5rem; overflow: hidden; }
+  .session-bar-fill { height: 100%; border-radius: 2px; background: var(--purple); transition: width 0.3s; }
+
+  /* Current Jobs */
+  .current-jobs { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .current-job { background: linear-gradient(135deg, rgba(88,166,255,0.08), rgba(188,140,255,0.08)); border: 1px solid var(--accent); border-radius: 10px; padding: 0.85rem 1rem; flex: 1; min-width: 280px; position: relative; overflow: hidden; }
+  .current-job::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, var(--accent), var(--purple), transparent); animation: jobScan 2s infinite; }
+  @keyframes jobScan { 0% { left: -100%; } 100% { left: 100%; } }
+  .cj-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem; }
+  .cj-agent { font-weight: 600; font-size: 0.95rem; }
+  .cj-badge { padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; background: rgba(88,166,255,0.15); color: var(--accent); animation: pulse 2s infinite; }
+  .cj-title { font-size: 0.85rem; color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.3rem; }
+  .cj-meta { display: flex; gap: 1rem; font-size: 0.75rem; color: var(--dim); }
+  .cj-elapsed { color: var(--accent); font-weight: 600; }
+  .cj-type { padding: 1px 6px; border-radius: 6px; font-size: 0.68rem; background: rgba(88,166,255,0.1); color: var(--accent); }
+  .cj-empty { color: var(--dim); font-size: 0.9rem; padding: 0.5rem; }
+  .cj-empty .idle-dot { color: var(--green); }
+
+  /* Queue */
+  .queue-section { margin-top: 0.75rem; }
+  .queue-header { font-size: 0.8rem; color: var(--dim); margin-bottom: 0.5rem; font-weight: 500; }
+  .queue-list { display: flex; flex-direction: column; gap: 0.4rem; }
+  .queue-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 0.55rem 0.85rem; display: flex; align-items: center; gap: 0.75rem; font-size: 0.82rem; }
+  .queue-item:hover { border-color: var(--orange); }
+  .qi-pos { color: var(--orange); font-weight: 700; min-width: 20px; font-size: 0.75rem; }
+  .qi-agent { min-width: 24px; text-align: center; }
+  .qi-title { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .qi-type { padding: 1px 6px; border-radius: 6px; font-size: 0.68rem; background: rgba(210,153,34,0.12); color: var(--orange); }
+  .qi-wait { color: var(--dim); font-size: 0.72rem; white-space: nowrap; }
+
+  /* Request Log */
+  .request-log { max-height: 500px; overflow-y: auto; }
+  .req-entry { padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--border); font-size: 0.8rem; }
+  .req-entry:hover { background: rgba(88,166,255,0.05); }
+  .req-row { display: flex; gap: 0.75rem; align-items: center; }
+  .req-expand { background: rgba(210,153,34,0.12); border: 1px solid rgba(210,153,34,0.3); color: var(--orange); width: 22px; height: 22px; border-radius: 50%; cursor: pointer; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; transition: all 0.2s; flex-shrink: 0; }
+  .req-expand:hover { background: rgba(210,153,34,0.25); transform: scale(1.1); }
+  .req-expand.active { background: var(--orange); color: var(--bg); }
+  .req-detail { display: none; background: rgba(210,153,34,0.04); border: 1px solid var(--border); border-radius: 8px; padding: 0.6rem 0.8rem; margin-top: 0.4rem; font-size: 0.75rem; line-height: 1.5; animation: fadeIn 0.2s ease; }
+  .req-detail.show { display: block; }
+  .req-detail-label { color: var(--orange); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .req-detail-text { color: var(--dim); white-space: pre-wrap; word-break: break-word; max-height: 300px; overflow-y: auto; }
+  .req-time { color: var(--dim); white-space: nowrap; min-width: 130px; font-size: 0.75rem; }
+  .req-agent { min-width: 30px; text-align: center; }
+  .req-type { min-width: 50px; font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; text-align: center; background: rgba(88,166,255,0.1); color: var(--accent); }
+  .req-type-photo { background: rgba(188,140,255,0.15); color: var(--purple); }
+  .req-type-bash { background: rgba(210,153,34,0.15); color: var(--orange); }
+  .req-title { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .req-duration { color: var(--dim); font-size: 0.75rem; min-width: 50px; text-align: right; }
+  .req-badge { padding: 1px 6px; border-radius: 8px; font-size: 0.65rem; font-weight: 600; }
+  .req-badge-success { background: rgba(63,185,80,0.15); color: var(--green); }
+  .req-badge-error { background: rgba(248,81,73,0.15); color: var(--red); }
+
+  .loading { text-align: center; padding: 3rem; color: var(--dim); }
+  .error-banner { background: rgba(248,81,73,0.15); border: 1px solid var(--red); color: var(--red); padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 1rem; display: none; }
+
+  /* Architecture Diagram */
+  .arch-container { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.5rem; overflow-x: auto; }
+  .arch-svg { width: 100%; min-width: 900px; height: 720px; }
+  .arch-svg text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .arch-node { cursor: pointer; transition: opacity 0.2s; }
+  .arch-node:hover { opacity: 0.85; }
+  .arch-node:hover rect, .arch-node:hover circle { stroke-width: 2.5; filter: drop-shadow(0 0 6px rgba(88,166,255,0.4)); }
+  .arch-edge { stroke-dasharray: 4 3; animation: archFlow 1.5s linear infinite; }
+  @keyframes archFlow { to { stroke-dashoffset: -14; } }
+  .arch-legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem; font-size: 0.78rem; color: var(--dim); }
+  .arch-legend-item { display: flex; align-items: center; gap: 0.4rem; }
+  .arch-legend-dot { width: 12px; height: 12px; border-radius: 3px; }
+
+  /* Agent Tooltip on Hover */
+  .card { position: relative; }
+  .card-tooltip { display: none; position: absolute; top: 100%; left: 0; right: 0; z-index: 100; background: #1c2333; border: 1px solid var(--accent); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 4px; font-size: 0.8rem; line-height: 1.55; color: var(--text); box-shadow: 0 8px 24px rgba(0,0,0,0.5); pointer-events: none; animation: tooltipIn 0.15s ease; }
+  .card:hover .card-tooltip { display: block; }
+  .card-tooltip .tt-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); font-weight: 600; margin-bottom: 0.35rem; }
+  .card-tooltip .tt-desc { color: var(--dim); margin-bottom: 0.5rem; }
+  .card-tooltip .tt-tasks { border-top: 1px solid var(--border); padding-top: 0.45rem; }
+  .card-tooltip .tt-task { display: flex; justify-content: space-between; align-items: center; padding: 0.15rem 0; font-size: 0.75rem; }
+  .card-tooltip .tt-task-name { color: var(--text); }
+  .card-tooltip .tt-task-cron { color: var(--dim); font-family: monospace; font-size: 0.68rem; }
+  .card-tooltip .tt-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.4rem; }
+  @keyframes tooltipIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); text-align: center; color: var(--dim); font-size: 0.75rem; }
+
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    .stats-bar { flex-direction: column; }
+    .retouren-table { font-size: 0.75rem; }
+    .retouren-table th, .retouren-table td { padding: 0.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span>Assistina</span> Dashboard</h1>
+  <div class="meta">
+    <span class="live" id="live-dot">&#9679;</span>
+    Aktualisiert: <span id="last-update">-</span> &middot;
+    Refresh in <span id="countdown">30</span>s
+  </div>
+</header>
+
+<div id="error-banner" class="error-banner"></div>
+
+<div class="stats-bar" id="stats-bar">
+  <div class="stat"><div class="val" id="s-agents">-</div><div class="lbl">Agenten</div></div>
+  <div class="stat"><div class="val" id="s-tasks">-</div><div class="lbl">Tasks aktiv</div></div>
+  <div class="stat"><div class="val" id="s-runs">-</div><div class="lbl">Runs gesamt</div></div>
+  <div class="stat"><div class="val" id="s-errors">-</div><div class="lbl">Errors</div></div>
+  <div class="stat"><div class="val" id="s-queue">-</div><div class="lbl">Queue</div></div>
+  <div class="stat"><div class="val" id="s-sessions">-</div><div class="lbl">Sessions</div></div>
+  <div class="stat"><div class="val" id="s-retouren">-</div><div class="lbl">Retouren offen</div></div>
+  <div class="stat"><div class="val" id="s-shopping">-</div><div class="lbl">🛒 Produkte</div></div>
+</div>
+
+<h2>🔄 Aktuell in Arbeit</h2>
+<div id="current-jobs" class="current-jobs">
+  <div class="cj-empty"><span class="idle-dot">●</span> Alle Agenten im Leerlauf</div>
+</div>
+<div id="queue-section" class="queue-section">
+  <div class="queue-header">⏳ Warteschlange</div>
+  <div id="queue-list" class="queue-list">
+    <div class="cj-empty"><span class="idle-dot">●</span> Keine wartenden Jobs</div>
+  </div>
+</div>
+
+<h2>Content &amp; Kanaele</h2>
+<div class="section-desc">Alle Plattformen, auf denen Assistina-Agenten Content veroeffentlichen</div>
+<div class="content-links">
+  <a class="content-link" href="https://fakedefenseai.wordpress.com" target="_blank">
+    <span class="cl-icon">📰</span>
+    <div class="cl-info">
+      <span class="cl-name">Fake Defense AI Blog</span>
+      <span class="cl-desc">WordPress – News &amp; Video Blogbeitraege</span>
+      <span class="cl-url">fakedefenseai.wordpress.com</span>
+    </div>
+  </a>
+  <a class="content-link" href="https://x.com/fake_defense_ai" target="_blank" rel="noopener noreferrer">
+    <span class="cl-icon">&#120143;</span>
+    <div class="cl-info">
+      <span class="cl-name">Twitter / X</span>
+      <span class="cl-desc">Newsradar &amp; Videoradar Posts</span>
+      <span class="cl-url">x.com/fake_defense_ai</span>
+    </div>
+  </a>
+  <a class="content-link" href="https://www.instagram.com/fake_defense_ai/" target="_blank">
+    <span class="cl-icon">📸</span>
+    <div class="cl-info">
+      <span class="cl-name">Instagram</span>
+      <span class="cl-desc">Newsradar &amp; Videoradar Posts</span>
+      <span class="cl-url">instagram.com/fake_defense_ai</span>
+    </div>
+  </a>
+  <a class="content-link" href="https://www.tiktok.com/@fake_defense_ai" target="_blank">
+    <span class="cl-icon">🎵</span>
+    <div class="cl-info">
+      <span class="cl-name">TikTok</span>
+      <span class="cl-desc">Newsradar &amp; Videoradar Posts</span>
+      <span class="cl-url">tiktok.com/@fake_defense_ai</span>
+    </div>
+  </a>
+  <a class="content-link" href="https://rokytnice.github.io/personal_agent/" target="_blank">
+    <span class="cl-icon">📊</span>
+    <div class="cl-info">
+      <span class="cl-name">Assistina Dashboard</span>
+      <span class="cl-desc">Dieses Dashboard (GitHub Pages)</span>
+      <span class="cl-url">rokytnice.github.io/personal_agent</span>
+    </div>
+  </a>
+  <a class="content-link" href="https://github.com/rokytnice/personal_agent" target="_blank">
+    <span class="cl-icon">💻</span>
+    <div class="cl-info">
+      <span class="cl-name">GitHub Repository</span>
+      <span class="cl-desc">Personal Agent Quellcode</span>
+      <span class="cl-url">github.com/rokytnice/personal_agent</span>
+    </div>
+  </a>
+</div>
+
+<h2>Agenten</h2>
+<div class="grid" id="agents-grid">
+  <div class="loading">Lade Daten...</div>
+</div>
+
+<h2>Sessions</h2>
+<div class="section-desc">Persistente Claude-Sessions pro Agent – Kontext bleibt erhalten</div>
+<div class="grid" id="sessions-grid">
+  <div class="loading">Lade Daten...</div>
+</div>
+
+<h2>Retouren-Tracking</h2>
+<div class="card" id="retouren-card">
+  <div class="loading">Lade Daten...</div>
+</div>
+
+<h2>🛒 Shopping-Radar</h2>
+<div class="section-desc">Tägliche Produktsuche — Wunschliste mit Preisüberwachung</div>
+<div class="card" id="shopping-card">
+  <div class="loading">Lade Daten...</div>
+</div>
+
+<h2>Aktivitaetslog</h2>
+<div class="card">
+  <div class="log" id="activity-log">
+    <div class="loading">Lade Daten...</div>
+  </div>
+</div>
+
+<h2>📋 Request-Log</h2>
+<div class="section-desc">Alle Anfragen an die Agenten (User-Requests &amp; Scheduled Tasks)</div>
+<div class="card">
+  <div class="request-log" id="request-log">
+    <div class="loading">Lade Daten...</div>
+  </div>
+</div>
+
+<h2>🏗️ Architektur</h2>
+<div class="section-desc">Systemarchitektur mit Abhaengigkeiten zwischen Komponenten</div>
+<div class="arch-container">
+<svg class="arch-svg" viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="8" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#58a6ff"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="8" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#3fb950"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="8" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#d29922"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 6" refX="10" refY="3" markerWidth="8" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#bc8cff"/>
+    </marker>
+    <linearGradient id="grad-core" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a2332"/><stop offset="100%" stop-color="#0d1117"/></linearGradient>
+  </defs>
+
+  <!-- ===== LAYER 1: Telegram (Top) ===== -->
+  <g class="arch-node">
+    <rect x="370" y="12" width="220" height="48" rx="24" fill="#0088cc" fill-opacity="0.2" stroke="#0088cc" stroke-width="1.5"/>
+    <text x="480" y="42" text-anchor="middle" fill="#0088cc" font-size="15" font-weight="600">💬 Telegram Bot API</text>
+  </g>
+
+  <!-- Arrow: Telegram → bot.py -->
+  <line x1="480" y1="60" x2="480" y2="96" stroke="#58a6ff" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== LAYER 2: Core Engine ===== -->
+  <g class="arch-node">
+    <rect x="340" y="98" width="280" height="52" rx="10" fill="#58a6ff" fill-opacity="0.12" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="480" y="120" text-anchor="middle" fill="#58a6ff" font-size="14" font-weight="700">⚙️ bot.py</text>
+    <text x="480" y="138" text-anchor="middle" fill="#8b949e" font-size="10">Message Router · PipeQueue · Scheduler</text>
+  </g>
+
+  <!-- Arrows from bot.py down -->
+  <!-- bot.py → ClaudePipe -->
+  <line x1="400" y1="150" x2="200" y2="196" stroke="#58a6ff" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <!-- bot.py → Scheduler -->
+  <line x1="560" y1="150" x2="760" y2="196" stroke="#d29922" stroke-width="1.2" marker-end="url(#arrow-orange)"/>
+  <!-- bot.py → Dashboard -->
+  <line x1="480" y1="150" x2="480" y2="196" stroke="#bc8cff" stroke-width="1.2" marker-end="url(#arrow-purple)"/>
+
+  <!-- ===== LAYER 3: Core Services ===== -->
+  <!-- ClaudePipe -->
+  <g class="arch-node">
+    <rect x="90" y="198" width="220" height="48" rx="8" fill="#3fb950" fill-opacity="0.1" stroke="#3fb950" stroke-width="1.2"/>
+    <text x="200" y="218" text-anchor="middle" fill="#3fb950" font-size="13" font-weight="600">🔧 ClaudePipe</text>
+    <text x="200" y="234" text-anchor="middle" fill="#8b949e" font-size="9">Claude Code Sessions · Persistent</text>
+  </g>
+
+  <!-- Dashboard Publisher -->
+  <g class="arch-node">
+    <rect x="370" y="198" width="220" height="48" rx="8" fill="#bc8cff" fill-opacity="0.1" stroke="#bc8cff" stroke-width="1.2"/>
+    <text x="480" y="218" text-anchor="middle" fill="#bc8cff" font-size="13" font-weight="600">📊 Dashboard</text>
+    <text x="480" y="234" text-anchor="middle" fill="#8b949e" font-size="9">GitHub Pages · Auto-Publish</text>
+  </g>
+
+  <!-- Scheduler -->
+  <g class="arch-node">
+    <rect x="650" y="198" width="220" height="48" rx="8" fill="#d29922" fill-opacity="0.1" stroke="#d29922" stroke-width="1.2"/>
+    <text x="760" y="218" text-anchor="middle" fill="#d29922" font-size="13" font-weight="600">⏰ Scheduler</text>
+    <text x="760" y="234" text-anchor="middle" fill="#8b949e" font-size="9">Cron Tasks · 16 aktive Jobs</text>
+  </g>
+
+  <!-- Scheduler → ClaudePipe (triggers agent runs) -->
+  <path d="M650,222 Q425,260 310,222" fill="none" stroke="#d29922" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arrow-orange)" class="arch-edge"/>
+
+  <!-- ===== LAYER 4: Agents (Main Block) ===== -->
+  <rect x="30" y="280" width="900" height="190" rx="12" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="302" fill="#8b949e" font-size="11" font-weight="600" text-transform="uppercase" letter-spacing="0.08em">AGENTEN-POOL (config/agents.json)</text>
+
+  <!-- Row 1 Agents -->
+  <g class="arch-node"><rect x="50" y="312" width="120" height="60" rx="8" fill="#58a6ff" fill-opacity="0.08" stroke="#58a6ff" stroke-width="1"/>
+    <text x="110" y="336" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">🤖 Assistent</text>
+    <text x="110" y="352" text-anchor="middle" fill="#8b949e" font-size="8">Persoenlich</text>
+    <text x="110" y="364" text-anchor="middle" fill="#3fb950" font-size="8">opus</text>
+  </g>
+  <g class="arch-node"><rect x="180" y="312" width="120" height="60" rx="8" fill="#58a6ff" fill-opacity="0.08" stroke="#58a6ff" stroke-width="1"/>
+    <text x="240" y="336" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">💻 Coder</text>
+    <text x="240" y="352" text-anchor="middle" fill="#8b949e" font-size="8">Entwickler</text>
+    <text x="240" y="364" text-anchor="middle" fill="#3fb950" font-size="8">opus</text>
+  </g>
+  <g class="arch-node"><rect x="310" y="312" width="120" height="60" rx="8" fill="#58a6ff" fill-opacity="0.08" stroke="#58a6ff" stroke-width="1"/>
+    <text x="370" y="336" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">🔍 Researcher</text>
+    <text x="370" y="352" text-anchor="middle" fill="#8b949e" font-size="8">Web-Suche</text>
+    <text x="370" y="364" text-anchor="middle" fill="#3fb950" font-size="8">opus</text>
+  </g>
+  <g class="arch-node"><rect x="440" y="312" width="120" height="60" rx="8" fill="#58a6ff" fill-opacity="0.08" stroke="#58a6ff" stroke-width="1"/>
+    <text x="500" y="336" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">✍️ Writer</text>
+    <text x="500" y="352" text-anchor="middle" fill="#8b949e" font-size="8">Texte/E-Mails</text>
+    <text x="500" y="364" text-anchor="middle" fill="#3fb950" font-size="8">opus</text>
+  </g>
+  <g class="arch-node"><rect x="570" y="312" width="120" height="60" rx="8" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1"/>
+    <text x="630" y="336" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">📧 Mailcheck</text>
+    <text x="630" y="352" text-anchor="middle" fill="#8b949e" font-size="8">E-Mail Waechter</text>
+    <text x="630" y="364" text-anchor="middle" fill="#d29922" font-size="8">auto 5h</text>
+  </g>
+  <g class="arch-node"><rect x="700" y="312" width="120" height="60" rx="8" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1"/>
+    <text x="760" y="336" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">🔄 DataSync</text>
+    <text x="760" y="352" text-anchor="middle" fill="#8b949e" font-size="8">Gmail/Cal/Drive</text>
+    <text x="760" y="364" text-anchor="middle" fill="#d29922" font-size="8">auto 4-6h</text>
+  </g>
+
+  <!-- Row 2 Agents -->
+  <g class="arch-node"><rect x="50" y="382" width="120" height="60" rx="8" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1"/>
+    <text x="110" y="406" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">📋 TaskPrep</text>
+    <text x="110" y="422" text-anchor="middle" fill="#8b949e" font-size="8">Briefing/Review</text>
+    <text x="110" y="434" text-anchor="middle" fill="#d29922" font-size="8">auto 3h</text>
+  </g>
+  <g class="arch-node"><rect x="180" y="382" width="120" height="60" rx="8" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1"/>
+    <text x="240" y="406" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">📰 NewsRadar</text>
+    <text x="240" y="422" text-anchor="middle" fill="#8b949e" font-size="8">Fake-Shop News</text>
+    <text x="240" y="434" text-anchor="middle" fill="#d29922" font-size="8">auto 21h</text>
+  </g>
+  <g class="arch-node"><rect x="310" y="382" width="120" height="60" rx="8" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1"/>
+    <text x="370" y="406" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">🎬 VideoRadar</text>
+    <text x="370" y="422" text-anchor="middle" fill="#8b949e" font-size="8">YouTube Videos</text>
+    <text x="370" y="434" text-anchor="middle" fill="#d29922" font-size="8">auto 22h</text>
+  </g>
+  <g class="arch-node"><rect x="440" y="382" width="120" height="60" rx="8" fill="#d29922" fill-opacity="0.08" stroke="#d29922" stroke-width="1"/>
+    <text x="500" y="406" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">📉 StockMon</text>
+    <text x="500" y="422" text-anchor="middle" fill="#8b949e" font-size="8">Crash Monitor</text>
+    <text x="500" y="434" text-anchor="middle" fill="#d29922" font-size="8">auto 30min</text>
+  </g>
+  <g class="arch-node"><rect x="570" y="382" width="120" height="60" rx="8" fill="#58a6ff" fill-opacity="0.08" stroke="#58a6ff" stroke-width="1"/>
+    <text x="630" y="406" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">📊 Steuer</text>
+    <text x="630" y="422" text-anchor="middle" fill="#8b949e" font-size="8">Buchhaltung</text>
+    <text x="630" y="434" text-anchor="middle" fill="#3fb950" font-size="8">opus</text>
+  </g>
+  <g class="arch-node"><rect x="700" y="382" width="120" height="60" rx="8" fill="#58a6ff" fill-opacity="0.08" stroke="#58a6ff" stroke-width="1"/>
+    <text x="760" y="406" text-anchor="middle" fill="#e6edf3" font-size="11" font-weight="600">🕵️ Auditor</text>
+    <text x="760" y="422" text-anchor="middle" fill="#8b949e" font-size="8">Forensic Corp</text>
+    <text x="760" y="434" text-anchor="middle" fill="#3fb950" font-size="8">opus</text>
+  </g>
+
+  <!-- ===== LAYER 5: Data Layer / Integrations ===== -->
+  <!-- RAG / ChromaDB -->
+  <g class="arch-node">
+    <rect x="50" y="510" width="200" height="52" rx="8" fill="#f85149" fill-opacity="0.1" stroke="#f85149" stroke-width="1.2"/>
+    <text x="150" y="532" text-anchor="middle" fill="#f85149" font-size="13" font-weight="600">🧠 RAG / ChromaDB</text>
+    <text x="150" y="546" text-anchor="middle" fill="#8b949e" font-size="9">Conversations · Knowledge · Prefs</text>
+  </g>
+
+  <!-- Social Media Posters -->
+  <g class="arch-node">
+    <rect x="280" y="510" width="200" height="52" rx="8" fill="#bc8cff" fill-opacity="0.1" stroke="#bc8cff" stroke-width="1.2"/>
+    <text x="380" y="532" text-anchor="middle" fill="#bc8cff" font-size="13" font-weight="600">📱 Social Poster</text>
+    <text x="380" y="546" text-anchor="middle" fill="#8b949e" font-size="9">Twitter · Instagram · TikTok</text>
+  </g>
+
+  <!-- Process Tracker / Retouren -->
+  <g class="arch-node">
+    <rect x="510" y="510" width="200" height="52" rx="8" fill="#3fb950" fill-opacity="0.1" stroke="#3fb950" stroke-width="1.2"/>
+    <text x="610" y="532" text-anchor="middle" fill="#3fb950" font-size="13" font-weight="600">📦 Tracking</text>
+    <text x="610" y="546" text-anchor="middle" fill="#8b949e" font-size="9">Retouren · Prozesse · Stock</text>
+  </g>
+
+  <!-- Browser / Playwright -->
+  <g class="arch-node">
+    <rect x="740" y="510" width="180" height="52" rx="8" fill="#d29922" fill-opacity="0.1" stroke="#d29922" stroke-width="1.2"/>
+    <text x="830" y="532" text-anchor="middle" fill="#d29922" font-size="13" font-weight="600">🌐 Playwright</text>
+    <text x="830" y="546" text-anchor="middle" fill="#8b949e" font-size="9">Chrome CDP · MCP Server</text>
+  </g>
+
+  <!-- Arrows: Agents → Data Layer -->
+  <!-- DataSync → RAG -->
+  <line x1="760" y1="442" x2="250" y2="510" stroke="#f85149" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow)" class="arch-edge" style="stroke:#f85149"/>
+  <!-- NewsRadar → Social -->
+  <line x1="240" y1="442" x2="350" y2="510" stroke="#bc8cff" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow-purple)" class="arch-edge"/>
+  <!-- VideoRadar → Social -->
+  <line x1="370" y1="442" x2="390" y2="510" stroke="#bc8cff" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow-purple)" class="arch-edge"/>
+  <!-- Mailcheck → Tracking -->
+  <line x1="630" y1="372" x2="610" y2="510" stroke="#3fb950" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow-green)" class="arch-edge"/>
+  <!-- StockMon → Tracking -->
+  <line x1="500" y1="442" x2="580" y2="510" stroke="#3fb950" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow-green)" class="arch-edge"/>
+  <!-- Multiple agents → Playwright -->
+  <line x1="760" y1="372" x2="830" y2="510" stroke="#d29922" stroke-width="1" stroke-dasharray="3 3" marker-end="url(#arrow-orange)" class="arch-edge"/>
+
+  <!-- ===== LAYER 6: External Services ===== -->
+  <rect x="30" y="600" width="900" height="52" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <text x="50" y="620" fill="#8b949e" font-size="10" font-weight="600" letter-spacing="0.08em">EXTERNE DIENSTE</text>
+
+  <g class="arch-node"><rect x="50" y="628" width="90" height="20" rx="4" fill="#0088cc" fill-opacity="0.15" stroke="#0088cc" stroke-width="0.8"/>
+    <text x="95" y="642" text-anchor="middle" fill="#0088cc" font-size="9">Gmail</text></g>
+  <g class="arch-node"><rect x="150" y="628" width="90" height="20" rx="4" fill="#0088cc" fill-opacity="0.15" stroke="#0088cc" stroke-width="0.8"/>
+    <text x="195" y="642" text-anchor="middle" fill="#0088cc" font-size="9">Calendar</text></g>
+  <g class="arch-node"><rect x="250" y="628" width="90" height="20" rx="4" fill="#0088cc" fill-opacity="0.15" stroke="#0088cc" stroke-width="0.8"/>
+    <text x="295" y="642" text-anchor="middle" fill="#0088cc" font-size="9">G-Drive</text></g>
+  <g class="arch-node"><rect x="350" y="628" width="90" height="20" rx="4" fill="#1da1f2" fill-opacity="0.15" stroke="#1da1f2" stroke-width="0.8"/>
+    <text x="395" y="642" text-anchor="middle" fill="#1da1f2" font-size="9">Twitter/X</text></g>
+  <g class="arch-node"><rect x="450" y="628" width="90" height="20" rx="4" fill="#e4405f" fill-opacity="0.15" stroke="#e4405f" stroke-width="0.8"/>
+    <text x="495" y="642" text-anchor="middle" fill="#e4405f" font-size="9">Instagram</text></g>
+  <g class="arch-node"><rect x="550" y="628" width="90" height="20" rx="4" fill="#ff0050" fill-opacity="0.15" stroke="#ff0050" stroke-width="0.8"/>
+    <text x="595" y="642" text-anchor="middle" fill="#ff0050" font-size="9">TikTok</text></g>
+  <g class="arch-node"><rect x="650" y="628" width="90" height="20" rx="4" fill="#21759b" fill-opacity="0.15" stroke="#21759b" stroke-width="0.8"/>
+    <text x="695" y="642" text-anchor="middle" fill="#21759b" font-size="9">WordPress</text></g>
+  <g class="arch-node"><rect x="750" y="628" width="90" height="20" rx="4" fill="#d29922" fill-opacity="0.15" stroke="#d29922" stroke-width="0.8"/>
+    <text x="795" y="642" text-anchor="middle" fill="#d29922" font-size="9">yFinance</text></g>
+
+  <!-- Data flow: Social Poster → External -->
+  <line x1="350" y1="562" x2="395" y2="628" stroke="#1da1f2" stroke-width="0.8" stroke-dasharray="2 2" class="arch-edge"/>
+  <line x1="380" y1="562" x2="495" y2="628" stroke="#e4405f" stroke-width="0.8" stroke-dasharray="2 2" class="arch-edge"/>
+  <line x1="410" y1="562" x2="595" y2="628" stroke="#ff0050" stroke-width="0.8" stroke-dasharray="2 2" class="arch-edge"/>
+
+  <!-- Data flow: RAG ← Google -->
+  <line x1="95" y1="628" x2="120" y2="562" stroke="#0088cc" stroke-width="0.8" stroke-dasharray="2 2" class="arch-edge"/>
+  <line x1="195" y1="628" x2="140" y2="562" stroke="#0088cc" stroke-width="0.8" stroke-dasharray="2 2" class="arch-edge"/>
+  <line x1="295" y1="628" x2="170" y2="562" stroke="#0088cc" stroke-width="0.8" stroke-dasharray="2 2" class="arch-edge"/>
+
+  <!-- Connector labels -->
+  <text x="480" y="188" text-anchor="middle" fill="#8b949e" font-size="8" font-style="italic">steuert</text>
+  <text x="310" y="490" text-anchor="middle" fill="#8b949e" font-size="8" font-style="italic">postet</text>
+  <text x="720" y="490" text-anchor="middle" fill="#8b949e" font-size="8" font-style="italic">browst</text>
+  <text x="480" y="490" text-anchor="middle" fill="#8b949e" font-size="8" font-style="italic">trackt</text>
+
+  <!-- Data flow labels on edges -->
+  <rect x="415" y="156" width="130" height="16" rx="3" fill="#0d1117"/>
+  <text x="480" y="168" text-anchor="middle" fill="#bc8cff" font-size="8">publish → GitHub Pages</text>
+
+  <!-- Version Tag -->
+  <text x="910" y="706" text-anchor="end" fill="#30363d" font-size="9">v0.29 · Stand 08.04.2026</text>
+</svg>
+
+<div class="arch-legend">
+  <div class="arch-legend-item"><div class="arch-legend-dot" style="background:#58a6ff"></div> Manuell (User-Request)</div>
+  <div class="arch-legend-item"><div class="arch-legend-dot" style="background:#d29922"></div> Automatisch (Cron/Scheduler)</div>
+  <div class="arch-legend-item"><div class="arch-legend-dot" style="background:#f85149"></div> Datenspeicher (RAG)</div>
+  <div class="arch-legend-item"><div class="arch-legend-dot" style="background:#bc8cff"></div> Publishing</div>
+  <div class="arch-legend-item"><div class="arch-legend-dot" style="background:#3fb950"></div> Tracking</div>
+  <div class="arch-legend-item"><div class="arch-legend-dot" style="background:#0088cc"></div> Externe Dienste</div>
+</div>
+</div>
+
+<footer>
+  Assistina Agent Dashboard &middot;
+  <a href="https://github.com/rokytnice/personal_agent" style="color:var(--accent);">GitHub</a>
+</footer>
+
+<script>
+const REFRESH_INTERVAL = 30;
+let countdown = REFRESH_INTERVAL;
+
+function relTime(ts) {
+  if (!ts) return '-';
+  const diff = (Date.now() - new Date(ts).getTime()) / 1000;
+  if (diff < 60) return Math.round(diff) + 's';
+  if (diff < 3600) return Math.round(diff / 60) + 'min';
+  if (diff < 86400) return Math.round(diff / 3600) + 'h';
+  return Math.round(diff / 86400) + 'd';
+}
+
+function badgeClass(status) {
+  if (!status) return 'badge-disabled';
+  const s = status.toLowerCase();
+  if (s === 'success') return 'badge-success';
+  if (s === 'error') return 'badge-error';
+  if (s === 'timeout') return 'badge-timeout';
+  if (s === 'running') return 'badge-running';
+  return 'badge-disabled';
+}
+
+function statusLabel(status) {
+  if (!status) return 'inaktiv';
+  const map = { success: 'OK', error: 'Fehler', timeout: 'Timeout', running: 'Laeuft' };
+  return map[status.toLowerCase()] || status;
+}
+
+function toggleAgentInfo(id) {
+  const panel = document.getElementById('desc-' + id);
+  const btn = document.getElementById('btn-' + id);
+  if (panel) {
+    panel.classList.toggle('show');
+    btn.classList.toggle('active');
+  }
+}
+
+function toggleTaskInfo(id) {
+  const panel = document.getElementById('td-' + id);
+  const btn = document.getElementById('tbtn-' + id);
+  if (panel) {
+    panel.classList.toggle('show');
+    btn.classList.toggle('active');
+  }
+}
+
+function toggleReqDetail(i) {
+  const panel = document.getElementById('req-detail-' + i);
+  const btn = document.getElementById('req-btn-' + i);
+  if (panel) {
+    panel.classList.toggle('show');
+    if (btn) {
+      btn.classList.toggle('active');
+      btn.textContent = panel.classList.contains('show') ? '▼' : '▶';
+    }
+  }
+}
+
+function renderAgents(agents) {
+  const grid = document.getElementById('agents-grid');
+  if (!agents || agents.length === 0) { grid.innerHTML = '<div class="loading">Keine Agenten</div>'; return; }
+
+  grid.innerHTML = agents.map(a => {
+    const tasks = (a.tasks || []).map(t => {
+      const errHtml = t.last_error ? `<div class="task-error">${t.last_error.substring(0, 120)}</div>` : '';
+      const hasDetail = t.detail && t.detail.length > 0;
+      const infoBtnHtml = hasDetail ? `<button class="task-info-btn" id="tbtn-${t.id}" onclick="toggleTaskInfo('${t.id}')" title="Details">i</button>` : '';
+      const silentTag = t.silent ? '<span class="td-tag td-tag-silent">silent</span>' : '';
+      const typeTag = `<span class="td-tag td-tag-type">${t.task_type || 'claude'}</span>`;
+      const timeoutTag = `<span class="td-tag td-tag-timeout">timeout: ${t.timeout || 300}s</span>`;
+      const detailHtml = hasDetail ? `<div class="task-detail" id="td-${t.id}"><div class="td-prompt">${t.detail.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div><div class="td-tags">${typeTag}${silentTag}${timeoutTag}</div></div>` : '';
+      return `<li class="task">
+        <div class="task-name">
+          <span>${t.description || t.id}${infoBtnHtml}</span>
+          <span class="badge ${badgeClass(t.last_status)}">${statusLabel(t.last_status)}</span>
+        </div>
+        <div class="task-meta">
+          <span>Letzter Lauf: ${relTime(t.last_run)}</span>
+          <span>Dauer: ${t.last_duration_seconds ? t.last_duration_seconds.toFixed(1) + 's' : '-'}</span>
+          <span>Runs: ${t.run_count || 0}</span>
+          <span title="${t.cron || ''}">&#128337; ${t.cron || '-'}</span>
+        </div>
+        ${detailHtml}
+        ${errHtml}
+      </li>`;
+    }).join('');
+
+    const overallStatus = a.status || (a.tasks || []).reduce((s, t) => {
+      if (t.last_status === 'error') return 'error';
+      if (t.last_status === 'timeout' && s !== 'error') return 'timeout';
+      if (t.last_status === 'success' && s !== 'error' && s !== 'timeout') return 'success';
+      return s;
+    }, null);
+
+    // Description & tools/model tags
+    const descText = (a.description || '').split(' | ')[0] || '';
+    const toolTags = (a.tools || []).map(t => `<span class="desc-tag desc-tag-tool">${t}</span>`).join('');
+    const modelTag = a.model ? `<span class="desc-tag desc-tag-model">${a.model}</span>` : '';
+
+    // Build tooltip content
+    const ttTasks = (a.tasks || []).map(t =>
+      `<div class="tt-task"><span class="tt-task-name">${t.description || t.id}</span><span class="tt-task-cron">${t.cron || ''}</span></div>`
+    ).join('');
+    const ttTaskSection = ttTasks ? `<div class="tt-tasks"><div class="tt-label">Scheduled Tasks</div>${ttTasks}</div>` : '';
+
+    return `<div class="card">
+      <div class="card-header">
+        <div class="card-title"><span class="emoji">${a.emoji || ''}</span>${a.name}<button class="info-btn" id="btn-${a.id}" onclick="event.stopPropagation();toggleAgentInfo('${a.id}')" title="Info">i</button></div>
+        <span class="badge ${badgeClass(overallStatus)}">${statusLabel(overallStatus)}</span>
+      </div>
+      <div class="card-tooltip">
+        <div class="tt-label">Was macht dieser Agent?</div>
+        <div class="tt-desc">${descText || 'Keine Beschreibung'}</div>
+        <div class="tt-tags">${modelTag}${toolTags}</div>
+        ${ttTaskSection}
+      </div>
+      <div class="agent-desc" id="desc-${a.id}">
+        <div class="desc-text">${descText}</div>
+        <div class="desc-meta">${modelTag}${toolTags}</div>
+      </div>
+      <ul class="task-list">${tasks || '<li class="task"><div class="task-meta">Keine Tasks</div></li>'}</ul>
+    </div>`;
+  }).join('');
+}
+
+function renderRetouren(retouren) {
+  const card = document.getElementById('retouren-card');
+  if (!retouren || !retouren.items || retouren.items.length === 0) {
+    card.innerHTML = '<div style="padding:1rem;color:var(--dim);">Keine offenen Retouren</div>';
+    return;
+  }
+
+  const rows = retouren.items.map(r => {
+    const deadline = new Date(r.refund_deadline);
+    const daysLeft = Math.ceil((deadline - Date.now()) / 86400000);
+    const urgClass = daysLeft <= 3 ? 'urgent' : (daysLeft <= 7 ? '' : 'ok');
+    const statusIcon = r.status === 'received' ? '&#9989;' : (r.status === 'overdue' ? '&#9888;&#65039;' : '&#9203;');
+    const amount = r.amount ? r.amount.toFixed(2) + ' EUR' : '?';
+    return `<tr>
+      <td>${statusIcon}</td>
+      <td>${r.shop}</td>
+      <td>${r.product ? r.product.substring(0, 40) : '-'}</td>
+      <td>${amount}</td>
+      <td>${r.payment_method || '-'}</td>
+      <td>${r.return_date || '-'}</td>
+      <td class="${urgClass}">${r.refund_deadline} (${daysLeft}d)</td>
+      <td>${r.status}</td>
+    </tr>`;
+  }).join('');
+
+  card.innerHTML = `<div style="overflow-x:auto;">
+    <table class="retouren-table">
+      <thead><tr>
+        <th></th><th>Shop</th><th>Produkt</th><th>Betrag</th><th>Zahlung</th><th>Retoure</th><th>Frist</th><th>Status</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>
+  <div style="margin-top:0.75rem;font-size:0.8rem;color:var(--dim);">
+    Gesamt: ${retouren.pending_count || 0} offen &middot; ${(retouren.total_amount || 0).toFixed(2)} EUR ausstehend &middot; Letzter Scan: ${retouren.last_scan || '-'}
+  </div>`;
+}
+
+function renderShopping(shopping) {
+  const card = document.getElementById('shopping-card');
+  if (!shopping || !shopping.products || shopping.products.length === 0) {
+    card.innerHTML = '<div style="padding:1rem;color:var(--dim);">Keine Produkte auf der Wunschliste</div>';
+    return;
+  }
+
+  const summary = `<div class="shopping-summary">
+    <span>📦 ${shopping.product_count} Produkte</span>
+    <span>✅ ${shopping.active_count} aktiv</span>
+    <span>🔍 ${shopping.searches_total} Suchen gesamt</span>
+  </div>`;
+
+  const items = shopping.products.map(p => {
+    const prioClass = p.priority || 'normal';
+    const prioLabel = p.priority === 'high' ? '🔴 Hoch' : (p.priority === 'low' ? '⚪ Niedrig' : '🔵 Normal');
+    const inactiveClass = p.active ? '' : ' inactive';
+    const catEmoji = p.category === 'garten' ? '🌳' : (p.category === 'tech' ? '💻' : (p.category === 'haushalt' ? '🏠' : '📦'));
+
+    let priceHtml = `<span class="budget">Budget: ${p.max_price ? p.max_price.toFixed(2) + ' €' : '-'}</span>`;
+    if (p.best_price_found != null) {
+      const cls = p.best_price_found <= p.max_price ? 'best' : 'over-budget';
+      const icon = p.best_price_found <= p.max_price ? '✅' : '⚠️';
+      priceHtml += `<span class="${cls}">${icon} Bester Preis: ${p.best_price_found.toFixed(2)} €</span>`;
+    }
+
+    let offersHtml = '';
+    if (p.offers && p.offers.length > 0) {
+      const offerRows = p.offers.map(o =>
+        `<div class="shopping-offer">
+          <span>${o.shop || 'Shop'}: ${o.name || ''}</span>
+          <span>${o.price ? o.price.toFixed(2) + ' €' : '?'} ${o.url ? '<a href="' + o.url + '" target="_blank">→</a>' : ''}</span>
+        </div>`
+      ).join('');
+      offersHtml = `<div class="shopping-offers">${offerRows}</div>`;
+    }
+
+    const lastSearched = p.last_searched ? relTime(p.last_searched) : 'noch nie';
+    const notes = p.notes ? `<div class="shopping-notes">${p.notes.substring(0, 150)}${p.notes.length > 150 ? '...' : ''}</div>` : '';
+
+    return `<div class="shopping-item${inactiveClass}">
+      <div class="shopping-header">
+        <span class="shopping-name">${catEmoji} ${p.name}</span>
+        <span class="shopping-badge ${prioClass}">${prioLabel}</span>
+      </div>
+      <div class="shopping-price">${priceHtml}</div>
+      ${notes}
+      ${offersHtml}
+      <div class="shopping-meta">
+        <span>🔍 Zuletzt: ${lastSearched}</span>
+        <span>📊 ${p.offers_count || 0} Angebote</span>
+        ${p.best_offer_url ? '<a href="' + p.best_offer_url + '" target="_blank" style="color:var(--accent);">Bestes Angebot →</a>' : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  card.innerHTML = summary + `<div class="shopping-grid">${items}</div>`;
+}
+
+function renderSessions(sessions) {
+  const grid = document.getElementById('sessions-grid');
+  if (!sessions || sessions.length === 0) { grid.innerHTML = '<div class="loading">Keine Sessions</div>'; return; }
+
+  const maxSize = Math.max(...sessions.map(s => s.transcript_mb || 0), 1);
+
+  grid.innerHTML = sessions.map(s => {
+    const pct = maxSize > 0 ? Math.min(((s.transcript_mb || 0) / maxSize) * 100, 100) : 0;
+    const sizeColor = s.transcript_mb > 50 ? 'var(--orange)' : (s.transcript_mb > 20 ? 'var(--accent)' : 'var(--green)');
+    const barColor = s.transcript_mb > 50 ? 'var(--orange)' : 'var(--purple)';
+    return `<div class="session-card">
+      <div class="session-header">
+        <span class="session-name">${s.emoji || ''} ${s.name || s.agent_id}</span>
+        <span class="session-id">${s.session_id}</span>
+      </div>
+      <div class="session-meta">
+        <span class="size" style="color:${sizeColor}">${s.transcript_mb} MB</span>
+        <span>Letzte Aktivitaet: ${relTime(s.last_activity)}</span>
+      </div>
+      <div class="session-bar"><div class="session-bar-fill" style="width:${pct}%;background:${barColor}"></div></div>
+    </div>`;
+  }).join('');
+}
+
+function renderCurrentJobs(jobs) {
+  const el = document.getElementById('current-jobs');
+  if (!jobs || jobs.length === 0) {
+    el.innerHTML = '<div class="cj-empty"><span class="idle-dot">●</span> Alle Agenten im Leerlauf</div>';
+    return;
+  }
+
+  el.innerHTML = jobs.map(j => {
+    const started = j.started ? new Date(j.started) : null;
+    const elapsed = started ? Math.round((Date.now() - started.getTime()) / 1000) : (j.elapsed_seconds || 0);
+    const mins = Math.floor(elapsed / 60);
+    const secs = elapsed % 60;
+    const elapsedStr = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+    const srcIcon = j.source === 'scheduler' ? '⏰' : '💬';
+    return `<div class="current-job">
+      <div class="cj-header">
+        <span class="cj-agent">${j.agent_emoji || '🤖'} ${j.agent_name || j.agent_id}</span>
+        <span class="cj-badge">▶ Laeuft</span>
+      </div>
+      <div class="cj-title">${j.title || 'Verarbeitung...'}</div>
+      <div class="cj-meta">
+        <span class="cj-elapsed">⏱ ${elapsedStr}</span>
+        <span class="cj-type">${j.job_type || 'text'}</span>
+        <span>${srcIcon} ${j.source === 'scheduler' ? 'Scheduler' : 'User-Request'}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderQueue(jobs, running) {
+  const list = document.getElementById('queue-list');
+  const allJobs = [];
+
+  // Laufende Jobs mit Status "running"
+  if (running && running.length > 0) {
+    running.forEach(j => {
+      const started = j.started ? new Date(j.started) : null;
+      const elapsed = started ? Math.round((Date.now() - started.getTime()) / 1000) : 0;
+      const mins = Math.floor(elapsed / 60);
+      const secs = elapsed % 60;
+      const elapsedStr = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+      const srcIcon = j.source === 'scheduler' ? '⏰' : '💬';
+      allJobs.push(`<div class="queue-item" style="border-color:var(--accent);">
+        <span class="badge badge-running" style="min-width:60px;text-align:center">▶ Läuft</span>
+        <span class="qi-agent" title="${j.agent_name || ''}">${j.agent_emoji || '🤖'}</span>
+        <span class="qi-title">${j.title || 'Verarbeitung...'}</span>
+        <span class="qi-type">${j.job_type || 'text'}</span>
+        <span class="qi-wait" style="color:var(--accent)">⏱ ${elapsedStr}</span>
+        <span style="font-size:0.7rem;color:var(--dim)">${srcIcon}</span>
+      </div>`);
+    });
+  }
+
+  // Wartende Jobs mit Status "queued"
+  if (jobs && jobs.length > 0) {
+    jobs.forEach((j, i) => {
+      const enqueued = j.enqueued ? new Date(j.enqueued) : null;
+      const waitSecs = enqueued ? Math.round((Date.now() - enqueued.getTime()) / 1000) : 0;
+      const waitStr = waitSecs > 60 ? Math.round(waitSecs / 60) + 'min' : waitSecs + 's';
+      const srcIcon = j.source === 'scheduler' ? '⏰' : '💬';
+      allJobs.push(`<div class="queue-item">
+        <span class="badge badge-timeout" style="min-width:60px;text-align:center">#${i + 1} Wartet</span>
+        <span class="qi-agent" title="${j.agent_name || ''}">${j.agent_emoji || '🤖'}</span>
+        <span class="qi-title">${j.title || 'Wartend...'}</span>
+        <span class="qi-type">${j.job_type || 'text'}</span>
+        <span class="qi-wait">wartet ${waitStr}</span>
+        <span style="font-size:0.7rem;color:var(--dim)">${srcIcon}</span>
+      </div>`);
+    });
+  }
+
+  if (allJobs.length === 0) {
+    list.innerHTML = '<div class="cj-empty"><span class="idle-dot">●</span> Keine aktiven oder wartenden Jobs</div>';
+  } else {
+    list.innerHTML = allJobs.join('');
+  }
+}
+
+function renderRequests(requests) {
+  const el = document.getElementById('request-log');
+  if (!requests || requests.length === 0) { el.innerHTML = '<div class="loading">Noch keine Requests aufgezeichnet</div>'; return; }
+
+  // Neueste zuerst
+  requests.sort((a, b) => (b.timestamp || '').localeCompare(a.timestamp || ''));
+
+  el.innerHTML = requests.map((r, i) => {
+    const ts = r.timestamp ? new Date(r.timestamp) : null;
+    const timeStr = ts ? ts.toLocaleString('de-DE', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit' }) : '-';
+    const typeCls = r.job_type === 'photo' ? 'req-type req-type-photo' : (r.job_type === 'bash' ? 'req-type req-type-bash' : 'req-type');
+    const statusCls = r.status === 'success' ? 'req-badge req-badge-success' : 'req-badge req-badge-error';
+    const statusTxt = r.status === 'success' ? 'OK' : 'ERR';
+    const dur = r.duration_seconds != null ? r.duration_seconds.toFixed(1) + 's' : '-';
+    const srcIcon = r.source === 'scheduler' ? '⏰' : '💬';
+    const hasDetail = r.prompt || r.output;
+    const expandBtn = hasDetail ? `<button class="req-expand" onclick="toggleReqDetail(${i})" id="req-btn-${i}">▶</button>` : '';
+    const prompt = (r.prompt || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const output = (r.output || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const detail = hasDetail ? `<div class="req-detail" id="req-detail-${i}">
+      ${prompt ? `<div class="req-detail-label">📨 Request</div><div class="req-detail-text">${prompt}</div>` : ''}
+      ${output ? `<div class="req-detail-label" style="margin-top:0.5rem">📤 Antwort</div><div class="req-detail-text">${output}</div>` : ''}
+    </div>` : '';
+    return `<div class="req-entry">
+      <div class="req-row">
+        ${expandBtn}
+        <span class="req-time">${srcIcon} ${timeStr}</span>
+        <span class="req-agent" title="${r.agent_name || ''}">${r.agent_emoji || '🤖'}</span>
+        <span class="${typeCls}">${r.job_type || 'text'}</span>
+        <span class="req-title" title="${(r.title || '').replace(/"/g, '&quot;')}">${r.title || '-'}</span>
+        <span class="req-duration">${dur}</span>
+        <span class="${statusCls}">${statusTxt}</span>
+      </div>
+      ${detail}
+    </div>`;
+  }).join('');
+}
+
+function renderLog(log) {
+  const el = document.getElementById('activity-log');
+  if (!log || log.length === 0) { el.innerHTML = '<div class="loading">Keine Eintraege</div>'; return; }
+
+  el.innerHTML = log.slice(0, 50).map(e => {
+    const statusCls = e.status === 'success' ? 'log-status-success' : (e.status === 'error' ? 'log-status-error' : 'log-status-timeout');
+    return `<div class="log-entry">
+      <span class="log-time">${relTime(e.timestamp)}</span>
+      <span class="log-agent">${e.agent || ''}</span>
+      <span class="log-msg ${statusCls}">${e.task || ''}: ${e.message || e.status || ''}</span>
+    </div>`;
+  }).join('');
+}
+
+function render(data) {
+  if (!data) return;
+
+  document.getElementById('last-update').textContent = data.last_updated ? new Date(data.last_updated).toLocaleString('de-DE') : '-';
+
+  const agents = data.agents || [];
+  const activeAgents = agents.filter(a => (a.tasks || []).some(t => t.enabled !== false));
+  const totalTasks = agents.reduce((s, a) => s + (a.tasks || []).filter(t => t.enabled !== false).length, 0);
+  const totalRuns = agents.reduce((s, a) => s + (a.tasks || []).reduce((rs, t) => rs + (t.run_count || 0), 0), 0);
+  const errorTasks = agents.reduce((s, a) => s + (a.tasks || []).filter(t => t.last_status === 'error').length, 0);
+
+  document.getElementById('s-agents').textContent = activeAgents.length;
+  document.getElementById('s-tasks').textContent = totalTasks;
+  document.getElementById('s-runs').textContent = totalRuns;
+  document.getElementById('s-errors').textContent = errorTasks;
+  document.getElementById('s-errors').style.color = errorTasks > 0 ? 'var(--red)' : 'var(--green)';
+  const queueCount = (data.queued_jobs || []).length;
+  const runningCount = (data.current_jobs || []).length;
+  document.getElementById('s-queue').textContent = runningCount + queueCount;
+  document.getElementById('s-queue').style.color = (runningCount + queueCount) > 0 ? 'var(--accent)' : 'var(--green)';
+  document.getElementById('s-sessions').textContent = (data.sessions || []).length;
+  document.getElementById('s-retouren').textContent = data.retouren?.pending_count || 0;
+  document.getElementById('s-shopping').textContent = data.shopping?.active_count || 0;
+
+  renderCurrentJobs(data.current_jobs);
+  renderQueue(data.queued_jobs, data.current_jobs);
+  renderAgents(agents);
+  renderSessions(data.sessions);
+  renderRetouren(data.retouren);
+  renderShopping(data.shopping);
+  renderLog(data.activity_log);
+  renderRequests(data.request_log);
+
+  document.getElementById('error-banner').style.display = 'none';
+}
+
+async function fetchData() {
+  try {
+    const res = await fetch('dashboard_status.json?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    const banner = document.getElementById('error-banner');
+    banner.textContent = 'Fehler beim Laden: ' + e.message;
+    banner.style.display = 'block';
+  }
+}
+
+fetchData();
+setInterval(() => {
+  countdown--;
+  document.getElementById('countdown').textContent = countdown;
+  if (countdown <= 0) {
+    countdown = REFRESH_INTERVAL;
+    fetchData();
+  }
+}, 1000);
+</script>
+</body>
+</html>
