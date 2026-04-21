@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-21T20:32:30.479902",
+  "last_updated": "2026-04-21T20:32:31.469732",
   "public": true,
   "agents": [
     {
@@ -114,7 +114,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-21T20:24:58.728692",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 106.1,
@@ -249,7 +249,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-04-21T16:35:23.297572",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 25.3,
@@ -1102,13 +1102,6 @@
       "message": "OK (1.8s)"
     },
     {
-      "timestamp": "2026-04-21T20:24:58.728692",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (106.1s)"
-    },
-    {
       "timestamp": "2026-04-21T19:32:39.872945",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
@@ -1135,13 +1128,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (110.8s)"
-    },
-    {
-      "timestamp": "2026-04-21T16:35:23.297572",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (25.3s)"
     },
     {
       "timestamp": "2026-04-21T08:03:01.569866",
