@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T05:30:55.491801",
+  "last_updated": "2026-04-22T05:30:55.553082",
   "public": true,
   "agents": [
     {
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-04-22T05:15:35.000477",
+          "last_run": "2026-04-22T05:30:55.550336",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 160
+          "run_count": 161
         },
         {
           "id": "ustva_check",
@@ -1074,6 +1074,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-22T05:30:55.550336",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.1s)"
+    },
+    {
       "timestamp": "2026-04-22T05:30:55.423089",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
@@ -1093,13 +1100,6 @@
       "task": "email_check",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-22T05:15:35.000477",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.1s)"
     },
     {
       "timestamp": "2026-04-22T05:00:33.909016",
@@ -1336,12 +1336,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
