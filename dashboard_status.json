@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T03:00:57.547735",
+  "last_updated": "2026-04-22T03:00:57.627713",
   "public": true,
   "agents": [
     {
@@ -701,11 +701,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-04-22T02:30:54.895274",
+          "last_run": "2026-04-22T03:00:57.624490",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 27
+          "run_count": 28
         },
         {
           "id": "qa_retrospective_daily_digest",
@@ -1074,6 +1074,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-22T03:00:57.624490",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (0.1s)"
+    },
+    {
       "timestamp": "2026-04-22T03:00:57.476366",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
@@ -1091,13 +1098,6 @@
       "timestamp": "2026-04-22T03:00:57.037058",
       "agent": "chrome_health",
       "task": "chrome_health",
-      "status": "success",
-      "message": "OK (0.1s)"
-    },
-    {
-      "timestamp": "2026-04-22T02:30:54.895274",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.1s)"
     },
@@ -1336,12 +1336,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
