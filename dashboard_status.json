@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T04:45:05.567893",
+  "last_updated": "2026-04-22T04:48:29.808953",
   "public": true,
   "agents": [
     {
@@ -565,7 +565,7 @@
       "id": "data_analyst",
       "name": "Datenanalyse-Agent",
       "emoji": "🔬",
-      "status": "success",
+      "status": "error",
       "description": "Tools: claude, bash | Modell: opus",
       "tools": [
         "claude",
@@ -582,11 +582,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-21T16:47:44.844078",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 110.8,
-          "run_count": 64
+          "last_run": "2026-04-22T04:48:09.798872",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 184.2,
+          "run_count": 65
         }
       ]
     },
@@ -1074,6 +1074,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-22T04:48:09.798872",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-04-22T04:45:05.492955",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
@@ -1163,13 +1170,6 @@
       "task": "sync_conversations",
       "status": "success",
       "message": "OK (3.0s)"
-    },
-    {
-      "timestamp": "2026-04-21T16:47:44.844078",
-      "agent": "data_analysis",
-      "task": "data_analysis",
-      "status": "success",
-      "message": "OK (110.8s)"
     },
     {
       "timestamp": "2026-04-21T08:03:01.569866",
@@ -1336,12 +1336,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
