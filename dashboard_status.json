@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T05:00:31.230010",
+  "last_updated": "2026-04-22T05:00:33.912758",
   "public": true,
   "agents": [
     {
@@ -773,11 +773,11 @@
           "silent": true,
           "timeout": 90,
           "detail": "",
-          "last_run": "2026-04-22T03:01:00.426233",
+          "last_run": "2026-04-22T05:00:33.909016",
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 2.7,
-          "run_count": 13
+          "run_count": 14
         }
       ]
     },
@@ -1074,6 +1074,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-22T05:00:33.909016",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-04-22T05:00:31.157375",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1120,13 +1127,6 @@
       "agent": "sync_drive",
       "task": "sync_drive",
       "status": "timeout",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-22T03:01:00.426233",
-      "agent": "eufy_weekday_schedule",
-      "task": "eufy_weekday_schedule",
-      "status": "error",
       "message": "[error]"
     },
     {
@@ -1336,12 +1336,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
