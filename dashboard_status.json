@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T15:01:38.751418",
+  "last_updated": "2026-04-27T15:02:04.072377",
   "public": true,
   "agents": [
     {
@@ -542,11 +542,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-27T14:31:49.117721",
+          "last_run": "2026-04-27T15:02:04.070120",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 86.8,
-          "run_count": 372
+          "last_duration_seconds": 83.8,
+          "run_count": 373
         }
       ]
     },
@@ -1107,6 +1107,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-27T15:02:04.070120",
+      "agent": "stock_crash_check",
+      "task": "stock_crash_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-04-27T15:00:38.400197",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1133,13 +1140,6 @@
       "task": "chrome_health",
       "status": "success",
       "message": "OK (1.0s)"
-    },
-    {
-      "timestamp": "2026-04-27T14:31:49.117721",
-      "agent": "stock_crash_check",
-      "task": "stock_crash_check",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-04-27T13:00:59.802318",
