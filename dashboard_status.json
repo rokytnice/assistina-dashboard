@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T20:32:47.355655",
+  "last_updated": "2026-04-27T20:33:04.765171",
   "public": true,
   "agents": [
     {
@@ -174,11 +174,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-04-27T20:33:04.638178",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 82.4,
-          "run_count": 279
+          "last_duration_seconds": 17.3,
+          "run_count": 280
         },
         {
           "id": "retouren_check",
@@ -1107,6 +1107,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-27T20:33:04.638178",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (17.3s)"
+    },
+    {
       "timestamp": "2026-04-27T20:32:44.750076",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1383,12 +1390,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
