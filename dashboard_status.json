@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-27T12:32:57.856898",
+  "last_updated": "2026-04-27T12:32:58.661555",
   "public": true,
   "agents": [
     {
@@ -174,7 +174,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-27T10:23:42.652219",
+          "last_run": null,
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 12.6,
@@ -309,7 +309,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-04-27T07:01:12.781925",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 54.4,
@@ -1156,13 +1156,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-04-27T10:23:42.652219",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-04-27T10:00:40.815563",
       "agent": "retouren_check",
       "task": "retouren_check",
@@ -1189,13 +1182,6 @@
       "task": "daily_freelance_scan",
       "status": "success",
       "message": "OK (172.7s)"
-    },
-    {
-      "timestamp": "2026-04-27T07:01:12.781925",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (54.4s)"
     },
     {
       "timestamp": "2026-04-26T13:30:38.646778",
