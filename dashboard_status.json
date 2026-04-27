@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T07:32:59.437412",
+  "last_updated": "2026-04-27T09:49:03.181384",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-04-22T07:30:48.333674",
+          "last_run": "2026-04-27T09:30:09.512403",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 1422
+          "last_duration_seconds": 0.1,
+          "run_count": 1600
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-04-22T07:31:10.727199",
+          "last_run": "2026-04-27T09:45:36.099441",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 20.1,
-          "run_count": 614
+          "last_duration_seconds": 1.0,
+          "run_count": 1654
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,71 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-04-22T06:45:41.642263",
+          "last_run": "2026-04-27T09:45:36.166865",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.1,
-          "run_count": 165
+          "last_duration_seconds": 0.0,
+          "run_count": 510
+        },
+        {
+          "id": "email_followup_tracker",
+          "description": "Erinnert werktags 9/13/17 Uhr an offene Mail-Antworten. Scannt Gmail-SENT der le",
+          "cron": "0 9,13,17 * * 1-5",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-04-27T09:01:02.000830",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 9.4,
+          "run_count": 4
+        },
+        {
+          "id": "admin_server_guard",
+          "description": "Stellt sicher, dass der Admin-Server (lib.admin_server, Port 8766) läuft. Idempo",
+          "cron": "* * * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 30,
+          "detail": "",
+          "last_run": "2026-04-27T09:48:36.409803",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 0.0,
+          "run_count": 2309
+        },
+        {
+          "id": "monthly_timesheet_reminder",
+          "description": "Erinnert am letzten Tag jedes Monats um 09:00 Uhr an die Zeitabrechnung. Läuft a",
+          "cron": "0 9 28-31 * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 30,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "investor_research_agent",
+          "description": "Investor-Research-Agent für Fake Defense AI — Di + Fr um 08:00. Liest config/pro",
+          "cron": "0 8 * * 2,5",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 600,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         },
         {
           "id": "ustva_check",
@@ -96,7 +156,7 @@
       "id": "mailcheck",
       "name": "E-Mail Wächter",
       "emoji": "📧",
-      "status": "error",
+      "status": "success",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -114,11 +174,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-22T05:26:34.931591",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 179.4,
-          "run_count": 243
+          "last_run": "2026-04-26T12:33:21.516168",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 54.4,
+          "run_count": 275
         },
         {
           "id": "retouren_check",
@@ -129,11 +189,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-20T10:03:12.204626",
+          "last_run": "2026-04-25T10:00:42.347965",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 143.3,
-          "run_count": 9
+          "last_duration_seconds": 11.4,
+          "run_count": 13
         }
       ]
     },
@@ -141,7 +201,7 @@
       "id": "datasync",
       "name": "Daten-Synchronizer",
       "emoji": "🔄",
-      "status": "error",
+      "status": "timeout",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -159,11 +219,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-22T04:33:04.439516",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 176.6,
-          "run_count": 198
+          "last_run": "2026-04-26T12:32:27.028993",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 123.9,
+          "run_count": 216
         },
         {
           "id": "sync_calendar",
@@ -174,11 +234,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-04-22T06:03:58.833797",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 180.6,
-          "run_count": 23
+          "last_run": "2026-04-24T06:02:21.669854",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 132.8,
+          "run_count": 25
         },
         {
           "id": "sync_contacts",
@@ -204,11 +264,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-22T04:05:05.569219",
+          "last_run": "2026-04-25T04:05:45.519843",
           "last_status": "timeout",
           "last_error": "error",
           "last_duration_seconds": 300.0,
-          "run_count": 11
+          "run_count": 12
         },
         {
           "id": "sync_conversations",
@@ -219,11 +279,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-04-21T18:00:53.907128",
+          "last_run": "2026-04-26T12:00:30.981479",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.0,
-          "run_count": 70
+          "last_duration_seconds": 1.8,
+          "run_count": 82
         }
       ]
     },
@@ -249,11 +309,11 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-04-21T20:33:04.832104",
+          "last_run": "2026-04-27T07:01:12.781925",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 13.1,
-          "run_count": 64
+          "last_duration_seconds": 54.4,
+          "run_count": 88
         },
         {
           "id": "taskprep_precheck",
@@ -279,11 +339,11 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-04-19T20:01:23.200120",
+          "last_run": "2026-04-25T20:01:07.228995",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 46.8,
-          "run_count": 26
+          "last_duration_seconds": 46.1,
+          "run_count": 30
         }
       ]
     },
@@ -309,11 +369,11 @@
           "silent": false,
           "timeout": 3600,
           "detail": "",
-          "last_run": "2026-04-20T21:01:01.898137",
+          "last_run": "2026-04-24T21:00:51.934748",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 8.8,
-          "run_count": 4
+          "last_duration_seconds": 8.2,
+          "run_count": 7
         }
       ]
     },
@@ -337,54 +397,11 @@
           "silent": false,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-04-20T19:01:58.896035",
+          "last_run": "2026-04-25T19:02:29.991209",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 93.1,
-          "run_count": 7
-        }
-      ]
-    },
-    {
-      "id": "news_stocks",
-      "name": "News → Stock Impact",
-      "emoji": "📊",
-      "status": "success",
-      "description": "Tools: bash | Modell: sonnet",
-      "tools": [
-        "bash"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "news_stocks_morning",
-          "description": "News→Stock Morgen-Report um 08:00",
-          "cron": "0 8 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 180,
-          "detail": "",
-          "last_run": "2026-04-21T08:03:01.569866",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 155.7,
-          "run_count": 4
-        },
-        {
-          "id": "news_stocks_evening",
-          "description": "News→Stock Abend-Report um 19:00",
-          "cron": "0 19 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 180,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 90.3,
+          "run_count": 9
         }
       ]
     },
@@ -392,7 +409,7 @@
       "id": "freelance",
       "name": "Freelance Projekt-Scanner",
       "emoji": "💼",
-      "status": null,
+      "status": "success",
       "description": "Tools: bash, playwright | Modell: sonnet",
       "tools": [
         "bash",
@@ -409,11 +426,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-04-27T08:03:03.911460",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 172.7,
+          "run_count": 3
         }
       ]
     },
@@ -438,11 +455,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-21T21:31:17.813724",
+          "last_run": "2026-04-24T21:30:39.333351",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 21.8,
-          "run_count": 6
+          "last_duration_seconds": 18.2,
+          "run_count": 9
         }
       ]
     },
@@ -450,7 +467,7 @@
       "id": "shopping",
       "name": "Shopping-Schnäppchenjäger",
       "emoji": "🛒",
-      "status": null,
+      "status": "success",
       "description": "Tools: bash, playwright | Modell: sonnet",
       "tools": [
         "bash",
@@ -467,11 +484,11 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-04-26T12:03:14.749867",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 163.7,
+          "run_count": 5
         }
       ]
     },
@@ -525,11 +542,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-21T22:03:09.487575",
+          "last_run": "2026-04-27T09:31:31.315731",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 134.8,
-          "run_count": 300
+          "last_duration_seconds": 80.8,
+          "run_count": 366
         }
       ]
     },
@@ -565,7 +582,7 @@
       "id": "data_analyst",
       "name": "Datenanalyse-Agent",
       "emoji": "🔬",
-      "status": "error",
+      "status": "success",
       "description": "Tools: claude, bash | Modell: opus",
       "tools": [
         "claude",
@@ -582,11 +599,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-22T04:48:09.798872",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 184.2,
-          "run_count": 65
+          "last_run": "2026-04-27T08:45:16.907062",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 14.4,
+          "run_count": 87
         }
       ]
     },
@@ -641,11 +658,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-12T07:31:07.900779",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 47.7,
-          "run_count": 2
+          "last_run": "2026-04-26T07:31:19.405742",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 37.7,
+          "run_count": 3
         },
         {
           "id": "qa_mailcheck",
@@ -656,11 +673,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-19T14:01:38.512415",
+          "last_run": "2026-04-25T14:01:16.888322",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 42.2,
-          "run_count": 4
+          "last_duration_seconds": 45.9,
+          "run_count": 5
         },
         {
           "id": "qa_stock_monitor",
@@ -701,11 +718,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-04-22T05:30:55.701116",
+          "last_run": "2026-04-26T13:30:38.646778",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 31
+          "run_count": 83
         },
         {
           "id": "qa_retrospective_daily_digest",
@@ -716,11 +733,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-21T19:16:02.680695",
+          "last_run": "2026-04-25T19:16:07.938558",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 16.6,
-          "run_count": 2
+          "last_duration_seconds": 33.7,
+          "run_count": 6
         }
       ]
     },
@@ -773,11 +790,11 @@
           "silent": true,
           "timeout": 90,
           "detail": "",
-          "last_run": "2026-04-22T05:00:33.909016",
+          "last_run": "2026-04-26T13:01:04.461417",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 2.7,
-          "run_count": 14
+          "last_duration_seconds": 62.1,
+          "run_count": 42
         }
       ]
     },
@@ -987,6 +1004,22 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "shopping",
+      "name": "Shopping-Schnäppchenjäger",
+      "emoji": "🛒",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "freelance",
+      "name": "Freelance Projekt-Scanner",
+      "emoji": "💼",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "retouren": {
@@ -1069,128 +1102,191 @@
   "shopping": {
     "product_count": 1,
     "active_count": 1,
-    "searches_total": 1,
+    "searches_total": 6,
     "products": []
   },
   "activity_log": [
     {
-      "timestamp": "2026-04-22T07:31:10.727199",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
+      "timestamp": "2026-04-27T09:48:36.409803",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
       "status": "success",
-      "message": "OK (20.1s)"
+      "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-04-22T07:30:48.333674",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.2s)"
-    },
-    {
-      "timestamp": "2026-04-22T06:45:41.642263",
+      "timestamp": "2026-04-27T09:45:36.166865",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
-      "message": "OK (1.1s)"
+      "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-04-22T06:03:58.833797",
-      "agent": "sync_calendar",
-      "task": "sync_calendar",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-22T05:30:55.701116",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
+      "timestamp": "2026-04-27T09:45:36.099441",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (0.1s)"
+      "message": "OK (1.0s)"
     },
     {
-      "timestamp": "2026-04-22T05:26:34.931591",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-22T05:00:33.909016",
-      "agent": "eufy_weekday_schedule",
-      "task": "eufy_weekday_schedule",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-22T04:48:09.798872",
-      "agent": "data_analysis",
-      "task": "data_analysis",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-22T04:33:04.439516",
-      "agent": "sync_gmail",
-      "task": "sync_gmail",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-22T04:05:05.569219",
-      "agent": "sync_drive",
-      "task": "sync_drive",
-      "status": "timeout",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-21T22:03:09.487575",
+      "timestamp": "2026-04-27T09:31:31.315731",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
       "status": "error",
       "message": "[error]"
     },
     {
-      "timestamp": "2026-04-21T21:31:17.813724",
-      "agent": "daily_seo",
-      "task": "daily_seo",
+      "timestamp": "2026-04-27T09:30:09.512403",
+      "agent": "chrome_health",
+      "task": "chrome_health",
       "status": "success",
-      "message": "OK (21.8s)"
+      "message": "OK (0.1s)"
     },
     {
-      "timestamp": "2026-04-21T20:33:04.832104",
+      "timestamp": "2026-04-27T09:01:02.000830",
+      "agent": "email_followup_tracker",
+      "task": "email_followup_tracker",
+      "status": "success",
+      "message": "OK (9.4s)"
+    },
+    {
+      "timestamp": "2026-04-27T08:45:16.907062",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "success",
+      "message": "OK (14.4s)"
+    },
+    {
+      "timestamp": "2026-04-27T08:03:03.911460",
+      "agent": "daily_freelance_scan",
+      "task": "daily_freelance_scan",
+      "status": "success",
+      "message": "OK (172.7s)"
+    },
+    {
+      "timestamp": "2026-04-27T07:01:12.781925",
       "agent": "taskprep_morning",
       "task": "taskprep_morning",
       "status": "success",
-      "message": "OK (13.1s)"
+      "message": "OK (54.4s)"
     },
     {
-      "timestamp": "2026-04-21T19:16:02.680695",
-      "agent": "qa_retrospective_daily_digest",
-      "task": "qa_retrospective_daily_digest",
+      "timestamp": "2026-04-26T13:30:38.646778",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
       "status": "success",
-      "message": "OK (16.6s)"
+      "message": "OK (0.1s)"
     },
     {
-      "timestamp": "2026-04-21T18:00:53.907128",
+      "timestamp": "2026-04-26T13:01:04.461417",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-26T12:33:21.516168",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (54.4s)"
+    },
+    {
+      "timestamp": "2026-04-26T12:32:27.028993",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (123.9s)"
+    },
+    {
+      "timestamp": "2026-04-26T12:03:14.749867",
+      "agent": "daily_shopping",
+      "task": "daily_shopping",
+      "status": "success",
+      "message": "OK (163.7s)"
+    },
+    {
+      "timestamp": "2026-04-26T12:00:30.981479",
       "agent": "sync_conversations",
       "task": "sync_conversations",
       "status": "success",
-      "message": "OK (3.0s)"
+      "message": "OK (1.8s)"
     },
     {
-      "timestamp": "2026-04-21T08:03:01.569866",
-      "agent": "news_stocks_morning",
-      "task": "news_stocks_morning",
+      "timestamp": "2026-04-26T07:31:19.405742",
+      "agent": "qa_taskprep",
+      "task": "qa_taskprep",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-25T20:01:07.228995",
+      "agent": "taskprep_evening",
+      "task": "taskprep_evening",
       "status": "success",
-      "message": "OK (155.7s)"
+      "message": "OK (46.1s)"
     },
     {
-      "timestamp": "2026-04-20T21:01:01.898137",
+      "timestamp": "2026-04-25T19:16:07.938558",
+      "agent": "qa_retrospective_daily_digest",
+      "task": "qa_retrospective_daily_digest",
+      "status": "success",
+      "message": "OK (33.7s)"
+    },
+    {
+      "timestamp": "2026-04-25T19:02:29.991209",
+      "agent": "daily_robotics",
+      "task": "daily_robotics",
+      "status": "success",
+      "message": "OK (90.3s)"
+    },
+    {
+      "timestamp": "2026-04-25T14:01:16.888322",
+      "agent": "qa_mailcheck",
+      "task": "qa_mailcheck",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-25T10:00:42.347965",
+      "agent": "retouren_check",
+      "task": "retouren_check",
+      "status": "success",
+      "message": "OK (11.4s)"
+    },
+    {
+      "timestamp": "2026-04-25T04:05:45.519843",
+      "agent": "sync_drive",
+      "task": "sync_drive",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-24T21:30:39.333351",
+      "agent": "daily_seo",
+      "task": "daily_seo",
+      "status": "success",
+      "message": "OK (18.2s)"
+    },
+    {
+      "timestamp": "2026-04-24T21:00:51.934748",
       "agent": "daily_content",
       "task": "daily_content",
       "status": "error",
       "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-24T06:02:21.669854",
+      "agent": "sync_calendar",
+      "task": "sync_calendar",
+      "status": "success",
+      "message": "OK (132.8s)"
+    },
+    {
+      "timestamp": "2026-04-22T08:02:25.267752",
+      "agent": "news_stocks_morning",
+      "task": "news_stocks_morning",
+      "status": "success",
+      "message": "OK (112.7s)"
     },
     {
       "timestamp": "2026-04-20T21:00:41.931752",
@@ -1200,39 +1296,11 @@
       "message": "OK (9.8s)"
     },
     {
-      "timestamp": "2026-04-20T19:01:58.896035",
-      "agent": "daily_robotics",
-      "task": "daily_robotics",
-      "status": "success",
-      "message": "OK (93.1s)"
-    },
-    {
-      "timestamp": "2026-04-20T10:03:12.204626",
-      "agent": "retouren_check",
-      "task": "retouren_check",
-      "status": "success",
-      "message": "OK (143.3s)"
-    },
-    {
       "timestamp": "2026-04-19T22:31:28.780814",
       "agent": "daily_post_qa",
       "task": "daily_post_qa",
       "status": "success",
       "message": "OK (34.5s)"
-    },
-    {
-      "timestamp": "2026-04-19T20:01:23.200120",
-      "agent": "taskprep_evening",
-      "task": "taskprep_evening",
-      "status": "success",
-      "message": "OK (46.8s)"
-    },
-    {
-      "timestamp": "2026-04-19T14:01:38.512415",
-      "agent": "qa_mailcheck",
-      "task": "qa_mailcheck",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-04-12T21:31:36.576448",
@@ -1254,13 +1322,6 @@
       "task": "qa_datasync",
       "status": "success",
       "message": "OK (35.3s)"
-    },
-    {
-      "timestamp": "2026-04-12T07:31:07.900779",
-      "agent": "qa_taskprep",
-      "task": "qa_taskprep",
-      "status": "success",
-      "message": "OK (47.7s)"
     },
     {
       "timestamp": "2026-04-12T03:05:31.671819",
@@ -1335,7 +1396,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 7,
+  "user_prompts_count": 4,
   "current_jobs": [
     {
       "id": "",
