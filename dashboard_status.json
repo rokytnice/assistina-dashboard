@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28T08:00:58.746926",
+  "last_updated": "2026-04-28T08:02:35.131871",
   "public": true,
   "agents": [
     {
@@ -114,11 +114,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-04-28T08:02:35.129518",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 96.4,
+          "run_count": 1
         },
         {
           "id": "ustva_check",
@@ -1107,6 +1107,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-28T08:02:35.129518",
+      "agent": "investor_research_agent",
+      "task": "investor_research_agent",
+      "status": "success",
+      "message": "OK (96.4s)"
+    },
+    {
       "timestamp": "2026-04-28T08:00:56.699634",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1397,12 +1404,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 6,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
