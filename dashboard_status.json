@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28T02:40:37.047252",
+  "last_updated": "2026-04-28T02:40:38.028449",
   "public": true,
   "agents": [
     {
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-04-28T02:39:31.368078",
+          "last_run": "2026-04-28T02:40:38.026402",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.9,
-          "run_count": 3217
+          "last_duration_seconds": 1.0,
+          "run_count": 3218
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1107,18 +1107,18 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-28T02:40:38.026402",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (1.0s)"
+    },
+    {
       "timestamp": "2026-04-28T02:40:34.936898",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
       "message": "OK (2.0s)"
-    },
-    {
-      "timestamp": "2026-04-28T02:39:31.368078",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (0.9s)"
     },
     {
       "timestamp": "2026-04-28T02:30:03.196192",
@@ -1397,12 +1397,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
