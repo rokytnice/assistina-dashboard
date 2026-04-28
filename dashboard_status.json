@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28T12:19:35.587136",
+  "last_updated": "2026-04-28T12:20:37.081899",
   "public": true,
   "agents": [
     {
@@ -460,35 +460,6 @@
           "last_error": null,
           "last_duration_seconds": 25.6,
           "run_count": 10
-        }
-      ]
-    },
-    {
-      "id": "shopping",
-      "name": "Shopping-Schnäppchenjäger",
-      "emoji": "🛒",
-      "status": "success",
-      "description": "Tools: bash, playwright | Modell: sonnet",
-      "tools": [
-        "bash",
-        "playwright"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "daily_shopping",
-          "description": "Tägliche Shopping-Suche um 12 Uhr",
-          "cron": "0 12 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-28T12:04:11.350516",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 213.4,
-          "run_count": 6
         }
       ]
     },
@@ -1419,6 +1390,11 @@
   "user_prompts": [],
   "user_prompts_count": 1,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
