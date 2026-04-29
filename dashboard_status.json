@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T16:33:58.550127",
+  "last_updated": "2026-04-29T16:34:30.308540",
   "public": true,
   "agents": [
     {
@@ -174,11 +174,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-04-29T16:34:30.236649",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 86.2,
-          "run_count": 294
+          "last_duration_seconds": 79.9,
+          "run_count": 295
         },
         {
           "id": "retouren_check",
@@ -1077,6 +1077,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-04-29T16:34:30.236649",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (79.9s)"
+    },
     {
       "timestamp": "2026-04-29T16:33:06.037643",
       "agent": "sync_gmail",
