@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T19:15:46.740847",
+  "last_updated": "2026-04-29T19:15:50.877823",
   "public": true,
   "agents": [
     {
@@ -704,11 +704,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-28T19:16:00.140797",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 12.9,
-          "run_count": 8
+          "last_run": "2026-04-29T19:15:50.756276",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 4.0,
+          "run_count": 9
         }
       ]
     },
@@ -1078,6 +1078,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-29T19:15:50.756276",
+      "agent": "qa_retrospective_daily_digest",
+      "task": "qa_retrospective_daily_digest",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-04-29T19:15:44.155870",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1260,13 +1267,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-04-28T19:16:00.140797",
-      "agent": "qa_retrospective_daily_digest",
-      "task": "qa_retrospective_daily_digest",
-      "status": "success",
-      "message": "OK (12.9s)"
-    },
-    {
       "timestamp": "2026-04-28T18:00:52.027025",
       "agent": "qa_stock_monitor",
       "task": "qa_stock_monitor",
@@ -1396,12 +1396,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
