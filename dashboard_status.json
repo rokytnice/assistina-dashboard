@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T16:33:07.639931",
+  "last_updated": "2026-04-29T16:33:08.928740",
   "public": true,
   "agents": [
     {
@@ -174,7 +174,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-29T15:25:05.897436",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 86.2,
@@ -309,7 +309,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-04-29T08:33:25.475379",
+          "last_run": null,
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 3.5,
@@ -1141,13 +1141,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-04-29T15:25:05.897436",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (86.2s)"
-    },
-    {
       "timestamp": "2026-04-29T14:00:31.308148",
       "agent": "qa_mailcheck",
       "task": "qa_mailcheck",
@@ -1165,13 +1158,6 @@
       "timestamp": "2026-04-29T12:45:31.522905",
       "agent": "data_analysis",
       "task": "data_analysis",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-29T08:33:25.475379",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
       "status": "error",
       "message": "[error]"
     },
