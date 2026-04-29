@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-29T07:30:32.299139",
+  "last_updated": "2026-04-29T07:30:33.410574",
   "public": true,
   "agents": [
     {
@@ -513,11 +513,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-28T22:30:43.934804",
+          "last_run": "2026-04-29T07:30:33.408395",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 0.0,
-          "run_count": 397
+          "last_duration_seconds": 1.1,
+          "run_count": 398
         }
       ]
     },
@@ -1078,6 +1078,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-29T07:30:33.408395",
+      "agent": "stock_crash_check",
+      "task": "stock_crash_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-04-29T07:30:29.726955",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1181,13 +1188,6 @@
       "task": "stock_watchlist_check",
       "status": "success",
       "message": "OK (0.4s)"
-    },
-    {
-      "timestamp": "2026-04-28T22:30:43.934804",
-      "agent": "stock_crash_check",
-      "task": "stock_crash_check",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-04-28T21:31:25.959263",
@@ -1396,12 +1396,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 7,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
