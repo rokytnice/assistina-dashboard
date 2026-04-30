@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T12:32:32.973624",
+  "last_updated": "2026-04-30T12:32:34.235760",
   "public": true,
   "agents": [
     {
@@ -189,7 +189,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-30T10:25:00.178552",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 93.9,
@@ -324,7 +324,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-04-29T16:34:45.378474",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 12.6,
@@ -1126,13 +1126,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-04-30T10:25:00.178552",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (93.9s)"
-    },
-    {
       "timestamp": "2026-04-30T08:45:55.265761",
       "agent": "data_analysis",
       "task": "data_analysis",
@@ -1194,13 +1187,6 @@
       "task": "daily_robotics",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-29T16:34:45.378474",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (12.6s)"
     },
     {
       "timestamp": "2026-04-29T14:00:31.308148",
