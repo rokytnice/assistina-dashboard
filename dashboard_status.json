@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T06:57:57.080971",
+  "last_updated": "2026-04-30T06:58:18.621690",
   "public": true,
   "agents": [
     {
@@ -698,35 +698,6 @@
       ]
     },
     {
-      "id": "post_qa",
-      "name": "Post-Qualitätssicherung",
-      "emoji": "🔍",
-      "status": "success",
-      "description": "Tools: claude, bash | Modell: sonnet",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "daily_post_qa",
-          "description": "Post-QA um 22:30 (nach NewsRadar + VideoRadar)",
-          "cron": "30 22 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-30T06:57:09.748206",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 38.2,
-          "run_count": 6
-        }
-      ]
-    },
-    {
       "id": "eufy_security",
       "name": "eufy Security",
       "emoji": "🔐",
@@ -1275,13 +1246,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 2,
+  "current_jobs": [],
   "queued_jobs": []
 }
