@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T17:15:18.261585",
+  "last_updated": "2026-04-30T17:16:19.548765",
   "public": true,
   "agents": [
     {
@@ -119,6 +119,21 @@
           "last_error": null,
           "last_duration_seconds": 96.4,
           "run_count": 1
+        },
+        {
+          "id": "play_release_check_6h",
+          "description": "Play-Console-Release-Check alle 6 Stunden (00:00, 06:00, 12:00, 18:00). Liest vi",
+          "cron": "0 */6 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 120,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         },
         {
           "id": "data_analysis_8h",
@@ -1368,6 +1383,11 @@
   "user_prompts": [],
   "user_prompts_count": 1,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
