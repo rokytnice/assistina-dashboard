@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T21:14:22.269702",
+  "last_updated": "2026-04-30T21:14:23.418854",
   "public": true,
   "agents": [
     {
@@ -629,7 +629,7 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-30T06:58:42.240654",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 90.1,
@@ -1174,20 +1174,6 @@
       "task": "daily_freelance_scan",
       "status": "success",
       "message": "OK (57.7s)"
-    },
-    {
-      "timestamp": "2026-04-30T06:58:42.240654",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (90.1s)"
-    },
-    {
-      "timestamp": "2026-04-30T06:57:09.748206",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (38.2s)"
     },
     {
       "timestamp": "2026-04-29T20:00:33.039155",
