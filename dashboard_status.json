@@ -1,877 +1,52 @@
 {
-  "last_updated": "2026-04-30T10:04:44.186969",
+  "last_updated": "2026-04-30T10:05:19.796203",
   "public": true,
-  "agents": [
-    {
-      "id": "assistant",
-      "name": "Persönlicher Assistent",
-      "emoji": "🤖",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "chrome_health",
-          "description": "Chrome Deep-Health-Check alle 30 Min (ergänzend zum Watchdog)",
-          "cron": "*/30 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 60,
-          "detail": "",
-          "last_run": "2026-04-30T10:00:57.095979",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 2.1,
-          "run_count": 1719
-        },
-        {
-          "id": "sensor_sweep",
-          "description": "Business-Sensoren (Gmail, Calendar, Lexware) alle 5 Minuten. Events gehen auf de",
-          "cron": "*/5 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-04-30T09:55:33.514346",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.9,
-          "run_count": 2354
-        },
-        {
-          "id": "unified_index_rebuild",
-          "description": "Baut data/unified_index.json neu (Cross-References zwischen Reminders, Retouren,",
-          "cron": "*/15 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 60,
-          "detail": "",
-          "last_run": "2026-04-30T09:45:46.272540",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 729
-        },
-        {
-          "id": "email_followup_tracker",
-          "description": "Erinnert werktags 9/13/17 Uhr an offene Mail-Antworten. Scannt Gmail-SENT der le",
-          "cron": "0 9,13,17 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-29T13:00:58.881213",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 12.0,
-          "run_count": 9
-        },
-        {
-          "id": "admin_server_guard",
-          "description": "Stellt sicher, dass der Admin-Server (lib.admin_server, Port 8766) läuft. Idempo",
-          "cron": "* * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 30,
-          "detail": "",
-          "last_run": "2026-04-30T10:04:17.374151",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 5664
-        },
-        {
-          "id": "monthly_timesheet_reminder",
-          "description": "Erinnert am letzten Tag jedes Monats um 09:00 Uhr an die Zeitabrechnung. Läuft a",
-          "cron": "0 9 28-31 * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 30,
-          "detail": "",
-          "last_run": "2026-04-28T09:00:46.353739",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.8,
-          "run_count": 1
-        },
-        {
-          "id": "investor_research_agent",
-          "description": "Investor-Research-Agent für Fake Defense AI — Di + Fr um 08:00. Liest config/pro",
-          "cron": "0 8 * * 2,5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-28T08:02:35.129518",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 96.4,
-          "run_count": 1
-        },
-        {
-          "id": "ustva_check",
-          "description": "USt-VA Prüfung am 10. jedes Monats um 9 Uhr",
-          "cron": "0 9 10 * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-10T09:02:52.500888",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 124.8,
-          "run_count": 1
-        },
-        {
-          "id": "escooter_versicherung",
-          "description": "E-Scooter Versicherungserinnerung am 10. Februar jedes Jahr",
-          "cron": "0 9 10 2 *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        }
-      ]
-    },
-    {
-      "id": "mailcheck",
-      "name": "E-Mail Wächter",
-      "emoji": "📧",
-      "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "email_check",
-          "description": "E-Mail-Check + Aufgaben-Erkennung alle 5 Stunden",
-          "cron": "23 */5 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-29T20:24:33.100352",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 54.8,
-          "run_count": 296
-        },
-        {
-          "id": "retouren_check",
-          "description": "Täglicher Retouren-Check um 10 Uhr",
-          "cron": "0 10 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-28T10:00:27.783083",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 3.6,
-          "run_count": 15
-        }
-      ]
-    },
-    {
-      "id": "datasync",
-      "name": "Daten-Synchronizer",
-      "emoji": "🔄",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "sync_gmail",
-          "description": "Gmail-Sync alle 4 Stunden",
-          "cron": "30 */4 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-29T16:33:06.037643",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 130.7,
-          "run_count": 229
-        },
-        {
-          "id": "sync_calendar",
-          "description": "Kalender-Sync täglich 6 Uhr",
-          "cron": "0 6 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-29T06:02:53.256232",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 115.1,
-          "run_count": 26
-        },
-        {
-          "id": "sync_contacts",
-          "description": "Kontakte-Sync wöchentlich Sonntag 3 Uhr",
-          "cron": "0 3 * * 0",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-12T03:05:31.671819",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 308.2,
-          "run_count": 2
-        },
-        {
-          "id": "sync_drive",
-          "description": "Drive-Index täglich 4 Uhr",
-          "cron": "0 4 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-29T04:01:01.839123",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 53.0,
-          "run_count": 13
-        },
-        {
-          "id": "sync_conversations",
-          "description": "Konversations-Sync alle 6 Stunden in RAG",
-          "cron": "0 */6 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-04-29T18:01:01.177417",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 2.1,
-          "run_count": 88
-        }
-      ]
-    },
-    {
-      "id": "taskprep",
-      "name": "Aufgaben-Vorbereiter",
-      "emoji": "📋",
-      "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "taskprep_morning",
-          "description": "Morgen-Briefing täglich 7 Uhr",
-          "cron": "0 7 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 420,
-          "detail": "",
-          "last_run": "2026-04-29T16:34:45.378474",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 12.6,
-          "run_count": 100
-        },
-        {
-          "id": "taskprep_precheck",
-          "description": "Vorbereitungs-Check alle 3h (9-20 Uhr)",
-          "cron": "0 */3 9-20 * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-20T21:00:41.931752",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 9.8,
-          "run_count": 109
-        },
-        {
-          "id": "taskprep_evening",
-          "description": "Abend-Review täglich 20 Uhr",
-          "cron": "0 20 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-29T20:00:33.039155",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 4.0,
-          "run_count": 33
-        }
-      ]
-    },
-    {
-      "id": "contentradar",
-      "name": "Content Radar (News + Video)",
-      "emoji": "📡",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "daily_content",
-          "description": "Täglicher Content Radar (News + Videos) um 21 Uhr",
-          "cron": "0 21 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 3600,
-          "detail": "",
-          "last_run": "2026-04-30T06:56:27.995883",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 35740.6,
-          "run_count": 9
-        }
-      ]
-    },
-    {
-      "id": "robotics",
-      "name": "Robotics Daily",
-      "emoji": "🦾",
-      "status": "error",
-      "description": "Tools: bash | Modell: sonnet",
-      "tools": [
-        "bash"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "daily_robotics",
-          "description": "Robotics Daily News um 19 Uhr",
-          "cron": "0 19 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-04-29T19:00:07.065167",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 4.0,
-          "run_count": 11
-        }
-      ]
-    },
-    {
-      "id": "freelance",
-      "name": "Freelance Projekt-Scanner",
-      "emoji": "💼",
-      "status": "success",
-      "description": "Tools: bash, playwright | Modell: sonnet",
-      "tools": [
-        "bash",
-        "playwright"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "daily_freelance_scan",
-          "description": "Freelance Projekt-Scan Mo-Fr 08:00 (silent wenn nichts gefunden)",
-          "cron": "0 8 * * 1-5",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-30T08:01:29.091695",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 57.7,
-          "run_count": 5
-        }
-      ]
-    },
-    {
-      "id": "seo",
-      "name": "SEO & Crawler Optimizer",
-      "emoji": "🔍",
-      "status": "success",
-      "description": "Tools: bash, playwright | Modell: sonnet",
-      "tools": [
-        "bash",
-        "playwright"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "daily_seo",
-          "description": "Täglicher SEO-Check um 21:30 (nach Content Radar)",
-          "cron": "30 21 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-28T21:30:46.667718",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 27.3,
-          "run_count": 11
-        }
-      ]
-    },
-    {
-      "id": "steuer",
-      "name": "Steuer & Buchhaltung 2025",
-      "emoji": "📊",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "steuer_reminder",
-          "description": "Monatliche Steuer-Statusprüfung am 1. des Monats",
-          "cron": "0 9 1 * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-01T09:01:53.820207",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 78.4,
-          "run_count": 1
-        }
-      ]
-    },
-    {
-      "id": "stock_monitor",
-      "name": "Aktien-Crash-Monitor",
-      "emoji": "📉",
-      "status": "error",
-      "description": "Tools: bash | Modell: opus",
-      "tools": [
-        "bash"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "stock_crash_check",
-          "description": "Aktien-Crash-Check alle 30 Min (Mo-Fr 6-22 Uhr, ~1.000 Ticker)",
-          "cron": "*/30 6-22 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-30T09:30:31.854646",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 1.3,
-          "run_count": 413
-        }
-      ]
-    },
-    {
-      "id": "stock_watchlist",
-      "name": "Aktien-Watchlist",
-      "emoji": "👁️",
-      "status": "success",
-      "description": "Tools: bash | Modell: opus",
-      "tools": [
-        "bash"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "stock_watchlist_check",
-          "description": "Watchlist-Check alle 30 Min (Mo-Fr 9-22 Uhr, Xetra + NASDAQ Boersenzeit)",
-          "cron": "*/30 9-22 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-04-30T09:30:35.914104",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.6,
-          "run_count": 33
-        }
-      ]
-    },
-    {
-      "id": "data_analyst",
-      "name": "Datenanalyse-Agent",
-      "emoji": "🔬",
-      "status": "success",
-      "description": "Tools: claude, bash | Modell: opus",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "data_analysis",
-          "description": "Datenanalyse alle 4h (15 Min nach Gmail-Sync)",
-          "cron": "45 */4 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-30T08:45:55.265761",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 14.5,
-          "run_count": 102
-        }
-      ]
-    },
-    {
-      "id": "qa_agent",
-      "name": "Qualitätssicherung",
-      "emoji": "✅",
-      "status": "error",
-      "description": "Tools: claude, bash | Modell: sonnet",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "qa_contentradar",
-          "description": "QA Content Radar (30 Min nach daily_content)",
-          "cron": "30 21 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-30T06:58:42.240654",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 90.1,
-          "run_count": 5
-        },
-        {
-          "id": "qa_datasync",
-          "description": "QA Datensync (Mittags-Check)",
-          "cron": "0 12 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-12T12:01:34.340552",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 35.3,
-          "run_count": 2
-        },
-        {
-          "id": "qa_taskprep",
-          "description": "QA Taskprep (30 Min nach Morning-Briefing)",
-          "cron": "30 7 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-29T07:31:24.237037",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 48.4,
-          "run_count": 4
-        },
-        {
-          "id": "qa_mailcheck",
-          "description": "QA Mailcheck (Nachmittags-Check)",
-          "cron": "0 14 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-29T14:00:31.308148",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 3.5,
-          "run_count": 6
-        },
-        {
-          "id": "qa_stock_monitor",
-          "description": "QA Aktien-Monitor (Mo-Fr 18:00)",
-          "cron": "0 18 * * 1-5",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-28T18:00:52.027025",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 39.0,
-          "run_count": 1
-        },
-        {
-          "id": "qa_daily_report",
-          "description": "Täglicher Gesamt-QA-Report um 19 Uhr",
-          "cron": "0 19 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-04-29T19:00:21.625084",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 3.5,
-          "run_count": 3
-        },
-        {
-          "id": "qa_retrospective_sweep",
-          "description": "v0.55.0: Fallback-Sweep – nimmt die letzten 30 Einträge aus request_log.json, er",
-          "cron": "*/30 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-30T09:30:39.719923",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 136
-        }
-      ]
-    },
-    {
-      "id": "eufy_security",
-      "name": "eufy Security",
-      "emoji": "🔐",
-      "status": "error",
-      "description": "Tools: bash | Modell: opus",
-      "tools": [
-        "bash"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "eufy_weekday_schedule",
-          "description": "Di-Do: Alarm aus (disarmed), sonst: eufy-Zeitsteuerung (schedule). Stuendlich id",
-          "cron": "0 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 90,
-          "detail": "",
-          "last_run": "2026-04-29T20:01:51.808647",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 63.2,
-          "run_count": 65
-        }
-      ]
-    },
-    {
-      "id": "airbnb",
-      "name": "Airbnb Manager",
-      "emoji": "🏠",
-      "status": null,
-      "description": "Tools: bash, playwright | Modell: sonnet",
-      "tools": [
-        "bash",
-        "playwright"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "airbnb_morning",
-          "description": "Airbnb Morgen-Check um 8 Uhr",
-          "cron": "0 8 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        },
-        {
-          "id": "airbnb_evening",
-          "description": "Airbnb Abend-Check um 20 Uhr",
-          "cron": "0 20 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        }
-      ]
-    },
-    {
-      "id": "book_analysis",
-      "name": "Book Analysis Agent",
-      "emoji": "📚",
-      "status": null,
-      "description": "Tools: bash | Modell: haiku",
-      "tools": [
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "book_agent_night_tick",
-          "description": "Nachts 22-6 Uhr: indexiert Software-Bücher aus gdrive/2_Books in ChromaDB 'softw",
-          "cron": "0 22-23,0-5 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 2800,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        }
-      ]
-    },
-    {
-      "id": "self_improvement",
-      "name": "Self-Improvement Analyzer",
-      "emoji": "🧪",
-      "status": null,
-      "description": "Tools: claude, bash | Modell: opus",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "nightly_self_audit",
-          "description": "Nächtlicher Selbst-Audit des Bots um 3 Uhr – schreibt Vorschläge nach data/impro",
-          "cron": "0 3 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": true,
-          "timeout": 900,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        }
-      ]
-    }
-  ],
+  "agents": [],
   "sessions": [
     {
       "agent_id": "assistant",
-      "name": "Persönlicher Assistent",
-      "emoji": "🤖",
+      "name": "assistant",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "mailcheck",
-      "name": "E-Mail Wächter",
-      "emoji": "📧",
+      "name": "mailcheck",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "datasync",
-      "name": "Daten-Synchronizer",
-      "emoji": "🔄",
+      "name": "datasync",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "data_analyst",
-      "name": "Datenanalyse-Agent",
-      "emoji": "🔬",
+      "name": "data_analyst",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "qa_agent",
-      "name": "Qualitätssicherung",
-      "emoji": "✅",
+      "name": "qa_agent",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "taskprep",
-      "name": "Aufgaben-Vorbereiter",
-      "emoji": "📋",
+      "name": "taskprep",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
@@ -894,56 +69,56 @@
     },
     {
       "agent_id": "post_qa",
-      "name": "Post-Qualitätssicherung",
-      "emoji": "🔍",
+      "name": "post_qa",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "contentradar",
-      "name": "Content Radar (News + Video)",
-      "emoji": "📡",
+      "name": "contentradar",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "seo",
-      "name": "SEO & Crawler Optimizer",
-      "emoji": "🔍",
+      "name": "seo",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "robotics",
-      "name": "Robotics Daily",
-      "emoji": "🦾",
+      "name": "robotics",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "news_stocks",
-      "name": "News → Stock Impact",
-      "emoji": "📊",
+      "name": "news_stocks",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "shopping",
-      "name": "Shopping-Schnäppchenjäger",
-      "emoji": "🛒",
+      "name": "shopping",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
     },
     {
       "agent_id": "freelance",
-      "name": "Freelance Projekt-Scanner",
-      "emoji": "💼",
+      "name": "freelance",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
