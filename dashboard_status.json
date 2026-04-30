@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T12:00:36.957400",
+  "last_updated": "2026-04-30T12:01:19.634158",
   "public": true,
   "agents": [
     {
@@ -629,11 +629,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-12T12:01:34.340552",
+          "last_run": "2026-04-30T12:01:19.632012",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 35.3,
-          "run_count": 2
+          "last_duration_seconds": 42.7,
+          "run_count": 3
         },
         {
           "id": "qa_taskprep",
@@ -1049,6 +1049,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-04-30T12:01:19.632012",
+      "agent": "qa_datasync",
+      "task": "qa_datasync",
+      "status": "success",
+      "message": "OK (42.7s)"
+    },
+    {
       "timestamp": "2026-04-30T12:00:34.379246",
       "agent": "stock_watchlist_check",
       "task": "stock_watchlist_check",
@@ -1287,13 +1294,6 @@
       "message": "OK (9.8s)"
     },
     {
-      "timestamp": "2026-04-12T12:01:34.340552",
-      "agent": "qa_datasync",
-      "task": "qa_datasync",
-      "status": "success",
-      "message": "OK (35.3s)"
-    },
-    {
       "timestamp": "2026-04-12T03:05:31.671819",
       "agent": "sync_contacts",
       "task": "sync_contacts",
@@ -1367,12 +1367,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
