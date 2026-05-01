@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-05-01T13:00:21.523238",
+  "last_updated": "2026-05-01T13:00:31.544572",
   "public": true,
   "agents": [
     {
       "id": "assistant",
       "name": "Persönlicher Assistent",
       "emoji": "🤖",
-      "status": "success",
+      "status": "error",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -69,11 +69,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-29T13:00:58.881213",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 12.0,
-          "run_count": 9
+          "last_run": "2026-05-01T13:00:31.541836",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 10.0,
+          "run_count": 10
         },
         {
           "id": "admin_server_guard",
@@ -1064,6 +1064,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-01T13:00:31.541836",
+      "agent": "email_followup_tracker",
+      "task": "email_followup_tracker",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-01T13:00:19.213364",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
@@ -1232,13 +1239,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-04-29T13:00:58.881213",
-      "agent": "email_followup_tracker",
-      "task": "email_followup_tracker",
-      "status": "success",
-      "message": "OK (12.0s)"
-    },
-    {
       "timestamp": "2026-04-29T07:31:24.237037",
       "agent": "qa_taskprep",
       "task": "qa_taskprep",
@@ -1382,12 +1382,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
