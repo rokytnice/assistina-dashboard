@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T16:00:16.989552",
+  "last_updated": "2026-05-01T16:01:57.862799",
   "public": true,
   "agents": [
     {
@@ -144,11 +144,11 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-05-01T16:01:57.756076",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 100.8,
+          "run_count": 1
         },
         {
           "id": "ustva_check",
@@ -1064,6 +1064,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-01T16:01:57.756076",
+      "agent": "data_analysis_8h",
+      "task": "data_analysis_8h",
+      "status": "success",
+      "message": "OK (100.8s)"
+    },
+    {
       "timestamp": "2026-05-01T16:00:14.433625",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1382,12 +1389,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
