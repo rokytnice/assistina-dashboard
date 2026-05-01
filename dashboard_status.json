@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01T16:32:27.201881",
+  "last_updated": "2026-05-01T16:32:28.467305",
   "public": true,
   "agents": [
     {
@@ -204,7 +204,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-01T15:25:11.395531",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 129.8,
@@ -339,7 +339,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-01T12:35:46.456575",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 54.2,
@@ -1127,13 +1127,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-01T15:25:11.395531",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (129.8s)"
-    },
-    {
       "timestamp": "2026-05-01T15:01:16.072558",
       "agent": "eufy_weekday_schedule",
       "task": "eufy_weekday_schedule",
@@ -1160,13 +1153,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (33.8s)"
-    },
-    {
-      "timestamp": "2026-05-01T12:35:46.456575",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (54.2s)"
     },
     {
       "timestamp": "2026-04-30T21:31:22.207480",
