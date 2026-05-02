@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T04:11:22.723886",
+  "last_updated": "2026-05-02T04:11:25.197204",
   "public": true,
   "agents": [
     {
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-02T04:10:18.742480",
+          "last_run": "2026-05-02T04:11:25.195175",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 2.5,
-          "run_count": 7206
+          "run_count": 7207
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1064,7 +1064,7 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-02T04:10:18.742480",
+      "timestamp": "2026-05-02T04:11:25.195175",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
@@ -1396,12 +1396,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
