@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T04:00:51.886668",
+  "last_updated": "2026-05-02T04:05:53.001224",
   "public": true,
   "agents": [
     {
@@ -231,7 +231,7 @@
       "id": "datasync",
       "name": "Daten-Synchronizer",
       "emoji": "🔄",
-      "status": "success",
+      "status": "timeout",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -294,10 +294,10 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-04-29T04:01:01.839123",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 53.0,
+          "last_run": "2026-05-02T04:05:52.998917",
+          "last_status": "timeout",
+          "last_error": "error",
+          "last_duration_seconds": 301.1,
           "run_count": 13
         },
         {
@@ -1064,6 +1064,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-02T04:05:52.998917",
+      "agent": "sync_drive",
+      "task": "sync_drive",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-02T04:00:49.634670",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1267,13 +1274,6 @@
       "message": "OK (115.1s)"
     },
     {
-      "timestamp": "2026-04-29T04:01:01.839123",
-      "agent": "sync_drive",
-      "task": "sync_drive",
-      "status": "success",
-      "message": "OK (53.0s)"
-    },
-    {
       "timestamp": "2026-04-28T18:00:52.027025",
       "agent": "qa_stock_monitor",
       "task": "qa_stock_monitor",
@@ -1396,12 +1396,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
