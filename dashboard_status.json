@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T21:11:16.550604",
+  "last_updated": "2026-05-03T21:11:17.685041",
   "public": true,
   "agents": [
     {
@@ -629,7 +629,7 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-01T21:12:23.455996",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 36.5,
@@ -1230,20 +1230,6 @@
       "task": "daily_seo",
       "status": "success",
       "message": "OK (24.5s)"
-    },
-    {
-      "timestamp": "2026-05-01T21:12:23.455996",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (36.5s)"
-    },
-    {
-      "timestamp": "2026-05-01T21:11:44.275904",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (33.2s)"
     },
     {
       "timestamp": "2026-05-01T17:00:54.177064",
