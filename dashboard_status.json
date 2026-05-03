@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-03T20:32:36.152482",
+  "last_updated": "2026-05-03T20:32:37.311893",
   "public": true,
   "agents": [
     {
@@ -204,7 +204,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-03T20:24:41.848757",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 100.2,
@@ -339,7 +339,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-02T16:33:09.413352",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 14.2,
@@ -1099,13 +1099,6 @@
       "message": "OK (1.3s)"
     },
     {
-      "timestamp": "2026-05-03T20:24:41.848757",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (100.2s)"
-    },
-    {
       "timestamp": "2026-05-03T20:01:22.573745",
       "agent": "taskprep_evening",
       "task": "taskprep_evening",
@@ -1167,13 +1160,6 @@
       "task": "play_release_check_6h",
       "status": "success",
       "message": "OK (3.5s)"
-    },
-    {
-      "timestamp": "2026-05-02T16:33:09.413352",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (14.2s)"
     },
     {
       "timestamp": "2026-05-02T12:01:41.634099",
