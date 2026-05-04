@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-04T05:23:48.645887",
+  "last_updated": "2026-05-04T05:26:47.230564",
   "public": true,
   "agents": [
     {
@@ -186,7 +186,7 @@
       "id": "mailcheck",
       "name": "E-Mail Wächter",
       "emoji": "📧",
-      "status": "success",
+      "status": "error",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -204,11 +204,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-04T00:32:56.056179",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 13.6,
-          "run_count": 318
+          "last_run": "2026-05-04T05:26:47.225138",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 178.6,
+          "run_count": 319
         },
         {
           "id": "retouren_check",
@@ -1064,6 +1064,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-04T05:26:47.225138",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-04T05:23:48.585779",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1132,13 +1139,6 @@
       "task": "taskprep_morning",
       "status": "success",
       "message": "OK (71.7s)"
-    },
-    {
-      "timestamp": "2026-05-04T00:32:56.056179",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (13.6s)"
     },
     {
       "timestamp": "2026-05-03T21:31:20.688086",
@@ -1396,12 +1396,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
