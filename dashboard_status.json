@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05T19:46:00.537385",
+  "last_updated": "2026-05-05T19:46:42.252172",
   "public": true,
   "agents": [
     {
@@ -404,34 +404,6 @@
           "last_error": null,
           "last_duration_seconds": 634.1,
           "run_count": 12
-        }
-      ]
-    },
-    {
-      "id": "robotics",
-      "name": "Robotics Daily",
-      "emoji": "🦾",
-      "status": "success",
-      "description": "Tools: bash | Modell: sonnet",
-      "tools": [
-        "bash"
-      ],
-      "model": "sonnet",
-      "tasks": [
-        {
-          "id": "daily_robotics",
-          "description": "Robotics Daily News um 19 Uhr",
-          "cron": "0 19 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-05-05T19:02:05.331868",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 99.3,
-          "run_count": 14
         }
       ]
     },
@@ -1397,6 +1369,11 @@
   "user_prompts": [],
   "user_prompts_count": 0,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
