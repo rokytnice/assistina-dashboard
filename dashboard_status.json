@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-05T15:26:23.631259",
+  "last_updated": "2026-05-05T15:26:24.294817",
   "public": true,
   "agents": [
     {
@@ -204,11 +204,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-04T10:26:19.262658",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 180.8,
-          "run_count": 320
+          "last_run": "2026-05-05T15:26:23.348331",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 158.1,
+          "run_count": 321
         },
         {
           "id": "retouren_check",
@@ -1064,6 +1064,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-05T15:26:23.348331",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (158.1s)"
+    },
+    {
       "timestamp": "2026-05-05T15:23:42.432356",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1165,13 +1172,6 @@
       "timestamp": "2026-05-04T12:00:38.544188",
       "agent": "play_release_check_6h",
       "task": "play_release_check_6h",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-04T10:26:19.262658",
-      "agent": "email_check",
-      "task": "email_check",
       "status": "error",
       "message": "[error]"
     },
