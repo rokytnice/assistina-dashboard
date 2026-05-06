@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T21:11:31.935363",
+  "last_updated": "2026-05-06T21:11:33.276775",
   "public": true,
   "agents": [
     {
@@ -601,7 +601,7 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-03T21:12:24.861750",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 46.0,
@@ -1216,20 +1216,6 @@
       "task": "daily_robotics",
       "status": "success",
       "message": "OK (99.3s)"
-    },
-    {
-      "timestamp": "2026-05-03T21:12:24.861750",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (46.0s)"
-    },
-    {
-      "timestamp": "2026-05-03T21:11:36.379062",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (17.5s)"
     },
     {
       "timestamp": "2026-04-30T08:01:29.091695",
