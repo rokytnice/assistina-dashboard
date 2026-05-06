@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-06T15:00:32.165233",
+  "last_updated": "2026-05-06T15:00:34.743763",
   "public": true,
   "agents": [
     {
@@ -719,11 +719,11 @@
           "silent": true,
           "timeout": 90,
           "detail": "",
-          "last_run": "2026-05-06T13:00:03.765990",
+          "last_run": "2026-05-06T15:00:34.740935",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 2.7,
-          "run_count": 100
+          "last_duration_seconds": 2.6,
+          "run_count": 101
         }
       ]
     },
@@ -1036,6 +1036,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-06T15:00:34.740935",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-06T15:00:32.105130",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1088,13 +1095,6 @@
       "timestamp": "2026-05-06T14:03:22.314966",
       "agent": "qa_mailcheck",
       "task": "qa_mailcheck",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-06T13:00:03.765990",
-      "agent": "eufy_weekday_schedule",
-      "task": "eufy_weekday_schedule",
       "status": "error",
       "message": "[error]"
     },
@@ -1368,12 +1368,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
