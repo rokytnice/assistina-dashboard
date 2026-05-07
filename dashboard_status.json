@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T07:30:25.443295",
+  "last_updated": "2026-05-07T07:31:01.244855",
   "public": true,
   "agents": [
     {
@@ -631,11 +631,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-06T07:33:50.013831",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 184.1,
-          "run_count": 7
+          "last_run": "2026-05-07T07:31:01.242285",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 35.8,
+          "run_count": 8
         },
         {
           "id": "qa_mailcheck",
@@ -1036,6 +1036,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-07T07:31:01.242285",
+      "agent": "qa_taskprep",
+      "task": "qa_taskprep",
+      "status": "success",
+      "message": "OK (35.8s)"
+    },
+    {
       "timestamp": "2026-05-07T07:30:22.956480",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
@@ -1218,13 +1225,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-06T07:33:50.013831",
-      "agent": "qa_taskprep",
-      "task": "qa_taskprep",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-05T19:02:05.331868",
       "agent": "daily_robotics",
       "task": "daily_robotics",
@@ -1368,12 +1368,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
