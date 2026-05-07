@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T20:33:03.876017",
+  "last_updated": "2026-05-07T20:33:05.218399",
   "public": true,
   "agents": [
     {
@@ -219,7 +219,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-07T15:23:43.598838",
+          "last_run": null,
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 4.6,
@@ -354,7 +354,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-07T12:35:32.634997",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 22.6,
@@ -1121,13 +1121,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-07T15:23:43.598838",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-07T14:01:02.084151",
       "agent": "qa_mailcheck",
       "task": "qa_mailcheck",
@@ -1140,13 +1133,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (63.2s)"
-    },
-    {
-      "timestamp": "2026-05-07T12:35:32.634997",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (22.6s)"
     },
     {
       "timestamp": "2026-05-07T10:00:45.122364",
