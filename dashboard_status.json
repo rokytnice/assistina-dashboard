@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T16:02:55.255326",
+  "last_updated": "2026-05-07T16:02:56.663941",
   "public": true,
   "agents": [
     {
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-07T16:00:26.450175",
+          "last_run": "2026-05-07T16:02:56.660763",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.5,
-          "run_count": 12117
+          "last_duration_seconds": 1.4,
+          "run_count": 12118
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1023,6 +1023,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-07T16:02:56.660763",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (1.4s)"
+    },
+    {
       "timestamp": "2026-05-07T16:01:52.273423",
       "agent": "eufy_weekday_schedule",
       "task": "eufy_weekday_schedule",
@@ -1049,13 +1056,6 @@
       "task": "data_analysis_8h",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-07T16:00:26.450175",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (1.5s)"
     },
     {
       "timestamp": "2026-05-07T16:00:21.892886",
@@ -1355,12 +1355,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 6,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
