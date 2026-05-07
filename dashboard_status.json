@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T06:02:18.624927",
+  "last_updated": "2026-05-07T06:02:19.976911",
   "public": true,
   "agents": [
     {
@@ -339,7 +339,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-07T04:36:19.354610",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 60.3,
@@ -1090,13 +1090,6 @@
       "task": "eufy_weekday_schedule",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-07T04:36:19.354610",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (60.3s)"
     },
     {
       "timestamp": "2026-05-07T04:35:16.496673",
