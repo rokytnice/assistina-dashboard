@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T09:28:51.243362",
+  "last_updated": "2026-05-07T09:29:37.750133",
   "public": true,
   "agents": [
     {
@@ -520,34 +520,6 @@
           "last_error": "error",
           "last_duration_seconds": 1.4,
           "run_count": 478
-        }
-      ]
-    },
-    {
-      "id": "stock_watchlist",
-      "name": "Aktien-Watchlist",
-      "emoji": "👁️",
-      "status": "success",
-      "description": "Tools: bash | Modell: opus",
-      "tools": [
-        "bash"
-      ],
-      "model": "opus",
-      "tasks": [
-        {
-          "id": "stock_watchlist_check",
-          "description": "Watchlist-Check alle 30 Min (Mo-Fr 9-22 Uhr, Xetra + NASDAQ Boersenzeit)",
-          "cron": "*/30 9-22 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-05-06T22:30:25.243516",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.9,
-          "run_count": 87
         }
       ]
     },
@@ -1367,13 +1339,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 2,
+  "current_jobs": [],
   "queued_jobs": []
 }
