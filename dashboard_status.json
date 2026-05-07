@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T12:56:12.399159",
+  "last_updated": "2026-05-07T12:57:13.649966",
   "public": true,
   "agents": [
     {
@@ -119,6 +119,21 @@
           "last_error": null,
           "last_duration_seconds": 96.4,
           "run_count": 1
+        },
+        {
+          "id": "landhaus_watcher_daily",
+          "description": "Landhaus-Watcher täglich 08:00. Sucht Brandenburg+MV, Preis ≤ 80.000 €, Grundstü",
+          "cron": "0 8 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 180,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         },
         {
           "id": "play_release_check_6h",
