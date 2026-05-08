@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T07:13:15.308714",
+  "last_updated": "2026-05-08T07:14:16.585628",
   "public": true,
   "agents": [
     {
@@ -119,6 +119,21 @@
           "last_error": null,
           "last_duration_seconds": 96.4,
           "run_count": 1
+        },
+        {
+          "id": "latency_monitor_daily",
+          "description": "Latenz-Monitor täglich 09:00. Wertet Claude-CLI-JSONL-Sessions aus und schickt T",
+          "cron": "0 9 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 60,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         },
         {
           "id": "landhaus_watcher_daily",
@@ -1355,6 +1370,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
