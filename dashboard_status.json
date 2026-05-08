@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T08:05:31.783814",
+  "last_updated": "2026-05-08T08:05:33.973440",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-08T07:55:29.667272",
+          "last_run": "2026-05-08T08:05:33.970368",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 4.4,
-          "run_count": 3857
+          "last_duration_seconds": 2.2,
+          "run_count": 3858
         },
         {
           "id": "unified_index_rebuild",
@@ -1061,6 +1061,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-08T08:05:33.970368",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (2.2s)"
+    },
+    {
       "timestamp": "2026-05-08T08:04:29.365502",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1073,13 +1080,6 @@
       "task": "investor_research_agent",
       "status": "success",
       "message": "OK (141.2s)"
-    },
-    {
-      "timestamp": "2026-05-08T07:55:29.667272",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (4.4s)"
     },
     {
       "timestamp": "2026-05-08T07:45:37.638732",
@@ -1393,12 +1393,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
