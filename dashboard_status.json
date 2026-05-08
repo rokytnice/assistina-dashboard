@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T12:32:10.155250",
+  "last_updated": "2026-05-08T12:33:33.308317",
   "public": true,
   "agents": [
     {
@@ -276,7 +276,7 @@
       "id": "mailcheck",
       "name": "E-Mail Wächter",
       "emoji": "📧",
-      "status": "error",
+      "status": "success",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -294,11 +294,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 4.8,
-          "run_count": 338
+          "last_run": "2026-05-08T12:33:33.229470",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 98.7,
+          "run_count": 339
         },
         {
           "id": "retouren_check",
@@ -412,13 +412,13 @@
       "name": "Aufgaben-Vorbereiter",
       "emoji": "📋",
       "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "description": "Tools: claude, bash, playwright | Modell: sonnet",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "opus",
+      "model": "sonnet",
       "tasks": [
         {
           "id": "taskprep_morning",
@@ -1105,6 +1105,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-05-08T12:33:33.229470",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (98.7s)"
+    },
     {
       "timestamp": "2026-05-08T12:31:49.524515",
       "agent": "sync_gmail",
