@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T20:31:07.042926",
+  "last_updated": "2026-05-08T20:31:10.085564",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-08T20:24:20.217267",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 61.4,
@@ -444,7 +444,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-08T16:36:34.054634",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 235.6,
@@ -1156,13 +1156,6 @@
       "message": "OK (3.0s)"
     },
     {
-      "timestamp": "2026-05-08T20:24:20.217267",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (61.4s)"
-    },
-    {
       "timestamp": "2026-05-08T20:15:24.530574",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
@@ -1203,13 +1196,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (25.0s)"
-    },
-    {
-      "timestamp": "2026-05-08T16:36:34.054634",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (235.6s)"
     },
     {
       "timestamp": "2026-05-08T16:02:03.046758",
