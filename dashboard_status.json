@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T11:20:11.563052",
+  "last_updated": "2026-05-08T11:21:13.062406",
   "public": true,
   "agents": [
     {
@@ -119,6 +119,36 @@
           "last_error": null,
           "last_duration_seconds": 141.2,
           "run_count": 2
+        },
+        {
+          "id": "token_monitor_daily_telegram",
+          "description": "Token-Metriken Daily-Telegram-Push 09:00. Echte usage-Werte aus data/token_metri",
+          "cron": "0 9 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 60,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "token_monitor_weekly_telegram",
+          "description": "Token-Metriken Weekly-Telegram Mo 09:00 (7-Tage-Übersicht). Pendant zum Daily-Pu",
+          "cron": "0 9 * * 1",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 60,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         },
         {
           "id": "token_metrics_collect_5m",
@@ -1400,6 +1430,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
