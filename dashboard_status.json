@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T14:55:50.721563",
+  "last_updated": "2026-05-09T14:56:51.846741",
   "public": true,
   "agents": [
     {
@@ -585,7 +585,7 @@
       "tasks": [
         {
           "id": "steuer_reminder",
-          "description": "Monatliche Steuer-Statusprüfung am 1. des Monats — Drive + Lexware-Abgleich. Bro",
+          "description": "Monatliche Steuer-Statusprüfung am 1. des Monats — Lexware-UStVA-Fokus + N26-Ein",
           "cron": "0 9 1 * *",
           "enabled": true,
           "task_type": "claude",
@@ -1475,6 +1475,11 @@
   "user_prompts": [],
   "user_prompts_count": 2,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
