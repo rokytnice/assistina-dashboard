@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T09:05:32.781779",
+  "last_updated": "2026-05-09T09:05:34.964784",
   "public": true,
   "agents": [
     {
@@ -144,11 +144,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-05-09T09:05:34.961821",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 2.2,
+          "run_count": 1
         },
         {
           "id": "token_monitor_daily_telegram",
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-09T09:05:34.961821",
+      "agent": "profiling_daily_telegram",
+      "task": "profiling_daily_telegram",
+      "status": "success",
+      "message": "OK (2.2s)"
+    },
+    {
       "timestamp": "2026-05-09T09:05:29.958269",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1462,24 +1469,11 @@
       "task": "steuer_reminder",
       "status": "success",
       "message": "OK (78.4s)"
-    },
-    {
-      "timestamp": "2026-03-27T22:30:06.224005",
-      "agent": "stock_crash_monitor",
-      "task": "stock_crash_monitor",
-      "status": "success",
-      "message": "OK (1.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 3,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
