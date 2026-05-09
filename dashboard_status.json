@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T20:31:04.513309",
+  "last_updated": "2026-05-09T20:31:06.646728",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-09T20:24:18.941808",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 23.5,
@@ -444,7 +444,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-09T16:31:28.125094",
+          "last_run": null,
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 3.4,
@@ -1163,13 +1163,6 @@
       "message": "OK (2.1s)"
     },
     {
-      "timestamp": "2026-05-09T20:24:18.941808",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (23.5s)"
-    },
-    {
       "timestamp": "2026-05-09T19:30:26.451144",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1215,13 +1208,6 @@
       "timestamp": "2026-05-09T16:45:37.087143",
       "agent": "data_analysis",
       "task": "data_analysis",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-09T16:31:28.125094",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
       "status": "error",
       "message": "[error]"
     },
@@ -1469,6 +1455,20 @@
       "task": "daily_qa",
       "status": "success",
       "message": "OK (107.7s)"
+    },
+    {
+      "timestamp": "2026-04-01T09:01:53.820207",
+      "agent": "steuer_reminder",
+      "task": "steuer_reminder",
+      "status": "success",
+      "message": "OK (78.4s)"
+    },
+    {
+      "timestamp": "2026-03-27T22:30:06.224005",
+      "agent": "stock_crash_monitor",
+      "task": "stock_crash_monitor",
+      "status": "success",
+      "message": "OK (1.4s)"
     }
   ],
   "request_log": [],
