@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T20:31:21.341368",
+  "last_updated": "2026-05-09T20:31:46.987944",
   "public": true,
   "agents": [
     {
@@ -444,11 +444,11 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": null,
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 3.4,
-          "run_count": 128
+          "last_run": "2026-05-09T20:31:46.984814",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 25.6,
+          "run_count": 129
         },
         {
           "id": "taskprep_precheck",
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-09T20:31:46.984814",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (25.6s)"
+    },
+    {
       "timestamp": "2026-05-09T20:31:18.265401",
       "agent": "email_check",
       "task": "email_check",
@@ -1462,24 +1469,11 @@
       "task": "daily_qa",
       "status": "success",
       "message": "OK (107.7s)"
-    },
-    {
-      "timestamp": "2026-04-01T09:01:53.820207",
-      "agent": "steuer_reminder",
-      "task": "steuer_reminder",
-      "status": "success",
-      "message": "OK (78.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
