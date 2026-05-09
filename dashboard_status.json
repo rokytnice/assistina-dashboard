@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T16:31:15.316921",
+  "last_updated": "2026-05-09T16:31:16.654790",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-09T15:23:42.755854",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 21.4,
@@ -444,7 +444,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-09T08:34:49.908889",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 13.3,
@@ -1177,13 +1177,6 @@
       "message": "OK (1.2s)"
     },
     {
-      "timestamp": "2026-05-09T15:23:42.755854",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (21.4s)"
-    },
-    {
       "timestamp": "2026-05-09T15:01:59.053339",
       "agent": "eufy_weekday_schedule",
       "task": "eufy_weekday_schedule",
@@ -1224,13 +1217,6 @@
       "task": "token_monitor_daily_telegram",
       "status": "success",
       "message": "OK (1.8s)"
-    },
-    {
-      "timestamp": "2026-05-09T08:34:49.908889",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (13.3s)"
     },
     {
       "timestamp": "2026-05-09T07:30:57.327538",
@@ -1469,6 +1455,20 @@
       "task": "daily_qa",
       "status": "success",
       "message": "OK (107.7s)"
+    },
+    {
+      "timestamp": "2026-04-01T09:01:53.820207",
+      "agent": "steuer_reminder",
+      "task": "steuer_reminder",
+      "status": "success",
+      "message": "OK (78.4s)"
+    },
+    {
+      "timestamp": "2026-03-27T22:30:06.224005",
+      "agent": "stock_crash_monitor",
+      "task": "stock_crash_monitor",
+      "status": "success",
+      "message": "OK (1.4s)"
     }
   ],
   "request_log": [],
