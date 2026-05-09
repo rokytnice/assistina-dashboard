@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T00:31:20.716883",
+  "last_updated": "2026-05-10T00:31:51.487289",
   "public": true,
   "agents": [
     {
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-05-10T00:31:51.352321",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 9.7,
-          "run_count": 353
+          "last_duration_seconds": 30.6,
+          "run_count": 354
         },
         {
           "id": "retouren_check",
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-10T00:31:51.352321",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (30.6s)"
+    },
+    {
       "timestamp": "2026-05-10T00:31:17.415341",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1462,24 +1469,11 @@
       "task": "steuer_reminder",
       "status": "success",
       "message": "OK (78.4s)"
-    },
-    {
-      "timestamp": "2026-03-27T22:30:06.224005",
-      "agent": "stock_crash_monitor",
-      "task": "stock_crash_monitor",
-      "status": "success",
-      "message": "OK (1.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 3,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
