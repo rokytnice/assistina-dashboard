@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T20:45:58.464348",
+  "last_updated": "2026-05-09T20:46:50.455824",
   "public": true,
   "agents": [
     {
@@ -632,7 +632,7 @@
       "id": "data_analyst",
       "name": "Datenanalyse-Agent",
       "emoji": "🔬",
-      "status": "error",
+      "status": "success",
       "description": "Tools: claude, bash | Modell: opus",
       "tools": [
         "claude",
@@ -649,11 +649,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-09T16:45:37.087143",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 6.1,
-          "run_count": 136
+          "last_run": "2026-05-09T20:46:50.295112",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 51.8,
+          "run_count": 137
         }
       ]
     },
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-09T20:46:50.295112",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "success",
+      "message": "OK (51.8s)"
+    },
+    {
       "timestamp": "2026-05-09T20:45:55.640148",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1215,13 +1222,6 @@
       "timestamp": "2026-05-09T17:01:51.213081",
       "agent": "eufy_weekday_schedule",
       "task": "eufy_weekday_schedule",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-09T16:45:37.087143",
-      "agent": "data_analysis",
-      "task": "data_analysis",
       "status": "error",
       "message": "[error]"
     },
@@ -1474,12 +1474,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
