@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T06:02:47.630619",
+  "last_updated": "2026-05-09T06:02:48.995075",
   "public": true,
   "agents": [
     {
@@ -444,7 +444,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-09T04:34:04.961509",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 9.4,
@@ -1203,13 +1203,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (60.3s)"
-    },
-    {
-      "timestamp": "2026-05-09T04:34:04.961509",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (9.4s)"
     },
     {
       "timestamp": "2026-05-09T04:32:36.445558",
