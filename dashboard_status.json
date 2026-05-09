@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T08:16:13.980962",
+  "last_updated": "2026-05-09T08:17:05.849498",
   "public": true,
   "agents": [
     {
@@ -121,19 +121,19 @@
           "run_count": 2
         },
         {
-          "id": "retouren_completion_watcher_30m",
-          "description": "Retouren-Abschluss-Watcher alle 30 Min. Erkennt Retouren mit geld_eingegangen_am",
-          "cron": "*/30 * * * *",
+          "id": "retouren_completion_watcher_daily",
+          "description": "Retouren-Abschluss-Watcher täglich 10:30 (nach retouren_check 10:00). Erkennt Re",
+          "cron": "30 10 * * *",
           "enabled": true,
           "task_type": "bash",
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-09T07:30:04.857708",
-          "last_status": "success",
+          "last_run": null,
+          "last_status": null,
           "last_error": null,
-          "last_duration_seconds": 1.4,
-          "run_count": 28
+          "last_duration_seconds": null,
+          "run_count": 0
         },
         {
           "id": "profiling_daily_telegram",
@@ -1468,6 +1468,11 @@
   "user_prompts": [],
   "user_prompts_count": 0,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
