@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T04:00:09.795085",
+  "last_updated": "2026-05-09T04:01:32.643104",
   "public": true,
   "agents": [
     {
@@ -399,11 +399,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-08T04:01:13.311887",
+          "last_run": "2026-05-09T04:01:32.639108",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 72.3,
-          "run_count": 15
+          "last_duration_seconds": 82.8,
+          "run_count": 16
         },
         {
           "id": "sync_conversations",
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-09T04:01:32.639108",
+      "agent": "sync_drive",
+      "task": "sync_drive",
+      "status": "success",
+      "message": "OK (82.8s)"
+    },
+    {
       "timestamp": "2026-05-09T04:00:07.169160",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1296,13 +1303,6 @@
       "message": "OK (3.2s)"
     },
     {
-      "timestamp": "2026-05-08T04:01:13.311887",
-      "agent": "sync_drive",
-      "task": "sync_drive",
-      "status": "success",
-      "message": "OK (72.3s)"
-    },
-    {
       "timestamp": "2026-05-07T21:08:19.522642",
       "agent": "qa_contentradar",
       "task": "qa_contentradar",
@@ -1467,12 +1467,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
