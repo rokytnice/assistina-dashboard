@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T16:45:31.026674",
+  "last_updated": "2026-05-09T16:45:37.706005",
   "public": true,
   "agents": [
     {
@@ -632,7 +632,7 @@
       "id": "data_analyst",
       "name": "Datenanalyse-Agent",
       "emoji": "🔬",
-      "status": "success",
+      "status": "error",
       "description": "Tools: claude, bash | Modell: opus",
       "tools": [
         "claude",
@@ -649,11 +649,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-09T04:46:21.064113",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 60.3,
-          "run_count": 135
+          "last_run": "2026-05-09T16:45:37.087143",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 6.1,
+          "run_count": 136
         }
       ]
     },
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-09T16:45:37.087143",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-09T16:45:27.068420",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1259,13 +1266,6 @@
       "task": "play_release_check_6h",
       "status": "success",
       "message": "OK (4.2s)"
-    },
-    {
-      "timestamp": "2026-05-09T04:46:21.064113",
-      "agent": "data_analysis",
-      "task": "data_analysis",
-      "status": "success",
-      "message": "OK (60.3s)"
     },
     {
       "timestamp": "2026-05-09T04:01:32.639108",
@@ -1474,12 +1474,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 6,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
