@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T21:00:52.373007",
+  "last_updated": "2026-05-10T21:12:41.762790",
   "public": true,
   "agents": [
     {
@@ -486,7 +486,7 @@
       "id": "contentradar",
       "name": "Content Radar (News + Video)",
       "emoji": "📡",
-      "status": "error",
+      "status": "success",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -504,11 +504,11 @@
           "silent": false,
           "timeout": 3600,
           "detail": "",
-          "last_run": "2026-05-08T21:06:19.919198",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 329.4,
-          "run_count": 15
+          "last_run": "2026-05-10T21:12:31.743261",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 699.4,
+          "run_count": 16
         }
       ]
     },
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-10T21:12:31.743261",
+      "agent": "daily_content",
+      "task": "daily_content",
+      "status": "success",
+      "message": "OK (699.4s)"
+    },
+    {
       "timestamp": "2026-05-10T21:00:49.983143",
       "agent": "taskprep_precheck",
       "task": "taskprep_precheck",
@@ -1331,13 +1338,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-08T21:06:19.919198",
-      "agent": "daily_content",
-      "task": "daily_content",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-08T10:02:16.459428",
       "agent": "retouren_check",
       "task": "retouren_check",
@@ -1474,12 +1474,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
