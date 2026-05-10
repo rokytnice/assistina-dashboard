@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T13:00:55.993903",
+  "last_updated": "2026-05-10T13:00:56.373540",
   "public": true,
   "agents": [
     {
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-10T12:45:49.323552",
+          "last_run": "2026-05-10T13:00:56.370379",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 1314
+          "last_duration_seconds": 1.7,
+          "run_count": 1315
         },
         {
           "id": "email_followup_tracker",
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-10T13:00:56.370379",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (1.7s)"
+    },
+    {
       "timestamp": "2026-05-10T13:00:52.247878",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
@@ -1154,13 +1161,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (49.7s)"
-    },
-    {
-      "timestamp": "2026-05-10T12:45:49.323552",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (1.2s)"
     },
     {
       "timestamp": "2026-05-10T12:34:48.004717",
