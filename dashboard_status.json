@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T21:12:45.386068",
+  "last_updated": "2026-05-10T21:13:21.979779",
   "public": true,
   "agents": [
     {
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-10T21:13:11.970725",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (26.6s)"
+    },
+    {
       "timestamp": "2026-05-10T21:12:31.743261",
       "agent": "daily_content",
       "task": "daily_content",
@@ -1462,24 +1469,11 @@
       "task": "daily_qa",
       "status": "success",
       "message": "OK (107.7s)"
-    },
-    {
-      "timestamp": "2026-04-01T09:01:53.820207",
-      "agent": "steuer_reminder",
-      "task": "steuer_reminder",
-      "status": "success",
-      "message": "OK (78.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
