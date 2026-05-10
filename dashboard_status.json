@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T16:00:26.968053",
+  "last_updated": "2026-05-10T16:00:31.444941",
   "public": true,
   "agents": [
     {
@@ -249,11 +249,11 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-05-09T16:01:42.768589",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 61.1,
-          "run_count": 11
+          "last_run": "2026-05-10T16:00:31.314659",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 4.3,
+          "run_count": 12
         },
         {
           "id": "ustva_check",
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-10T16:00:31.314659",
+      "agent": "data_analysis_8h",
+      "task": "data_analysis_8h",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-10T16:00:24.386670",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1273,13 +1280,6 @@
       "task": "play_release_check_6h",
       "status": "success",
       "message": "OK (3.4s)"
-    },
-    {
-      "timestamp": "2026-05-09T16:01:42.768589",
-      "agent": "data_analysis_8h",
-      "task": "data_analysis_8h",
-      "status": "success",
-      "message": "OK (61.1s)"
     },
     {
       "timestamp": "2026-05-09T09:00:46.433554",
@@ -1474,12 +1474,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 5,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
