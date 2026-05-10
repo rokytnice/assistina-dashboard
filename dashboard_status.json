@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T08:00:55.672431",
+  "last_updated": "2026-05-10T08:01:05.355895",
   "public": true,
   "agents": [
     {
@@ -219,11 +219,11 @@
           "silent": true,
           "timeout": 180,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-05-10T08:01:05.353708",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 9.7,
+          "run_count": 1
         },
         {
           "id": "play_release_check_6h",
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-10T08:01:05.353708",
+      "agent": "landhaus_watcher_daily",
+      "task": "landhaus_watcher_daily",
+      "status": "success",
+      "message": "OK (9.7s)"
+    },
+    {
       "timestamp": "2026-05-10T08:00:52.632135",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1462,24 +1469,11 @@
       "task": "daily_news",
       "status": "success",
       "message": "OK (349.2s)"
-    },
-    {
-      "timestamp": "2026-04-08T19:02:44.053686",
-      "agent": "daily_qa",
-      "task": "daily_qa",
-      "status": "success",
-      "message": "OK (107.7s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 5,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
