@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T10:00:27.189890",
+  "last_updated": "2026-05-11T10:00:31.828385",
   "public": true,
   "agents": [
     {
@@ -291,7 +291,7 @@
       "id": "mailcheck",
       "name": "E-Mail Wächter",
       "emoji": "📧",
-      "status": "success",
+      "status": "error",
       "description": "Tools: claude, bash, playwright | Modell: opus",
       "tools": [
         "claude",
@@ -324,11 +324,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-08T10:02:16.459428",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 83.8,
-          "run_count": 20
+          "last_run": "2026-05-11T10:00:31.683196",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 4.5,
+          "run_count": 21
         }
       ]
     },
@@ -1121,6 +1121,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-11T10:00:31.683196",
+      "agent": "retouren_check",
+      "task": "retouren_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-11T10:00:23.736318",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1366,13 +1373,6 @@
       "message": "OK (1.4s)"
     },
     {
-      "timestamp": "2026-05-08T10:02:16.459428",
-      "agent": "retouren_check",
-      "task": "retouren_check",
-      "status": "success",
-      "message": "OK (83.8s)"
-    },
-    {
       "timestamp": "2026-05-08T08:02:21.661681",
       "agent": "investor_research_agent",
       "task": "investor_research_agent",
@@ -1474,12 +1474,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 5,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
