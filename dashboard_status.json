@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T09:10:28.979156",
+  "last_updated": "2026-05-12T09:15:56.863706",
   "public": true,
   "agents": [
     {
@@ -15,21 +15,6 @@
       ],
       "model": "opus",
       "tasks": [
-        {
-          "id": "system_health",
-          "description": "System-Health-Check alle 6 Stunden",
-          "cron": "0 */12 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 120,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        },
         {
           "id": "chrome_health",
           "description": "Chrome Deep-Health-Check alle 30 Min (ergänzend zum Watchdog)",
@@ -1497,6 +1482,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
