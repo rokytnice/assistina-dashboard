@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T18:30:18.413890",
+  "last_updated": "2026-05-12T18:30:19.996998",
   "public": true,
   "agents": [
     {
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-12T18:20:16.656050",
+          "last_run": "2026-05-12T18:30:19.993805",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.5,
-          "run_count": 16939
+          "last_duration_seconds": 1.6,
+          "run_count": 16940
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1065,6 +1065,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-12T18:30:19.993805",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (1.6s)"
+    },
+    {
       "timestamp": "2026-05-12T18:30:15.387531",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
@@ -1089,13 +1096,6 @@
       "timestamp": "2026-05-12T18:20:23.304418",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
-      "status": "success",
-      "message": "OK (2.5s)"
-    },
-    {
-      "timestamp": "2026-05-12T18:20:16.656050",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
       "status": "success",
       "message": "OK (2.5s)"
     },
@@ -1418,12 +1418,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 16,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
