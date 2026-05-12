@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T12:25:14.850446",
+  "last_updated": "2026-05-12T12:30:16.346855",
   "public": true,
   "agents": [
     {
@@ -7,13 +7,13 @@
       "name": "Persönlicher Assistent",
       "emoji": "🤖",
       "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "opus",
+      "model": "haiku",
       "tasks": [
         {
           "id": "chrome_health",
@@ -337,13 +337,13 @@
       "name": "Daten-Synchronizer",
       "emoji": "🔄",
       "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: sonnet",
+      "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "sync_gmail",
@@ -517,12 +517,12 @@
       "name": "Freelance Projekt-Scanner",
       "emoji": "💼",
       "status": "error",
-      "description": "Tools: bash, playwright | Modell: sonnet",
+      "description": "Tools: bash, playwright | Modell: haiku",
       "tools": [
         "bash",
         "playwright"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "daily_freelance_scan",
@@ -546,12 +546,12 @@
       "name": "SEO & Crawler Optimizer",
       "emoji": "🔍",
       "status": "success",
-      "description": "Tools: bash, playwright | Modell: sonnet",
+      "description": "Tools: bash, playwright | Modell: haiku",
       "tools": [
         "bash",
         "playwright"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "daily_seo",
@@ -575,13 +575,13 @@
       "name": "Steuer & Buchhaltung 2025",
       "emoji": "📊",
       "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "opus",
+      "model": "haiku",
       "tasks": [
         {
           "id": "steuer_reminder",
@@ -605,11 +605,11 @@
       "name": "Aktien-Crash-Monitor",
       "emoji": "📉",
       "status": "error",
-      "description": "Tools: bash | Modell: sonnet",
+      "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "stock_crash_check",
@@ -633,12 +633,12 @@
       "name": "Datenanalyse-Agent",
       "emoji": "🔬",
       "status": "error",
-      "description": "Tools: claude, bash | Modell: opus",
+      "description": "Tools: claude, bash | Modell: haiku",
       "tools": [
         "claude",
         "bash"
       ],
-      "model": "opus",
+      "model": "haiku",
       "tasks": [
         {
           "id": "data_analysis",
@@ -662,12 +662,12 @@
       "name": "Qualitätssicherung",
       "emoji": "✅",
       "status": "error",
-      "description": "Tools: claude, bash | Modell: sonnet",
+      "description": "Tools: claude, bash | Modell: haiku",
       "tools": [
         "claude",
         "bash"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "qa_contentradar",
@@ -781,11 +781,11 @@
       "name": "eufy Security",
       "emoji": "🔐",
       "status": "error",
-      "description": "Tools: bash | Modell: sonnet",
+      "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "eufy_weekday_schedule",
@@ -881,12 +881,12 @@
       "name": "Self-Improvement Analyzer",
       "emoji": "🧪",
       "status": null,
-      "description": "Tools: claude, bash | Modell: sonnet",
+      "description": "Tools: claude, bash | Modell: haiku",
       "tools": [
         "claude",
         "bash"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "nightly_self_audit",
@@ -1482,6 +1482,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 7,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
