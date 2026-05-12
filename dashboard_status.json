@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T09:03:17.975416",
+  "last_updated": "2026-05-12T09:05:29.725263",
   "public": true,
   "agents": [
     {
@@ -18,7 +18,7 @@
         {
           "id": "system_health",
           "description": "System-Health-Check alle 6 Stunden",
-          "cron": "0 */6 * * *",
+          "cron": "0 */12 * * *",
           "enabled": true,
           "task_type": "claude",
           "silent": false,
@@ -307,13 +307,13 @@
       "name": "E-Mail Wächter",
       "emoji": "📧",
       "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: sonnet",
+      "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "email_check",
@@ -1497,6 +1497,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
