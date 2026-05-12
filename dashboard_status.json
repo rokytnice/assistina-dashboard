@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T18:30:32.395985",
+  "last_updated": "2026-05-12T18:30:34.252306",
   "public": true,
   "agents": [
     {
@@ -768,11 +768,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-05-12T15:01:00.131684",
+          "last_run": "2026-05-12T18:30:34.249726",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.8,
-          "run_count": 328
+          "last_duration_seconds": 1.9,
+          "run_count": 329
         }
       ]
     },
@@ -1065,6 +1065,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-12T18:30:34.249726",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (1.9s)"
+    },
+    {
       "timestamp": "2026-05-12T18:30:28.887155",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
@@ -1147,13 +1154,6 @@
       "task": "email_check",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-12T15:01:00.131684",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
-      "status": "success",
-      "message": "OK (1.8s)"
     },
     {
       "timestamp": "2026-05-12T11:01:50.941079",
@@ -1418,12 +1418,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 16,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
