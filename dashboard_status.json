@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-12T16:52:49.486194",
+  "last_updated": "2026-05-12T16:55:21.364340",
   "public": true,
   "agents": [
     {
@@ -916,46 +916,6 @@
       "last_activity": null
     },
     {
-      "agent_id": "mailcheck",
-      "name": "E-Mail Wächter",
-      "emoji": "📧",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
-      "agent_id": "datasync",
-      "name": "Daten-Synchronizer",
-      "emoji": "🔄",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
-      "agent_id": "data_analyst",
-      "name": "Datenanalyse-Agent",
-      "emoji": "🔬",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
-      "agent_id": "qa_agent",
-      "name": "Qualitätssicherung",
-      "emoji": "✅",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
-      "agent_id": "taskprep",
-      "name": "Aufgaben-Vorbereiter",
-      "emoji": "📋",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
       "agent_id": "newsradar",
       "name": "newsradar",
       "emoji": "",
@@ -980,14 +940,6 @@
       "last_activity": null
     },
     {
-      "agent_id": "contentradar",
-      "name": "Content Radar (News + Video)",
-      "emoji": "📡",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
       "agent_id": "seo",
       "name": "SEO & Crawler Optimizer",
       "emoji": "🔍",
@@ -996,25 +948,9 @@
       "last_activity": null
     },
     {
-      "agent_id": "robotics",
-      "name": "Robotics Daily",
-      "emoji": "🦾",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
       "agent_id": "news_stocks",
       "name": "News → Stock Impact",
       "emoji": "📊",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
-    {
-      "agent_id": "shopping",
-      "name": "Shopping-Schnäppchenjäger",
-      "emoji": "🛒",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
@@ -1482,6 +1418,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 17,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
