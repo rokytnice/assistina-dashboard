@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T16:31:34.300990",
+  "last_updated": "2026-05-12T09:02:56.888167",
   "public": true,
   "agents": [
     {
@@ -78,7 +78,7 @@
         {
           "id": "admin_server_guard",
           "description": "Stellt sicher, dass der Admin-Server (lib.admin_server, Port 8766) läuft. Idempo",
-          "cron": "* * * * *",
+          "cron": "*/5 * * * *",
           "enabled": true,
           "task_type": "bash",
           "silent": true,
@@ -292,13 +292,13 @@
       "name": "E-Mail Wächter",
       "emoji": "📧",
       "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "description": "Tools: claude, bash, playwright | Modell: sonnet",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "opus",
+      "model": "sonnet",
       "tasks": [
         {
           "id": "email_check",
@@ -337,13 +337,13 @@
       "name": "Daten-Synchronizer",
       "emoji": "🔄",
       "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "description": "Tools: claude, bash, playwright | Modell: sonnet",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "opus",
+      "model": "sonnet",
       "tasks": [
         {
           "id": "sync_gmail",
@@ -427,13 +427,13 @@
       "name": "Aufgaben-Vorbereiter",
       "emoji": "📋",
       "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: sonnet",
+      "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "taskprep_morning",
@@ -487,13 +487,13 @@
       "name": "Content Radar (News + Video)",
       "emoji": "📡",
       "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: opus",
+      "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
         "bash",
         "playwright"
       ],
-      "model": "opus",
+      "model": "haiku",
       "tasks": [
         {
           "id": "daily_content",
@@ -605,11 +605,11 @@
       "name": "Aktien-Crash-Monitor",
       "emoji": "📉",
       "status": "error",
-      "description": "Tools: bash | Modell: opus",
+      "description": "Tools: bash | Modell: sonnet",
       "tools": [
         "bash"
       ],
-      "model": "opus",
+      "model": "sonnet",
       "tasks": [
         {
           "id": "stock_crash_check",
@@ -781,11 +781,11 @@
       "name": "eufy Security",
       "emoji": "🔐",
       "status": "error",
-      "description": "Tools: bash | Modell: opus",
+      "description": "Tools: bash | Modell: sonnet",
       "tools": [
         "bash"
       ],
-      "model": "opus",
+      "model": "sonnet",
       "tasks": [
         {
           "id": "eufy_weekday_schedule",
@@ -809,12 +809,12 @@
       "name": "Airbnb Manager",
       "emoji": "🏠",
       "status": null,
-      "description": "Tools: bash, playwright | Modell: sonnet",
+      "description": "Tools: bash, playwright | Modell: haiku",
       "tools": [
         "bash",
         "playwright"
       ],
-      "model": "sonnet",
+      "model": "haiku",
       "tasks": [
         {
           "id": "airbnb_morning",
@@ -881,12 +881,12 @@
       "name": "Self-Improvement Analyzer",
       "emoji": "🧪",
       "status": null,
-      "description": "Tools: claude, bash | Modell: opus",
+      "description": "Tools: claude, bash | Modell: sonnet",
       "tools": [
         "claude",
         "bash"
       ],
-      "model": "opus",
+      "model": "sonnet",
       "tasks": [
         {
           "id": "nightly_self_audit",
