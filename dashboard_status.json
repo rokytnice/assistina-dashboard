@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T20:30:31.033127",
+  "last_updated": "2026-05-13T20:32:24.922634",
   "public": true,
   "agents": [
     {
@@ -336,7 +336,7 @@
       "id": "datasync",
       "name": "Daten-Synchronizer",
       "emoji": "🔄",
-      "status": "error",
+      "status": "timeout",
       "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
@@ -354,11 +354,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-12T16:31:07.267214",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 22.1,
-          "run_count": 272
+          "last_run": "2026-05-13T20:32:24.920369",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 113.9,
+          "run_count": 273
         },
         {
           "id": "sync_calendar",
@@ -1002,6 +1002,14 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "datasync",
+      "name": "Daten-Synchronizer",
+      "emoji": "🔄",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "retouren": {
@@ -1088,6 +1096,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-05-13T20:32:24.920369",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (113.9s)"
+    },
     {
       "timestamp": "2026-05-13T20:30:26.979043",
       "agent": "token_metrics_collect_5m",
@@ -1199,13 +1214,6 @@
       "task": "daily_seo",
       "status": "success",
       "message": "OK (39.1s)"
-    },
-    {
-      "timestamp": "2026-05-12T16:31:07.267214",
-      "agent": "sync_gmail",
-      "task": "sync_gmail",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-12T10:30:30.680639",
@@ -1442,12 +1450,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 9,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
