@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T18:00:43.812003",
+  "last_updated": "2026-05-13T18:05:46.193864",
   "public": true,
   "agents": [
     {
@@ -426,7 +426,7 @@
       "id": "taskprep",
       "name": "Aufgaben-Vorbereiter",
       "emoji": "📋",
-      "status": "success",
+      "status": "timeout",
       "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
@@ -459,10 +459,10 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-12T18:01:01.184662",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 6.0,
+          "last_run": "2026-05-13T18:05:46.191161",
+          "last_status": "timeout",
+          "last_error": "error",
+          "last_duration_seconds": 302.4,
           "run_count": 122
         },
         {
@@ -986,6 +986,14 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "taskprep",
+      "name": "Aufgaben-Vorbereiter",
+      "emoji": "📋",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "retouren": {
@@ -1072,6 +1080,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-05-13T18:05:46.191161",
+      "agent": "taskprep_precheck",
+      "task": "taskprep_precheck",
+      "status": "timeout",
+      "message": "[error]"
+    },
     {
       "timestamp": "2026-05-13T18:00:40.643509",
       "agent": "sync_conversations",
@@ -1169,13 +1184,6 @@
       "task": "qa_daily_report",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-12T18:01:01.184662",
-      "agent": "taskprep_precheck",
-      "task": "taskprep_precheck",
-      "status": "success",
-      "message": "OK (6.0s)"
     },
     {
       "timestamp": "2026-05-12T16:31:07.267214",
@@ -1426,12 +1434,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 14,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
