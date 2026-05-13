@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T15:23:02.299126",
+  "last_updated": "2026-05-13T15:24:13.104547",
   "public": true,
   "agents": [
     {
@@ -975,6 +975,14 @@
       "agent_id": "assistant",
       "name": "Persönlicher Assistent",
       "emoji": "🤖",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "mailcheck",
+      "name": "E-Mail Wächter",
+      "emoji": "📧",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
