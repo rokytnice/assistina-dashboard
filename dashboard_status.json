@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T19:00:54.172944",
+  "last_updated": "2026-05-13T19:02:08.334557",
   "public": true,
   "agents": [
     {
@@ -753,11 +753,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-12T19:01:03.954636",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 31.4,
-          "run_count": 7
+          "last_run": "2026-05-13T19:02:08.108325",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 73.9,
+          "run_count": 8
         },
         {
           "id": "qa_retrospective_sweep",
@@ -994,6 +994,14 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "qa_agent",
+      "name": "Qualitätssicherung",
+      "emoji": "✅",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "retouren": {
@@ -1080,6 +1088,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-05-13T19:02:08.108325",
+      "agent": "qa_daily_report",
+      "task": "qa_daily_report",
+      "status": "success",
+      "message": "OK (73.9s)"
+    },
     {
       "timestamp": "2026-05-13T19:00:51.209571",
       "agent": "stock_crash_check",
@@ -1177,13 +1192,6 @@
       "task": "daily_seo",
       "status": "success",
       "message": "OK (39.1s)"
-    },
-    {
-      "timestamp": "2026-05-12T19:01:03.954636",
-      "agent": "qa_daily_report",
-      "task": "qa_daily_report",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-12T16:31:07.267214",
@@ -1434,12 +1442,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 13,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
