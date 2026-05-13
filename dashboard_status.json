@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T11:06:52.527366",
+  "last_updated": "2026-05-13T11:09:22.602469",
   "public": true,
   "agents": [
     {
@@ -907,14 +907,6 @@
     }
   ],
   "sessions": [
-    {
-      "agent_id": "assistant",
-      "name": "Persönlicher Assistent",
-      "emoji": "🤖",
-      "session_id": "[hidden]",
-      "transcript_mb": 0,
-      "last_activity": null
-    },
     {
       "agent_id": "newsradar",
       "name": "newsradar",
