@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T13:30:40.228545",
+  "last_updated": "2026-05-14T13:33:14.523533",
   "public": true,
   "agents": [
     {
@@ -620,11 +620,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-14T11:32:30.047606",
+          "last_run": "2026-05-14T13:33:14.521204",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 96.8,
-          "run_count": 544
+          "last_duration_seconds": 168.2,
+          "run_count": 545
         }
       ]
     },
@@ -1105,6 +1105,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-14T13:33:14.521204",
+      "agent": "stock_crash_check",
+      "task": "stock_crash_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-14T13:30:23.554723",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1180,13 +1187,6 @@
       "task": "play_release_check_6h",
       "status": "success",
       "message": "OK (3.3s)"
-    },
-    {
-      "timestamp": "2026-05-14T11:32:30.047606",
-      "agent": "stock_crash_check",
-      "task": "stock_crash_check",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-14T10:01:33.471615",
