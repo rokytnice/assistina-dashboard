@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T08:31:40.727907",
+  "last_updated": "2026-05-14T08:33:09.170046",
   "public": true,
   "agents": [
     {
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-05-14T08:33:09.042515",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 47.9,
-          "run_count": 379
+          "last_duration_seconds": 88.3,
+          "run_count": 380
         },
         {
           "id": "retouren_check",
@@ -1105,6 +1105,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-14T08:33:09.042515",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (88.3s)"
+    },
+    {
       "timestamp": "2026-05-14T08:31:37.236178",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1446,24 +1453,11 @@
       "task": "daily_qa",
       "status": "success",
       "message": "OK (107.7s)"
-    },
-    {
-      "timestamp": "2026-04-01T09:01:53.820207",
-      "agent": "steuer_reminder",
-      "task": "steuer_reminder",
-      "status": "success",
-      "message": "OK (78.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 11,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
