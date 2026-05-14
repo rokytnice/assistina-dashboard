@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T09:00:57.078498",
+  "last_updated": "2026-05-14T09:00:58.826828",
   "public": true,
   "agents": [
     {
@@ -204,11 +204,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-09T09:00:46.433554",
+          "last_run": "2026-05-14T09:00:58.823854",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.1,
-          "run_count": 1
+          "last_duration_seconds": 1.7,
+          "run_count": 2
         },
         {
           "id": "landhaus_watcher_daily",
@@ -1105,6 +1105,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-14T09:00:58.823854",
+      "agent": "latency_monitor_daily",
+      "task": "latency_monitor_daily",
+      "status": "success",
+      "message": "OK (1.7s)"
+    },
+    {
       "timestamp": "2026-05-14T09:00:54.534652",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1343,13 +1350,6 @@
       "message": "OK (71.4s)"
     },
     {
-      "timestamp": "2026-05-09T09:00:46.433554",
-      "agent": "latency_monitor_daily",
-      "task": "latency_monitor_daily",
-      "status": "success",
-      "message": "OK (2.1s)"
-    },
-    {
       "timestamp": "2026-05-09T07:30:04.857708",
       "agent": "retouren_completion_watcher_30m",
       "task": "retouren_completion_watcher_30m",
@@ -1458,12 +1458,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 11,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
