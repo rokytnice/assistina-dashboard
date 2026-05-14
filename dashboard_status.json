@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T16:03:56.027429",
+  "last_updated": "2026-05-14T16:10:30.156274",
   "public": true,
   "agents": [
     {
@@ -249,10 +249,10 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-05-11T16:00:58.609445",
-          "last_status": "error",
+          "last_run": "2026-05-14T16:10:30.153229",
+          "last_status": "timeout",
           "last_error": "error",
-          "last_duration_seconds": 3.0,
+          "last_duration_seconds": 602.7,
           "run_count": 14
         },
         {
@@ -1105,6 +1105,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-14T16:10:30.153229",
+      "agent": "data_analysis_8h",
+      "task": "data_analysis_8h",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-14T16:00:24.355943",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1292,13 +1299,6 @@
       "task": "retouren_completion_watcher_daily",
       "status": "success",
       "message": "OK (1.8s)"
-    },
-    {
-      "timestamp": "2026-05-11T16:00:58.609445",
-      "agent": "data_analysis_8h",
-      "task": "data_analysis_8h",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-11T14:00:56.884668",
