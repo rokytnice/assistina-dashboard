@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T16:45:19.815635",
+  "last_updated": "2026-05-14T16:46:09.895234",
   "public": true,
   "agents": [
     {
@@ -649,11 +649,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-14T08:46:44.850697",
+          "last_run": "2026-05-14T16:46:09.487909",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 67.2,
-          "run_count": 150
+          "last_duration_seconds": 49.7,
+          "run_count": 151
         }
       ]
     },
@@ -1105,6 +1105,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-14T16:46:09.487909",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "success",
+      "message": "OK (49.7s)"
+    },
+    {
       "timestamp": "2026-05-14T16:45:16.867501",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1229,13 +1236,6 @@
       "task": "token_monitor_daily_telegram",
       "status": "success",
       "message": "OK (2.1s)"
-    },
-    {
-      "timestamp": "2026-05-14T08:46:44.850697",
-      "agent": "data_analysis",
-      "task": "data_analysis",
-      "status": "success",
-      "message": "OK (67.2s)"
     },
     {
       "timestamp": "2026-05-14T08:01:02.421912",
@@ -1458,12 +1458,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
