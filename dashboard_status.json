@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T06:04:16.963103",
+  "last_updated": "2026-05-14T06:04:18.586332",
   "public": true,
   "agents": [
     {
@@ -444,7 +444,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-14T04:34:17.600562",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 57.3,
@@ -1175,13 +1175,6 @@
       "message": "OK (1.3s)"
     },
     {
-      "timestamp": "2026-05-14T04:34:17.600562",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (57.3s)"
-    },
-    {
       "timestamp": "2026-05-14T04:31:45.418927",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1453,6 +1446,13 @@
       "task": "daily_news",
       "status": "success",
       "message": "OK (349.2s)"
+    },
+    {
+      "timestamp": "2026-04-08T19:02:44.053686",
+      "agent": "daily_qa",
+      "task": "daily_qa",
+      "status": "success",
+      "message": "OK (107.7s)"
     }
   ],
   "request_log": [],
