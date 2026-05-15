@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T19:40:09.295191",
+  "last_updated": "2026-05-15T19:40:10.606621",
   "public": true,
   "agents": [
     {
@@ -1466,6 +1466,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 8,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
