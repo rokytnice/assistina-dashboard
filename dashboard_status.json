@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T21:00:53.727049",
+  "last_updated": "2026-05-15T21:02:33.836866",
   "public": true,
   "agents": [
     {
@@ -504,11 +504,11 @@
           "silent": false,
           "timeout": 3600,
           "detail": "",
-          "last_run": "2026-05-14T21:08:02.882399",
+          "last_run": "2026-05-15T21:02:33.719437",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 431.0,
-          "run_count": 17
+          "last_duration_seconds": 100.0,
+          "run_count": 18
         }
       ]
     },
@@ -1113,6 +1113,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-15T21:02:33.719437",
+      "agent": "daily_content",
+      "task": "daily_content",
+      "status": "success",
+      "message": "OK (100.0s)"
+    },
+    {
       "timestamp": "2026-05-15T21:00:50.742778",
       "agent": "taskprep_precheck",
       "task": "taskprep_precheck",
@@ -1295,13 +1302,6 @@
       "message": "OK (21.5s)"
     },
     {
-      "timestamp": "2026-05-14T21:08:02.882399",
-      "agent": "daily_content",
-      "task": "daily_content",
-      "status": "success",
-      "message": "OK (431.0s)"
-    },
-    {
       "timestamp": "2026-05-14T09:00:58.823854",
       "agent": "latency_monitor_daily",
       "task": "latency_monitor_daily",
@@ -1466,12 +1466,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 7,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
