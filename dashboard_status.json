@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T13:00:34.361749",
+  "last_updated": "2026-05-15T13:00:46.464906",
   "public": true,
   "agents": [
     {
@@ -69,11 +69,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-15T09:00:51.805036",
+          "last_run": "2026-05-15T13:00:46.461728",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 8.0,
-          "run_count": 29
+          "last_duration_seconds": 12.1,
+          "run_count": 30
         },
         {
           "id": "admin_server_guard",
@@ -1113,6 +1113,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-15T13:00:46.461728",
+      "agent": "email_followup_tracker",
+      "task": "email_followup_tracker",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-15T13:00:31.060341",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
@@ -1216,13 +1223,6 @@
       "task": "token_monitor_daily_telegram",
       "status": "success",
       "message": "OK (1.5s)"
-    },
-    {
-      "timestamp": "2026-05-15T09:00:51.805036",
-      "agent": "email_followup_tracker",
-      "task": "email_followup_tracker",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-15T08:33:09.538700",
@@ -1467,11 +1467,6 @@
   "user_prompts": [],
   "user_prompts_count": 27,
   "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    },
     {
       "id": "",
       "started_at": null,
