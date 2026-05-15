@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T16:31:54.303148",
+  "last_updated": "2026-05-15T16:31:55.795567",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-15T12:26:51.769673",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 180.3,
@@ -444,7 +444,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-15T08:33:09.538700",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 31.3,
@@ -1190,13 +1190,6 @@
       "message": "OK (56.0s)"
     },
     {
-      "timestamp": "2026-05-15T12:26:51.769673",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (180.3s)"
-    },
-    {
       "timestamp": "2026-05-15T12:00:35.459688",
       "agent": "sync_conversations",
       "task": "sync_conversations",
@@ -1237,13 +1230,6 @@
       "task": "token_monitor_daily_telegram",
       "status": "success",
       "message": "OK (1.5s)"
-    },
-    {
-      "timestamp": "2026-05-15T08:33:09.538700",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (31.3s)"
     },
     {
       "timestamp": "2026-05-15T08:03:00.606730",
@@ -1461,6 +1447,20 @@
       "task": "daily_news",
       "status": "success",
       "message": "OK (349.2s)"
+    },
+    {
+      "timestamp": "2026-04-08T19:02:44.053686",
+      "agent": "daily_qa",
+      "task": "daily_qa",
+      "status": "success",
+      "message": "OK (107.7s)"
+    },
+    {
+      "timestamp": "2026-04-01T09:01:53.820207",
+      "agent": "steuer_reminder",
+      "task": "steuer_reminder",
+      "status": "success",
+      "message": "OK (78.4s)"
     }
   ],
   "request_log": [],
