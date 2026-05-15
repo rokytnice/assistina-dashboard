@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-15T16:00:30.385108",
+  "last_updated": "2026-05-15T16:01:24.528809",
   "public": true,
   "agents": [
     {
@@ -249,11 +249,11 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-05-15T00:01:14.284587",
+          "last_run": "2026-05-15T16:01:23.785471",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 44.1,
-          "run_count": 15
+          "last_duration_seconds": 53.4,
+          "run_count": 16
         },
         {
           "id": "ustva_check",
@@ -1113,6 +1113,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-15T16:01:23.785471",
+      "agent": "data_analysis_8h",
+      "task": "data_analysis_8h",
+      "status": "success",
+      "message": "OK (53.4s)"
+    },
+    {
       "timestamp": "2026-05-15T16:00:27.782528",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1265,13 +1272,6 @@
       "task": "eufy_weekday_schedule",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-15T00:01:14.284587",
-      "agent": "data_analysis_8h",
-      "task": "data_analysis_8h",
-      "status": "success",
-      "message": "OK (44.1s)"
     },
     {
       "timestamp": "2026-05-14T21:09:48.671526",
@@ -1466,12 +1466,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 22,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
