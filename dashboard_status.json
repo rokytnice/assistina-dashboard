@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T07:23:42.604192",
+  "last_updated": "2026-05-16T07:25:11.834462",
   "public": true,
   "agents": [
     {
@@ -291,7 +291,7 @@
       "id": "mailcheck",
       "name": "E-Mail Wächter",
       "emoji": "📧",
-      "status": "timeout",
+      "status": "success",
       "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-16T00:36:22.110674",
-          "last_status": "timeout",
-          "last_error": "error",
-          "last_duration_seconds": 301.7,
-          "run_count": 389
+          "last_run": "2026-05-16T07:25:11.660220",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 89.1,
+          "run_count": 390
         },
         {
           "id": "retouren_check",
@@ -1113,6 +1113,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-16T07:25:11.660220",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (89.1s)"
+    },
+    {
       "timestamp": "2026-05-16T07:20:38.763984",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1202,13 +1209,6 @@
       "task": "taskprep_precheck",
       "status": "success",
       "message": "OK (11.8s)"
-    },
-    {
-      "timestamp": "2026-05-16T00:36:22.110674",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "timeout",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-16T00:31:17.140155",
@@ -1466,12 +1466,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
