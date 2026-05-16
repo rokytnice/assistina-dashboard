@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T07:30:32.725722",
+  "last_updated": "2026-05-16T07:31:20.101603",
   "public": true,
   "agents": [
     {
@@ -708,11 +708,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-11T07:36:56.802953",
-          "last_status": "timeout",
-          "last_error": "error",
-          "last_duration_seconds": 384.0,
-          "run_count": 11
+          "last_run": "2026-05-16T07:31:20.099108",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 47.4,
+          "run_count": 12
         },
         {
           "id": "qa_mailcheck",
@@ -1113,6 +1113,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-16T07:31:20.099108",
+      "agent": "qa_taskprep",
+      "task": "qa_taskprep",
+      "status": "success",
+      "message": "OK (47.4s)"
+    },
+    {
       "timestamp": "2026-05-16T07:30:30.320161",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1351,13 +1358,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-11T07:36:56.802953",
-      "agent": "qa_taskprep",
-      "task": "qa_taskprep",
-      "status": "timeout",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-10T03:01:54.905407",
       "agent": "sync_contacts",
       "task": "sync_contacts",
@@ -1466,12 +1466,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
