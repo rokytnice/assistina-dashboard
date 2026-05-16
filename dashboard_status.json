@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T10:01:07.154969",
+  "last_updated": "2026-05-16T10:01:28.487807",
   "public": true,
   "agents": [
     {
@@ -339,11 +339,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-15T10:02:01.231739",
+          "last_run": "2026-05-16T10:01:28.375660",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 61.7,
-          "run_count": 23
+          "last_duration_seconds": 39.4,
+          "run_count": 24
         }
       ]
     },
@@ -1128,6 +1128,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-16T10:01:28.375660",
+      "agent": "retouren_check",
+      "task": "retouren_check",
+      "status": "success",
+      "message": "OK (39.4s)"
+    },
+    {
       "timestamp": "2026-05-16T10:00:46.207500",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1322,13 +1329,6 @@
       "task": "retouren_completion_watcher_daily",
       "status": "success",
       "message": "OK (1.9s)"
-    },
-    {
-      "timestamp": "2026-05-15T10:02:01.231739",
-      "agent": "retouren_check",
-      "task": "retouren_check",
-      "status": "success",
-      "message": "OK (61.7s)"
     },
     {
       "timestamp": "2026-05-15T09:00:59.383458",
