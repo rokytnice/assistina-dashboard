@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T09:51:12.342638",
+  "last_updated": "2026-05-16T09:53:32.385207",
   "public": true,
   "agents": [
     {
@@ -226,6 +226,21 @@
           "run_count": 4
         },
         {
+          "id": "elster_inbox_check_6h",
+          "description": "ELSTER Posteingangs-Watcher (read-only) alle 6 Stunden — nutzt CredentialManager",
+          "cron": "0 */6 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 180,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
           "id": "play_release_check_6h",
           "description": "Play-Console-Release-Check alle 6 Stunden (00:00, 06:00, 12:00, 18:00). Liest vi",
           "cron": "0 */6 * * *",
@@ -257,7 +272,7 @@
         },
         {
           "id": "ustva_check",
-          "description": "USt-VA Prüfung am 10. jedes Monats um 9 Uhr",
+          "description": "USt-VA Prüfung am 10. jedes Monats um 9 Uhr (mit CredentialManager) — AKTUELL 6 ",
           "cron": "0 9 10 * *",
           "enabled": true,
           "task_type": "claude",
@@ -1465,7 +1480,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 8,
+  "user_prompts_count": 9,
   "current_jobs": [
     {
       "id": "",
@@ -1474,11 +1489,6 @@
     }
   ],
   "queued_jobs": [
-    {
-      "id": 150,
-      "started_at": null,
-      "agent": ""
-    },
     {
       "id": 151,
       "started_at": null,
