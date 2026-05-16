@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T09:05:08.671860",
+  "last_updated": "2026-05-16T09:05:10.048140",
   "public": true,
   "agents": [
     {
@@ -144,11 +144,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-15T09:05:11.892082",
+          "last_run": "2026-05-16T09:05:10.044842",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.5,
-          "run_count": 5
+          "last_duration_seconds": 1.4,
+          "run_count": 6
         },
         {
           "id": "token_monitor_daily_telegram",
@@ -1113,6 +1113,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-16T09:05:10.044842",
+      "agent": "profiling_daily_telegram",
+      "task": "profiling_daily_telegram",
+      "status": "success",
+      "message": "OK (1.4s)"
+    },
+    {
       "timestamp": "2026-05-16T09:05:06.199766",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1309,13 +1316,6 @@
       "message": "OK (61.7s)"
     },
     {
-      "timestamp": "2026-05-15T09:05:11.892082",
-      "agent": "profiling_daily_telegram",
-      "task": "profiling_daily_telegram",
-      "status": "success",
-      "message": "OK (1.5s)"
-    },
-    {
       "timestamp": "2026-05-15T09:00:59.383458",
       "agent": "token_monitor_daily_telegram",
       "task": "token_monitor_daily_telegram",
@@ -1466,12 +1466,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
