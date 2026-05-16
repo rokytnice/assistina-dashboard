@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-16T12:31:17.666458",
+  "last_updated": "2026-05-16T12:31:18.868061",
   "public": true,
   "agents": [
     {
@@ -324,7 +324,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-16T12:24:49.917882",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 56.6,
@@ -459,7 +459,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-16T08:37:07.367366",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 13.7,
@@ -1170,13 +1170,6 @@
       "message": "OK (1.3s)"
     },
     {
-      "timestamp": "2026-05-16T12:24:49.917882",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (56.6s)"
-    },
-    {
       "timestamp": "2026-05-16T11:30:19.243726",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1210,13 +1203,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (55.6s)"
-    },
-    {
-      "timestamp": "2026-05-16T08:37:07.367366",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (13.7s)"
     },
     {
       "timestamp": "2026-05-16T08:01:13.328117",
@@ -1476,6 +1462,20 @@
       "task": "daily_news",
       "status": "success",
       "message": "OK (349.2s)"
+    },
+    {
+      "timestamp": "2026-04-08T19:02:44.053686",
+      "agent": "daily_qa",
+      "task": "daily_qa",
+      "status": "success",
+      "message": "OK (107.7s)"
+    },
+    {
+      "timestamp": "2026-04-01T09:01:53.820207",
+      "agent": "steuer_reminder",
+      "task": "steuer_reminder",
+      "status": "success",
+      "message": "OK (78.4s)"
     }
   ],
   "request_log": [],
