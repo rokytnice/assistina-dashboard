@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T00:32:24.161544",
+  "last_updated": "2026-05-19T00:32:25.463969",
   "public": true,
   "agents": [
     {
@@ -324,7 +324,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-18T22:28:23.544431",
+          "last_run": null,
           "last_status": "timeout",
           "last_error": "error",
           "last_duration_seconds": 303.0,
@@ -459,7 +459,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-16T12:31:59.838677",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 10.4,
@@ -1191,13 +1191,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-18T22:28:23.544431",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "timeout",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-18T22:02:16.742466",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
@@ -1231,13 +1224,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (189.8s)"
-    },
-    {
-      "timestamp": "2026-05-16T12:31:59.838677",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (10.4s)"
     },
     {
       "timestamp": "2026-05-16T10:30:43.398936",
@@ -1476,6 +1462,20 @@
       "task": "ustva_check",
       "status": "success",
       "message": "OK (124.8s)"
+    },
+    {
+      "timestamp": "2026-04-09T21:06:18.312547",
+      "agent": "daily_news",
+      "task": "daily_news",
+      "status": "success",
+      "message": "OK (349.2s)"
+    },
+    {
+      "timestamp": "2026-04-08T19:02:44.053686",
+      "agent": "daily_qa",
+      "task": "daily_qa",
+      "status": "success",
+      "message": "OK (107.7s)"
     }
   ],
   "request_log": [],
