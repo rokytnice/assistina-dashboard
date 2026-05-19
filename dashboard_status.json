@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T10:30:57.265436",
+  "last_updated": "2026-05-19T10:30:58.765989",
   "public": true,
   "agents": [
     {
@@ -129,11 +129,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-16T10:30:43.398936",
+          "last_run": "2026-05-19T10:30:58.762867",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 6
+          "last_duration_seconds": 1.5,
+          "run_count": 7
         },
         {
           "id": "profiling_daily_telegram",
@@ -1057,6 +1057,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-19T10:30:58.762867",
+      "agent": "retouren_completion_watcher_daily",
+      "task": "retouren_completion_watcher_daily",
+      "status": "success",
+      "message": "OK (1.5s)"
+    },
+    {
       "timestamp": "2026-05-19T10:30:54.325777",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1209,13 +1216,6 @@
       "task": "qa_mailcheck",
       "status": "success",
       "message": "OK (38.8s)"
-    },
-    {
-      "timestamp": "2026-05-16T10:30:43.398936",
-      "agent": "retouren_completion_watcher_daily",
-      "task": "retouren_completion_watcher_daily",
-      "status": "success",
-      "message": "OK (1.2s)"
     },
     {
       "timestamp": "2026-05-16T09:05:10.044842",
@@ -1410,12 +1410,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 15,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
