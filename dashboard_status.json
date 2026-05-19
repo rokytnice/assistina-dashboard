@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T04:31:53.178581",
+  "last_updated": "2026-05-19T04:31:54.633459",
   "public": true,
   "agents": [
     {
@@ -324,7 +324,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-19T00:35:02.652087",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 156.0,
@@ -459,7 +459,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-19T00:35:19.037954",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 13.7,
@@ -1198,20 +1198,6 @@
       "message": "OK (74.0s)"
     },
     {
-      "timestamp": "2026-05-19T00:35:19.037954",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (13.7s)"
-    },
-    {
-      "timestamp": "2026-05-19T00:35:02.652087",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (156.0s)"
-    },
-    {
       "timestamp": "2026-05-19T00:01:20.406021",
       "agent": "elster_inbox_check_6h",
       "task": "elster_inbox_check_6h",
@@ -1476,6 +1462,20 @@
       "task": "ustva_check",
       "status": "success",
       "message": "OK (124.8s)"
+    },
+    {
+      "timestamp": "2026-04-09T21:06:18.312547",
+      "agent": "daily_news",
+      "task": "daily_news",
+      "status": "success",
+      "message": "OK (349.2s)"
+    },
+    {
+      "timestamp": "2026-04-08T19:02:44.053686",
+      "agent": "daily_qa",
+      "task": "daily_qa",
+      "status": "success",
+      "message": "OK (107.7s)"
     }
   ],
   "request_log": [],
