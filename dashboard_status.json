@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T10:00:33.866110",
+  "last_updated": "2026-05-19T10:01:13.513999",
   "public": true,
   "agents": [
     {
@@ -339,11 +339,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-16T10:01:28.375660",
+          "last_run": "2026-05-19T10:01:13.345139",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 39.4,
-          "run_count": 24
+          "last_duration_seconds": 39.5,
+          "run_count": 25
         }
       ]
     },
@@ -1046,79 +1046,8 @@
   "retouren": {
     "pending_count": 0,
     "total_amount": 0,
-    "last_scan": "2026-04-04 15:24",
-    "items": [
-      {
-        "shop": "Amazon",
-        "product": "[item]",
-        "amount": 246.49,
-        "payment_method": "Kreditkarte (DKB, Endziffern 811)",
-        "return_date": "2026-03-18",
-        "refund_deadline": "2026-04-01",
-        "status": "received",
-        "refund_date": "2026-03-25"
-      },
-      {
-        "shop": "Gymshark DE (Happy Returns)",
-        "product": "[item]",
-        "amount": 223.4,
-        "payment_method": "PayPal",
-        "return_date": "2026-03-16",
-        "refund_deadline": "2026-03-30",
-        "status": "received",
-        "refund_date": "2026-03-25"
-      },
-      {
-        "shop": "Amazon",
-        "product": "[item]",
-        "amount": 139.94,
-        "payment_method": "Bankkonto (vermutlich DKB)",
-        "return_date": "2026-03-26",
-        "refund_deadline": "2026-04-09",
-        "status": "received",
-        "refund_date": "2026-03-26"
-      },
-      {
-        "shop": "Amazon",
-        "product": "[item]",
-        "amount": null,
-        "payment_method": "Bankkonto (vermutlich DKB)",
-        "return_date": "2026-03-26",
-        "refund_deadline": "2026-04-09",
-        "status": "received",
-        "refund_date": "2026-03-26"
-      },
-      {
-        "shop": "Amazon",
-        "product": "[item]",
-        "amount": null,
-        "payment_method": "Bankkonto (vermutlich DKB)",
-        "return_date": "2026-03-31",
-        "refund_deadline": "2026-04-14",
-        "status": "received",
-        "refund_date": "2026-03-31"
-      },
-      {
-        "shop": "Amazon",
-        "product": "[item]",
-        "amount": null,
-        "payment_method": "Bankkonto (vermutlich DKB)",
-        "return_date": "2026-03-31",
-        "refund_deadline": "2026-04-14",
-        "status": "received",
-        "refund_date": "2026-03-31"
-      },
-      {
-        "shop": "BoohooMAN",
-        "product": "[item]",
-        "amount": null,
-        "payment_method": "PayPal",
-        "return_date": "2026-03-30",
-        "refund_deadline": "2026-04-13",
-        "status": "received",
-        "refund_date": "2026-04-04"
-      }
-    ]
+    "last_scan": null,
+    "items": []
   },
   "shopping": {
     "product_count": 1,
@@ -1127,6 +1056,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-05-19T10:01:13.345139",
+      "agent": "retouren_check",
+      "task": "retouren_check",
+      "status": "success",
+      "message": "OK (39.5s)"
+    },
     {
       "timestamp": "2026-05-19T10:00:30.626729",
       "agent": "token_metrics_collect_5m",
@@ -1280,13 +1216,6 @@
       "task": "retouren_completion_watcher_daily",
       "status": "success",
       "message": "OK (1.2s)"
-    },
-    {
-      "timestamp": "2026-05-16T10:01:28.375660",
-      "agent": "retouren_check",
-      "task": "retouren_check",
-      "status": "success",
-      "message": "OK (39.4s)"
     },
     {
       "timestamp": "2026-05-16T09:05:10.044842",
@@ -1481,12 +1410,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 14,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
