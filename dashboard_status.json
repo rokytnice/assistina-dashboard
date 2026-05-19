@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T03:00:44.282108",
+  "last_updated": "2026-05-19T03:01:47.790539",
   "public": true,
   "agents": [
     {
@@ -811,11 +811,11 @@
           "silent": true,
           "timeout": 90,
           "detail": "",
-          "last_run": "2026-05-18T23:01:57.648852",
+          "last_run": "2026-05-19T03:01:47.787936",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 64.1,
-          "run_count": 152
+          "last_duration_seconds": 63.5,
+          "run_count": 153
         }
       ]
     },
@@ -1128,6 +1128,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-19T03:01:47.787936",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-19T03:00:41.654518",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1208,13 +1215,6 @@
       "timestamp": "2026-05-19T00:01:20.406021",
       "agent": "elster_inbox_check_6h",
       "task": "elster_inbox_check_6h",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-18T23:01:57.648852",
-      "agent": "eufy_weekday_schedule",
-      "task": "eufy_weekday_schedule",
       "status": "error",
       "message": "[error]"
     },
@@ -1481,12 +1481,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
