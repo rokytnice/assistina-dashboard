@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-19T09:30:29.369546",
+  "last_updated": "2026-05-19T09:31:56.318637",
   "public": true,
   "agents": [
     {
@@ -635,11 +635,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-19T07:02:51.443923",
+          "last_run": "2026-05-19T09:31:56.315976",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 114.7,
-          "run_count": 573
+          "last_duration_seconds": 86.9,
+          "run_count": 574
         }
       ]
     },
@@ -1128,6 +1128,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-19T09:31:56.315976",
+      "agent": "stock_crash_check",
+      "task": "stock_crash_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-19T09:30:26.234746",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1224,13 +1231,6 @@
       "task": "investor_research_agent",
       "status": "success",
       "message": "OK (99.9s)"
-    },
-    {
-      "timestamp": "2026-05-19T07:02:51.443923",
-      "agent": "stock_crash_check",
-      "task": "stock_crash_check",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-19T06:01:19.840546",
@@ -1481,12 +1481,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 3,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
