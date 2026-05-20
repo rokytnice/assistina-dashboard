@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T21:03:14.691687",
+  "last_updated": "2026-05-20T21:03:35.099107",
   "public": true,
   "agents": [
     {
@@ -1108,6 +1108,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-20T21:03:34.969985",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (20.3s)"
+    },
+    {
       "timestamp": "2026-05-20T21:03:10.499850",
       "agent": "daily_content",
       "task": "daily_content",
@@ -1449,24 +1456,11 @@
       "task": "daily_news",
       "status": "success",
       "message": "OK (349.2s)"
-    },
-    {
-      "timestamp": "2026-04-08T19:02:44.053686",
-      "agent": "daily_qa",
-      "task": "daily_qa",
-      "status": "success",
-      "message": "OK (107.7s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 11,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
