@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T08:31:19.034737",
+  "last_updated": "2026-05-20T08:31:20.918106",
   "public": true,
   "agents": [
     {
@@ -324,7 +324,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-19T17:24:14.998833",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 73.6,
@@ -459,7 +459,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-19T16:33:08.576275",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 15.5,
@@ -1150,25 +1150,11 @@
       "message": "OK (2.4s)"
     },
     {
-      "timestamp": "2026-05-19T17:24:14.998833",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (73.6s)"
-    },
-    {
       "timestamp": "2026-05-19T17:01:03.295444",
       "agent": "email_followup_tracker",
       "task": "email_followup_tracker",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-19T16:33:08.576275",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (15.5s)"
     },
     {
       "timestamp": "2026-05-19T16:01:18.652421",
@@ -1456,6 +1442,20 @@
       "task": "ustva_check",
       "status": "success",
       "message": "OK (124.8s)"
+    },
+    {
+      "timestamp": "2026-04-09T21:06:18.312547",
+      "agent": "daily_news",
+      "task": "daily_news",
+      "status": "success",
+      "message": "OK (349.2s)"
+    },
+    {
+      "timestamp": "2026-04-08T19:02:44.053686",
+      "agent": "daily_qa",
+      "task": "daily_qa",
+      "status": "success",
+      "message": "OK (107.7s)"
     }
   ],
   "request_log": [],
