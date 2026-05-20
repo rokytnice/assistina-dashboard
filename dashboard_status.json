@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-20T22:00:27.302825",
+  "last_updated": "2026-05-20T22:02:22.895262",
   "public": true,
   "agents": [
     {
@@ -619,7 +619,7 @@
       "id": "stock_monitor",
       "name": "Aktien-Crash-Monitor",
       "emoji": "📉",
-      "status": "error",
+      "status": "success",
       "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
@@ -635,11 +635,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-20T19:02:19.985029",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 107.5,
-          "run_count": 584
+          "last_run": "2026-05-20T22:02:22.892538",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 115.6,
+          "run_count": 585
         }
       ]
     },
@@ -1108,6 +1108,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-20T22:02:22.892538",
+      "agent": "stock_crash_check",
+      "task": "stock_crash_check",
+      "status": "success",
+      "message": "OK (115.6s)"
+    },
+    {
       "timestamp": "2026-05-20T22:00:24.749393",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1197,13 +1204,6 @@
       "task": "sync_gmail",
       "status": "success",
       "message": "OK (38.9s)"
-    },
-    {
-      "timestamp": "2026-05-20T19:02:19.985029",
-      "agent": "stock_crash_check",
-      "task": "stock_crash_check",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-20T17:01:04.211333",
@@ -1461,12 +1461,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 8,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
