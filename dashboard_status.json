@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T14:46:52.896638",
+  "last_updated": "2026-05-21T14:50:37.311876",
   "public": true,
   "agents": [
     {
@@ -434,6 +434,66 @@
           "last_error": null,
           "last_duration_seconds": 2.2,
           "run_count": 105
+        },
+        {
+          "id": "sync_check24",
+          "description": "CHECK24 Versicherungs-Sync täglich 5 Uhr",
+          "cron": "0 5 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "sync_ing_diba",
+          "description": "ING-DiBa Bank-Sync 3× täglich (8:00, 14:00, 20:00)",
+          "cron": "0 8,14,20 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "sync_sparkasse",
+          "description": "Sparkasse Bank-Sync 2× täglich (7:00, 19:00)",
+          "cron": "0 7,19 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "sync_elster",
+          "description": "ELSTER Posteingang-Sync täglich 9 Uhr",
+          "cron": "0 9 * * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         }
       ]
     },
@@ -1472,6 +1532,11 @@
   "user_prompts": [],
   "user_prompts_count": 9,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
