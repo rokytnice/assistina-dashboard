@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T08:00:53.715607",
+  "last_updated": "2026-05-21T08:01:04.523517",
   "public": true,
   "agents": [
     {
@@ -219,11 +219,11 @@
           "silent": true,
           "timeout": 180,
           "detail": "",
-          "last_run": "2026-05-16T08:00:52.095172",
+          "last_run": "2026-05-21T08:01:04.520334",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 7.1,
-          "run_count": 4
+          "last_duration_seconds": 10.8,
+          "run_count": 5
         },
         {
           "id": "elster_inbox_check_6h",
@@ -1118,6 +1118,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-21T08:01:04.520334",
+      "agent": "landhaus_watcher_daily",
+      "task": "landhaus_watcher_daily",
+      "status": "success",
+      "message": "OK (10.8s)"
+    },
+    {
       "timestamp": "2026-05-21T08:00:51.027051",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1328,13 +1335,6 @@
       "message": "OK (38.8s)"
     },
     {
-      "timestamp": "2026-05-16T08:00:52.095172",
-      "agent": "landhaus_watcher_daily",
-      "task": "landhaus_watcher_daily",
-      "status": "success",
-      "message": "OK (7.1s)"
-    },
-    {
       "timestamp": "2026-05-16T07:31:20.099108",
       "agent": "qa_taskprep",
       "task": "qa_taskprep",
@@ -1471,12 +1471,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
