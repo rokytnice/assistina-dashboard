@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T21:02:49.015795",
+  "last_updated": "2026-05-22T21:02:51.395560",
   "public": true,
   "agents": [
     {
@@ -753,7 +753,7 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-20T21:04:36.420398",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 58.4,
@@ -1367,20 +1367,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-20T21:04:36.420398",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (58.4s)"
-    },
-    {
-      "timestamp": "2026-05-20T21:03:34.969985",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (20.3s)"
-    },
-    {
       "timestamp": "2026-05-20T21:00:37.534582",
       "agent": "taskprep_precheck",
       "task": "taskprep_precheck",
@@ -1526,6 +1512,20 @@
       "task": "daily_videos",
       "status": "error",
       "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T21:23:37.854284",
+      "agent": "qa_newsradar",
+      "task": "qa_newsradar",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T09:02:52.500888",
+      "agent": "ustva_check",
+      "task": "ustva_check",
+      "status": "success",
+      "message": "OK (124.8s)"
     }
   ],
   "request_log": [],
