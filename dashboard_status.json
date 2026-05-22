@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T18:05:27.123977",
+  "last_updated": "2026-05-22T18:05:28.592042",
   "public": true,
   "agents": [
     {
@@ -189,11 +189,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-22T18:00:33.980348",
+          "last_run": "2026-05-22T18:05:28.589520",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 1.5,
-          "run_count": 2248
+          "run_count": 2249
         },
         {
           "id": "latency_monitor_daily",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-22T18:05:28.589520",
+      "agent": "token_metrics_collect_5m",
+      "task": "token_metrics_collect_5m",
+      "status": "success",
+      "message": "OK (1.5s)"
+    },
+    {
       "timestamp": "2026-05-22T18:05:24.432641",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1218,13 +1225,6 @@
       "task": "elster_inbox_check_6h",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-22T18:00:33.980348",
-      "agent": "token_metrics_collect_5m",
-      "task": "token_metrics_collect_5m",
-      "status": "success",
-      "message": "OK (1.5s)"
     },
     {
       "timestamp": "2026-05-22T18:00:25.574300",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
