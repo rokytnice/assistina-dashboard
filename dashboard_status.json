@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T20:31:40.019081",
+  "last_updated": "2026-05-22T20:31:41.205236",
   "public": true,
   "agents": [
     {
@@ -324,7 +324,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-22T17:24:11.606282",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 53.8,
@@ -519,7 +519,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-22T16:33:08.401335",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 13.2,
@@ -1255,25 +1255,11 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-22T17:24:11.606282",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (53.8s)"
-    },
-    {
       "timestamp": "2026-05-22T17:01:02.797856",
       "agent": "email_followup_tracker",
       "task": "email_followup_tracker",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-22T16:33:08.401335",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (13.2s)"
     },
     {
       "timestamp": "2026-05-22T12:46:13.699020",
@@ -1526,6 +1512,20 @@
       "task": "daily_videos",
       "status": "error",
       "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T21:23:37.854284",
+      "agent": "qa_newsradar",
+      "task": "qa_newsradar",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T09:02:52.500888",
+      "agent": "ustva_check",
+      "task": "ustva_check",
+      "status": "success",
+      "message": "OK (124.8s)"
     }
   ],
   "request_log": [],
