@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T16:32:08.428215",
+  "last_updated": "2026-05-22T16:32:52.532063",
   "public": true,
   "agents": [
     {
@@ -324,11 +324,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-05-22T16:32:52.382866",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 77.7,
-          "run_count": 414
+          "last_duration_seconds": 44.0,
+          "run_count": 415
         },
         {
           "id": "retouren_check",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-22T16:32:52.382866",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (44.0s)"
+    },
+    {
       "timestamp": "2026-05-22T16:32:03.536108",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1519,24 +1526,11 @@
       "task": "qa_newsradar",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-10T09:02:52.500888",
-      "agent": "ustva_check",
-      "task": "ustva_check",
-      "status": "success",
-      "message": "OK (124.8s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
