@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T09:01:48.283252",
+  "last_updated": "2026-05-22T09:05:19.972224",
   "public": true,
   "agents": [
     {
@@ -489,11 +489,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-05-22T09:05:19.969869",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 264.2,
+          "run_count": 1
         }
       ]
     },
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-22T09:05:19.969869",
+      "agent": "sync_elster",
+      "task": "sync_elster",
+      "status": "success",
+      "message": "OK (264.2s)"
+    },
+    {
       "timestamp": "2026-05-22T09:00:53.332356",
       "agent": "latency_monitor_daily",
       "task": "latency_monitor_daily",
@@ -1519,13 +1526,6 @@
       "task": "qa_newsradar",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-10T09:02:52.500888",
-      "agent": "ustva_check",
-      "task": "ustva_check",
-      "status": "success",
-      "message": "OK (124.8s)"
     }
   ],
   "request_log": [],
