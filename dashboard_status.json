@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T23:00:38.019575",
+  "last_updated": "2026-05-22T23:00:39.589031",
   "public": true,
   "agents": [
     {
@@ -843,11 +843,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-05-21T05:30:54.028588",
+          "last_run": "2026-05-22T23:00:39.586102",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.2,
-          "run_count": 381
+          "last_duration_seconds": 1.6,
+          "run_count": 382
         }
       ]
     },
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-22T23:00:39.586102",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (1.6s)"
+    },
+    {
       "timestamp": "2026-05-22T23:00:34.491668",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1374,13 +1381,6 @@
       "message": "OK (58.4s)"
     },
     {
-      "timestamp": "2026-05-21T05:30:54.028588",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
-      "status": "success",
-      "message": "OK (2.2s)"
-    },
-    {
       "timestamp": "2026-05-21T02:00:48.968434",
       "agent": "eufy_weekday_schedule",
       "task": "eufy_weekday_schedule",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
