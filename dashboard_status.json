@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-22T14:00:26.282674",
+  "last_updated": "2026-05-22T14:01:35.023554",
   "public": true,
   "agents": [
     {
@@ -459,11 +459,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-05-22T14:01:35.021152",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 68.7,
+          "run_count": 1
         },
         {
           "id": "sync_sparkasse",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-22T14:01:35.021152",
+      "agent": "sync_ing_diba",
+      "task": "sync_ing_diba",
+      "status": "success",
+      "message": "OK (68.7s)"
+    },
+    {
       "timestamp": "2026-05-22T14:00:23.555888",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1519,24 +1526,11 @@
       "task": "daily_videos",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-10T21:23:37.854284",
-      "agent": "qa_newsradar",
-      "task": "qa_newsradar",
-      "status": "error",
-      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 3,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
