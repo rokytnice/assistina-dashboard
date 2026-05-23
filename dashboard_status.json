@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T00:31:45.597197",
+  "last_updated": "2026-05-24T00:31:46.667130",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-23T22:28:18.952123",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 262.6,
@@ -519,7 +519,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-23T20:33:53.071252",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 17.5,
@@ -1248,13 +1248,6 @@
       "message": "OK (1.1s)"
     },
     {
-      "timestamp": "2026-05-23T22:28:18.952123",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (262.6s)"
-    },
-    {
       "timestamp": "2026-05-23T21:31:36.322567",
       "agent": "qa_contentradar",
       "task": "qa_contentradar",
@@ -1288,13 +1281,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (17.6s)"
-    },
-    {
-      "timestamp": "2026-05-23T20:33:53.071252",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (17.5s)"
     },
     {
       "timestamp": "2026-05-23T20:01:08.271519",
@@ -1524,6 +1510,20 @@
       "timestamp": "2026-04-10T22:23:13.559536",
       "agent": "qa_videoradar",
       "task": "qa_videoradar",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T22:03:21.718356",
+      "agent": "daily_videos",
+      "task": "daily_videos",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T21:23:37.854284",
+      "agent": "qa_newsradar",
+      "task": "qa_newsradar",
       "status": "error",
       "message": "[error]"
     }
