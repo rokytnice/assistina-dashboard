@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T10:00:45.514381",
+  "last_updated": "2026-05-23T10:01:40.140785",
   "public": true,
   "agents": [
     {
@@ -1106,7 +1106,7 @@
   "retouren": {
     "pending_count": 0,
     "total_amount": 0,
-    "last_scan": "2026-05-23T08:32:23.596920",
+    "last_scan": "2026-05-23T10:01:29.703861",
     "items": [
       {
         "shop": "Amazon",
@@ -1530,18 +1530,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    },
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 1,
+  "current_jobs": [],
   "queued_jobs": []
 }
