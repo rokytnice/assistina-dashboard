@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T06:00:44.029761",
+  "last_updated": "2026-05-23T06:00:45.175808",
   "public": true,
   "agents": [
     {
@@ -234,11 +234,11 @@
           "silent": true,
           "timeout": 180,
           "detail": "",
-          "last_run": "2026-05-23T00:00:27.115048",
+          "last_run": "2026-05-23T06:00:45.172051",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 2.3,
-          "run_count": 7
+          "last_duration_seconds": 1.1,
+          "run_count": 8
         },
         {
           "id": "play_release_check_6h",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-23T06:00:45.172051",
+      "agent": "elster_inbox_check_6h",
+      "task": "elster_inbox_check_6h",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-23T06:00:41.794978",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1267,13 +1274,6 @@
       "task": "play_release_check_6h",
       "status": "success",
       "message": "OK (3.1s)"
-    },
-    {
-      "timestamp": "2026-05-23T00:00:27.115048",
-      "agent": "elster_inbox_check_6h",
-      "task": "elster_inbox_check_6h",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-05-22T22:01:53.373699",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
