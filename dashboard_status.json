@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T00:31:47.786761",
+  "last_updated": "2026-05-24T00:33:30.889960",
   "public": true,
   "agents": [
     {
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-05-24T00:33:30.781534",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 262.6,
-          "run_count": 423
+          "last_duration_seconds": 103.0,
+          "run_count": 424
         },
         {
           "id": "retouren_check",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-24T00:33:30.781534",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (103.0s)"
+    },
+    {
       "timestamp": "2026-05-24T00:31:44.390665",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1519,24 +1526,11 @@
       "task": "daily_videos",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-10T21:23:37.854284",
-      "agent": "qa_newsradar",
-      "task": "qa_newsradar",
-      "status": "error",
-      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 7,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
