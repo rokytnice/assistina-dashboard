@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T19:00:43.103199",
+  "last_updated": "2026-05-23T19:01:02.002080",
   "public": true,
   "agents": [
     {
@@ -459,11 +459,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-05-23T19:01:01.999532",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 18.9,
+          "run_count": 1
         },
         {
           "id": "sync_elster",
@@ -1163,6 +1163,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-23T19:01:01.999532",
+      "agent": "sync_sparkasse",
+      "task": "sync_sparkasse",
+      "status": "success",
+      "message": "OK (18.9s)"
+    },
+    {
       "timestamp": "2026-05-23T19:00:40.853975",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1504,24 +1511,11 @@
       "task": "qa_videoradar",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-10T22:03:21.718356",
-      "agent": "daily_videos",
-      "task": "daily_videos",
-      "status": "error",
-      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
