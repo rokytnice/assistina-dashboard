@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T08:31:27.266829",
+  "last_updated": "2026-05-23T08:32:36.992005",
   "public": true,
   "agents": [
     {
@@ -324,11 +324,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-05-23T08:32:36.862212",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 74.1,
-          "run_count": 419
+          "last_duration_seconds": 69.6,
+          "run_count": 420
         },
         {
           "id": "retouren_check",
@@ -1106,7 +1106,7 @@
   "retouren": {
     "pending_count": 0,
     "total_amount": 0,
-    "last_scan": "2026-05-23T07:24:57.940873",
+    "last_scan": "2026-05-23T08:32:23.596920",
     "items": [
       {
         "shop": "Amazon",
@@ -1177,6 +1177,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-05-23T08:32:36.862212",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (69.6s)"
+    },
     {
       "timestamp": "2026-05-23T08:31:23.660292",
       "agent": "sync_gmail",
@@ -1519,24 +1526,11 @@
       "task": "qa_newsradar",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-04-10T09:02:52.500888",
-      "agent": "ustva_check",
-      "task": "ustva_check",
-      "status": "success",
-      "message": "OK (124.8s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
