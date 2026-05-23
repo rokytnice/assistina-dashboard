@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T07:23:55.076885",
+  "last_updated": "2026-05-23T07:25:09.259743",
   "public": true,
   "agents": [
     {
@@ -324,11 +324,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-23T04:32:37.159011",
+          "last_run": "2026-05-23T07:25:09.127861",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 72.0,
-          "run_count": 418
+          "last_duration_seconds": 74.1,
+          "run_count": 419
         },
         {
           "id": "retouren_check",
@@ -1106,7 +1106,7 @@
   "retouren": {
     "pending_count": 0,
     "total_amount": 0,
-    "last_scan": "2026-05-23T04:32:25.202457",
+    "last_scan": "2026-05-23T07:24:57.940873",
     "items": [
       {
         "shop": "Amazon",
@@ -1177,6 +1177,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-05-23T07:25:09.127861",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (74.1s)"
+    },
     {
       "timestamp": "2026-05-23T07:20:52.804972",
       "agent": "token_metrics_collect_5m",
@@ -1253,13 +1260,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (48.3s)"
-    },
-    {
-      "timestamp": "2026-05-23T04:32:37.159011",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (72.0s)"
     },
     {
       "timestamp": "2026-05-23T04:31:21.712970",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
