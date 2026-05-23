@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T10:11:45.949937",
+  "last_updated": "2026-05-23T10:15:54.424066",
   "public": true,
   "agents": [
     {
@@ -119,21 +119,6 @@
           "last_error": null,
           "last_duration_seconds": 99.9,
           "run_count": 4
-        },
-        {
-          "id": "retouren_completion_watcher_daily",
-          "description": "Retouren-Abschluss-Watcher täglich 10:30 (nach retouren_check 10:00). Erkennt Re",
-          "cron": "30 10 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 60,
-          "detail": "",
-          "last_run": "2026-05-22T10:30:28.146612",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.5,
-          "run_count": 10
         },
         {
           "id": "profiling_daily_telegram",
@@ -332,7 +317,7 @@
         },
         {
           "id": "retouren_check",
-          "description": "Täglicher Retouren-Check um 10 Uhr",
+          "description": "Täglicher Retouren-Check um 10 Uhr. Inkl. Abschluss-Check ([phone]: retouren_com",
           "cron": "0 10 * * *",
           "enabled": true,
           "task_type": "claude",
@@ -1530,13 +1515,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 5,
+  "current_jobs": [],
   "queued_jobs": []
 }
