@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T08:00:59.271955",
+  "last_updated": "2026-05-23T08:01:05.799575",
   "public": true,
   "agents": [
     {
@@ -219,11 +219,11 @@
           "silent": true,
           "timeout": 180,
           "detail": "",
-          "last_run": "2026-05-21T08:01:04.520334",
+          "last_run": "2026-05-23T08:01:05.796696",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 10.8,
-          "run_count": 5
+          "last_duration_seconds": 6.5,
+          "run_count": 6
         },
         {
           "id": "elster_inbox_check_6h",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-23T08:01:05.796696",
+      "agent": "landhaus_watcher_daily",
+      "task": "landhaus_watcher_daily",
+      "status": "success",
+      "message": "OK (6.5s)"
+    },
+    {
       "timestamp": "2026-05-23T08:00:56.953105",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1388,13 +1395,6 @@
       "message": "OK (1.6s)"
     },
     {
-      "timestamp": "2026-05-21T08:01:04.520334",
-      "agent": "landhaus_watcher_daily",
-      "task": "landhaus_watcher_daily",
-      "status": "success",
-      "message": "OK (10.8s)"
-    },
-    {
       "timestamp": "2026-05-20T21:00:37.534582",
       "agent": "taskprep_precheck",
       "task": "taskprep_precheck",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
