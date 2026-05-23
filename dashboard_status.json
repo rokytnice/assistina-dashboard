@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-23T20:32:19.942093",
+  "last_updated": "2026-05-23T20:32:21.113169",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-23T17:24:01.970234",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 19.9,
@@ -519,7 +519,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-23T12:36:45.595517",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 13.2,
@@ -1262,13 +1262,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-23T17:24:01.970234",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (19.9s)"
-    },
-    {
       "timestamp": "2026-05-23T17:01:54.834239",
       "agent": "eufy_weekday_schedule",
       "task": "eufy_weekday_schedule",
@@ -1288,13 +1281,6 @@
       "task": "data_analysis_8h",
       "status": "success",
       "message": "OK (66.2s)"
-    },
-    {
-      "timestamp": "2026-05-23T12:36:45.595517",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (13.2s)"
     },
     {
       "timestamp": "2026-05-23T10:01:42.247460",
@@ -1524,6 +1510,20 @@
       "timestamp": "2026-04-10T22:23:13.559536",
       "agent": "qa_videoradar",
       "task": "qa_videoradar",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T22:03:21.718356",
+      "agent": "daily_videos",
+      "task": "daily_videos",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T21:23:37.854284",
+      "agent": "qa_newsradar",
+      "task": "qa_newsradar",
       "status": "error",
       "message": "[error]"
     }
