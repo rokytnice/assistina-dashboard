@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T08:45:55.652219",
+  "last_updated": "2026-05-24T08:48:59.907222",
   "public": true,
   "agents": [
     {
@@ -707,7 +707,7 @@
       "id": "data_analyst",
       "name": "Datenanalyse-Agent",
       "emoji": "🔬",
-      "status": "success",
+      "status": "error",
       "description": "Tools: claude, bash | Modell: haiku",
       "tools": [
         "claude",
@@ -724,11 +724,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-24T04:45:39.708486",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 12.5,
-          "run_count": 179
+          "last_run": "2026-05-24T08:48:59.903572",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 184.3,
+          "run_count": 180
         }
       ]
     },
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-24T08:48:59.903572",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-24T08:45:55.587525",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1295,13 +1302,6 @@
       "task": "sync_check24",
       "status": "timeout",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-24T04:45:39.708486",
-      "agent": "data_analysis",
-      "task": "data_analysis",
-      "status": "success",
-      "message": "OK (12.5s)"
     },
     {
       "timestamp": "2026-05-24T04:32:51.048542",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
