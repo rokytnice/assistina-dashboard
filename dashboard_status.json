@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T05:00:19.636796",
+  "last_updated": "2026-05-24T05:05:21.504931",
   "public": true,
   "agents": [
     {
@@ -336,7 +336,7 @@
       "id": "datasync",
       "name": "Daten-Synchronizer",
       "emoji": "🔄",
-      "status": "success",
+      "status": "timeout",
       "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
@@ -429,10 +429,10 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
+          "last_run": "2026-05-24T05:05:21.502747",
+          "last_status": "timeout",
+          "last_error": "error",
+          "last_duration_seconds": 301.9,
           "run_count": 0
         },
         {
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-24T05:05:21.502747",
+      "agent": "sync_check24",
+      "task": "sync_check24",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-24T05:00:17.118725",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1519,24 +1526,11 @@
       "task": "news_stocks_morning",
       "status": "success",
       "message": "OK (112.7s)"
-    },
-    {
-      "timestamp": "2026-04-10T22:23:13.559536",
-      "agent": "qa_videoradar",
-      "task": "qa_videoradar",
-      "status": "error",
-      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
