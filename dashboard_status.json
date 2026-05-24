@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T09:00:01.426094",
+  "last_updated": "2026-05-24T09:00:01.833256",
   "public": true,
   "agents": [
     {
@@ -189,11 +189,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-23T09:00:37.629693",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.6,
-          "run_count": 5
+          "last_run": "2026-05-24T09:00:01.830737",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 0.4,
+          "run_count": 6
         },
         {
           "id": "landhaus_watcher_daily",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-24T09:00:01.830737",
+      "agent": "latency_monitor_daily",
+      "task": "latency_monitor_daily",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-24T09:00:01.358514",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1395,13 +1402,6 @@
       "message": "OK (33.6s)"
     },
     {
-      "timestamp": "2026-05-23T09:00:37.629693",
-      "agent": "latency_monitor_daily",
-      "task": "latency_monitor_daily",
-      "status": "success",
-      "message": "OK (1.6s)"
-    },
-    {
       "timestamp": "2026-05-22T22:01:53.373699",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
