@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T07:00:44.399924",
+  "last_updated": "2026-05-24T07:03:43.256436",
   "public": true,
   "agents": [
     {
@@ -459,11 +459,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-23T19:01:01.999532",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 18.9,
-          "run_count": 1
+          "last_run": "2026-05-24T07:03:43.253895",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 178.9,
+          "run_count": 2
         },
         {
           "id": "sync_elster",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-24T07:03:43.253895",
+      "agent": "sync_sparkasse",
+      "task": "sync_sparkasse",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-24T07:00:44.337287",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1337,13 +1344,6 @@
       "task": "sync_ing_diba",
       "status": "success",
       "message": "OK (18.7s)"
-    },
-    {
-      "timestamp": "2026-05-23T19:01:01.999532",
-      "agent": "sync_sparkasse",
-      "task": "sync_sparkasse",
-      "status": "success",
-      "message": "OK (18.9s)"
     },
     {
       "timestamp": "2026-05-23T18:01:01.494627",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
