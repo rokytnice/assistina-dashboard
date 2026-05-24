@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T19:00:50.530096",
+  "last_updated": "2026-05-24T19:03:51.513230",
   "public": true,
   "agents": [
     {
@@ -459,11 +459,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-24T07:03:43.253895",
+          "last_run": "2026-05-24T19:03:51.510563",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 178.9,
-          "run_count": 2
+          "last_duration_seconds": 181.0,
+          "run_count": 3
         },
         {
           "id": "sync_elster",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-24T19:03:51.510563",
+      "agent": "sync_sparkasse",
+      "task": "sync_sparkasse",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-24T19:00:50.463988",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1335,13 +1342,6 @@
       "timestamp": "2026-05-24T07:33:47.343465",
       "agent": "qa_taskprep",
       "task": "qa_taskprep",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-24T07:03:43.253895",
-      "agent": "sync_sparkasse",
-      "task": "sync_sparkasse",
       "status": "error",
       "message": "[error]"
     },
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
