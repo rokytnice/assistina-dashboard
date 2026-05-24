@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-24T04:31:47.116090",
+  "last_updated": "2026-05-24T04:31:48.180903",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-24T00:33:30.781534",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 103.0,
@@ -519,7 +519,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-24T00:33:43.380068",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 10.1,
@@ -1248,20 +1248,6 @@
       "message": "OK (14.7s)"
     },
     {
-      "timestamp": "2026-05-24T00:33:43.380068",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (10.1s)"
-    },
-    {
-      "timestamp": "2026-05-24T00:33:30.781534",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (103.0s)"
-    },
-    {
       "timestamp": "2026-05-24T00:01:29.678377",
       "agent": "data_analysis_8h",
       "task": "data_analysis_8h",
@@ -1524,6 +1510,20 @@
       "timestamp": "2026-04-10T22:23:13.559536",
       "agent": "qa_videoradar",
       "task": "qa_videoradar",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T22:03:21.718356",
+      "agent": "daily_videos",
+      "task": "daily_videos",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-04-10T21:23:37.854284",
+      "agent": "qa_newsradar",
+      "task": "qa_newsradar",
       "status": "error",
       "message": "[error]"
     }
