@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-25T22:23:51.887930",
+  "last_updated": "2026-05-25T22:26:43.162152",
   "public": true,
   "agents": [
     {
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-25T17:25:53.952896",
+          "last_run": "2026-05-25T22:26:43.158743",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 173.8,
-          "run_count": 432
+          "last_duration_seconds": 171.3,
+          "run_count": 433
         },
         {
           "id": "retouren_check",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-25T22:26:43.158743",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-25T22:20:51.768939",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1300,13 +1307,6 @@
       "timestamp": "2026-05-25T18:00:28.364244",
       "agent": "elster_inbox_check_6h",
       "task": "elster_inbox_check_6h",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-25T17:25:53.952896",
-      "agent": "email_check",
-      "task": "email_check",
       "status": "error",
       "message": "[error]"
     },
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
