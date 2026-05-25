@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-25T05:00:40.663584",
+  "last_updated": "2026-05-25T05:03:36.070619",
   "public": true,
   "agents": [
     {
@@ -429,11 +429,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-24T05:05:21.502747",
-          "last_status": "timeout",
+          "last_run": "2026-05-25T05:03:36.067769",
+          "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 301.9,
-          "run_count": 0
+          "last_duration_seconds": 175.4,
+          "run_count": 1
         },
         {
           "id": "sync_ing_diba",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-25T05:03:36.067769",
+      "agent": "sync_check24",
+      "task": "sync_check24",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-05-25T05:00:40.602621",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1381,13 +1388,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-24T05:05:21.502747",
-      "agent": "sync_check24",
-      "task": "sync_check24",
-      "status": "timeout",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-24T04:32:51.048542",
       "agent": "taskprep_morning",
       "task": "taskprep_morning",
@@ -1531,12 +1531,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
