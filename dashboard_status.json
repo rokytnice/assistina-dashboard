@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T06:38:15.864665",
+  "last_updated": "2026-05-26T06:39:01.695027",
   "public": true,
   "agents": [
     {
@@ -479,21 +479,6 @@
           "last_error": "error",
           "last_duration_seconds": 175.0,
           "run_count": 4
-        },
-        {
-          "id": "daily_tech_digest",
-          "description": "Daily Tech Digest - RSS Feeds zu KI/SWE/Java/K8s aggregieren, HTML generieren, p",
-          "cron": "10 6 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-05-26T06:11:56.409950",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 88.9,
-          "run_count": 3
         }
       ]
     },
@@ -1530,13 +1515,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 2,
+  "current_jobs": [],
   "queued_jobs": []
 }
