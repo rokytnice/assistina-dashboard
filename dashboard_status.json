@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T21:00:14.501986",
+  "last_updated": "2026-05-26T21:05:20.935781",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-26T20:30:21.841660",
+          "last_run": "2026-05-26T21:00:16.295036",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.3,
-          "run_count": 2644
+          "last_duration_seconds": 1.8,
+          "run_count": 2645
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-26T20:55:14.332871",
+          "last_run": "2026-05-26T21:00:17.199289",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.5,
-          "run_count": 7828
+          "last_duration_seconds": 0.9,
+          "run_count": 7829
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-26T20:45:43.326570",
+          "last_run": "2026-05-26T21:00:17.262828",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2342
+          "run_count": 2343
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-26T20:55:14.362055",
+          "last_run": "2026-05-26T21:00:17.299740",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 19602
+          "run_count": 19603
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-26T20:55:14.417752",
+          "last_run": "2026-05-26T21:00:17.358309",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3326
+          "run_count": 3327
         },
         {
           "id": "latency_monitor_daily",
@@ -546,7 +546,7 @@
       "id": "contentradar",
       "name": "Content Radar (News + Video)",
       "emoji": "📡",
-      "status": "error",
+      "status": "success",
       "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
@@ -564,11 +564,11 @@
           "silent": false,
           "timeout": 3600,
           "detail": "",
-          "last_run": "2026-05-25T21:03:19.768011",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 178.3,
-          "run_count": 23
+          "last_run": "2026-05-26T21:02:51.015100",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 153.6,
+          "run_count": 24
         }
       ]
     },
@@ -738,11 +738,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-23T21:31:36.322567",
+          "last_run": "2026-05-26T21:05:20.924018",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 39.4,
-          "run_count": 17
+          "last_duration_seconds": 126.0,
+          "run_count": 18
         },
         {
           "id": "qa_datasync",
@@ -1163,25 +1163,60 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-26T20:55:14.417752",
+      "timestamp": "2026-05-26T21:05:20.924018",
+      "agent": "qa_contentradar",
+      "task": "qa_contentradar",
+      "status": "success",
+      "message": "OK (126.0s)"
+    },
+    {
+      "timestamp": "2026-05-26T21:03:14.643120",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (23.3s)"
+    },
+    {
+      "timestamp": "2026-05-26T21:02:51.015100",
+      "agent": "daily_content",
+      "task": "daily_content",
+      "status": "success",
+      "message": "OK (153.6s)"
+    },
+    {
+      "timestamp": "2026-05-26T21:00:17.358309",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-26T20:55:14.362055",
+      "timestamp": "2026-05-26T21:00:17.299740",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-26T20:55:14.332871",
+      "timestamp": "2026-05-26T21:00:17.262828",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-26T21:00:17.199289",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (1.5s)"
+      "message": "OK (0.9s)"
+    },
+    {
+      "timestamp": "2026-05-26T21:00:16.295036",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.8s)"
     },
     {
       "timestamp": "2026-05-26T20:46:09.814563",
@@ -1189,13 +1224,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (26.4s)"
-    },
-    {
-      "timestamp": "2026-05-26T20:45:43.326570",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.0s)"
     },
     {
       "timestamp": "2026-05-26T20:33:33.490378",
@@ -1217,13 +1245,6 @@
       "task": "sync_gmail",
       "status": "success",
       "message": "OK (88.6s)"
-    },
-    {
-      "timestamp": "2026-05-26T20:30:21.841660",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (2.3s)"
     },
     {
       "timestamp": "2026-05-26T20:01:04.743589",
@@ -1359,13 +1380,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-25T21:03:19.768011",
-      "agent": "daily_content",
-      "task": "daily_content",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-25T18:04:07.116995",
       "agent": "qa_stock_monitor",
       "task": "qa_stock_monitor",
@@ -1413,20 +1427,6 @@
       "task": "qa_taskprep",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-23T21:31:36.322567",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (39.4s)"
-    },
-    {
-      "timestamp": "2026-05-23T21:03:00.432866",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (22.2s)"
     },
     {
       "timestamp": "2026-05-22T10:30:28.146612",
@@ -1516,12 +1516,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
