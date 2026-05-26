@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T09:05:11.112321",
+  "last_updated": "2026-05-26T09:05:12.866906",
   "public": true,
   "agents": [
     {
@@ -129,11 +129,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-25T09:05:01.958643",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 0.4,
-          "run_count": 11
+          "last_run": "2026-05-26T09:05:12.864241",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 1.8,
+          "run_count": 12
         },
         {
           "id": "token_monitor_daily_telegram",
@@ -1163,6 +1163,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-26T09:05:12.864241",
+      "agent": "profiling_daily_telegram",
+      "task": "profiling_daily_telegram",
+      "status": "success",
+      "message": "OK (1.8s)"
+    },
+    {
       "timestamp": "2026-05-26T09:05:08.650389",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1366,13 +1373,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-25T09:05:01.958643",
-      "agent": "profiling_daily_telegram",
-      "task": "profiling_daily_telegram",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-25T09:03:01.281009",
       "agent": "sync_elster",
       "task": "sync_elster",
@@ -1516,12 +1516,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 16,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
