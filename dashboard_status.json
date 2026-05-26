@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T08:31:14.998133",
+  "last_updated": "2026-05-26T08:31:16.247642",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-26T07:28:15.514189",
+          "last_run": null,
           "last_status": "timeout",
           "last_error": "error",
           "last_duration_seconds": 301.7,
@@ -504,7 +504,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-26T06:05:12.507472",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 9.9,
@@ -1212,13 +1212,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-05-26T07:28:15.514189",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "timeout",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-26T07:00:46.954305",
       "agent": "sync_sparkasse",
       "task": "sync_sparkasse",
@@ -1231,13 +1224,6 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
-    },
-    {
-      "timestamp": "2026-05-26T06:05:12.507472",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (9.9s)"
     },
     {
       "timestamp": "2026-05-26T06:04:58.955912",
@@ -1511,6 +1497,20 @@
       "task": "daily_shopping",
       "status": "success",
       "message": "OK (213.4s)"
+    },
+    {
+      "timestamp": "2026-04-28T09:00:46.353739",
+      "agent": "monthly_timesheet_reminder",
+      "task": "monthly_timesheet_reminder",
+      "status": "success",
+      "message": "OK (0.8s)"
+    },
+    {
+      "timestamp": "2026-04-22T08:02:25.267752",
+      "agent": "news_stocks_morning",
+      "task": "news_stocks_morning",
+      "status": "success",
+      "message": "OK (112.7s)"
     }
   ],
   "request_log": [],
