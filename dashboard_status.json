@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T16:31:42.159011",
+  "last_updated": "2026-05-26T16:31:43.532216",
   "public": true,
   "agents": [
     {
@@ -309,7 +309,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-26T12:33:24.974859",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 95.3,
@@ -504,7 +504,7 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-26T12:33:37.680734",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 9.9,
@@ -1226,20 +1226,6 @@
       "message": "OK (17.6s)"
     },
     {
-      "timestamp": "2026-05-26T12:33:37.680734",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (9.9s)"
-    },
-    {
-      "timestamp": "2026-05-26T12:33:24.974859",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (95.3s)"
-    },
-    {
       "timestamp": "2026-05-26T12:00:49.943676",
       "agent": "sync_conversations",
       "task": "sync_conversations",
@@ -1511,6 +1497,20 @@
       "task": "daily_shopping",
       "status": "success",
       "message": "OK (213.4s)"
+    },
+    {
+      "timestamp": "2026-04-28T09:00:46.353739",
+      "agent": "monthly_timesheet_reminder",
+      "task": "monthly_timesheet_reminder",
+      "status": "success",
+      "message": "OK (0.8s)"
+    },
+    {
+      "timestamp": "2026-04-22T08:02:25.267752",
+      "agent": "news_stocks_morning",
+      "task": "news_stocks_morning",
+      "status": "success",
+      "message": "OK (112.7s)"
     }
   ],
   "request_log": [],
