@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T10:01:51.278435",
+  "last_updated": "2026-05-26T10:03:08.949955",
   "public": true,
   "agents": [
     {
@@ -92,8 +92,8 @@
         },
         {
           "id": "monthly_timesheet_reminder",
-          "description": "Erinnert am letzten Tag jedes Monats um 09:00 Uhr an die Zeitabrechnung. Läuft a",
-          "cron": "0 9 28-31 * *",
+          "description": "Erinnert am letzten Werktag (Mo-Fr) jedes Monats um 09:00 Uhr an die Zeitabrechn",
+          "cron": "0 9 * * 1-5",
           "enabled": true,
           "task_type": "bash",
           "silent": true,
@@ -1515,13 +1515,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 20,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 21,
+  "current_jobs": [],
   "queued_jobs": []
 }
