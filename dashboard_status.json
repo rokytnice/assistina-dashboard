@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T08:31:04.127139",
+  "last_updated": "2026-05-26T08:31:13.875674",
   "public": true,
   "agents": [
     {
@@ -354,11 +354,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-26T04:33:09.928997",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 184.5,
-          "run_count": 316
+          "last_run": "2026-05-26T08:31:13.873225",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 53.1,
+          "run_count": 317
         },
         {
           "id": "sync_calendar",
@@ -1163,6 +1163,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-26T08:31:13.873225",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (53.1s)"
+    },
+    {
       "timestamp": "2026-05-26T08:30:18.208086",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
@@ -1271,13 +1278,6 @@
       "timestamp": "2026-05-26T04:48:06.011330",
       "agent": "data_analysis",
       "task": "data_analysis",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-26T04:33:09.928997",
-      "agent": "sync_gmail",
-      "task": "sync_gmail",
       "status": "error",
       "message": "[error]"
     },
