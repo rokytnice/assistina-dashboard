@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T16:31:44.946779",
+  "last_updated": "2026-05-26T16:33:05.960566",
   "public": true,
   "agents": [
     {
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-05-26T16:33:05.772782",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 95.3,
-          "run_count": 436
+          "last_duration_seconds": 80.8,
+          "run_count": 437
         },
         {
           "id": "retouren_check",
@@ -1163,6 +1163,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-26T16:33:05.772782",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (80.8s)"
+    },
+    {
       "timestamp": "2026-05-26T16:31:40.762316",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1504,24 +1511,11 @@
       "task": "monthly_timesheet_reminder",
       "status": "success",
       "message": "OK (0.8s)"
-    },
-    {
-      "timestamp": "2026-04-22T08:02:25.267752",
-      "agent": "news_stocks_morning",
-      "task": "news_stocks_morning",
-      "status": "success",
-      "message": "OK (112.7s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 7,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
