@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T06:05:02.580423",
+  "last_updated": "2026-05-26T06:05:12.509773",
   "public": true,
   "agents": [
     {
@@ -519,11 +519,11 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-05-26T06:05:12.507472",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 9.3,
-          "run_count": 178
+          "last_duration_seconds": 9.9,
+          "run_count": 179
         },
         {
           "id": "taskprep_precheck",
@@ -1178,6 +1178,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-26T06:05:12.507472",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (9.9s)"
+    },
+    {
       "timestamp": "2026-05-26T06:04:58.955912",
       "agent": "sync_calendar",
       "task": "sync_calendar",
@@ -1519,24 +1526,11 @@
       "task": "daily_shopping",
       "status": "success",
       "message": "OK (213.4s)"
-    },
-    {
-      "timestamp": "2026-04-28T09:00:46.353739",
-      "agent": "monthly_timesheet_reminder",
-      "task": "monthly_timesheet_reminder",
-      "status": "success",
-      "message": "OK (0.8s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
