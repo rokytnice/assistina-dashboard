@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T03:00:57.131268",
+  "last_updated": "2026-05-27T03:10:18.492535",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-27T02:01:12.235598",
+          "last_run": "2026-05-27T03:01:15.732071",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 17.3,
-          "run_count": 2650
+          "last_duration_seconds": 18.6,
+          "run_count": 2651
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-27T02:55:47.676558",
+          "last_run": "2026-05-27T03:05:09.063122",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.7,
-          "run_count": 7884
+          "last_duration_seconds": 0.9,
+          "run_count": 7885
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-27T02:55:47.705813",
+          "last_run": "2026-05-27T03:05:09.093003",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 19655
+          "run_count": 19656
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-27T02:55:47.759406",
+          "last_run": "2026-05-27T03:05:09.150934",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3379
+          "run_count": 3380
         },
         {
           "id": "latency_monitor_daily",
@@ -1163,25 +1163,32 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-27T02:55:47.759406",
+      "timestamp": "2026-05-27T03:05:09.150934",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-27T02:55:47.705813",
+      "timestamp": "2026-05-27T03:05:09.093003",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-27T02:55:47.676558",
+      "timestamp": "2026-05-27T03:05:09.063122",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (0.7s)"
+      "message": "OK (0.9s)"
+    },
+    {
+      "timestamp": "2026-05-27T03:01:15.732071",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (18.6s)"
     },
     {
       "timestamp": "2026-05-27T02:45:23.806796",
@@ -1189,13 +1196,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-05-27T02:01:12.235598",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (17.3s)"
     },
     {
       "timestamp": "2026-05-27T00:45:34.456994",
