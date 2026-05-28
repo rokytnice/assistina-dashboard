@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T19:00:26.554080",
+  "last_updated": "2026-05-28T19:08:03.531166",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-28T18:30:29.697422",
+          "last_run": "2026-05-28T19:00:28.285897",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.4,
-          "run_count": 2716
+          "last_duration_seconds": 1.7,
+          "run_count": 2717
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-28T18:55:26.411892",
+          "last_run": "2026-05-28T19:05:03.404333",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.6,
-          "run_count": 8300
+          "last_duration_seconds": 1.8,
+          "run_count": 8302
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-28T18:45:19.327323",
+          "last_run": "2026-05-28T19:00:30.603907",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2477
+          "run_count": 2478
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-28T18:55:26.442384",
+          "last_run": "2026-05-28T19:05:03.435449",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20046
+          "run_count": 20048
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-28T18:55:26.494637",
+          "last_run": "2026-05-28T19:05:03.491194",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3770
+          "run_count": 3772
         },
         {
           "id": "latency_monitor_daily",
@@ -459,11 +459,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-26T19:01:02.807134",
+          "last_run": "2026-05-28T19:01:01.550201",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 23.2,
-          "run_count": 7
+          "last_duration_seconds": 30.8,
+          "run_count": 8
         },
         {
           "id": "sync_elster",
@@ -1163,32 +1163,46 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-28T18:55:26.494637",
+      "timestamp": "2026-05-28T19:05:03.491194",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-28T18:55:26.442384",
+      "timestamp": "2026-05-28T19:05:03.435449",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-28T18:55:26.411892",
+      "timestamp": "2026-05-28T19:05:03.404333",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (2.6s)"
+      "message": "OK (1.8s)"
     },
     {
-      "timestamp": "2026-05-28T18:45:19.327323",
+      "timestamp": "2026-05-28T19:01:01.550201",
+      "agent": "sync_sparkasse",
+      "task": "sync_sparkasse",
+      "status": "success",
+      "message": "OK (30.8s)"
+    },
+    {
+      "timestamp": "2026-05-28T19:00:30.603907",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-28T19:00:28.285897",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.7s)"
     },
     {
       "timestamp": "2026-05-28T18:34:09.710557",
@@ -1196,13 +1210,6 @@
       "task": "stock_crash_check",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-28T18:30:29.697422",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (3.4s)"
     },
     {
       "timestamp": "2026-05-28T18:01:02.607890",
@@ -1359,13 +1366,6 @@
       "message": "OK (31.6s)"
     },
     {
-      "timestamp": "2026-05-26T19:01:02.807134",
-      "agent": "sync_sparkasse",
-      "task": "sync_sparkasse",
-      "status": "success",
-      "message": "OK (23.2s)"
-    },
-    {
       "timestamp": "2026-05-26T06:11:56.409950",
       "agent": "daily_tech_digest",
       "task": "daily_tech_digest",
@@ -1516,12 +1516,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
