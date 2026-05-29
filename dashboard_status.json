@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T08:57:55.192698",
+  "last_updated": "2026-05-29T09:04:53.831819",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T08:30:14.986169",
+          "last_run": "2026-05-29T09:00:13.380433",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.8,
-          "run_count": 2744
+          "last_duration_seconds": 0.1,
+          "run_count": 2745
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-29T08:55:13.166780",
+          "last_run": "2026-05-29T09:00:31.893566",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.0,
-          "run_count": 8466
+          "last_duration_seconds": 18.5,
+          "run_count": 8467
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T08:45:36.833773",
+          "last_run": "2026-05-29T09:00:31.947448",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2530
+          "run_count": 2531
         },
         {
           "id": "email_followup_tracker",
@@ -69,11 +69,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-28T17:00:45.493530",
+          "last_run": "2026-05-29T09:00:45.851653",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 29.8,
-          "run_count": 51
+          "last_duration_seconds": 13.9,
+          "run_count": 52
         },
         {
           "id": "admin_server_guard",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-29T08:55:13.199879",
+          "last_run": "2026-05-29T09:00:45.881605",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20203
+          "run_count": 20204
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -99,11 +99,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-28T09:00:44.402334",
+          "last_run": "2026-05-29T09:00:45.912368",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2
+          "run_count": 3
         },
         {
           "id": "investor_research_agent",
@@ -144,11 +144,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-28T09:00:44.769968",
+          "last_run": "2026-05-29T09:00:46.293217",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.4,
-          "run_count": 11
+          "run_count": 12
         },
         {
           "id": "token_monitor_weekly_telegram",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T08:55:13.253997",
+          "last_run": "2026-05-29T09:00:46.354665",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3926
+          "run_count": 3927
         },
         {
           "id": "latency_monitor_daily",
@@ -189,11 +189,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-28T09:00:45.374427",
+          "last_run": "2026-05-29T09:00:47.095299",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.5,
-          "run_count": 8
+          "last_duration_seconds": 0.7,
+          "run_count": 9
         },
         {
           "id": "landhaus_watcher_daily",
@@ -474,11 +474,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-28T09:01:27.545236",
+          "last_run": "2026-05-29T09:01:30.031374",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 42.2,
-          "run_count": 5
+          "last_duration_seconds": 42.9,
+          "run_count": 6
         }
       ]
     },
@@ -1134,25 +1134,74 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-29T08:55:13.253997",
+      "timestamp": "2026-05-29T09:01:30.031374",
+      "agent": "sync_elster",
+      "task": "sync_elster",
+      "status": "success",
+      "message": "OK (42.9s)"
+    },
+    {
+      "timestamp": "2026-05-29T09:00:47.095299",
+      "agent": "latency_monitor_daily",
+      "task": "latency_monitor_daily",
+      "status": "success",
+      "message": "OK (0.7s)"
+    },
+    {
+      "timestamp": "2026-05-29T09:00:46.354665",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T08:55:13.199879",
+      "timestamp": "2026-05-29T09:00:46.293217",
+      "agent": "token_monitor_daily_telegram",
+      "task": "token_monitor_daily_telegram",
+      "status": "success",
+      "message": "OK (0.4s)"
+    },
+    {
+      "timestamp": "2026-05-29T09:00:45.912368",
+      "agent": "monthly_timesheet_reminder",
+      "task": "monthly_timesheet_reminder",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-29T09:00:45.881605",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T08:55:13.166780",
+      "timestamp": "2026-05-29T09:00:45.851653",
+      "agent": "email_followup_tracker",
+      "task": "email_followup_tracker",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-29T09:00:31.947448",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-29T09:00:31.893566",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (1.0s)"
+      "message": "OK (18.5s)"
+    },
+    {
+      "timestamp": "2026-05-29T09:00:13.380433",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (0.1s)"
     },
     {
       "timestamp": "2026-05-29T08:46:09.038902",
@@ -1160,13 +1209,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (32.0s)"
-    },
-    {
-      "timestamp": "2026-05-29T08:45:36.833773",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.0s)"
     },
     {
       "timestamp": "2026-05-29T08:32:24.225580",
@@ -1188,13 +1230,6 @@
       "task": "sync_gmail",
       "status": "success",
       "message": "OK (49.6s)"
-    },
-    {
-      "timestamp": "2026-05-29T08:30:14.986169",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.8s)"
     },
     {
       "timestamp": "2026-05-29T08:02:44.285249",
@@ -1323,13 +1358,6 @@
       "message": "OK (48.2s)"
     },
     {
-      "timestamp": "2026-05-28T17:00:45.493530",
-      "agent": "email_followup_tracker",
-      "task": "email_followup_tracker",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-05-28T10:01:15.661702",
       "agent": "retouren_check",
       "task": "retouren_check",
@@ -1342,34 +1370,6 @@
       "task": "profiling_daily_telegram",
       "status": "success",
       "message": "OK (0.6s)"
-    },
-    {
-      "timestamp": "2026-05-28T09:01:27.545236",
-      "agent": "sync_elster",
-      "task": "sync_elster",
-      "status": "success",
-      "message": "OK (42.2s)"
-    },
-    {
-      "timestamp": "2026-05-28T09:00:45.374427",
-      "agent": "latency_monitor_daily",
-      "task": "latency_monitor_daily",
-      "status": "success",
-      "message": "OK (0.5s)"
-    },
-    {
-      "timestamp": "2026-05-28T09:00:44.769968",
-      "agent": "token_monitor_daily_telegram",
-      "task": "token_monitor_daily_telegram",
-      "status": "success",
-      "message": "OK (0.4s)"
-    },
-    {
-      "timestamp": "2026-05-28T09:00:44.402334",
-      "agent": "monthly_timesheet_reminder",
-      "task": "monthly_timesheet_reminder",
-      "status": "success",
-      "message": "OK (0.0s)"
     },
     {
       "timestamp": "2026-05-26T06:11:56.409950",
@@ -1486,7 +1486,13 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 3,
-  "current_jobs": [],
+  "user_prompts_count": 4,
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
