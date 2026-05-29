@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T08:45:32.728425",
+  "last_updated": "2026-05-29T08:53:10.891208",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-29T08:40:32.576274",
+          "last_run": "2026-05-29T08:50:10.747952",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.9,
-          "run_count": 8463
+          "last_duration_seconds": 1.4,
+          "run_count": 8465
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T08:30:16.567551",
+          "last_run": "2026-05-29T08:45:36.833773",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 2529
+          "last_duration_seconds": 0.0,
+          "run_count": 2530
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-29T08:40:32.606720",
+          "last_run": "2026-05-29T08:50:10.783163",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20200
+          "run_count": 20202
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T08:40:32.663763",
+          "last_run": "2026-05-29T08:50:10.842794",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3923
+          "run_count": 3925
         },
         {
           "id": "latency_monitor_daily",
@@ -680,11 +680,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-29T04:46:13.496222",
+          "last_run": "2026-05-29T08:46:09.038902",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 26.8,
-          "run_count": 206
+          "last_duration_seconds": 32.0,
+          "run_count": 207
         }
       ]
     },
@@ -1134,25 +1134,39 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-29T08:40:32.663763",
+      "timestamp": "2026-05-29T08:50:10.842794",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T08:40:32.606720",
+      "timestamp": "2026-05-29T08:50:10.783163",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T08:40:32.576274",
+      "timestamp": "2026-05-29T08:50:10.747952",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (2.9s)"
+      "message": "OK (1.4s)"
+    },
+    {
+      "timestamp": "2026-05-29T08:46:09.038902",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "success",
+      "message": "OK (32.0s)"
+    },
+    {
+      "timestamp": "2026-05-29T08:45:36.833773",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.0s)"
     },
     {
       "timestamp": "2026-05-29T08:32:24.225580",
@@ -1174,13 +1188,6 @@
       "task": "sync_gmail",
       "status": "success",
       "message": "OK (49.6s)"
-    },
-    {
-      "timestamp": "2026-05-29T08:30:16.567551",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.1s)"
     },
     {
       "timestamp": "2026-05-29T08:30:14.986169",
@@ -1244,13 +1251,6 @@
       "task": "sync_check24",
       "status": "success",
       "message": "OK (40.1s)"
-    },
-    {
-      "timestamp": "2026-05-29T04:46:13.496222",
-      "agent": "data_analysis",
-      "task": "data_analysis",
-      "status": "success",
-      "message": "OK (26.8s)"
     },
     {
       "timestamp": "2026-05-29T04:05:06.841266",
@@ -1487,12 +1487,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
