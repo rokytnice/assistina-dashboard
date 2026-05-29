@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T14:35:22.531356",
+  "last_updated": "2026-05-29T14:40:27.361919",
   "public": true,
   "agents": [
     {
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-29T14:30:27.705080",
+          "last_run": "2026-05-29T14:35:24.191670",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20261
+          "run_count": 20262
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T14:30:27.767593",
+          "last_run": "2026-05-29T14:35:24.245282",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3984
+          "run_count": 3985
         },
         {
           "id": "latency_monitor_daily",
@@ -1134,6 +1134,20 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-05-29T14:35:24.245282",
+      "agent": "token_metrics_collect_5m",
+      "task": "token_metrics_collect_5m",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-29T14:35:24.191670",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
       "timestamp": "2026-05-29T14:35:22.528523",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
@@ -1146,20 +1160,6 @@
       "task": "stock_crash_check",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-29T14:30:27.767593",
-      "agent": "token_metrics_collect_5m",
-      "task": "token_metrics_collect_5m",
-      "status": "success",
-      "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-05-29T14:30:27.705080",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (0.0s)"
     },
     {
       "timestamp": "2026-05-29T14:30:27.677683",
@@ -1487,6 +1487,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
