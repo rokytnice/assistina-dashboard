@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T23:00:18.453798",
+  "last_updated": "2026-05-29T23:05:23.969995",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T22:30:29.103984",
+          "last_run": "2026-05-29T23:00:19.844484",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.8,
-          "run_count": 2772
+          "last_duration_seconds": 1.4,
+          "run_count": 2773
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-29T22:55:18.308922",
+          "last_run": "2026-05-29T23:00:20.904617",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.0,
-          "run_count": 8628
+          "last_duration_seconds": 1.0,
+          "run_count": 8629
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T22:45:11.782107",
+          "last_run": "2026-05-29T23:00:20.954282",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2581
+          "run_count": 2582
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-29T22:55:18.338239",
+          "last_run": "2026-05-29T23:00:20.982471",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20356
+          "run_count": 20357
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T22:55:18.391874",
+          "last_run": "2026-05-29T23:00:21.037755",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 4079
+          "run_count": 4080
         },
         {
           "id": "latency_monitor_daily",
@@ -799,11 +799,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-05-29T05:30:19.491821",
+          "last_run": "2026-05-29T23:00:21.098904",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 464
+          "run_count": 465
         }
       ]
     },
@@ -827,11 +827,11 @@
           "silent": true,
           "timeout": 90,
           "detail": "",
-          "last_run": "2026-05-29T03:00:31.471910",
+          "last_run": "2026-05-29T23:01:23.905212",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 2.5,
-          "run_count": 188
+          "last_duration_seconds": 62.8,
+          "run_count": 189
         }
       ]
     },
@@ -1134,32 +1134,53 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-29T22:55:18.391874",
+      "timestamp": "2026-05-29T23:01:23.905212",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-29T23:00:21.098904",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-29T23:00:21.037755",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T22:55:18.338239",
+      "timestamp": "2026-05-29T23:00:20.982471",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T22:55:18.308922",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (3.0s)"
-    },
-    {
-      "timestamp": "2026-05-29T22:45:11.782107",
+      "timestamp": "2026-05-29T23:00:20.954282",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-29T23:00:20.904617",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (1.0s)"
+    },
+    {
+      "timestamp": "2026-05-29T23:00:19.844484",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.4s)"
     },
     {
       "timestamp": "2026-05-29T22:32:04.558491",
@@ -1167,13 +1188,6 @@
       "task": "stock_crash_check",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-29T22:30:29.103984",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.8s)"
     },
     {
       "timestamp": "2026-05-29T22:24:25.509560",
@@ -1344,13 +1358,6 @@
       "message": "OK (77.7s)"
     },
     {
-      "timestamp": "2026-05-29T05:30:19.491821",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
-      "status": "success",
-      "message": "OK (0.0s)"
-    },
-    {
       "timestamp": "2026-05-29T05:01:05.017569",
       "agent": "sync_check24",
       "task": "sync_check24",
@@ -1362,13 +1369,6 @@
       "agent": "sync_drive",
       "task": "sync_drive",
       "status": "timeout",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-29T03:00:31.471910",
-      "agent": "eufy_weekday_schedule",
-      "task": "eufy_weekday_schedule",
-      "status": "error",
       "message": "[error]"
     },
     {
@@ -1487,12 +1487,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
