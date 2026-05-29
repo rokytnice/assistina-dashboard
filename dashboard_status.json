@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T10:55:47.971031",
+  "last_updated": "2026-05-29T11:00:51.929207",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-29T10:50:47.827573",
+          "last_run": "2026-05-29T10:55:51.795294",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.7,
-          "run_count": 8489
+          "last_duration_seconds": 2.3,
+          "run_count": 8490
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-29T10:50:47.858826",
+          "last_run": "2026-05-29T10:55:51.826707",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20226
+          "run_count": 20227
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-29T10:50:47.916001",
+          "last_run": "2026-05-29T10:55:51.881699",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3949
+          "run_count": 3950
         },
         {
           "id": "latency_monitor_daily",
@@ -1134,25 +1134,25 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-29T10:50:47.916001",
+      "timestamp": "2026-05-29T10:55:51.881699",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T10:50:47.858826",
+      "timestamp": "2026-05-29T10:55:51.826707",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-05-29T10:50:47.827573",
+      "timestamp": "2026-05-29T10:55:51.795294",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (2.7s)"
+      "message": "OK (2.3s)"
     },
     {
       "timestamp": "2026-05-29T10:45:45.026271",
@@ -1487,6 +1487,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 12,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
