@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T04:20:23.689954",
+  "last_updated": "2026-05-30T04:25:25.777322",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-05-30T04:15:23.493905",
+          "last_run": "2026-05-30T04:20:25.537950",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.7,
-          "run_count": 8691
+          "last_duration_seconds": 1.9,
+          "run_count": 8692
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-05-30T04:15:23.572721",
+          "last_run": "2026-05-30T04:20:25.586023",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20415
+          "run_count": 20416
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-05-30T04:15:23.625214",
+          "last_run": "2026-05-30T04:20:25.694450",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.0,
-          "run_count": 4138
+          "last_duration_seconds": 0.1,
+          "run_count": 4139
         },
         {
           "id": "latency_monitor_daily",
@@ -1134,18 +1134,25 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-05-30T04:15:23.625214",
+      "timestamp": "2026-05-30T04:20:25.694450",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
-      "message": "OK (0.0s)"
+      "message": "OK (0.1s)"
     },
     {
-      "timestamp": "2026-05-30T04:15:23.572721",
+      "timestamp": "2026-05-30T04:20:25.586023",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-05-30T04:20:25.537950",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (1.9s)"
     },
     {
       "timestamp": "2026-05-30T04:15:23.544404",
@@ -1153,13 +1160,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-05-30T04:15:23.493905",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (1.7s)"
     },
     {
       "timestamp": "2026-05-30T04:05:18.608677",
