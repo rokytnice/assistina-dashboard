@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T00:30:51.232824",
+  "last_updated": "2026-06-01T00:40:25.012904",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-01T00:00:17.981382",
+          "last_run": "2026-06-01T00:30:54.723943",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.6,
-          "run_count": 2870
+          "last_duration_seconds": 3.5,
+          "run_count": 2871
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-01T00:25:51.097086",
+          "last_run": "2026-06-01T00:35:24.874337",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 9213
+          "run_count": 9215
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-01T00:15:47.589654",
+          "last_run": "2026-06-01T00:30:54.870579",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2764
+          "run_count": 2765
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-01T00:25:51.126388",
+          "last_run": "2026-06-01T00:35:24.903922",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20912
+          "run_count": 20914
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-01T00:25:51.184878",
+          "last_run": "2026-06-01T00:35:24.960320",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 4632
+          "run_count": 4634
         },
         {
           "id": "latency_monitor_daily",
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-31T22:23:31.766358",
+          "last_run": "2026-06-01T00:32:14.024477",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 26.1,
-          "run_count": 479
+          "last_duration_seconds": 27.4,
+          "run_count": 480
         },
         {
           "id": "retouren_check",
@@ -354,11 +354,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-31T16:32:06.792853",
+          "last_run": "2026-06-01T00:31:46.608591",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 72.1,
-          "run_count": 343
+          "last_duration_seconds": 51.6,
+          "run_count": 344
         },
         {
           "id": "sync_calendar",
@@ -504,11 +504,11 @@
           "silent": true,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-05-31T16:33:29.016717",
+          "last_run": "2026-06-01T00:32:24.764686",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 17.9,
-          "run_count": 206
+          "last_duration_seconds": 10.5,
+          "run_count": 207
         },
         {
           "id": "taskprep_precheck",
@@ -1163,32 +1163,60 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-01T00:25:51.184878",
+      "timestamp": "2026-06-01T00:35:24.960320",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-01T00:25:51.126388",
+      "timestamp": "2026-06-01T00:35:24.903922",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-01T00:25:51.097086",
+      "timestamp": "2026-06-01T00:35:24.874337",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
       "message": "OK (0.1s)"
     },
     {
-      "timestamp": "2026-06-01T00:15:47.589654",
+      "timestamp": "2026-06-01T00:32:24.764686",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (10.5s)"
+    },
+    {
+      "timestamp": "2026-06-01T00:32:14.024477",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (27.4s)"
+    },
+    {
+      "timestamp": "2026-06-01T00:31:46.608591",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (51.6s)"
+    },
+    {
+      "timestamp": "2026-06-01T00:30:54.870579",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-01T00:30:54.723943",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (3.5s)"
     },
     {
       "timestamp": "2026-06-01T00:00:42.567320",
@@ -1231,20 +1259,6 @@
       "task": "elster_inbox_check_6h",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-01T00:00:17.981382",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (3.6s)"
-    },
-    {
-      "timestamp": "2026-05-31T22:23:31.766358",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (26.1s)"
     },
     {
       "timestamp": "2026-05-31T21:31:44.631290",
@@ -1294,20 +1308,6 @@
       "task": "sync_sparkasse",
       "status": "success",
       "message": "OK (25.4s)"
-    },
-    {
-      "timestamp": "2026-05-31T16:33:29.016717",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (17.9s)"
-    },
-    {
-      "timestamp": "2026-05-31T16:32:06.792853",
-      "agent": "sync_gmail",
-      "task": "sync_gmail",
-      "status": "success",
-      "message": "OK (72.1s)"
     },
     {
       "timestamp": "2026-05-31T12:01:59.513714",
