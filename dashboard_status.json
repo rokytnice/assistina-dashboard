@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T10:57:07.219469",
+  "last_updated": "2026-05-31T11:00:50.498054",
   "public": true,
   "agents": [
     {
@@ -935,6 +935,35 @@
           "run_count": 0
         }
       ]
+    },
+    {
+      "id": "secret_scanner",
+      "name": "Quarterly Secret Scanner",
+      "emoji": "🔒",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: haiku",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "haiku",
+      "tasks": [
+        {
+          "id": "quarterly_secret_scan",
+          "description": "Quarterly Secret Scan — Scanne öffentliche GitHub-Repos auf exposed Credentials.",
+          "cron": "0 9 1 1,4,7,10 *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": false,
+          "timeout": 14400,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
     }
   ],
   "sessions": [
@@ -1486,13 +1515,13 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 11,
-  "current_jobs": [
+  "user_prompts_count": 12,
+  "current_jobs": [],
+  "queued_jobs": [
     {
-      "id": "",
+      "id": 37,
       "started_at": null,
       "agent": ""
     }
-  ],
-  "queued_jobs": []
+  ]
 }
