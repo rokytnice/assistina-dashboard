@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-01T07:00:50.172161",
+  "last_updated": "2026-06-01T07:07:12.273408",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-01T04:30:19.518996",
+          "last_run": "2026-06-01T07:00:51.400231",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.3,
-          "run_count": 2879
+          "last_duration_seconds": 1.2,
+          "run_count": 2880
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-01T06:55:50.052021",
+          "last_run": "2026-06-01T07:05:12.158604",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 9266
+          "run_count": 9268
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-01T04:45:34.793579",
+          "last_run": "2026-06-01T07:00:51.532090",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2781
+          "run_count": 2782
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-01T06:55:50.079191",
+          "last_run": "2026-06-01T07:05:12.185856",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 20964
+          "run_count": 20966
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-01T06:55:50.137563",
+          "last_run": "2026-06-01T07:05:12.241494",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 4684
+          "run_count": 4686
         },
         {
           "id": "latency_monitor_daily",
@@ -459,11 +459,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-05-31T19:01:17.755213",
+          "last_run": "2026-06-01T07:01:12.035512",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 25.4,
-          "run_count": 12
+          "last_duration_seconds": 20.4,
+          "run_count": 13
         },
         {
           "id": "sync_elster",
@@ -1163,25 +1163,46 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-01T06:55:50.137563",
+      "timestamp": "2026-06-01T07:05:12.241494",
       "agent": "token_metrics_collect_5m",
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-01T06:55:50.079191",
+      "timestamp": "2026-06-01T07:05:12.185856",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-01T06:55:50.052021",
+      "timestamp": "2026-06-01T07:05:12.158604",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
       "message": "OK (0.1s)"
+    },
+    {
+      "timestamp": "2026-06-01T07:01:12.035512",
+      "agent": "sync_sparkasse",
+      "task": "sync_sparkasse",
+      "status": "success",
+      "message": "OK (20.4s)"
+    },
+    {
+      "timestamp": "2026-06-01T07:00:51.532090",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-01T07:00:51.400231",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.2s)"
     },
     {
       "timestamp": "2026-06-01T04:46:01.103088",
@@ -1189,13 +1210,6 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (26.2s)"
-    },
-    {
-      "timestamp": "2026-06-01T04:45:34.793579",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.0s)"
     },
     {
       "timestamp": "2026-06-01T04:31:30.299479",
@@ -1217,13 +1231,6 @@
       "task": "sync_gmail",
       "status": "success",
       "message": "OK (41.9s)"
-    },
-    {
-      "timestamp": "2026-06-01T04:30:19.518996",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (3.3s)"
     },
     {
       "timestamp": "2026-06-01T04:05:09.095623",
@@ -1308,13 +1315,6 @@
       "task": "sync_ing_diba",
       "status": "success",
       "message": "OK (120.2s)"
-    },
-    {
-      "timestamp": "2026-05-31T19:01:17.755213",
-      "agent": "sync_sparkasse",
-      "task": "sync_sparkasse",
-      "status": "success",
-      "message": "OK (25.4s)"
     },
     {
       "timestamp": "2026-05-31T12:01:59.513714",
@@ -1516,12 +1516,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
