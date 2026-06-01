@@ -24,6 +24,36 @@
   .stat .val { font-size: 1.5rem; font-weight: 700; }
   .stat .lbl { font-size: 0.75rem; color: var(--dim); text-transform: uppercase; }
 
+  /* Token-Metriken Widget */
+  .token-metrics-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; }
+  .token-metrics-card:hover { border-color: var(--accent); }
+  .token-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+  .token-title { font-weight: 600; font-size: 1rem; }
+  .token-period-selector { display: flex; gap: 0.5rem; }
+  .token-period-btn { background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.2); color: var(--accent); padding: 0.35rem 0.75rem; border-radius: 6px; cursor: pointer; font-size: 0.75rem; font-weight: 500; transition: all 0.2s; }
+  .token-period-btn:hover { background: rgba(88,166,255,0.15); border-color: var(--accent); }
+  .token-period-btn.active { background: var(--accent); color: var(--bg); }
+
+  .token-current { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.75rem; margin-bottom: 1rem; }
+  .token-stat-item { background: rgba(88,166,255,0.05); border: 1px solid var(--border); border-radius: 8px; padding: 0.75rem; text-align: center; }
+  .token-stat-label { font-size: 0.7rem; color: var(--dim); text-transform: uppercase; margin-bottom: 0.3rem; }
+  .token-stat-value { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
+  .token-stat-unit { font-size: 0.65rem; color: var(--dim); margin-left: 0.25rem; }
+
+  .token-chart-container { background: rgba(88,166,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 1rem; margin-bottom: 0.75rem; min-height: 200px; position: relative; }
+  .token-chart-placeholder { color: var(--dim); font-size: 0.9rem; text-align: center; padding: 3rem 1rem; }
+  .token-chart { display: flex; align-items: flex-end; justify-content: space-around; height: 160px; gap: 0.5rem; }
+  .token-bar { flex: 1; background: linear-gradient(to top, var(--accent), rgba(88,166,255,0.5)); border-radius: 4px 4px 0 0; position: relative; transition: all 0.3s; }
+  .token-bar:hover { background: linear-gradient(to top, var(--accent), var(--accent)); filter: drop-shadow(0 0 6px rgba(88,166,255,0.4)); }
+  .token-bar-label { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); font-size: 0.65rem; color: var(--dim); white-space: nowrap; }
+
+  .token-summary { display: flex; gap: 1rem; flex-wrap: wrap; padding-top: 0.75rem; border-top: 1px solid var(--border); font-size: 0.8rem; }
+  .token-summary-item { flex: 1; min-width: 140px; }
+  .token-summary-label { color: var(--dim); font-size: 0.7rem; text-transform: uppercase; margin-bottom: 0.2rem; }
+  .token-summary-value { color: var(--text); font-weight: 600; }
+  .token-summary-value.good { color: var(--green); }
+  .token-summary-value.warning { color: var(--orange); }
+
   h2 { font-size: 1.1rem; margin: 1.5rem 0 0.75rem; color: var(--dim); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 500; }
 
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; }
@@ -251,6 +281,62 @@
   <div class="stat"><div class="val" id="s-sessions">-</div><div class="lbl">Sessions</div></div>
   <div class="stat"><div class="val" id="s-retouren">-</div><div class="lbl">Retouren offen</div></div>
   <div class="stat"><div class="val" id="s-shopping">-</div><div class="lbl">🛒 Produkte</div></div>
+</div>
+
+<h2>💾 Token-Metriken</h2>
+<div class="token-metrics-card" id="token-metrics-card">
+  <div class="token-header">
+    <span class="token-title">API Token-Verwendung</span>
+    <div class="token-period-selector">
+      <button class="token-period-btn active" onclick="switchTokenPeriod('today')">Heute</button>
+      <button class="token-period-btn" onclick="switchTokenPeriod('week')">Woche</button>
+      <button class="token-period-btn" onclick="switchTokenPeriod('month')">Monat</button>
+    </div>
+  </div>
+
+  <div class="token-current">
+    <div class="token-stat-item">
+      <div class="token-stat-label">Input Tokens</div>
+      <div class="token-stat-value"><span id="token-input">-</span><span class="token-stat-unit">K</span></div>
+    </div>
+    <div class="token-stat-item">
+      <div class="token-stat-label">Output Tokens</div>
+      <div class="token-stat-value"><span id="token-output">-</span><span class="token-stat-unit">K</span></div>
+    </div>
+    <div class="token-stat-item">
+      <div class="token-stat-label">Total Tokens</div>
+      <div class="token-stat-value"><span id="token-total">-</span><span class="token-stat-unit">K</span></div>
+    </div>
+    <div class="token-stat-item">
+      <div class="token-stat-label">Avg Sessions</div>
+      <div class="token-stat-value"><span id="token-sessions">-</span></div>
+    </div>
+  </div>
+
+  <div class="token-chart-container">
+    <div class="token-chart" id="token-chart">
+      <div class="token-chart-placeholder">Lade Token-Daten...</div>
+    </div>
+  </div>
+
+  <div class="token-summary">
+    <div class="token-summary-item">
+      <div class="token-summary-label">Kosten (USD)</div>
+      <div class="token-summary-value" id="token-cost">-</div>
+    </div>
+    <div class="token-summary-item">
+      <div class="token-summary-label">Durchschnitt/Tag</div>
+      <div class="token-summary-value" id="token-avg-day">-</div>
+    </div>
+    <div class="token-summary-item">
+      <div class="token-summary-label">Max-Session</div>
+      <div class="token-summary-value" id="token-max-session">-</div>
+    </div>
+    <div class="token-summary-item">
+      <div class="token-summary-label">Status</div>
+      <div class="token-summary-value good" id="token-status">OK</div>
+    </div>
+  </div>
 </div>
 
 <h2>🔄 Aktuell in Arbeit</h2>
@@ -1026,6 +1112,56 @@ function renderLog(log) {
   }).join('');
 }
 
+// Token Metrics Widget
+let currentTokenPeriod = 'today';
+
+function renderTokenMetrics(metrics) {
+  if (!metrics) {
+    document.getElementById('token-metrics-card').innerHTML = '<div class="loading">Token-Metriken werden geladen...</div>';
+    return;
+  }
+
+  // Sample data für Demo (würde später aus Datenbank kommen)
+  const sampleData = {
+    today: { input: 12450, output: 8230, sessions: 42, cost: 0.32, max_session: 2850, bars: [450, 520, 480, 890, 720, 1150, 2450, 1980, 1240, 890, 630, 450] },
+    week: { input: 78920, output: 52150, sessions: 286, cost: 2.15, max_session: 2850, bars: [6500, 7200, 8100, 9200, 8900, 7800, 7120] },
+    month: { input: 324680, output: 218450, sessions: 1204, cost: 8.92, max_session: 2850, bars: [10500, 11200, 12100, 11500, 10800, 9200, 10100, 9800, 8900, 10200, 9500, 8200, 7600, 6800, 7200, 8100, 9400, 10200, 11100, 12500, 13200, 12800, 11600, 10500, 9200, 8500, 7800, 8100, 8900, 9200] }
+  };
+
+  const data = sampleData[currentTokenPeriod] || sampleData.today;
+  const inputK = (data.input / 1000).toFixed(1);
+  const outputK = (data.output / 1000).toFixed(1);
+  const totalK = ((data.input + data.output) / 1000).toFixed(1);
+  const avgDay = (data.input + data.output) / (currentTokenPeriod === 'today' ? 12 : currentTokenPeriod === 'week' ? 7 : 30) / 1000;
+
+  // Update stats
+  document.getElementById('token-input').textContent = inputK;
+  document.getElementById('token-output').textContent = outputK;
+  document.getElementById('token-total').textContent = totalK;
+  document.getElementById('token-sessions').textContent = data.sessions;
+  document.getElementById('token-cost').textContent = '$' + data.cost.toFixed(2);
+  document.getElementById('token-avg-day').textContent = avgDay.toFixed(1) + 'K';
+  document.getElementById('token-max-session').textContent = (data.max_session / 1000).toFixed(1) + 'K';
+
+  // Render chart
+  const maxBar = Math.max(...data.bars);
+  const chartHtml = data.bars.map((val, i) => {
+    const height = (val / maxBar) * 160;
+    const label = currentTokenPeriod === 'today' ? (i * 2) + 'h' : (currentTokenPeriod === 'week' ? ['Mo','Di','Mi','Do','Fr','Sa','So'][i] : (i + 1));
+    return `<div class="token-bar" style="height: ${height}px;" title="${(val/1000).toFixed(1)}K">
+      <div class="token-bar-label">${label}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('token-chart').innerHTML = chartHtml;
+}
+
+function switchTokenPeriod(period) {
+  currentTokenPeriod = period;
+  document.querySelectorAll('.token-period-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+  renderTokenMetrics({});
+}
+
 function render(data) {
   if (!data) return;
 
@@ -1052,6 +1188,7 @@ function render(data) {
 
   renderCurrentJobs(data.current_jobs);
   renderQueue(data.queued_jobs, data.current_jobs);
+  renderTokenMetrics(data.token_metrics);
   renderAgents(agents);
   renderSessions(data.sessions);
   renderRetouren(data.retouren);
