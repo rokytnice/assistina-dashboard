@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T12:00:03.831309",
+  "last_updated": "2026-06-03T12:05:20.944489",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-03T11:30:54.927555",
+          "last_run": "2026-06-03T12:00:06.092520",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.7,
-          "run_count": 2984
+          "last_duration_seconds": 2.3,
+          "run_count": 2985
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-03T11:55:03.659715",
+          "last_run": "2026-06-03T12:00:06.812923",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.0,
-          "run_count": 9887
+          "last_duration_seconds": 0.7,
+          "run_count": 9888
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-03T11:45:59.193339",
+          "last_run": "2026-06-03T12:00:06.865984",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 2982
+          "run_count": 2983
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-03T11:55:03.689313",
+          "last_run": "2026-06-03T12:00:06.895317",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 21563
+          "run_count": 21564
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-03T11:55:03.744855",
+          "last_run": "2026-06-03T12:00:06.949346",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 5280
+          "run_count": 5281
         },
         {
           "id": "latency_monitor_daily",
@@ -219,11 +219,11 @@
           "silent": true,
           "timeout": 180,
           "detail": "",
-          "last_run": "2026-06-03T06:00:02.075709",
+          "last_run": "2026-06-03T12:00:07.089594",
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 0.1,
-          "run_count": 47
+          "run_count": 48
         },
         {
           "id": "play_release_check_6h",
@@ -234,11 +234,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-03T06:00:04.339544",
+          "last_run": "2026-06-03T12:00:09.529401",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.2,
-          "run_count": 78
+          "last_duration_seconds": 2.4,
+          "run_count": 79
         },
         {
           "id": "data_analysis_8h",
@@ -414,11 +414,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-02T18:00:19.756141",
+          "last_run": "2026-06-03T12:00:10.316157",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.7,
-          "run_count": 129
+          "last_duration_seconds": 0.8,
+          "run_count": 130
         },
         {
           "id": "sync_check24",
@@ -651,11 +651,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-03T11:32:45.791584",
+          "last_run": "2026-06-03T12:03:20.899265",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 108.3,
-          "run_count": 730
+          "last_duration_seconds": 190.6,
+          "run_count": 731
         }
       ]
     },
@@ -1163,46 +1163,67 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-03T11:55:03.744855",
-      "agent": "token_metrics_collect_5m",
-      "task": "token_metrics_collect_5m",
-      "status": "success",
-      "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-03T11:55:03.689313",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-03T11:55:03.659715",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (1.0s)"
-    },
-    {
-      "timestamp": "2026-06-03T11:45:59.193339",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-03T11:32:45.791584",
+      "timestamp": "2026-06-03T12:03:20.899265",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
       "status": "error",
       "message": "[error]"
     },
     {
-      "timestamp": "2026-06-03T11:30:54.927555",
+      "timestamp": "2026-06-03T12:00:10.316157",
+      "agent": "sync_conversations",
+      "task": "sync_conversations",
+      "status": "success",
+      "message": "OK (0.8s)"
+    },
+    {
+      "timestamp": "2026-06-03T12:00:09.529401",
+      "agent": "play_release_check_6h",
+      "task": "play_release_check_6h",
+      "status": "success",
+      "message": "OK (2.4s)"
+    },
+    {
+      "timestamp": "2026-06-03T12:00:07.089594",
+      "agent": "elster_inbox_check_6h",
+      "task": "elster_inbox_check_6h",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-03T12:00:06.949346",
+      "agent": "token_metrics_collect_5m",
+      "task": "token_metrics_collect_5m",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-03T12:00:06.895317",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-03T12:00:06.865984",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-03T12:00:06.812923",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (0.7s)"
+    },
+    {
+      "timestamp": "2026-06-03T12:00:06.092520",
       "agent": "chrome_health",
       "task": "chrome_health",
       "status": "success",
-      "message": "OK (1.7s)"
+      "message": "OK (2.3s)"
     },
     {
       "timestamp": "2026-06-03T10:01:19.121086",
@@ -1310,20 +1331,6 @@
       "message": "OK (56.0s)"
     },
     {
-      "timestamp": "2026-06-03T06:00:04.339544",
-      "agent": "play_release_check_6h",
-      "task": "play_release_check_6h",
-      "status": "success",
-      "message": "OK (2.2s)"
-    },
-    {
-      "timestamp": "2026-06-03T06:00:02.075709",
-      "agent": "elster_inbox_check_6h",
-      "task": "elster_inbox_check_6h",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-06-03T05:30:50.749728",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1364,13 +1371,6 @@
       "task": "daily_content",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-02T18:00:19.756141",
-      "agent": "sync_conversations",
-      "task": "sync_conversations",
-      "status": "success",
-      "message": "OK (0.7s)"
     },
     {
       "timestamp": "2026-06-02T08:02:34.507760",
@@ -1516,12 +1516,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
