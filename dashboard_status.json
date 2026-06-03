@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-03T12:50:30.357464",
+  "last_updated": "2026-06-03T13:11:00.592184",
   "public": true,
   "agents": [
     {
@@ -1091,8 +1091,69 @@
   "retouren": {
     "pending_count": 0,
     "total_amount": 0,
-    "last_scan": null,
-    "items": []
+    "last_scan": "2026-06-03T07:24:00.000000",
+    "items": [
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": 246.49,
+        "payment_method": "",
+        "return_date": "",
+        "refund_deadline": "",
+        "status": "received",
+        "refund_date": "2026-03-25"
+      },
+      {
+        "shop": "Gymshark DE",
+        "product": "[item]",
+        "amount": 223.4,
+        "payment_method": "",
+        "return_date": "",
+        "refund_deadline": "",
+        "status": "received",
+        "refund_date": "2026-03-25"
+      },
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": null,
+        "payment_method": "Bankkonto (vermutlich DKB)",
+        "return_date": "2026-05-19",
+        "refund_deadline": "2026-06-02",
+        "status": "overdue",
+        "refund_date": null
+      },
+      {
+        "shop": "C&A Online Shop",
+        "product": "[item]",
+        "amount": null,
+        "payment_method": "Unbekannt",
+        "return_date": "2026-05-19",
+        "refund_deadline": "2026-06-02",
+        "status": "overdue",
+        "refund_date": null
+      },
+      {
+        "shop": "GARDENA",
+        "product": "[item]",
+        "amount": 44.72,
+        "payment_method": "PayPal",
+        "return_date": "2026-05-xx",
+        "refund_deadline": "2026-06-02",
+        "status": "received",
+        "refund_date": "2026-05-19"
+      },
+      {
+        "shop": "Amazon",
+        "product": "[item]",
+        "amount": null,
+        "payment_method": "Unbekannt",
+        "return_date": "2026-05-20",
+        "refund_deadline": null,
+        "status": "received",
+        "refund_date": "2026-05-23"
+      }
+    ]
   },
   "shopping": {
     "product_count": 1,
