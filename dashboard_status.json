@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T10:25:06.006861",
+  "last_updated": "2026-06-08T10:27:28.927438",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-08T10:20:03.432732",
+          "last_run": "2026-06-08T10:25:49.550129",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.5,
-          "run_count": 11173
+          "last_duration_seconds": 44.1,
+          "run_count": 11174
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-08T10:20:03.714617",
+          "last_run": "2026-06-08T10:25:53.909145",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 22796
+          "last_duration_seconds": 0.7,
+          "run_count": 22797
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1118,18 +1118,18 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-08T10:20:03.714617",
+      "timestamp": "2026-06-08T10:25:53.909145",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
-      "message": "OK (0.1s)"
+      "message": "OK (0.7s)"
     },
     {
-      "timestamp": "2026-06-08T10:20:03.432732",
+      "timestamp": "2026-06-08T10:25:49.550129",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (2.5s)"
+      "message": "OK (44.1s)"
     },
     {
       "timestamp": "2026-06-08T10:02:51.681984",
@@ -1470,24 +1470,13 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 10,
+  "user_prompts_count": 11,
   "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    },
     {
       "id": "",
       "started_at": null,
       "agent": ""
     }
   ],
-  "queued_jobs": [
-    {
-      "id": 37,
-      "started_at": null,
-      "agent": ""
-    }
-  ]
+  "queued_jobs": []
 }
