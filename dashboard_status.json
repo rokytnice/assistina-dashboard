@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T15:00:13.138307",
+  "last_updated": "2026-06-08T15:05:13.587414",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-08T14:30:46.904436",
+          "last_run": "2026-06-08T15:00:15.335259",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.7,
-          "run_count": 3208
+          "last_duration_seconds": 2.2,
+          "run_count": 3209
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-08T14:55:12.828523",
+          "last_run": "2026-06-08T15:05:13.552326",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.0,
-          "run_count": 11228
+          "last_duration_seconds": 1.4,
+          "run_count": 11230
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-08T14:45:56.309595",
+          "last_run": "2026-06-08T15:00:16.605807",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 3413
+          "last_duration_seconds": 0.0,
+          "run_count": 3414
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-08T14:55:12.979413",
+          "last_run": "2026-06-08T15:00:16.637327",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 22848
+          "last_duration_seconds": 0.0,
+          "run_count": 22849
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -591,11 +591,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-08T14:32:29.247370",
+          "last_run": "2026-06-08T15:02:12.130829",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 100.2,
-          "run_count": 784
+          "last_duration_seconds": 115.5,
+          "run_count": 785
         }
       ]
     },
@@ -1103,39 +1103,39 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-08T14:55:12.979413",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (0.1s)"
-    },
-    {
-      "timestamp": "2026-06-08T14:55:12.828523",
+      "timestamp": "2026-06-08T15:05:13.552326",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (2.0s)"
+      "message": "OK (1.4s)"
     },
     {
-      "timestamp": "2026-06-08T14:45:56.309595",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.1s)"
-    },
-    {
-      "timestamp": "2026-06-08T14:32:29.247370",
+      "timestamp": "2026-06-08T15:02:12.130829",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
       "status": "error",
       "message": "[error]"
     },
     {
-      "timestamp": "2026-06-08T14:30:46.904436",
+      "timestamp": "2026-06-08T15:00:16.637327",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-08T15:00:16.605807",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-08T15:00:15.335259",
       "agent": "chrome_health",
       "task": "chrome_health",
       "status": "success",
-      "message": "OK (1.7s)"
+      "message": "OK (2.2s)"
     },
     {
       "timestamp": "2026-06-08T14:01:31.375132",
@@ -1457,11 +1457,6 @@
   "user_prompts": [],
   "user_prompts_count": 14,
   "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    },
     {
       "id": "",
       "started_at": null,
