@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T00:00:47.646456",
+  "last_updated": "2026-06-09T00:10:09.429787",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-08T23:30:33.163599",
+          "last_run": "2026-06-09T00:00:49.268528",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.5,
-          "run_count": 3226
+          "last_duration_seconds": 1.7,
+          "run_count": 3227
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-08T23:55:47.302395",
+          "last_run": "2026-06-09T00:05:09.259859",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.7,
-          "run_count": 11336
+          "last_duration_seconds": 1.5,
+          "run_count": 11338
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-08T23:45:42.161565",
+          "last_run": "2026-06-09T00:00:50.685410",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 3449
+          "run_count": 3450
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-08T23:55:47.441250",
+          "last_run": "2026-06-09T00:05:09.335790",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 22955
+          "last_duration_seconds": 0.0,
+          "run_count": 22957
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -159,11 +159,11 @@
           "silent": true,
           "timeout": 180,
           "detail": "",
-          "last_run": "2026-06-08T18:00:55.675002",
+          "last_run": "2026-06-09T00:00:51.512447",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 0.8,
-          "run_count": 66
+          "last_duration_seconds": 0.7,
+          "run_count": 67
         },
         {
           "id": "play_release_check_6h",
@@ -174,11 +174,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-08T18:00:58.640950",
+          "last_run": "2026-06-09T00:00:55.066078",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.8,
-          "run_count": 97
+          "last_duration_seconds": 3.4,
+          "run_count": 98
         },
         {
           "id": "ustva_check",
@@ -354,11 +354,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-08T18:01:06.933901",
+          "last_run": "2026-06-09T00:01:07.649420",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 8.1,
-          "run_count": 140
+          "last_duration_seconds": 12.5,
+          "run_count": 141
         },
         {
           "id": "sync_check24",
@@ -1103,25 +1103,53 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-08T23:55:47.441250",
+      "timestamp": "2026-06-09T00:05:09.335790",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
-      "message": "OK (0.1s)"
+      "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-08T23:55:47.302395",
+      "timestamp": "2026-06-09T00:05:09.259859",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (0.7s)"
+      "message": "OK (1.5s)"
     },
     {
-      "timestamp": "2026-06-08T23:45:42.161565",
+      "timestamp": "2026-06-09T00:01:07.649420",
+      "agent": "sync_conversations",
+      "task": "sync_conversations",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-09T00:00:55.066078",
+      "agent": "play_release_check_6h",
+      "task": "play_release_check_6h",
+      "status": "success",
+      "message": "OK (3.4s)"
+    },
+    {
+      "timestamp": "2026-06-09T00:00:51.512447",
+      "agent": "elster_inbox_check_6h",
+      "task": "elster_inbox_check_6h",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-09T00:00:50.685410",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.1s)"
+    },
+    {
+      "timestamp": "2026-06-09T00:00:49.268528",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.7s)"
     },
     {
       "timestamp": "2026-06-08T23:30:34.127073",
@@ -1129,13 +1157,6 @@
       "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.1s)"
-    },
-    {
-      "timestamp": "2026-06-08T23:30:33.163599",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.5s)"
     },
     {
       "timestamp": "2026-06-08T23:01:14.530594",
@@ -1148,27 +1169,6 @@
       "timestamp": "2026-06-08T22:31:57.548786",
       "agent": "stock_crash_check",
       "task": "stock_crash_check",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-08T18:01:06.933901",
-      "agent": "sync_conversations",
-      "task": "sync_conversations",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-08T18:00:58.640950",
-      "agent": "play_release_check_6h",
-      "task": "play_release_check_6h",
-      "status": "success",
-      "message": "OK (2.8s)"
-    },
-    {
-      "timestamp": "2026-06-08T18:00:55.675002",
-      "agent": "elster_inbox_check_6h",
-      "task": "elster_inbox_check_6h",
       "status": "error",
       "message": "[error]"
     },
