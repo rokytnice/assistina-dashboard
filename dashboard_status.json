@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T02:00:59.298157",
+  "last_updated": "2026-06-08T02:01:03.039231",
   "public": true,
   "agents": [
     {
@@ -767,11 +767,11 @@
           "silent": true,
           "timeout": 90,
           "detail": "",
-          "last_run": "2026-06-08T01:01:33.113890",
+          "last_run": "2026-06-08T02:01:03.031489",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 62.0,
-          "run_count": 253
+          "last_duration_seconds": 3.7,
+          "run_count": 254
         }
       ]
     },
@@ -1103,6 +1103,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-08T02:01:03.031489",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-08T02:00:59.116988",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1136,13 +1143,6 @@
       "task": "chrome_health",
       "status": "success",
       "message": "OK (0.3s)"
-    },
-    {
-      "timestamp": "2026-06-08T01:01:33.113890",
-      "agent": "eufy_weekday_schedule",
-      "task": "eufy_weekday_schedule",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-06-08T00:48:25.789702",
@@ -1456,12 +1456,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
