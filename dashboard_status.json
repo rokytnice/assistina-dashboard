@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-09T14:04:35.748349",
+  "last_updated": "2026-06-09T14:08:45.064336",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-09T14:00:21.707136",
+          "last_run": "2026-06-09T14:05:12.636672",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 11505
+          "last_duration_seconds": 2.2,
+          "run_count": 11506
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-09T14:00:21.790327",
+          "last_run": "2026-06-09T14:05:12.685503",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 23120
+          "run_count": 23121
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -600,35 +600,6 @@
       ]
     },
     {
-      "id": "data_analyst",
-      "name": "Datenanalyse-Agent",
-      "emoji": "🔬",
-      "status": "success",
-      "description": "Tools: claude, bash | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "data_analysis",
-          "description": "Datenanalyse täglich um 02:00 UTC (nachts, nach allen Sync-Läufen)",
-          "cron": "0 2 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-09T12:46:50.887134",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 92.3,
-          "run_count": 261
-        }
-      ]
-    },
-    {
       "id": "qa_agent",
       "name": "Qualitätssicherung",
       "emoji": "✅",
@@ -1111,6 +1082,20 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-09T14:05:12.685503",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-09T14:05:12.636672",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (2.2s)"
+    },
+    {
       "timestamp": "2026-06-09T14:01:10.341580",
       "agent": "sync_ing_diba",
       "task": "sync_ing_diba",
@@ -1118,25 +1103,11 @@
       "message": "OK (48.5s)"
     },
     {
-      "timestamp": "2026-06-09T14:00:21.790327",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (0.0s)"
-    },
-    {
       "timestamp": "2026-06-09T14:00:21.760078",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-09T14:00:21.707136",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (1.2s)"
     },
     {
       "timestamp": "2026-06-09T14:00:20.459849",
@@ -1463,7 +1434,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 10,
+  "user_prompts_count": 11,
   "current_jobs": [],
   "queued_jobs": []
 }
