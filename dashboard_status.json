@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T20:25:39.917746",
+  "last_updated": "2026-06-11T20:30:46.791743",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-11T20:00:03.993775",
+          "last_run": "2026-06-11T20:30:13.437659",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 3344
+          "run_count": 3345
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-11T20:20:39.835795",
+          "last_run": "2026-06-11T20:30:21.495634",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 23.3,
-          "run_count": 12038
+          "last_duration_seconds": 8.0,
+          "run_count": 12040
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-11T20:15:16.457160",
+          "last_run": "2026-06-11T20:30:21.554226",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 3654
+          "run_count": 3655
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-11T20:20:39.869154",
+          "last_run": "2026-06-11T20:30:21.587648",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 23568
+          "run_count": 23569
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-11T04:30:28.875156",
+          "last_run": "2026-06-11T20:30:46.647186",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 22.3,
-          "run_count": 395
+          "last_duration_seconds": 25.0,
+          "run_count": 396
         },
         {
           "id": "sync_calendar",
@@ -1125,25 +1125,39 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-11T20:20:39.869154",
+      "timestamp": "2026-06-11T20:30:46.647186",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (25.0s)"
+    },
+    {
+      "timestamp": "2026-06-11T20:30:21.587648",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-11T20:20:39.835795",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (23.3s)"
-    },
-    {
-      "timestamp": "2026-06-11T20:15:16.457160",
+      "timestamp": "2026-06-11T20:30:21.554226",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-11T20:30:21.495634",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (8.0s)"
+    },
+    {
+      "timestamp": "2026-06-11T20:30:13.437659",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (0.1s)"
     },
     {
       "timestamp": "2026-06-11T20:01:12.928620",
@@ -1151,13 +1165,6 @@
       "task": "sync_ing_diba",
       "status": "success",
       "message": "OK (34.0s)"
-    },
-    {
-      "timestamp": "2026-06-11T20:00:03.993775",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (0.1s)"
     },
     {
       "timestamp": "2026-06-11T19:33:10.606682",
@@ -1263,13 +1270,6 @@
       "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-11T04:30:28.875156",
-      "agent": "sync_gmail",
-      "task": "sync_gmail",
-      "status": "success",
-      "message": "OK (22.3s)"
     },
     {
       "timestamp": "2026-06-11T04:05:22.408868",
@@ -1478,12 +1478,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
