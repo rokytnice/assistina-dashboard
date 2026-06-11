@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-11T02:55:51.892777",
+  "last_updated": "2026-06-11T03:02:04.886737",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": false,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-11T02:30:30.340393",
+          "last_run": "2026-06-11T03:00:04.588535",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.8,
-          "run_count": 3310
+          "last_duration_seconds": 0.1,
+          "run_count": 3311
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": false,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-11T02:50:51.365949",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 11.9,
-          "run_count": 11834
+          "last_run": "2026-06-11T03:02:04.883472",
+          "last_status": "timeout",
+          "last_error": "error",
+          "last_duration_seconds": 120.0,
+          "run_count": 11835
         },
         {
           "id": "unified_index_rebuild",
@@ -1082,18 +1082,25 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-11T03:02:04.883472",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-11T03:00:04.588535",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (0.1s)"
+    },
+    {
       "timestamp": "2026-06-11T02:50:51.707455",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-11T02:50:51.365949",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (11.9s)"
     },
     {
       "timestamp": "2026-06-11T02:45:37.417810",
@@ -1108,13 +1115,6 @@
       "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-11T02:30:30.340393",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.8s)"
     },
     {
       "timestamp": "2026-06-11T02:00:27.208150",
@@ -1435,12 +1435,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 3,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
