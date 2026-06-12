@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T23:00:17.460406",
+  "last_updated": "2026-06-12T23:01:21.043568",
   "public": true,
   "agents": [
     {
@@ -753,11 +753,11 @@
           "silent": false,
           "timeout": 90,
           "detail": "",
-          "last_run": "2026-06-12T01:01:25.762095",
+          "last_run": "2026-06-12T23:01:20.752765",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 61.7,
-          "run_count": 263
+          "last_duration_seconds": 63.3,
+          "run_count": 264
         }
       ]
     },
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-12T23:01:20.752765",
+      "agent": "eufy_weekday_schedule",
+      "task": "eufy_weekday_schedule",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-12T23:00:16.617380",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1314,13 +1321,6 @@
       "message": "OK (50.3s)"
     },
     {
-      "timestamp": "2026-06-12T01:01:25.762095",
-      "agent": "eufy_weekday_schedule",
-      "task": "eufy_weekday_schedule",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-06-11T09:00:59.909806",
       "agent": "monthly_timesheet_reminder",
       "task": "monthly_timesheet_reminder",
@@ -1478,12 +1478,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
