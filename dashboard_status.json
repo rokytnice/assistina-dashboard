@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T20:31:22.628280",
+  "last_updated": "2026-06-12T20:31:27.321461",
   "public": true,
   "agents": [
     {
@@ -264,11 +264,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-06-12T20:31:27.150369",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 4.0,
-          "run_count": 577
+          "last_duration_seconds": 4.5,
+          "run_count": 578
         },
         {
           "id": "retouren_check",
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-12T20:31:27.150369",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (4.5s)"
+    },
+    {
       "timestamp": "2026-06-12T20:31:21.468618",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1466,24 +1473,11 @@
       "task": "retouren_completion_watcher_30m",
       "status": "success",
       "message": "OK (1.4s)"
-    },
-    {
-      "timestamp": "2026-05-06T22:30:25.243516",
-      "agent": "stock_watchlist_check",
-      "task": "stock_watchlist_check",
-      "status": "success",
-      "message": "OK (1.9s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
