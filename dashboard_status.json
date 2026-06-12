@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T17:00:55.013565",
+  "last_updated": "2026-06-12T17:01:33.307876",
   "public": true,
   "agents": [
     {
@@ -69,11 +69,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-11T17:00:42.801542",
+          "last_run": "2026-06-12T17:01:33.157994",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 14.3,
-          "run_count": 77
+          "last_duration_seconds": 38.1,
+          "run_count": 78
         },
         {
           "id": "admin_server_guard",
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-12T17:01:33.157994",
+      "agent": "email_followup_tracker",
+      "task": "email_followup_tracker",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-12T17:00:54.431349",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
@@ -1291,13 +1298,6 @@
       "task": "sync_sparkasse",
       "status": "success",
       "message": "OK (28.3s)"
-    },
-    {
-      "timestamp": "2026-06-11T17:00:42.801542",
-      "agent": "email_followup_tracker",
-      "task": "email_followup_tracker",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-06-11T09:00:59.909806",
@@ -1478,12 +1478,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 3,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
