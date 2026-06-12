@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T00:00:58.975175",
+  "last_updated": "2026-06-13T00:01:00.136964",
   "public": true,
   "agents": [
     {
@@ -159,11 +159,11 @@
           "silent": false,
           "timeout": 180,
           "detail": "",
-          "last_run": "2026-06-12T18:01:00.566452",
+          "last_run": "2026-06-13T00:00:59.531729",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 0.7,
-          "run_count": 77
+          "last_duration_seconds": 0.6,
+          "run_count": 78
         },
         {
           "id": "play_release_check_6h",
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-13T00:00:59.531729",
+      "agent": "elster_inbox_check_6h",
+      "task": "elster_inbox_check_6h",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-13T00:00:58.266775",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1235,13 +1242,6 @@
       "task": "sync_sparkasse",
       "status": "success",
       "message": "OK (24.6s)"
-    },
-    {
-      "timestamp": "2026-06-12T18:01:00.566452",
-      "agent": "elster_inbox_check_6h",
-      "task": "elster_inbox_check_6h",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-06-12T17:01:33.157994",
@@ -1478,12 +1478,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
