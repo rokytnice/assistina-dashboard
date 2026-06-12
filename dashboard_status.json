@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T21:03:04.783781",
+  "last_updated": "2026-06-12T21:03:05.045204",
   "public": true,
   "agents": [
     {
@@ -635,7 +635,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-09T21:07:26.670056",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 103.8,
@@ -1342,20 +1342,6 @@
       "message": "OK (11.5s)"
     },
     {
-      "timestamp": "2026-06-09T21:07:26.670056",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (103.8s)"
-    },
-    {
-      "timestamp": "2026-06-09T21:05:40.939074",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (34.1s)"
-    },
-    {
       "timestamp": "2026-06-09T12:46:50.887134",
       "agent": "data_analysis",
       "task": "data_analysis",
@@ -1473,6 +1459,20 @@
       "task": "daily_freelance_scan",
       "status": "error",
       "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-09T07:30:04.857708",
+      "agent": "retouren_completion_watcher_30m",
+      "task": "retouren_completion_watcher_30m",
+      "status": "success",
+      "message": "OK (1.4s)"
+    },
+    {
+      "timestamp": "2026-05-06T22:30:25.243516",
+      "agent": "stock_watchlist_check",
+      "task": "stock_watchlist_check",
+      "status": "success",
+      "message": "OK (1.9s)"
     }
   ],
   "request_log": [],
