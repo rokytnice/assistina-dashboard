@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T01:15:49.283607",
+  "last_updated": "2026-06-13T01:15:49.749782",
   "public": true,
   "agents": [
     {
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-13T00:45:43.436797",
+          "last_run": "2026-06-13T01:15:49.747076",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.3,
-          "run_count": 3746
+          "last_duration_seconds": 0.5,
+          "run_count": 3747
         },
         {
           "id": "email_followup_tracker",
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-13T01:15:49.747076",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.5s)"
+    },
+    {
       "timestamp": "2026-06-13T01:15:48.576562",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
@@ -1144,13 +1151,6 @@
       "task": "chrome_health",
       "status": "success",
       "message": "OK (0.7s)"
-    },
-    {
-      "timestamp": "2026-06-13T00:45:43.436797",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.3s)"
     },
     {
       "timestamp": "2026-06-13T00:31:08.904101",
@@ -1478,12 +1478,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
