@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T00:31:01.240919",
+  "last_updated": "2026-06-13T00:31:09.209677",
   "public": true,
   "agents": [
     {
@@ -459,11 +459,11 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-06-13T00:31:08.904101",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 7.8,
-          "run_count": 273
+          "last_duration_seconds": 7.7,
+          "run_count": 274
         },
         {
           "id": "taskprep_precheck",
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-13T00:31:08.904101",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (7.7s)"
+    },
+    {
       "timestamp": "2026-06-13T00:31:00.529063",
       "agent": "email_check",
       "task": "email_check",
@@ -1466,24 +1473,11 @@
       "task": "daily_freelance_scan",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-05-09T07:30:04.857708",
-      "agent": "retouren_completion_watcher_30m",
-      "task": "retouren_completion_watcher_30m",
-      "status": "success",
-      "message": "OK (1.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
