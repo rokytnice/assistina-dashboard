@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T21:03:05.298402",
+  "last_updated": "2026-06-12T21:03:29.320890",
   "public": true,
   "agents": [
     {
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-12T21:03:29.137003",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (23.8s)"
+    },
+    {
       "timestamp": "2026-06-12T21:03:04.336396",
       "agent": "daily_content",
       "task": "daily_content",
@@ -1466,24 +1473,11 @@
       "task": "retouren_completion_watcher_30m",
       "status": "success",
       "message": "OK (1.4s)"
-    },
-    {
-      "timestamp": "2026-05-06T22:30:25.243516",
-      "agent": "stock_watchlist_check",
-      "task": "stock_watchlist_check",
-      "status": "success",
-      "message": "OK (1.9s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
