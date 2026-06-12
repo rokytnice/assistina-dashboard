@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T00:15:40.374639",
+  "last_updated": "2026-06-13T00:15:40.876335",
   "public": true,
   "agents": [
     {
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-13T00:00:56.453357",
+          "last_run": "2026-06-13T00:15:40.873509",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.4,
-          "run_count": 3743
+          "last_duration_seconds": 0.5,
+          "run_count": 3744
         },
         {
           "id": "email_followup_tracker",
@@ -1125,6 +1125,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-13T00:15:40.873509",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.5s)"
+    },
+    {
       "timestamp": "2026-06-13T00:15:39.422831",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
@@ -1144,13 +1151,6 @@
       "task": "elster_inbox_check_6h",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-13T00:00:56.453357",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
-      "status": "success",
-      "message": "OK (0.4s)"
     },
     {
       "timestamp": "2026-06-13T00:00:41.996123",
@@ -1478,12 +1478,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
