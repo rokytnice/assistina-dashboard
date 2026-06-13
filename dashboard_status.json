@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T19:40:33.557566",
+  "last_updated": "2026-06-13T19:45:14.532141",
   "public": true,
   "agents": [
     {
@@ -892,6 +892,35 @@
       ]
     },
     {
+      "id": "daily_digest_cloud",
+      "name": "Daily Digest Cloud Agent",
+      "emoji": "📰",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: haiku",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "haiku",
+      "tasks": [
+        {
+          "id": "daily_digest_agent",
+          "description": "Daily Digest Cloud-Agent — Paralleles Generieren von 5 Digest-Typen (Content, Ro",
+          "cron": "0 6 * * *",
+          "enabled": true,
+          "task_type": "cloud_agent",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
       "id": "datasync_cloud",
       "name": "Data Sync Cloud Agent",
       "emoji": "📊",
@@ -1478,7 +1507,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 17,
+  "user_prompts_count": 18,
   "current_jobs": [
     {
       "id": "",
