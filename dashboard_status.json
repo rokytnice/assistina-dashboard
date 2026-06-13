@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T22:00:22.882736",
+  "last_updated": "2026-06-13T22:47:03.144323",
   "public": true,
   "agents": [
     {
@@ -781,7 +781,7 @@
       "id": "book_analysis",
       "name": "Book Analysis Agent",
       "emoji": "📚",
-      "status": null,
+      "status": "timeout",
       "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
@@ -797,10 +797,10 @@
           "silent": false,
           "timeout": 2800,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
+          "last_run": "2026-06-13T22:47:03.141324",
+          "last_status": "timeout",
+          "last_error": "error",
+          "last_duration_seconds": 2800.3,
           "run_count": 0
         }
       ]
@@ -1155,6 +1155,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-13T22:47:03.141324",
+      "agent": "book_agent_night_tick",
+      "task": "book_agent_night_tick",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-13T22:00:22.395169",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1496,24 +1503,11 @@
       "task": "retouren_completion_watcher_daily",
       "status": "success",
       "message": "OK (1.5s)"
-    },
-    {
-      "timestamp": "2026-05-11T08:00:38.968828",
-      "agent": "daily_freelance_scan",
-      "task": "daily_freelance_scan",
-      "status": "error",
-      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
