@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T08:30:58.418632",
+  "last_updated": "2026-06-13T08:30:58.706542",
   "public": true,
   "agents": [
     {
@@ -264,7 +264,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-13T07:23:57.466009",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 8.2,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-13T06:01:37.841690",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 32.1,
@@ -1153,25 +1153,11 @@
       "message": "OK (348.3s)"
     },
     {
-      "timestamp": "2026-06-13T07:23:57.466009",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (8.2s)"
-    },
-    {
       "timestamp": "2026-06-13T06:30:38.450251",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.4s)"
-    },
-    {
-      "timestamp": "2026-06-13T06:01:37.841690",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (32.1s)"
     },
     {
       "timestamp": "2026-06-13T06:01:04.914288",
@@ -1445,6 +1431,20 @@
       "task": "daily_freelance_scan",
       "status": "error",
       "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-09T07:30:04.857708",
+      "agent": "retouren_completion_watcher_30m",
+      "task": "retouren_completion_watcher_30m",
+      "status": "success",
+      "message": "OK (1.4s)"
+    },
+    {
+      "timestamp": "2026-05-06T22:30:25.243516",
+      "agent": "stock_watchlist_check",
+      "task": "stock_watchlist_check",
+      "status": "success",
+      "message": "OK (1.9s)"
     }
   ],
   "request_log": [],
