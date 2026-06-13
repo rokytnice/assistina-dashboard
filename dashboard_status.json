@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T19:35:30.102080",
+  "last_updated": "2026-06-13T19:40:30.453655",
   "public": true,
   "agents": [
     {
@@ -229,6 +229,21 @@
           "id": "secret_scanner_cloud_agent",
           "description": "Quarterly scan of 50+ GitHub repos for exposed secrets (9x speedup via Cloud par",
           "cron": "0 9 1 1,4,7,10 *",
+          "enabled": true,
+          "task_type": "cloud_agent",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "daily_digest_cloud_agents",
+          "description": "Parallel generation of 5 daily digests (Tech, Robotics, SEO, News/Stocks, Custom",
+          "cron": "0 6 * * *",
           "enabled": true,
           "task_type": "cloud_agent",
           "silent": true,
@@ -1465,6 +1480,11 @@
   "user_prompts": [],
   "user_prompts_count": 17,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
