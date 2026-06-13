@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T09:29:46.116384",
+  "last_updated": "2026-06-13T09:30:11.485781",
   "public": true,
   "agents": [
     {
@@ -119,21 +119,6 @@
           "last_error": "error",
           "last_duration_seconds": 300.4,
           "run_count": 9
-        },
-        {
-          "id": "latency_monitor_daily",
-          "description": "Latenz-Monitor täglich 09:00. Wertet Claude-CLI-JSONL-Sessions aus und schickt T",
-          "cron": "0 9 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 60,
-          "detail": "",
-          "last_run": "2026-06-13T09:00:29.640749",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.4,
-          "run_count": 18
         },
         {
           "id": "elster_inbox_check_6h",
@@ -1434,13 +1419,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 7,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 8,
+  "current_jobs": [],
   "queued_jobs": []
 }
