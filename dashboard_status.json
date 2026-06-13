@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T13:00:45.090405",
+  "last_updated": "2026-06-13T13:00:45.343561",
   "public": true,
   "agents": [
     {
@@ -695,11 +695,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-06-13T11:30:32.388299",
+          "last_run": "2026-06-13T13:00:45.340767",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.3,
-          "run_count": 653
+          "run_count": 654
         }
       ]
     },
@@ -1067,6 +1067,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-13T13:00:45.340767",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (0.3s)"
+    },
+    {
       "timestamp": "2026-06-13T13:00:44.611131",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1142,13 +1149,6 @@
       "task": "elster_inbox_check_6h",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-13T11:30:32.388299",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
-      "status": "success",
-      "message": "OK (0.3s)"
     },
     {
       "timestamp": "2026-06-13T10:01:41.742643",
@@ -1420,12 +1420,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 8,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
