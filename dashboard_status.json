@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T19:20:16.875108",
+  "last_updated": "2026-06-13T19:25:17.147272",
   "public": true,
   "agents": [
     {
@@ -860,6 +860,35 @@
           "run_count": 0
         }
       ]
+    },
+    {
+      "id": "datasync_cloud",
+      "name": "Data Sync Cloud Agent",
+      "emoji": "📊",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: haiku",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "haiku",
+      "tasks": [
+        {
+          "id": "nightly_data_sync",
+          "description": "Nightly Data Sync — Parallel Synchronisierung von 5 Quellen (Gmail, Calendar, Dr",
+          "cron": "0 23 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
     }
   ],
   "sessions": [
@@ -1421,6 +1450,11 @@
   "user_prompts": [],
   "user_prompts_count": 17,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
