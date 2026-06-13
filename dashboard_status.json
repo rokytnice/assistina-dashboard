@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T19:10:09.435068",
+  "last_updated": "2026-06-13T19:15:09.856365",
   "public": true,
   "agents": [
     {
@@ -208,6 +208,21 @@
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 348.3,
+          "run_count": 2
+        },
+        {
+          "id": "forum_scout_agent",
+          "description": "Forum Scout Cloud-Agent — Paralleles Scouting auf 4 Plattformen (gutefrage, redd",
+          "cron": "0 6 * * *",
+          "enabled": true,
+          "task_type": "cloud_agent",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-06-11T06:00:32.391817",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 0.1,
           "run_count": 2
         }
       ]
@@ -1406,6 +1421,11 @@
   "user_prompts": [],
   "user_prompts_count": 17,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
