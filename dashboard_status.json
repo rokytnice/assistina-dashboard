@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T18:30:34.303170",
+  "last_updated": "2026-06-13T18:30:34.586589",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-13T18:00:18.760156",
+          "last_run": "2026-06-13T18:30:34.584060",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.3,
-          "run_count": 3436
+          "run_count": 3437
         },
         {
           "id": "sensor_sweep",
@@ -1052,6 +1052,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-13T18:30:34.584060",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (0.3s)"
+    },
+    {
       "timestamp": "2026-06-13T18:25:33.606383",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1106,13 +1113,6 @@
       "task": "elster_inbox_check_6h",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-13T18:00:18.760156",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (0.3s)"
     },
     {
       "timestamp": "2026-06-13T17:23:05.104699",
@@ -1406,11 +1406,6 @@
   "user_prompts": [],
   "user_prompts_count": 16,
   "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    },
     {
       "id": "",
       "started_at": null,
