@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T15:40:26.075435",
+  "last_updated": "2026-06-13T15:44:34.434028",
   "public": true,
   "agents": [
     {
@@ -197,12 +197,12 @@
         },
         {
           "id": "forum_responder_agent",
-          "description": "Forum Responder Agent — Liest Findings des Forum Finders und postet Antworten mi",
+          "description": "Forum Responder Cloud-Agent — Hybrid Architektur (Cloud-Orchestrierung + RPC-Bac",
           "cron": "30 7 * * *",
           "enabled": true,
-          "task_type": "bash",
+          "task_type": "cloud_agent",
           "silent": true,
-          "timeout": 600,
+          "timeout": 300,
           "detail": "",
           "last_run": "2026-06-13T07:36:01.489096",
           "last_status": "success",
@@ -1405,12 +1405,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 16,
-  "current_jobs": [
+  "current_jobs": [],
+  "queued_jobs": [
     {
-      "id": "",
+      "id": 33,
       "started_at": null,
       "agent": ""
     }
-  ],
-  "queued_jobs": []
+  ]
 }
