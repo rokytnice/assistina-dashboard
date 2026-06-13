@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T04:42:41.071582",
+  "last_updated": "2026-06-13T04:43:36.399978",
   "public": true,
   "agents": [
     {
@@ -734,34 +734,6 @@
       ]
     },
     {
-      "id": "eufy_security",
-      "name": "eufy Security",
-      "emoji": "🔐",
-      "status": "error",
-      "description": "Tools: bash | Modell: haiku",
-      "tools": [
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "eufy_weekday_schedule",
-          "description": "Di-Do: Alarm aus (disarmed), sonst: eufy-Zeitsteuerung (schedule). Stuendlich id",
-          "cron": "0 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 90,
-          "detail": "",
-          "last_run": "2026-06-13T02:01:50.768104",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 60.5,
-          "run_count": 265
-        }
-      ]
-    },
-    {
       "id": "airbnb",
       "name": "Airbnb Manager",
       "emoji": "🏠",
@@ -1477,13 +1449,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 1,
+  "current_jobs": [],
   "queued_jobs": []
 }
