@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T13:51:11.993542",
+  "last_updated": "2026-06-13T13:53:44.474590",
   "public": true,
   "agents": [
     {
@@ -239,21 +239,6 @@
           "last_error": null,
           "last_duration_seconds": 3.2,
           "run_count": 584
-        },
-        {
-          "id": "retouren_check",
-          "description": "Täglicher Retouren-Check um 10 Uhr. Inkl. Abschluss-Check ([phone]: retouren_com",
-          "cron": "0 10 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-13T10:01:41.742643",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 47.1,
-          "run_count": 49
         }
       ]
     },
@@ -1419,13 +1404,18 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 8,
-  "current_jobs": [
+  "user_prompts_count": 9,
+  "current_jobs": [],
+  "queued_jobs": [
     {
-      "id": "",
+      "id": 20,
+      "started_at": null,
+      "agent": ""
+    },
+    {
+      "id": 21,
       "started_at": null,
       "agent": ""
     }
-  ],
-  "queued_jobs": []
+  ]
 }
