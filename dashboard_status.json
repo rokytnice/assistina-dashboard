@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T19:30:39.515475",
+  "last_updated": "2026-06-14T19:30:39.834480",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-14T19:00:49.840064",
+          "last_run": "2026-06-14T19:30:39.831736",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.6,
-          "run_count": 3481
+          "last_duration_seconds": 0.3,
+          "run_count": 3482
         },
         {
           "id": "sensor_sweep",
@@ -1162,6 +1162,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T19:30:39.831736",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (0.3s)"
+    },
+    {
       "timestamp": "2026-06-14T19:25:38.800409",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1188,13 +1195,6 @@
       "task": "sync_sparkasse",
       "status": "success",
       "message": "OK (22.5s)"
-    },
-    {
-      "timestamp": "2026-06-14T19:00:49.840064",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (0.6s)"
     },
     {
       "timestamp": "2026-06-14T18:30:28.119634",
@@ -1515,12 +1515,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
