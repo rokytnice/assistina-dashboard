@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T05:00:36.790253",
+  "last_updated": "2026-06-14T05:01:02.580698",
   "public": true,
   "agents": [
     {
@@ -384,11 +384,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-12T05:01:07.193453",
+          "last_run": "2026-06-14T05:01:02.463779",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 35.6,
-          "run_count": 13
+          "last_duration_seconds": 25.7,
+          "run_count": 14
         },
         {
           "id": "sync_ing_diba",
@@ -1155,6 +1155,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T05:01:02.463779",
+      "agent": "sync_check24",
+      "task": "sync_check24",
+      "status": "success",
+      "message": "OK (25.7s)"
+    },
+    {
       "timestamp": "2026-06-14T05:00:36.302924",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1372,13 +1379,6 @@
       "message": "OK (29.0s)"
     },
     {
-      "timestamp": "2026-06-12T05:01:07.193453",
-      "agent": "sync_check24",
-      "task": "sync_check24",
-      "status": "success",
-      "message": "OK (35.6s)"
-    },
-    {
       "timestamp": "2026-06-11T09:00:59.909806",
       "agent": "monthly_timesheet_reminder",
       "task": "monthly_timesheet_reminder",
@@ -1508,12 +1508,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
