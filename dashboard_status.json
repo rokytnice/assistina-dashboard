@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T19:05:22.699887",
+  "last_updated": "2026-06-14T19:05:23.223192",
   "public": true,
   "agents": [
     {
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-14T19:00:56.330650",
+          "last_run": "2026-06-14T19:05:23.220226",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.3,
-          "run_count": 24256
+          "last_duration_seconds": 0.5,
+          "run_count": 24257
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1162,6 +1162,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T19:05:23.220226",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (0.5s)"
+    },
+    {
       "timestamp": "2026-06-14T19:05:22.073999",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
@@ -1174,13 +1181,6 @@
       "task": "sync_sparkasse",
       "status": "success",
       "message": "OK (22.5s)"
-    },
-    {
-      "timestamp": "2026-06-14T19:00:56.330650",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (0.3s)"
     },
     {
       "timestamp": "2026-06-14T19:00:55.565832",
@@ -1515,12 +1515,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
