@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T06:00:38.879037",
+  "last_updated": "2026-06-14T06:00:41.279245",
   "public": true,
   "agents": [
     {
@@ -219,11 +219,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-11T06:00:32.391817",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 2
+          "last_run": "2026-06-14T06:00:41.224463",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 2.3,
+          "run_count": 3
         },
         {
           "id": "secret_scanner_cloud_agent",
@@ -1155,6 +1155,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T06:00:41.224463",
+      "agent": "forum_scout_agent",
+      "task": "forum_scout_agent",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-14T06:00:38.424044",
       "agent": "play_release_check_6h",
       "task": "play_release_check_6h",
@@ -1386,13 +1393,6 @@
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-11T06:00:32.391817",
-      "agent": "forum_scout_agent",
-      "task": "forum_scout_agent",
-      "status": "success",
-      "message": "OK (0.1s)"
-    },
-    {
       "timestamp": "2026-06-10T09:02:34.703231",
       "agent": "ustva_check",
       "task": "ustva_check",
@@ -1508,12 +1508,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
