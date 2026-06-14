@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T11:02:30.028766",
+  "last_updated": "2026-06-14T11:05:29.785728",
   "public": true,
   "agents": [
     {
@@ -123,7 +123,7 @@
         {
           "id": "elster_inbox_check_6h",
           "description": "ELSTER Posteingangs-Watcher (read-only) alle 6 Stunden — nutzt CredentialManager",
-          "cron": "0 */6 * * *",
+          "cron": "0 9 * * 1,4",
           "enabled": true,
           "task_type": "bash",
           "silent": false,
@@ -1516,6 +1516,11 @@
   "user_prompts": [],
   "user_prompts_count": 6,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
