@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T21:01:08.549563",
+  "last_updated": "2026-06-14T21:01:08.828819",
   "public": true,
   "agents": [
     {
@@ -620,7 +620,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-13T21:31:56.870523",
+          "last_run": null,
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 60.3,
@@ -1350,13 +1350,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-06-13T21:31:56.870523",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-06-13T21:30:55.593160",
       "agent": "daily_seo",
       "task": "daily_seo",
@@ -1390,13 +1383,6 @@
       "task": "eufy_weekday_schedule",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-12T21:03:29.137003",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (23.8s)"
     },
     {
       "timestamp": "2026-06-12T19:31:48.542695",
@@ -1495,6 +1481,20 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-22T10:30:28.146612",
+      "agent": "retouren_completion_watcher_daily",
+      "task": "retouren_completion_watcher_daily",
+      "status": "success",
+      "message": "OK (1.5s)"
     }
   ],
   "request_log": [],
