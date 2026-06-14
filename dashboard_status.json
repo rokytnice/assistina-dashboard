@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T08:00:59.981290",
+  "last_updated": "2026-06-14T08:03:37.137638",
   "public": true,
   "agents": [
     {
@@ -737,7 +737,7 @@
       "id": "airbnb",
       "name": "Airbnb Manager",
       "emoji": "🏠",
-      "status": null,
+      "status": "success",
       "description": "Tools: bash, playwright | Modell: haiku",
       "tools": [
         "bash",
@@ -754,11 +754,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-06-14T08:03:37.039891",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 157.1,
+          "run_count": 1
         },
         {
           "id": "airbnb_evening",
@@ -1078,6 +1078,14 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "airbnb",
+      "name": "Airbnb Manager",
+      "emoji": "🏠",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "retouren": {
@@ -1154,6 +1162,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-06-14T08:03:37.039891",
+      "agent": "airbnb_morning",
+      "task": "airbnb_morning",
+      "status": "success",
+      "message": "OK (157.1s)"
+    },
     {
       "timestamp": "2026-06-14T08:00:59.535366",
       "agent": "qa_retrospective_sweep",
@@ -1496,24 +1511,11 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
-    },
-    {
-      "timestamp": "2026-05-25T18:04:07.116995",
-      "agent": "qa_stock_monitor",
-      "task": "qa_stock_monitor",
-      "status": "error",
-      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
