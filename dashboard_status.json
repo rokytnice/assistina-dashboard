@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T12:00:45.159147",
+  "last_updated": "2026-06-14T12:01:29.576989",
   "public": true,
   "agents": [
     {
@@ -650,11 +650,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-07T12:01:15.909022",
+          "last_run": "2026-06-14T12:01:29.458912",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 29.4,
-          "run_count": 11
+          "last_duration_seconds": 44.3,
+          "run_count": 12
         },
         {
           "id": "qa_taskprep",
@@ -1162,6 +1162,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T12:01:29.458912",
+      "agent": "qa_datasync",
+      "task": "qa_datasync",
+      "status": "success",
+      "message": "OK (44.3s)"
+    },
+    {
       "timestamp": "2026-06-14T12:00:44.447350",
       "agent": "taskprep_precheck",
       "task": "taskprep_precheck",
@@ -1442,13 +1449,6 @@
       "message": "OK (104.9s)"
     },
     {
-      "timestamp": "2026-06-07T12:01:15.909022",
-      "agent": "qa_datasync",
-      "task": "qa_datasync",
-      "status": "success",
-      "message": "OK (29.4s)"
-    },
-    {
       "timestamp": "2026-06-07T03:06:46.671727",
       "agent": "sync_contacts",
       "task": "sync_contacts",
@@ -1516,11 +1516,6 @@
   "user_prompts": [],
   "user_prompts_count": 8,
   "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    },
     {
       "id": "",
       "started_at": null,
