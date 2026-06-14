@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T06:01:08.726274",
+  "last_updated": "2026-06-14T06:01:08.957647",
   "public": true,
   "agents": [
     {
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-14T04:32:20.601291",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 54.0,
@@ -1232,13 +1232,6 @@
       "message": "OK (25.7s)"
     },
     {
-      "timestamp": "2026-06-14T04:32:20.601291",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (54.0s)"
-    },
-    {
       "timestamp": "2026-06-14T04:31:26.040459",
       "agent": "email_check",
       "task": "email_check",
@@ -1503,6 +1496,13 @@
       "task": "qa_stock_monitor",
       "status": "error",
       "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-22T10:30:28.146612",
+      "agent": "retouren_completion_watcher_daily",
+      "task": "retouren_completion_watcher_daily",
+      "status": "success",
+      "message": "OK (1.5s)"
     }
   ],
   "request_log": [],
