@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T04:31:21.513855",
+  "last_updated": "2026-06-14T04:31:21.739153",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-13T20:31:08.973996",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 4.2,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-13T20:31:21.580094",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 11.8,
@@ -1253,20 +1253,6 @@
       "message": "OK (20.0s)"
     },
     {
-      "timestamp": "2026-06-13T20:31:21.580094",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (11.8s)"
-    },
-    {
-      "timestamp": "2026-06-13T20:31:08.973996",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (4.2s)"
-    },
-    {
       "timestamp": "2026-06-13T20:01:15.577093",
       "agent": "sync_ing_diba",
       "task": "sync_ing_diba",
@@ -1503,6 +1489,20 @@
       "task": "retouren_completion_watcher_daily",
       "status": "success",
       "message": "OK (1.5s)"
+    },
+    {
+      "timestamp": "2026-05-11T08:00:38.968828",
+      "agent": "daily_freelance_scan",
+      "task": "daily_freelance_scan",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-09T07:30:04.857708",
+      "agent": "retouren_completion_watcher_30m",
+      "task": "retouren_completion_watcher_30m",
+      "status": "success",
+      "message": "OK (1.4s)"
     }
   ],
   "request_log": [],
