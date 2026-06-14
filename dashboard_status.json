@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T00:30:51.445744",
+  "last_updated": "2026-06-15T00:30:51.721023",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-14T22:23:18.689891",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 3.8,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-14T20:33:08.077088",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 124.1,
@@ -1217,13 +1217,6 @@
       "message": "OK (9.6s)"
     },
     {
-      "timestamp": "2026-06-14T22:23:18.689891",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (3.8s)"
-    },
-    {
       "timestamp": "2026-06-14T21:31:08.530781",
       "agent": "qa_contentradar",
       "task": "qa_contentradar",
@@ -1250,13 +1243,6 @@
       "task": "daily_content",
       "status": "success",
       "message": "OK (15.3s)"
-    },
-    {
-      "timestamp": "2026-06-14T20:33:08.077088",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (124.1s)"
     },
     {
       "timestamp": "2026-06-14T20:01:05.586465",
@@ -1495,6 +1481,20 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-22T10:30:28.146612",
+      "agent": "retouren_completion_watcher_daily",
+      "task": "retouren_completion_watcher_daily",
+      "status": "success",
+      "message": "OK (1.5s)"
     }
   ],
   "request_log": [],
