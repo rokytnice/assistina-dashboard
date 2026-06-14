@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T20:00:05.700716",
+  "last_updated": "2026-06-14T20:00:28.605377",
   "public": true,
   "agents": [
     {
@@ -399,11 +399,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-14T14:00:41.938469",
+          "last_run": "2026-06-14T20:00:28.430579",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 22.5,
-          "run_count": 39
+          "last_duration_seconds": 22.7,
+          "run_count": 40
         },
         {
           "id": "sync_sparkasse",
@@ -1162,6 +1162,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T20:00:28.430579",
+      "agent": "sync_ing_diba",
+      "task": "sync_ing_diba",
+      "status": "success",
+      "message": "OK (22.7s)"
+    },
+    {
       "timestamp": "2026-06-14T20:00:05.002721",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1244,13 +1251,6 @@
       "task": "qa_mailcheck",
       "status": "success",
       "message": "OK (31.0s)"
-    },
-    {
-      "timestamp": "2026-06-14T14:00:41.938469",
-      "agent": "sync_ing_diba",
-      "task": "sync_ing_diba",
-      "status": "success",
-      "message": "OK (22.5s)"
     },
     {
       "timestamp": "2026-06-14T12:01:29.458912",
@@ -1515,12 +1515,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
