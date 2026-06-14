@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T20:48:20.218893",
+  "last_updated": "2026-06-14T20:50:24.343757",
   "public": true,
   "agents": [
     {
@@ -479,21 +479,6 @@
           "last_error": null,
           "last_duration_seconds": 48.7,
           "run_count": 153
-        },
-        {
-          "id": "taskprep_evening",
-          "description": "Abend-Review täglich 20 Uhr",
-          "cron": "0 20 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-14T20:01:05.586465",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 36.3,
-          "run_count": 51
         }
       ]
     },
@@ -1211,13 +1196,6 @@
       "message": "OK (0.6s)"
     },
     {
-      "timestamp": "2026-06-14T20:01:05.586465",
-      "agent": "taskprep_evening",
-      "task": "taskprep_evening",
-      "status": "success",
-      "message": "OK (36.3s)"
-    },
-    {
       "timestamp": "2026-06-14T20:00:28.430579",
       "agent": "sync_ing_diba",
       "task": "sync_ing_diba",
@@ -1510,12 +1488,24 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
   "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    },
     {
       "id": "",
       "started_at": null,
