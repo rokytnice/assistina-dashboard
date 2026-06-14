@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T16:30:29.921579",
+  "last_updated": "2026-06-14T16:30:30.133340",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-14T12:23:52.412100",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 6.0,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-14T06:01:19.015766",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 9.9,
@@ -1225,13 +1225,6 @@
       "message": "OK (22.5s)"
     },
     {
-      "timestamp": "2026-06-14T12:23:52.412100",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (6.0s)"
-    },
-    {
       "timestamp": "2026-06-14T12:01:29.458912",
       "agent": "qa_datasync",
       "task": "qa_datasync",
@@ -1286,13 +1279,6 @@
       "task": "forum_finder_agent",
       "status": "success",
       "message": "OK (60.7s)"
-    },
-    {
-      "timestamp": "2026-06-14T06:01:19.015766",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (9.9s)"
     },
     {
       "timestamp": "2026-06-14T06:01:08.394016",
@@ -1510,6 +1496,20 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-22T10:30:28.146612",
+      "agent": "retouren_completion_watcher_daily",
+      "task": "retouren_completion_watcher_daily",
+      "status": "success",
+      "message": "OK (1.5s)"
     }
   ],
   "request_log": [],
