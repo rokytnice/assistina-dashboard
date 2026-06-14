@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T07:02:58.681311",
+  "last_updated": "2026-06-14T07:05:54.581642",
   "public": true,
   "agents": [
     {
@@ -1513,7 +1513,23 @@
       "id": "",
       "started_at": null,
       "agent": ""
+    },
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
     }
   ],
-  "queued_jobs": []
+  "queued_jobs": [
+    {
+      "id": 40,
+      "started_at": null,
+      "agent": ""
+    },
+    {
+      "id": 41,
+      "started_at": null,
+      "agent": ""
+    }
+  ]
 }
