@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T02:00:25.828428",
+  "last_updated": "2026-06-14T02:37:46.011257",
   "public": true,
   "agents": [
     {
@@ -781,7 +781,7 @@
       "id": "book_analysis",
       "name": "Book Analysis Agent",
       "emoji": "📚",
-      "status": "timeout",
+      "status": "error",
       "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
@@ -797,11 +797,11 @@
           "silent": false,
           "timeout": 2800,
           "detail": "",
-          "last_run": "2026-06-14T01:47:17.662825",
-          "last_status": "timeout",
+          "last_run": "2026-06-14T02:37:45.722546",
+          "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 2800.2,
-          "run_count": 0
+          "last_duration_seconds": 2239.9,
+          "run_count": 1
         }
       ]
     },
@@ -1155,6 +1155,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T02:37:45.722546",
+      "agent": "book_agent_night_tick",
+      "task": "book_agent_night_tick",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-14T02:00:25.730150",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1188,13 +1195,6 @@
       "task": "chrome_health",
       "status": "success",
       "message": "OK (0.2s)"
-    },
-    {
-      "timestamp": "2026-06-14T01:47:17.662825",
-      "agent": "book_agent_night_tick",
-      "task": "book_agent_night_tick",
-      "status": "timeout",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-06-14T00:00:42.602417",
@@ -1508,12 +1508,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
