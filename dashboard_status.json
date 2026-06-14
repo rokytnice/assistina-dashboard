@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T08:53:12.157414",
+  "last_updated": "2026-06-14T08:53:42.354598",
   "public": true,
   "agents": [
     {
@@ -730,50 +730,6 @@
           "last_error": null,
           "last_duration_seconds": 0.3,
           "run_count": 671
-        }
-      ]
-    },
-    {
-      "id": "airbnb",
-      "name": "Airbnb Manager",
-      "emoji": "🏠",
-      "status": "success",
-      "description": "Tools: bash, playwright | Modell: haiku",
-      "tools": [
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "airbnb_morning",
-          "description": "Airbnb Morgen-Check um 8 Uhr",
-          "cron": "0 8 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-14T08:03:37.039891",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 157.1,
-          "run_count": 1
-        },
-        {
-          "id": "airbnb_evening",
-          "description": "Airbnb Abend-Check um 20 Uhr",
-          "cron": "0 20 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
         }
       ]
     },
@@ -1558,13 +1514,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 5,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "user_prompts_count": 6,
+  "current_jobs": [],
   "queued_jobs": []
 }
