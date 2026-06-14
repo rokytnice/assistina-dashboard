@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T08:05:37.629619",
+  "last_updated": "2026-06-14T08:05:38.717926",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-14T08:00:34.232164",
+          "last_run": "2026-06-14T08:05:38.714620",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.8,
-          "run_count": 12698
+          "last_duration_seconds": 1.1,
+          "run_count": 12699
         },
         {
           "id": "unified_index_rebuild",
@@ -1163,6 +1163,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T08:05:38.714620",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (1.1s)"
+    },
+    {
       "timestamp": "2026-06-14T08:03:37.039891",
       "agent": "airbnb_morning",
       "task": "airbnb_morning",
@@ -1196,13 +1203,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.2s)"
-    },
-    {
-      "timestamp": "2026-06-14T08:00:34.232164",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (0.8s)"
     },
     {
       "timestamp": "2026-06-14T08:00:32.997367",
@@ -1516,12 +1516,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 4,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
