@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T12:23:46.422410",
+  "last_updated": "2026-06-14T12:23:52.562041",
   "public": true,
   "agents": [
     {
@@ -279,11 +279,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-14T07:23:06.462898",
+          "last_run": "2026-06-14T12:23:52.412100",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 4.7,
-          "run_count": 589
+          "last_duration_seconds": 6.0,
+          "run_count": 590
         }
       ]
     },
@@ -1162,6 +1162,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-14T12:23:52.412100",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (6.0s)"
+    },
+    {
       "timestamp": "2026-06-14T12:20:45.962138",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1258,13 +1265,6 @@
       "task": "forum_responder_agent",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-14T07:23:06.462898",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (4.7s)"
     },
     {
       "timestamp": "2026-06-14T07:01:54.011865",
@@ -1515,12 +1515,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 10,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
