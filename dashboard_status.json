@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T00:30:40.796154",
+  "last_updated": "2026-06-16T00:30:41.032554",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-15T22:23:47.791886",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 5.1,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-15T20:31:39.742163",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 10.2,
@@ -1203,13 +1203,6 @@
       "message": "OK (113.3s)"
     },
     {
-      "timestamp": "2026-06-15T22:23:47.791886",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (5.1s)"
-    },
-    {
       "timestamp": "2026-06-15T21:30:49.912919",
       "agent": "daily_seo",
       "task": "daily_seo",
@@ -1243,13 +1236,6 @@
       "task": "taskprep_precheck",
       "status": "success",
       "message": "OK (11.7s)"
-    },
-    {
-      "timestamp": "2026-06-15T20:31:39.742163",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (10.2s)"
     },
     {
       "timestamp": "2026-06-15T20:00:41.999322",
@@ -1495,6 +1481,20 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-22T10:30:28.146612",
+      "agent": "retouren_completion_watcher_daily",
+      "task": "retouren_completion_watcher_daily",
+      "status": "success",
+      "message": "OK (1.5s)"
     }
   ],
   "request_log": [],
