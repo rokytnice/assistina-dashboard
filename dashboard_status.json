@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T06:00:51.848935",
+  "last_updated": "2026-06-15T06:00:52.088592",
   "public": true,
   "agents": [
     {
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-15T04:30:54.944064",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 6.1,
@@ -1224,13 +1224,6 @@
       "message": "OK (27.8s)"
     },
     {
-      "timestamp": "2026-06-15T04:30:54.944064",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (6.1s)"
-    },
-    {
       "timestamp": "2026-06-15T04:30:48.340943",
       "agent": "email_check",
       "task": "email_check",
@@ -1495,6 +1488,13 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
     }
   ],
   "request_log": [],
