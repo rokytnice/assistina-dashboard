@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T20:31:22.028083",
+  "last_updated": "2026-06-15T20:31:22.981606",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-15T17:23:30.032612",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 4.8,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-15T08:31:08.254737",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 6.3,
@@ -1224,13 +1224,6 @@
       "message": "OK (2.5s)"
     },
     {
-      "timestamp": "2026-06-15T17:23:30.032612",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (4.8s)"
-    },
-    {
       "timestamp": "2026-06-15T17:00:47.855450",
       "agent": "email_followup_tracker",
       "task": "email_followup_tracker",
@@ -1257,13 +1250,6 @@
       "task": "monthly_timesheet_reminder",
       "status": "success",
       "message": "OK (0.3s)"
-    },
-    {
-      "timestamp": "2026-06-15T08:31:08.254737",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (6.3s)"
     },
     {
       "timestamp": "2026-06-15T07:30:56.752888",
@@ -1495,6 +1481,20 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-05-22T10:30:28.146612",
+      "agent": "retouren_completion_watcher_daily",
+      "task": "retouren_completion_watcher_daily",
+      "status": "success",
+      "message": "OK (1.5s)"
     }
   ],
   "request_log": [],
