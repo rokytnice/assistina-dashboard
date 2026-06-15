@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T00:30:16.320086",
+  "last_updated": "2026-06-16T00:30:40.532772",
   "public": true,
   "agents": [
     {
@@ -309,11 +309,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-15T20:31:21.493800",
+          "last_run": "2026-06-16T00:30:40.429473",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 27.3,
-          "run_count": 413
+          "last_duration_seconds": 24.1,
+          "run_count": 414
         },
         {
           "id": "sync_calendar",
@@ -1147,6 +1147,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-16T00:30:40.429473",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (24.1s)"
+    },
+    {
       "timestamp": "2026-06-16T00:30:15.901458",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1243,13 +1250,6 @@
       "task": "taskprep_morning",
       "status": "success",
       "message": "OK (10.2s)"
-    },
-    {
-      "timestamp": "2026-06-15T20:31:21.493800",
-      "agent": "sync_gmail",
-      "task": "sync_gmail",
-      "status": "success",
-      "message": "OK (27.3s)"
     },
     {
       "timestamp": "2026-06-15T20:00:41.999322",
@@ -1500,12 +1500,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 1,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
