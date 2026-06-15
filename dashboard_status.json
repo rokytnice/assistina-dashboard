@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15T04:00:48.648967",
+  "last_updated": "2026-06-15T04:01:02.572946",
   "public": true,
   "agents": [
     {
@@ -738,11 +738,11 @@
           "silent": false,
           "timeout": 2800,
           "detail": "",
-          "last_run": "2026-06-15T02:01:05.855895",
+          "last_run": "2026-06-15T04:01:02.440313",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 17.0,
-          "run_count": 5
+          "last_duration_seconds": 13.8,
+          "run_count": 6
         }
       ]
     },
@@ -1147,6 +1147,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-15T04:01:02.440313",
+      "agent": "book_agent_night_tick",
+      "task": "book_agent_night_tick",
+      "status": "success",
+      "message": "OK (13.8s)"
+    },
+    {
       "timestamp": "2026-06-15T04:00:48.212476",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1187,13 +1194,6 @@
       "task": "chrome_health",
       "status": "success",
       "message": "OK (0.3s)"
-    },
-    {
-      "timestamp": "2026-06-15T02:01:05.855895",
-      "agent": "book_agent_night_tick",
-      "task": "book_agent_night_tick",
-      "status": "success",
-      "message": "OK (17.0s)"
     },
     {
       "timestamp": "2026-06-15T00:31:10.303422",
@@ -1500,12 +1500,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
