@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T21:03:58.820639",
+  "last_updated": "2026-06-16T21:03:59.021362",
   "public": true,
   "agents": [
     {
@@ -620,7 +620,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-15T21:04:04.920769",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 12.5,
@@ -1263,20 +1263,6 @@
       "message": "OK (18.0s)"
     },
     {
-      "timestamp": "2026-06-15T21:04:04.920769",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (12.5s)"
-    },
-    {
-      "timestamp": "2026-06-15T21:03:51.339052",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (19.2s)"
-    },
-    {
       "timestamp": "2026-06-15T09:01:11.079882",
       "agent": "sync_elster",
       "task": "sync_elster",
@@ -1436,6 +1422,20 @@
       "task": "token_monitor_weekly_telegram",
       "status": "success",
       "message": "OK (0.3s)"
+    },
+    {
+      "timestamp": "2026-05-26T06:11:56.409950",
+      "agent": "daily_tech_digest",
+      "task": "daily_tech_digest",
+      "status": "success",
+      "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
     }
   ],
   "request_log": [],
