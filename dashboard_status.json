@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T16:31:11.887086",
+  "last_updated": "2026-06-16T16:31:23.599067",
   "public": true,
   "agents": [
     {
@@ -459,11 +459,11 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-06-16T16:31:23.451157",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 9.1,
-          "run_count": 292
+          "last_duration_seconds": 11.6,
+          "run_count": 293
         },
         {
           "id": "taskprep_precheck",
@@ -1088,6 +1088,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-16T16:31:23.451157",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (11.6s)"
+    },
+    {
       "timestamp": "2026-06-16T16:31:10.504508",
       "agent": "email_check",
       "task": "email_check",
@@ -1429,24 +1436,11 @@
       "task": "token_monitor_weekly_telegram",
       "status": "success",
       "message": "OK (0.3s)"
-    },
-    {
-      "timestamp": "2026-05-26T06:11:56.409950",
-      "agent": "daily_tech_digest",
-      "task": "daily_tech_digest",
-      "status": "success",
-      "message": "OK (88.9s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
