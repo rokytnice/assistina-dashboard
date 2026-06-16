@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T00:00:44.999488",
+  "last_updated": "2026-06-17T00:00:45.601741",
   "public": true,
   "agents": [
     {
@@ -865,7 +865,7 @@
       "id": "forum_responder_analytics",
       "name": "Forum Responder Analytics",
       "emoji": "📊",
-      "status": null,
+      "status": "success",
       "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
@@ -881,11 +881,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-06-17T00:00:45.280170",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 0.3,
+          "run_count": 1
         },
         {
           "id": "forum_responder_weekly_analytics",
@@ -1087,6 +1087,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-06-17T00:00:45.280170",
+      "agent": "forum_responder_daily_analytics",
+      "task": "forum_responder_daily_analytics",
+      "status": "success",
+      "message": "OK (0.3s)"
+    },
     {
       "timestamp": "2026-06-17T00:00:44.148127",
       "agent": "book_agent_night_tick",
@@ -1429,24 +1436,11 @@
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-03T09:00:58.157915",
-      "agent": "token_monitor_daily_telegram",
-      "task": "token_monitor_daily_telegram",
-      "status": "success",
-      "message": "OK (0.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
