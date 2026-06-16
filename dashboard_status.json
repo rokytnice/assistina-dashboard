@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T12:30:59.890835",
+  "last_updated": "2026-06-16T12:31:03.599304",
   "public": true,
   "agents": [
     {
@@ -279,11 +279,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-06-16T12:31:03.517743",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 4.3,
-          "run_count": 607
+          "last_duration_seconds": 3.6,
+          "run_count": 608
         }
       ]
     },
@@ -1088,6 +1088,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-16T12:31:03.517743",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (3.6s)"
+    },
+    {
       "timestamp": "2026-06-16T12:30:59.100051",
       "agent": "sync_gmail",
       "task": "sync_gmail",
@@ -1429,24 +1436,11 @@
       "task": "daily_tech_digest",
       "status": "success",
       "message": "OK (88.9s)"
-    },
-    {
-      "timestamp": "2026-05-25T18:04:07.116995",
-      "agent": "qa_stock_monitor",
-      "task": "qa_stock_monitor",
-      "status": "error",
-      "message": "[error]"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
