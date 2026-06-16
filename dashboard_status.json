@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T08:31:02.568042",
+  "last_updated": "2026-06-16T08:31:02.788886",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-16T07:24:01.384501",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 5.2,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-16T04:31:54.767868",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 40.4,
@@ -1211,13 +1211,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-06-16T07:24:01.384501",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (5.2s)"
-    },
-    {
       "timestamp": "2026-06-16T07:01:47.105171",
       "agent": "forum_finder_agent",
       "task": "forum_finder_agent",
@@ -1237,13 +1230,6 @@
       "task": "sync_check24",
       "status": "success",
       "message": "OK (77.1s)"
-    },
-    {
-      "timestamp": "2026-06-16T04:31:54.767868",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (40.4s)"
     },
     {
       "timestamp": "2026-06-16T04:01:30.945706",
@@ -1503,6 +1489,20 @@
       "task": "token_monitor_weekly_telegram",
       "status": "success",
       "message": "OK (0.3s)"
+    },
+    {
+      "timestamp": "2026-05-26T06:11:56.409950",
+      "agent": "daily_tech_digest",
+      "task": "daily_tech_digest",
+      "status": "success",
+      "message": "OK (88.9s)"
+    },
+    {
+      "timestamp": "2026-05-25T18:04:07.116995",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "error",
+      "message": "[error]"
     }
   ],
   "request_log": [],
