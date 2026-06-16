@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T14:55:23.366178",
+  "last_updated": "2026-06-16T14:56:07.750357",
   "public": true,
   "agents": [
     {
@@ -584,8 +584,8 @@
       "tasks": [
         {
           "id": "stock_crash_check",
-          "description": "Aktien-Crash-Check alle 30 Min (Mo-Fr 6-22 Uhr, ~1.000 Ticker)",
-          "cron": "*/30 6-22 * * 1-5",
+          "description": "Aktien-Crash-Check täglich um 9 Uhr (Mo-Fr, ~2.500 Ticker)",
+          "cron": "0 9 * * 1-5",
           "enabled": true,
           "task_type": "bash",
           "silent": false,
@@ -1440,13 +1440,13 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 0,
-  "current_jobs": [
+  "user_prompts_count": 1,
+  "current_jobs": [],
+  "queued_jobs": [
     {
-      "id": "",
+      "id": 2,
       "started_at": null,
       "agent": ""
     }
-  ],
-  "queued_jobs": []
+  ]
 }
