@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T03:00:46.107906",
+  "last_updated": "2026-06-16T03:02:00.509891",
   "public": true,
   "agents": [
     {
@@ -778,7 +778,7 @@
       "id": "self_improvement",
       "name": "Self-Improvement Analyzer",
       "emoji": "🧪",
-      "status": null,
+      "status": "success",
       "description": "Tools: claude, bash | Modell: haiku",
       "tools": [
         "claude",
@@ -795,11 +795,11 @@
           "silent": false,
           "timeout": 900,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-06-16T03:02:00.363867",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 74.3,
+          "run_count": 1
         }
       ]
     },
@@ -1070,6 +1070,14 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "self_improvement",
+      "name": "Self-Improvement Analyzer",
+      "emoji": "🧪",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "retouren": {
@@ -1146,6 +1154,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-06-16T03:02:00.363867",
+      "agent": "nightly_self_audit",
+      "task": "nightly_self_audit",
+      "status": "success",
+      "message": "OK (74.3s)"
+    },
     {
       "timestamp": "2026-06-16T03:00:45.325027",
       "agent": "book_agent_night_tick",
@@ -1488,24 +1503,11 @@
       "task": "token_monitor_weekly_telegram",
       "status": "success",
       "message": "OK (0.3s)"
-    },
-    {
-      "timestamp": "2026-05-26T06:11:56.409950",
-      "agent": "daily_tech_digest",
-      "task": "daily_tech_digest",
-      "status": "success",
-      "message": "OK (88.9s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
