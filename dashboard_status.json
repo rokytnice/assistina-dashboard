@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16T08:00:47.446721",
+  "last_updated": "2026-06-16T08:03:13.183361",
   "public": true,
   "agents": [
     {
@@ -114,11 +114,11 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-06-12T08:05:46.183548",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 300.4,
-          "run_count": 9
+          "last_run": "2026-06-16T08:03:13.024748",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 145.6,
+          "run_count": 10
         },
         {
           "id": "elster_inbox_check_6h",
@@ -1155,6 +1155,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-16T08:03:13.024748",
+      "agent": "investor_research_agent",
+      "task": "investor_research_agent",
+      "status": "success",
+      "message": "OK (145.6s)"
+    },
+    {
       "timestamp": "2026-06-16T08:00:47.037741",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1435,13 +1442,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-06-12T08:05:46.183548",
-      "agent": "investor_research_agent",
-      "task": "investor_research_agent",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-06-10T09:02:34.703231",
       "agent": "ustva_check",
       "task": "ustva_check",
@@ -1508,12 +1508,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
