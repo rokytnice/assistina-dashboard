@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T04:30:53.452351",
+  "last_updated": "2026-06-17T04:30:53.753338",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-17T04:00:51.026652",
+          "last_run": "2026-06-17T04:30:53.751408",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.3,
-          "run_count": 3594
+          "run_count": 3595
         },
         {
           "id": "sensor_sweep",
@@ -1088,6 +1088,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-17T04:30:53.751408",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (0.3s)"
+    },
+    {
       "timestamp": "2026-06-17T04:25:52.991073",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
@@ -1114,13 +1121,6 @@
       "task": "sync_drive",
       "status": "success",
       "message": "OK (228.4s)"
-    },
-    {
-      "timestamp": "2026-06-17T04:00:51.026652",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (0.3s)"
     },
     {
       "timestamp": "2026-06-17T03:30:39.671753",
@@ -1441,12 +1441,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
