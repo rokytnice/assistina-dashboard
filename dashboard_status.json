@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T07:30:56.082261",
+  "last_updated": "2026-06-17T07:31:24.354966",
   "public": true,
   "agents": [
     {
@@ -650,11 +650,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-14T07:31:04.696077",
+          "last_run": "2026-06-17T07:31:24.228755",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 47.5,
-          "run_count": 20
+          "last_duration_seconds": 28.1,
+          "run_count": 21
         },
         {
           "id": "qa_mailcheck",
@@ -1088,6 +1088,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-17T07:31:24.228755",
+      "agent": "qa_taskprep",
+      "task": "qa_taskprep",
+      "status": "success",
+      "message": "OK (28.1s)"
+    },
+    {
       "timestamp": "2026-06-17T07:30:55.546791",
       "agent": "forum_responder_agent",
       "task": "forum_responder_agent",
@@ -1361,13 +1368,6 @@
       "message": "OK (157.1s)"
     },
     {
-      "timestamp": "2026-06-14T07:31:04.696077",
-      "agent": "qa_taskprep",
-      "task": "qa_taskprep",
-      "status": "success",
-      "message": "OK (47.5s)"
-    },
-    {
       "timestamp": "2026-06-13T10:01:41.742643",
       "agent": "retouren_check",
       "task": "retouren_check",
@@ -1441,12 +1441,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 2,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
