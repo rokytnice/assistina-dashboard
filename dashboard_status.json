@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T06:00:28.650950",
+  "last_updated": "2026-06-17T06:00:31.479008",
   "public": true,
   "agents": [
     {
@@ -219,11 +219,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-15T06:00:25.266747",
+          "last_run": "2026-06-17T06:00:31.418769",
           "last_status": "error",
           "last_error": "error",
-          "last_duration_seconds": 2.5,
-          "run_count": 4
+          "last_duration_seconds": 2.8,
+          "run_count": 5
         },
         {
           "id": "secret_scanner_cloud_agent",
@@ -1088,6 +1088,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-17T06:00:31.418769",
+      "agent": "forum_scout_agent",
+      "task": "forum_scout_agent",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-06-17T06:00:28.118535",
       "agent": "play_release_check_6h",
       "task": "play_release_check_6h",
@@ -1326,13 +1333,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-06-15T06:00:25.266747",
-      "agent": "forum_scout_agent",
-      "task": "forum_scout_agent",
-      "status": "error",
-      "message": "[error]"
-    },
-    {
       "timestamp": "2026-06-14T20:01:05.586465",
       "agent": "taskprep_evening",
       "task": "taskprep_evening",
@@ -1441,12 +1441,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
