@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T08:30:46.807798",
+  "last_updated": "2026-06-17T08:30:47.007185",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-17T07:23:46.962614",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 4.5,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-17T06:01:07.797742",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 8.1,
@@ -1144,13 +1144,6 @@
       "message": "[error]"
     },
     {
-      "timestamp": "2026-06-17T07:23:46.962614",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (4.5s)"
-    },
-    {
       "timestamp": "2026-06-17T07:01:31.678716",
       "agent": "forum_finder_agent",
       "task": "forum_finder_agent",
@@ -1163,13 +1156,6 @@
       "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.2s)"
-    },
-    {
-      "timestamp": "2026-06-17T06:01:07.797742",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (8.1s)"
     },
     {
       "timestamp": "2026-06-17T06:00:58.621576",
@@ -1436,6 +1422,20 @@
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-03T09:00:58.157915",
+      "agent": "token_monitor_daily_telegram",
+      "task": "token_monitor_daily_telegram",
+      "status": "success",
+      "message": "OK (0.4s)"
+    },
+    {
+      "timestamp": "2026-06-01T09:00:15.958464",
+      "agent": "token_monitor_weekly_telegram",
+      "task": "token_monitor_weekly_telegram",
+      "status": "success",
+      "message": "OK (0.3s)"
     }
   ],
   "request_log": [],
