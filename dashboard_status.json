@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T04:31:19.278544",
+  "last_updated": "2026-06-17T04:31:19.479318",
   "public": true,
   "agents": [
     {
@@ -279,7 +279,7 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-17T00:30:32.453311",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 5.2,
@@ -459,7 +459,7 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-17T00:30:41.859992",
+          "last_run": null,
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 8.8,
@@ -1151,20 +1151,6 @@
       "message": "OK (20.9s)"
     },
     {
-      "timestamp": "2026-06-17T00:30:41.859992",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (8.8s)"
-    },
-    {
-      "timestamp": "2026-06-17T00:30:32.453311",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (5.2s)"
-    },
-    {
       "timestamp": "2026-06-17T00:00:45.280170",
       "agent": "forum_responder_daily_analytics",
       "task": "forum_responder_daily_analytics",
@@ -1436,6 +1422,20 @@
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-03T09:00:58.157915",
+      "agent": "token_monitor_daily_telegram",
+      "task": "token_monitor_daily_telegram",
+      "status": "success",
+      "message": "OK (0.4s)"
+    },
+    {
+      "timestamp": "2026-06-01T09:00:15.958464",
+      "agent": "token_monitor_weekly_telegram",
+      "task": "token_monitor_weekly_telegram",
+      "status": "success",
+      "message": "OK (0.3s)"
     }
   ],
   "request_log": [],
