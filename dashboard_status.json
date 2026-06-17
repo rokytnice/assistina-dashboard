@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17T22:50:29.293351",
+  "last_updated": "2026-06-17T22:55:32.441464",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-17T22:45:29.159925",
+          "last_run": "2026-06-17T22:50:32.373507",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.7,
-          "run_count": 13724
+          "last_duration_seconds": 3.1,
+          "run_count": 13725
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-17T22:45:29.239381",
+          "last_run": "2026-06-17T22:50:32.403069",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 25114
+          "run_count": 25115
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1088,11 +1088,18 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-17T22:45:29.239381",
+      "timestamp": "2026-06-17T22:50:32.403069",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-17T22:50:32.373507",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (3.1s)"
     },
     {
       "timestamp": "2026-06-17T22:45:29.210210",
@@ -1100,13 +1107,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-17T22:45:29.159925",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (2.7s)"
     },
     {
       "timestamp": "2026-06-17T22:30:22.414786",
