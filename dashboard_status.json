@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T23:50:48.089969",
+  "last_updated": "2026-06-19T23:55:50.436115",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-19T23:45:47.266687",
+          "last_run": "2026-06-19T23:50:50.051073",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.2,
-          "run_count": 14301
+          "last_duration_seconds": 2.0,
+          "run_count": 14302
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-19T23:45:47.786546",
+          "last_run": "2026-06-19T23:50:50.242439",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 25667
+          "last_duration_seconds": 0.0,
+          "run_count": 25668
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1088,11 +1088,18 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-19T23:45:47.786546",
+      "timestamp": "2026-06-19T23:50:50.242439",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
-      "message": "OK (0.1s)"
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-19T23:50:50.051073",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (2.0s)"
     },
     {
       "timestamp": "2026-06-19T23:45:47.545363",
@@ -1100,13 +1107,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.1s)"
-    },
-    {
-      "timestamp": "2026-06-19T23:45:47.266687",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (3.2s)"
     },
     {
       "timestamp": "2026-06-19T23:30:38.381018",
