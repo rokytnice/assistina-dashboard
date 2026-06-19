@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19T05:00:05.695963",
+  "last_updated": "2026-06-19T05:05:16.999384",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-19T04:30:57.014418",
+          "last_run": "2026-06-19T05:00:06.935992",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 1.2,
-          "run_count": 3690
+          "run_count": 3691
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-19T04:55:05.595951",
+          "last_run": "2026-06-19T05:00:08.199603",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.6,
-          "run_count": 14079
+          "last_duration_seconds": 1.2,
+          "run_count": 14080
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-19T04:45:01.977172",
+          "last_run": "2026-06-19T05:00:08.247781",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 4287
+          "run_count": 4288
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-19T04:55:05.624103",
+          "last_run": "2026-06-19T05:00:08.275616",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 25454
+          "run_count": 25455
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -384,11 +384,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-18T05:01:33.849603",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 42.4,
-          "run_count": 18
+          "last_run": "2026-06-19T05:00:08.299735",
+          "last_status": "error",
+          "last_error": "error",
+          "last_duration_seconds": 0.0,
+          "run_count": 19
         },
         {
           "id": "sync_ing_diba",
@@ -710,11 +710,11 @@
           "silent": true,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-06-19T04:30:57.816213",
+          "last_run": "2026-06-19T05:00:08.500885",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 780
+          "run_count": 781
         }
       ]
     },
@@ -738,11 +738,11 @@
           "silent": false,
           "timeout": 2800,
           "detail": "",
-          "last_run": "2026-06-19T02:00:30.802861",
+          "last_run": "2026-06-19T05:00:16.807547",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 11.4,
-          "run_count": 25
+          "last_duration_seconds": 8.3,
+          "run_count": 26
         }
       ]
     },
@@ -1088,32 +1088,53 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-19T04:55:05.624103",
+      "timestamp": "2026-06-19T05:00:16.807547",
+      "agent": "book_agent_night_tick",
+      "task": "book_agent_night_tick",
+      "status": "success",
+      "message": "OK (8.3s)"
+    },
+    {
+      "timestamp": "2026-06-19T05:00:08.500885",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-19T05:00:08.299735",
+      "agent": "sync_check24",
+      "task": "sync_check24",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-19T05:00:08.275616",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-19T04:55:05.595951",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (1.6s)"
-    },
-    {
-      "timestamp": "2026-06-19T04:45:01.977172",
+      "timestamp": "2026-06-19T05:00:08.247781",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-19T04:30:57.816213",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
+      "timestamp": "2026-06-19T05:00:08.199603",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (0.0s)"
+      "message": "OK (1.2s)"
+    },
+    {
+      "timestamp": "2026-06-19T05:00:06.935992",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.2s)"
     },
     {
       "timestamp": "2026-06-19T04:30:57.629013",
@@ -1121,13 +1142,6 @@
       "task": "sync_gmail",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-19T04:30:57.014418",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.2s)"
     },
     {
       "timestamp": "2026-06-19T04:01:46.197144",
@@ -1142,13 +1156,6 @@
       "task": "taskprep_precheck",
       "status": "success",
       "message": "OK (44.2s)"
-    },
-    {
-      "timestamp": "2026-06-19T02:00:30.802861",
-      "agent": "book_agent_night_tick",
-      "task": "book_agent_night_tick",
-      "status": "success",
-      "message": "OK (11.4s)"
     },
     {
       "timestamp": "2026-06-19T00:01:03.960997",
@@ -1261,13 +1268,6 @@
       "task": "forum_scout_agent",
       "status": "error",
       "message": "[error]"
-    },
-    {
-      "timestamp": "2026-06-18T05:01:33.849603",
-      "agent": "sync_check24",
-      "task": "sync_check24",
-      "status": "success",
-      "message": "OK (42.4s)"
     },
     {
       "timestamp": "2026-06-18T00:00:55.266021",
