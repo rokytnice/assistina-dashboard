@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T10:05:14.784795",
+  "last_updated": "2026-06-20T10:06:36.846650",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-20T10:00:30.856135",
+          "last_run": "2026-06-20T10:05:32.463610",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.9,
-          "run_count": 14423
+          "last_duration_seconds": 0.7,
+          "run_count": 14424
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-20T10:00:31.422851",
+          "last_run": "2026-06-20T10:05:32.696170",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 25785
+          "run_count": 25786
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1032,16 +1032,23 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-20T10:00:31.581487",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
+      "timestamp": "2026-06-20T10:05:32.696170",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.1s)"
     },
     {
-      "timestamp": "2026-06-20T10:00:31.422851",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
+      "timestamp": "2026-06-20T10:05:32.463610",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (0.7s)"
+    },
+    {
+      "timestamp": "2026-06-20T10:00:31.581487",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.1s)"
     },
@@ -1051,13 +1058,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.1s)"
-    },
-    {
-      "timestamp": "2026-06-20T10:00:30.856135",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (0.9s)"
     },
     {
       "timestamp": "2026-06-20T10:00:29.847795",
@@ -1384,7 +1384,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 14,
+  "user_prompts_count": 15,
   "current_jobs": [
     {
       "id": "",
@@ -1393,11 +1393,6 @@
     }
   ],
   "queued_jobs": [
-    {
-      "id": 12,
-      "started_at": null,
-      "agent": ""
-    },
     {
       "id": 13,
       "started_at": null,
