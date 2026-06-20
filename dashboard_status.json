@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20T03:45:50.302645",
+  "last_updated": "2026-06-20T03:50:53.078254",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-20T03:40:49.916245",
+          "last_run": "2026-06-20T03:45:52.384341",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 7.8,
-          "run_count": 14348
+          "last_duration_seconds": 2.1,
+          "run_count": 14349
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-20T03:30:38.938305",
+          "last_run": "2026-06-20T03:45:52.669974",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 4376
+          "run_count": 4377
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-20T03:40:50.083337",
+          "last_run": "2026-06-20T03:45:52.915714",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.1,
-          "run_count": 25714
+          "run_count": 25715
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1088,30 +1088,30 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-20T03:40:50.083337",
+      "timestamp": "2026-06-20T03:45:52.915714",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.1s)"
     },
     {
-      "timestamp": "2026-06-20T03:40:49.916245",
+      "timestamp": "2026-06-20T03:45:52.669974",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.1s)"
+    },
+    {
+      "timestamp": "2026-06-20T03:45:52.384341",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (7.8s)"
+      "message": "OK (2.1s)"
     },
     {
       "timestamp": "2026-06-20T03:30:39.532011",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
-      "status": "success",
-      "message": "OK (0.1s)"
-    },
-    {
-      "timestamp": "2026-06-20T03:30:38.938305",
-      "agent": "unified_index_rebuild",
-      "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.1s)"
     },
