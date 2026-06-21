@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21T17:46:20.306546",
+  "last_updated": "2026-06-21T17:48:58.854016",
   "public": true,
   "agents": [
     {
@@ -270,21 +270,6 @@
       ],
       "model": "haiku",
       "tasks": [
-        {
-          "id": "sync_gmail",
-          "description": "Gmail-Sync alle 4 Stunden",
-          "cron": "30 */4 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-21T16:31:35.289588",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 36.9,
-          "run_count": 443
-        },
         {
           "id": "sync_calendar",
           "description": "Kalender-Sync täglich 6 Uhr",
@@ -1354,13 +1339,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 13,
+  "user_prompts_count": 14,
   "current_jobs": [],
-  "queued_jobs": [
-    {
-      "id": 2,
-      "started_at": null,
-      "agent": ""
-    }
-  ]
+  "queued_jobs": []
 }
