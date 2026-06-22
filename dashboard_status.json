@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T09:50:20.072920",
+  "last_updated": "2026-06-22T09:52:55.058011",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-22T09:45:19.949180",
+          "last_run": "2026-06-22T09:50:22.430880",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.9,
-          "run_count": 14858
+          "last_duration_seconds": 2.4,
+          "run_count": 14859
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-22T09:45:20.027652",
+          "last_run": "2026-06-22T09:50:22.457596",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 26205
+          "run_count": 26206
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -179,21 +179,6 @@
           "last_error": "error",
           "last_duration_seconds": 500.6,
           "run_count": 8
-        },
-        {
-          "id": "forum_responder_agent",
-          "description": "Forum Responder Cloud-Agent — Hybrid Architektur (Cloud-Orchestrierung + RPC-Bac",
-          "cron": "30 7 * * *",
-          "enabled": true,
-          "task_type": "cloud_agent",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-22T07:30:37.464140",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 1.7,
-          "run_count": 10
         },
         {
           "id": "forum_scout_agent",
@@ -957,11 +942,18 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-22T09:45:20.027652",
+      "timestamp": "2026-06-22T09:50:22.457596",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-22T09:50:22.430880",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (2.4s)"
     },
     {
       "timestamp": "2026-06-22T09:45:20.001075",
@@ -969,13 +961,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-22T09:45:19.949180",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (1.9s)"
     },
     {
       "timestamp": "2026-06-22T09:30:12.785735",
@@ -1309,7 +1294,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 7,
+  "user_prompts_count": 8,
   "current_jobs": [
     {
       "id": "",
