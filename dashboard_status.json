@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22T09:53:32.681672",
+  "last_updated": "2026-06-22T09:54:22.462109",
   "public": true,
   "agents": [
     {
@@ -550,21 +550,6 @@
           "last_error": null,
           "last_duration_seconds": 49.8,
           "run_count": 13
-        },
-        {
-          "id": "qa_taskprep",
-          "description": "QA Taskprep (30 Min nach Morning-Briefing)",
-          "cron": "30 7 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-22T07:31:18.979233",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 41.4,
-          "run_count": 23
         },
         {
           "id": "qa_mailcheck",
@@ -1294,7 +1279,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 9,
+  "user_prompts_count": 10,
   "current_jobs": [
     {
       "id": "",
