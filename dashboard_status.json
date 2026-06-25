@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T21:48:59.161281",
+  "last_updated": "2026-06-25T21:55:14.030700",
   "public": true,
   "agents": [
     {
@@ -620,11 +620,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
+          "last_run": "2026-06-25T21:50:13.818879",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 202.8,
-          "run_count": 45
+          "last_duration_seconds": 51.4,
+          "run_count": 46
         },
         {
           "id": "qa_datasync",
@@ -1017,6 +1017,20 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-25T21:50:13.818879",
+      "agent": "qa_contentradar",
+      "task": "qa_contentradar",
+      "status": "success",
+      "message": "OK (51.4s)"
+    },
+    {
+      "timestamp": "2026-06-25T21:49:22.343239",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (22.0s)"
+    },
+    {
       "timestamp": "2026-06-25T21:48:59.157118",
       "agent": "daily_videos",
       "task": "daily_videos",
@@ -1351,25 +1365,17 @@
       "task": "token_monitor_daily_telegram",
       "status": "success",
       "message": "OK (0.4s)"
-    },
-    {
-      "timestamp": "2026-06-01T09:00:15.958464",
-      "agent": "token_monitor_weekly_telegram",
-      "task": "token_monitor_weekly_telegram",
-      "status": "success",
-      "message": "OK (0.3s)"
-    },
-    {
-      "timestamp": "2026-05-26T06:11:56.409950",
-      "agent": "daily_tech_digest",
-      "task": "daily_tech_digest",
-      "status": "success",
-      "message": "OK (88.9s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 0,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
