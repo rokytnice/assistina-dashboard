@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T21:19:31.719603",
+  "last_updated": "2026-06-26T21:26:19.990878",
   "public": true,
   "agents": [
     {
@@ -471,7 +471,7 @@
       "id": "contentradar",
       "name": "Content Radar (News + Video)",
       "emoji": "📡",
-      "status": "timeout",
+      "status": "success",
       "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
@@ -504,11 +504,11 @@
           "silent": false,
           "timeout": 600,
           "detail": "",
-          "last_run": "2026-06-25T21:48:59.157118",
-          "last_status": "timeout",
-          "last_error": "error",
-          "last_duration_seconds": 600.5,
-          "run_count": 16
+          "last_run": "2026-06-26T21:23:59.865171",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 266.9,
+          "run_count": 17
         }
       ]
     },
@@ -620,11 +620,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-25T21:50:13.818879",
+          "last_run": "2026-06-26T21:26:19.589115",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 51.4,
-          "run_count": 46
+          "last_duration_seconds": 116.9,
+          "run_count": 47
         },
         {
           "id": "qa_datasync",
@@ -1017,6 +1017,27 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-26T21:26:19.589115",
+      "agent": "qa_contentradar",
+      "task": "qa_contentradar",
+      "status": "success",
+      "message": "OK (116.9s)"
+    },
+    {
+      "timestamp": "2026-06-26T21:24:22.500051",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (22.5s)"
+    },
+    {
+      "timestamp": "2026-06-26T21:23:59.865171",
+      "agent": "daily_videos",
+      "task": "daily_videos",
+      "status": "success",
+      "message": "OK (266.9s)"
+    },
+    {
       "timestamp": "2026-06-26T21:19:31.577381",
       "agent": "daily_content",
       "task": "daily_content",
@@ -1190,27 +1211,6 @@
       "task": "nightly_data_sync",
       "status": "success",
       "message": "OK (237.5s)"
-    },
-    {
-      "timestamp": "2026-06-25T21:50:13.818879",
-      "agent": "qa_contentradar",
-      "task": "qa_contentradar",
-      "status": "success",
-      "message": "OK (51.4s)"
-    },
-    {
-      "timestamp": "2026-06-25T21:49:22.343239",
-      "agent": "daily_post_qa",
-      "task": "daily_post_qa",
-      "status": "success",
-      "message": "OK (22.0s)"
-    },
-    {
-      "timestamp": "2026-06-25T21:48:59.157118",
-      "agent": "daily_videos",
-      "task": "daily_videos",
-      "status": "timeout",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-06-25T00:00:20.694025",
