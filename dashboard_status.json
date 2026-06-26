@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T00:00:35.686676",
+  "last_updated": "2026-06-27T00:05:37.975780",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-26T23:30:20.970467",
+          "last_run": "2026-06-27T00:00:36.936198",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 4040
+          "last_duration_seconds": 1.3,
+          "run_count": 4041
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-26T23:55:35.601852",
+          "last_run": "2026-06-27T00:00:37.697534",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.8,
-          "run_count": 16143
+          "last_duration_seconds": 0.7,
+          "run_count": 16144
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-26T23:45:29.334656",
+          "last_run": "2026-06-27T00:00:37.752809",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 4951
+          "run_count": 4952
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-26T23:55:35.631210",
+          "last_run": "2026-06-27T00:00:37.785365",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 27443
+          "run_count": 27444
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -261,7 +261,7 @@
       "id": "datasync",
       "name": "Daten-Synchronizer",
       "emoji": "🔄",
-      "status": "success",
+      "status": "timeout",
       "description": "Tools: claude, bash, playwright | Modell: haiku",
       "tools": [
         "claude",
@@ -339,10 +339,10 @@
           "silent": false,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-26T18:00:25.489373",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 4.2,
+          "last_run": "2026-06-27T00:02:37.816225",
+          "last_status": "timeout",
+          "last_error": "error",
+          "last_duration_seconds": 120.0,
           "run_count": 182
         },
         {
@@ -1017,25 +1017,39 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-26T23:55:35.631210",
+      "timestamp": "2026-06-27T00:02:37.816225",
+      "agent": "sync_conversations",
+      "task": "sync_conversations",
+      "status": "timeout",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-27T00:00:37.785365",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-26T23:55:35.601852",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (2.8s)"
-    },
-    {
-      "timestamp": "2026-06-26T23:45:29.334656",
+      "timestamp": "2026-06-27T00:00:37.752809",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-27T00:00:37.697534",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (0.7s)"
+    },
+    {
+      "timestamp": "2026-06-27T00:00:36.936198",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.3s)"
     },
     {
       "timestamp": "2026-06-26T23:30:23.336870",
@@ -1043,13 +1057,6 @@
       "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-26T23:30:20.970467",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.2s)"
     },
     {
       "timestamp": "2026-06-26T23:05:07.875347",
@@ -1134,13 +1141,6 @@
       "task": "qa_stock_monitor",
       "status": "success",
       "message": "OK (35.5s)"
-    },
-    {
-      "timestamp": "2026-06-26T18:00:25.489373",
-      "agent": "sync_conversations",
-      "task": "sync_conversations",
-      "status": "success",
-      "message": "OK (4.2s)"
     },
     {
       "timestamp": "2026-06-26T17:01:50.318637",
