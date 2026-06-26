@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T08:35:56.244040",
+  "last_updated": "2026-06-26T08:40:58.698418",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-26T08:30:05.289297",
+          "last_run": "2026-06-26T08:35:58.618685",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 0.5,
-          "run_count": 15965
+          "last_duration_seconds": 2.4,
+          "run_count": 15966
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-26T08:30:05.368203",
+          "last_run": "2026-06-26T08:35:58.646766",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 27272
+          "run_count": 27273
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -1017,6 +1017,20 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-06-26T08:35:58.646766",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-26T08:35:58.618685",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (2.4s)"
+    },
+    {
       "timestamp": "2026-06-26T08:30:56.183523",
       "agent": "qa_retrospective_sweep",
       "task": "qa_retrospective_sweep",
@@ -1045,25 +1059,11 @@
       "message": "OK (24.9s)"
     },
     {
-      "timestamp": "2026-06-26T08:30:05.368203",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
-      "status": "success",
-      "message": "OK (0.0s)"
-    },
-    {
       "timestamp": "2026-06-26T08:30:05.339950",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-26T08:30:05.289297",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (0.5s)"
     },
     {
       "timestamp": "2026-06-26T08:30:04.744078",
