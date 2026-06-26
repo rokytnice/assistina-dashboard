@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T20:30:49.632547",
+  "last_updated": "2026-06-26T20:40:35.369430",
   "public": true,
   "agents": [
     {
@@ -24,11 +24,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-26T20:00:14.627292",
+          "last_run": "2026-06-26T20:30:50.952853",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 1.3,
-          "run_count": 4033
+          "run_count": 4034
         },
         {
           "id": "sensor_sweep",
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-26T20:25:49.562726",
+          "last_run": "2026-06-26T20:35:35.276305",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.0,
-          "run_count": 16107
+          "last_duration_seconds": 1.1,
+          "run_count": 16109
         },
         {
           "id": "unified_index_rebuild",
@@ -54,11 +54,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-06-26T20:15:45.657768",
+          "last_run": "2026-06-26T20:30:51.956264",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 4938
+          "run_count": 4939
         },
         {
           "id": "email_followup_tracker",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-26T20:25:49.591406",
+          "last_run": "2026-06-26T20:35:35.305190",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 27407
+          "run_count": 27409
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -249,11 +249,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-26T17:24:05.065563",
+          "last_run": "2026-06-26T20:31:21.350256",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 5.2,
-          "run_count": 689
+          "last_duration_seconds": 3.9,
+          "run_count": 690
         }
       ]
     },
@@ -279,11 +279,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-06-26T12:30:45.926026",
+          "last_run": "2026-06-26T20:31:17.303341",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 25.7,
-          "run_count": 467
+          "last_duration_seconds": 25.3,
+          "run_count": 468
         },
         {
           "id": "sync_calendar",
@@ -429,11 +429,11 @@
           "silent": false,
           "timeout": 420,
           "detail": "",
-          "last_run": "2026-06-26T12:31:05.897502",
+          "last_run": "2026-06-26T20:32:33.973292",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 15.0,
-          "run_count": 342
+          "last_duration_seconds": 72.5,
+          "run_count": 343
         },
         {
           "id": "taskprep_precheck",
@@ -1017,25 +1017,53 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-26T20:25:49.591406",
+      "timestamp": "2026-06-26T20:35:35.305190",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-26T20:25:49.562726",
+      "timestamp": "2026-06-26T20:35:35.276305",
       "agent": "sensor_sweep",
       "task": "sensor_sweep",
       "status": "success",
-      "message": "OK (2.0s)"
+      "message": "OK (1.1s)"
     },
     {
-      "timestamp": "2026-06-26T20:15:45.657768",
+      "timestamp": "2026-06-26T20:32:33.973292",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (72.5s)"
+    },
+    {
+      "timestamp": "2026-06-26T20:31:21.350256",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (3.9s)"
+    },
+    {
+      "timestamp": "2026-06-26T20:31:17.303341",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (25.3s)"
+    },
+    {
+      "timestamp": "2026-06-26T20:30:51.956264",
       "agent": "unified_index_rebuild",
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-26T20:30:50.952853",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.3s)"
     },
     {
       "timestamp": "2026-06-26T20:02:07.693301",
@@ -1043,13 +1071,6 @@
       "task": "taskprep_evening",
       "status": "success",
       "message": "OK (112.2s)"
-    },
-    {
-      "timestamp": "2026-06-26T20:00:14.627292",
-      "agent": "chrome_health",
-      "task": "chrome_health",
-      "status": "success",
-      "message": "OK (1.3s)"
     },
     {
       "timestamp": "2026-06-26T19:30:03.358413",
@@ -1080,13 +1101,6 @@
       "message": "OK (4.2s)"
     },
     {
-      "timestamp": "2026-06-26T17:24:05.065563",
-      "agent": "email_check",
-      "task": "email_check",
-      "status": "success",
-      "message": "OK (5.2s)"
-    },
-    {
       "timestamp": "2026-06-26T17:01:50.318637",
       "agent": "email_followup_tracker",
       "task": "email_followup_tracker",
@@ -1099,20 +1113,6 @@
       "task": "qa_mailcheck",
       "status": "success",
       "message": "OK (22.9s)"
-    },
-    {
-      "timestamp": "2026-06-26T12:31:05.897502",
-      "agent": "taskprep_morning",
-      "task": "taskprep_morning",
-      "status": "success",
-      "message": "OK (15.0s)"
-    },
-    {
-      "timestamp": "2026-06-26T12:30:45.926026",
-      "agent": "sync_gmail",
-      "task": "sync_gmail",
-      "status": "success",
-      "message": "OK (25.7s)"
     },
     {
       "timestamp": "2026-06-26T12:00:58.999896",
