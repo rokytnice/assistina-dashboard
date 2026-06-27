@@ -1,499 +1,7 @@
 {
-  "last_updated": "2026-06-27T13:05:45.447882",
+  "last_updated": "2026-06-27T13:06:57.231728",
   "public": true,
-  "agents": [
-    {
-      "id": "assistant",
-      "name": "Persönlicher Assistent",
-      "emoji": "🤖",
-      "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "chrome_health",
-          "description": "Chrome Deep-Health-Check alle 30 Min (ergänzend zum Watchdog)",
-          "cron": "*/30 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 60,
-          "detail": "",
-          "last_run": "2026-06-27T13:00:44.427847",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1.2,
-          "run_count": 4067
-        },
-        {
-          "id": "sensor_sweep",
-          "description": "Business-Sensoren (Gmail, Calendar, Lexware) alle 5 Minuten. Events gehen auf de",
-          "cron": "*/5 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-06-27T13:00:45.266770",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.8,
-          "run_count": 16300
-        },
-        {
-          "id": "unified_index_rebuild",
-          "description": "Baut data/unified_index.json neu (Cross-References zwischen Reminders, Retouren,",
-          "cron": "*/15 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 60,
-          "detail": "",
-          "last_run": "2026-06-27T13:00:45.316858",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.0,
-          "run_count": 5002
-        },
-        {
-          "id": "email_followup_tracker",
-          "description": "Erinnert werktags 9/13/17 Uhr an offene Mail-Antworten. Scannt Gmail-SENT der le",
-          "cron": "0 9,13,17 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-26T17:01:50.318637",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 85.3,
-          "run_count": 106
-        },
-        {
-          "id": "admin_server_guard",
-          "description": "Stellt sicher, dass der Admin-Server (lib.admin_server, Port 8766) läuft. Idempo",
-          "cron": "*/5 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 30,
-          "detail": "",
-          "last_run": "2026-06-27T13:00:45.342681",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.0,
-          "run_count": 27596
-        },
-        {
-          "id": "monthly_timesheet_reminder",
-          "description": "Erinnert am letzten Werktag (Mo-Fr) jedes Monats um 09:00 Uhr an die Zeitabrechn",
-          "cron": "0 9 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 30,
-          "detail": "",
-          "last_run": "2026-06-15T09:00:53.320797",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.3,
-          "run_count": 9
-        },
-        {
-          "id": "investor_research_agent",
-          "description": "Investor-Research-Agent für Fake Defense AI — Di + Fr um 08:00. Liest config/pro",
-          "cron": "0 8 * * 2,5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-26T08:03:53.816809",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 224.4,
-          "run_count": 13
-        },
-        {
-          "id": "elster_inbox_check_6h",
-          "description": "ELSTER Posteingangs-Watcher (read-only) alle 6 Stunden — nutzt CredentialManager",
-          "cron": "0 9 * * 1,4",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 180,
-          "detail": "",
-          "last_run": null,
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 0.3,
-          "run_count": 84
-        },
-        {
-          "id": "ustva_check",
-          "description": "USt-VA Prüfung am 10. jedes Monats um 9 Uhr (mit CredentialManager) — AKTUELL 6 ",
-          "cron": "0 9 10 * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-10T09:02:34.703231",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 147.9,
-          "run_count": 2
-        },
-        {
-          "id": "escooter_versicherung",
-          "description": "E-Scooter Versicherungserinnerung am 10. Februar jedes Jahr",
-          "cron": "0 9 10 2 *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        },
-        {
-          "id": "forum_finder_agent",
-          "description": "Forum Finder Agent — Sucht täglich in deutschen Foren (gutefrage, Reddit, CHIP e",
-          "cron": "0 7 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-27T07:04:27.511152",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 224.9,
-          "run_count": 10
-        },
-        {
-          "id": "secret_scanner_cloud_agent",
-          "description": "Quarterly scan of 50+ GitHub repos for exposed secrets (9x speedup via Cloud par",
-          "cron": "0 9 1 1,4,7,10 *",
-          "enabled": true,
-          "task_type": "cloud_agent",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        }
-      ]
-    },
-    {
-      "id": "mailcheck",
-      "name": "E-Mail Wächter",
-      "emoji": "📧",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "email_check",
-          "description": "E-Mail-Check + Aufgaben-Erkennung täglich um 07:23, 12:23, 17:23, 22:23 Uhr (nur",
-          "cron": "23 7,12,17,22 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-27T12:31:26.819333",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 3.7,
-          "run_count": 697
-        }
-      ]
-    },
-    {
-      "id": "datasync",
-      "name": "Daten-Synchronizer",
-      "emoji": "🔄",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "sync_gmail",
-          "description": "Gmail-Sync alle 4 Stunden",
-          "cron": "30 */4 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-27T12:31:22.954661",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 25.3,
-          "run_count": 472
-        },
-        {
-          "id": "sync_conversations",
-          "description": "Konversations-Sync alle 6 Stunden in RAG",
-          "cron": "0 */6 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 120,
-          "detail": "",
-          "last_run": "2026-06-27T12:00:23.327496",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 6.2,
-          "run_count": 183
-        },
-        {
-          "id": "sync_ing_diba",
-          "description": "ING-DiBa Bank-Sync 1× wöchentlich (Montag 09:00 UTC)",
-          "cron": "0 9 * * 1",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 360,
-          "detail": "",
-          "last_run": "2026-06-18T08:00:57.835582",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 42.2,
-          "run_count": 47
-        },
-        {
-          "id": "sync_sparkasse",
-          "description": "Sparkasse Bank-Sync täglich 7:00 (CSV-Import, FinTS-Fallback)",
-          "cron": "0 7 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-16T19:00:54.054202",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 20.5,
-          "run_count": 37
-        },
-        {
-          "id": "sync_elster",
-          "description": "ELSTER Posteingang-Sync täglich 9 Uhr",
-          "cron": "0 9 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-21T09:00:53.831169",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 17.4,
-          "run_count": 18
-        }
-      ]
-    },
-    {
-      "id": "taskprep",
-      "name": "Aufgaben-Vorbereiter",
-      "emoji": "📋",
-      "status": "error",
-      "description": "Tools: claude, bash, playwright | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "taskprep_precheck",
-          "description": "Vorbereitungs-Check alle 3h (9-20 Uhr)",
-          "cron": "0 */3 9-20 * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 4.7,
-          "run_count": 182
-        }
-      ]
-    },
-    {
-      "id": "steuer",
-      "name": "Steuer & Buchhaltung 2025",
-      "emoji": "📊",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "steuer_reminder",
-          "description": "Monatliche Steuer-Statusprüfung am 1. des Monats — Lexware-UStVA-Fokus + N26-Ein",
-          "cron": "0 9 1 * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-04-01T09:01:53.820207",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 78.4,
-          "run_count": 1
-        }
-      ]
-    },
-    {
-      "id": "stock_monitor",
-      "name": "Aktien-Crash-Monitor",
-      "emoji": "📉",
-      "status": "success",
-      "description": "Tools: bash | Modell: haiku",
-      "tools": [
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "stock_crash_check",
-          "description": "Aktien-Crash-Check täglich um 9 Uhr (Mo-Fr, ~2.500 Ticker)",
-          "cron": "0 9 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-16T14:32:09.415977",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 89.0,
-          "run_count": 878
-        }
-      ]
-    },
-    {
-      "id": "qa_agent",
-      "name": "Qualitätssicherung",
-      "emoji": "✅",
-      "status": "success",
-      "description": "Tools: claude, bash | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "qa_datasync",
-          "description": "QA Datensync (Mittags-Check)",
-          "cron": "0 12 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-27T12:01:39.790649",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 76.2,
-          "run_count": 17
-        },
-        {
-          "id": "qa_mailcheck",
-          "description": "QA Mailcheck (Nachmittags-Check)",
-          "cron": "0 14 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-26T14:00:55.690160",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 22.9,
-          "run_count": 27
-        },
-        {
-          "id": "qa_retrospective_sweep",
-          "description": "v0.55.0: Fallback-Sweep – nimmt die letzten 30 Einträge aus request_log.json, er",
-          "cron": "*/30 * * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": true,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-27T13:00:45.395590",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.0,
-          "run_count": 1008
-        }
-      ]
-    },
-    {
-      "id": "secret_scanner",
-      "name": "Quarterly Secret Scanner",
-      "emoji": "🔒",
-      "status": null,
-      "description": "Tools: claude, bash | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "quarterly_secret_scan",
-          "description": "Quarterly Secret Scan — Scanne öffentliche GitHub-Repos auf exposed Credentials.",
-          "cron": "0 9 1 1,4,7,10 *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 14400,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        }
-      ]
-    }
-  ],
+  "agents": [],
   "sessions": [
     {
       "agent_id": "newsradar",
@@ -648,16 +156,23 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-27T13:00:45.395590",
-      "agent": "qa_retrospective_sweep",
-      "task": "qa_retrospective_sweep",
+      "timestamp": "2026-06-27T13:05:47.564108",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
     },
     {
-      "timestamp": "2026-06-27T13:00:45.342681",
-      "agent": "admin_server_guard",
-      "task": "admin_server_guard",
+      "timestamp": "2026-06-27T13:05:47.524780",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (2.1s)"
+    },
+    {
+      "timestamp": "2026-06-27T13:00:45.395590",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
       "status": "success",
       "message": "OK (0.0s)"
     },
@@ -667,13 +182,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-27T13:00:45.266770",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (0.8s)"
     },
     {
       "timestamp": "2026-06-27T13:00:44.427847",
@@ -1006,12 +514,18 @@
       "id": "",
       "started_at": null,
       "agent": ""
+    }
+  ],
+  "queued_jobs": [
+    {
+      "id": 6,
+      "started_at": null,
+      "agent": ""
     },
     {
-      "id": "",
+      "id": 7,
       "started_at": null,
       "agent": ""
     }
-  ],
-  "queued_jobs": []
+  ]
 }
