@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27T06:47:30.719470",
+  "last_updated": "2026-06-27T06:51:13.990038",
   "public": true,
   "agents": [
     {
@@ -39,11 +39,11 @@
           "silent": true,
           "timeout": 120,
           "detail": "",
-          "last_run": "2026-06-27T06:45:39.243818",
+          "last_run": "2026-06-27T06:50:39.941888",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.3,
-          "run_count": 16225
+          "last_duration_seconds": 0.6,
+          "run_count": 16226
         },
         {
           "id": "unified_index_rebuild",
@@ -84,11 +84,11 @@
           "silent": true,
           "timeout": 30,
           "detail": "",
-          "last_run": "2026-06-27T06:45:39.332379",
+          "last_run": "2026-06-27T06:50:39.980264",
           "last_status": "success",
           "last_error": null,
           "last_duration_seconds": 0.0,
-          "run_count": 27524
+          "run_count": 27525
         },
         {
           "id": "monthly_timesheet_reminder",
@@ -181,21 +181,6 @@
           "run_count": 9
         },
         {
-          "id": "forum_scout_agent",
-          "description": "Forum Scout Cloud-Agent — Paralleles Scouting auf 4 Plattformen (gutefrage, redd",
-          "cron": "0 6 * * *",
-          "enabled": true,
-          "task_type": "cloud_agent",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-27T06:00:29.355887",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 2.6,
-          "run_count": 14
-        },
-        {
           "id": "secret_scanner_cloud_agent",
           "description": "Quarterly scan of 50+ GitHub repos for exposed secrets (9x speedup via Cloud par",
           "cron": "0 9 1 1,4,7,10 *",
@@ -209,21 +194,6 @@
           "last_error": null,
           "last_duration_seconds": null,
           "run_count": 0
-        },
-        {
-          "id": "daily_digest_cloud_agents",
-          "description": "Parallel generation of 5 daily digests (Tech, Robotics, SEO, News/Stocks, Custom",
-          "cron": "0 6 * * *",
-          "enabled": true,
-          "task_type": "cloud_agent",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-27T06:00:31.845353",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 2.3,
-          "run_count": 11
         }
       ]
     },
@@ -286,36 +256,6 @@
           "run_count": 470
         },
         {
-          "id": "sync_contacts",
-          "description": "Kontakte-Sync wöchentlich Sonntag 3 Uhr",
-          "cron": "0 3 * * 0",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-07T03:06:46.671727",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 395.4,
-          "run_count": 5
-        },
-        {
-          "id": "sync_drive",
-          "description": "Drive-Index täglich 4 Uhr",
-          "cron": "0 4 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-27T04:03:25.664536",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 158.7,
-          "run_count": 31
-        },
-        {
           "id": "sync_conversations",
           "description": "Konversations-Sync alle 6 Stunden in RAG",
           "cron": "0 */6 * * *",
@@ -329,21 +269,6 @@
           "last_error": "error",
           "last_duration_seconds": 120.0,
           "run_count": 182
-        },
-        {
-          "id": "sync_check24",
-          "description": "CHECK24 Versicherungs-Sync täglich 5 Uhr",
-          "cron": "0 5 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-27T05:01:03.454442",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 26.6,
-          "run_count": 26
         },
         {
           "id": "sync_ing_diba",
@@ -419,95 +344,6 @@
           "last_error": "error",
           "last_duration_seconds": 4.7,
           "run_count": 182
-        },
-        {
-          "id": "taskprep_evening",
-          "description": "Abend-Review täglich 20 Uhr",
-          "cron": "0 20 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-26T20:02:07.693301",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 112.2,
-          "run_count": 56
-        }
-      ]
-    },
-    {
-      "id": "contentradar",
-      "name": "Content Radar (News + Video)",
-      "emoji": "📡",
-      "status": "success",
-      "description": "Tools: claude, bash, playwright | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "daily_content",
-          "description": "Täglicher Content Radar (News + Videos) um 21 Uhr",
-          "cron": "0 21 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 3600,
-          "detail": "",
-          "last_run": "2026-06-26T21:19:31.577381",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 1123.4,
-          "run_count": 46
-        },
-        {
-          "id": "daily_videos",
-          "description": "Video Radar - Tägliches Scouting aktueller YouTube-Videos",
-          "cron": "0 21 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 600,
-          "detail": "",
-          "last_run": "2026-06-26T21:23:59.865171",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 266.9,
-          "run_count": 17
-        }
-      ]
-    },
-    {
-      "id": "seo",
-      "name": "SEO & Crawler Optimizer",
-      "emoji": "🔍",
-      "status": "success",
-      "description": "Tools: bash, playwright | Modell: haiku",
-      "tools": [
-        "bash",
-        "playwright"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "daily_seo",
-          "description": "Täglicher SEO-Check um 21:30 (nach Content Radar)",
-          "cron": "30 21 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-26T21:30:58.622531",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 36.1,
-          "run_count": 51
         }
       ]
     },
@@ -582,21 +418,6 @@
       "model": "haiku",
       "tasks": [
         {
-          "id": "qa_contentradar",
-          "description": "QA Content Radar (30 Min nach daily_content)",
-          "cron": "30 21 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-26T21:32:58.750951",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 120.0,
-          "run_count": 48
-        },
-        {
           "id": "qa_datasync",
           "description": "QA Datensync (Mittags-Check)",
           "cron": "0 12 * * *",
@@ -627,36 +448,6 @@
           "run_count": 27
         },
         {
-          "id": "qa_stock_monitor",
-          "description": "QA Aktien-Monitor (Mo-Fr 18:00)",
-          "cron": "0 18 * * 1-5",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-26T18:01:01.485631",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 35.5,
-          "run_count": 7
-        },
-        {
-          "id": "qa_daily_report",
-          "description": "Täglicher Gesamt-QA-Report um 19 Uhr",
-          "cron": "0 19 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-26T19:01:51.994201",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 83.6,
-          "run_count": 17
-        },
-        {
           "id": "qa_retrospective_sweep",
           "description": "v0.55.0: Fallback-Sweep – nimmt die letzten 30 Einträge aus request_log.json, er",
           "cron": "*/30 * * * *",
@@ -670,35 +461,6 @@
           "last_error": null,
           "last_duration_seconds": 0.1,
           "run_count": 999
-        }
-      ]
-    },
-    {
-      "id": "self_improvement",
-      "name": "Self-Improvement Analyzer",
-      "emoji": "🧪",
-      "status": "success",
-      "description": "Tools: claude, bash | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "nightly_self_audit",
-          "description": "Nächtlicher Selbst-Audit des Bots um 3 Uhr – schreibt Vorschläge nach data/impro",
-          "cron": "0 3 * * *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 900,
-          "detail": "",
-          "last_run": "2026-06-27T03:02:23.241310",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 96.5,
-          "run_count": 7
         }
       ]
     },
@@ -728,107 +490,6 @@
           "last_error": null,
           "last_duration_seconds": null,
           "run_count": 0
-        }
-      ]
-    },
-    {
-      "id": "daily_digest_cloud",
-      "name": "Daily Digest Cloud Agent",
-      "emoji": "📰",
-      "status": null,
-      "description": "Tools: claude, bash | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "daily_digest_agent",
-          "description": "Daily Digest Cloud-Agent — Paralleles Generieren von 5 Digest-Typen (Content, Ro",
-          "cron": "0 6 * * *",
-          "enabled": true,
-          "task_type": "cloud_agent",
-          "silent": true,
-          "timeout": 300,
-          "detail": "",
-          "last_run": null,
-          "last_status": null,
-          "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
-        }
-      ]
-    },
-    {
-      "id": "forum_responder_analytics",
-      "name": "Forum Responder Analytics",
-      "emoji": "📊",
-      "status": "success",
-      "description": "Tools: bash | Modell: haiku",
-      "tools": [
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "forum_responder_daily_analytics",
-          "description": "Forum Responder Daily Analytics — Täglicher Report über Success/Failure Rates, E",
-          "cron": "0 0 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-25T00:00:20.694025",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 5
-        },
-        {
-          "id": "forum_responder_weekly_analytics",
-          "description": "Forum Responder Weekly Analytics — Wöchentlicher Report über 7-Tage-Trends. Läuf",
-          "cron": "0 0 * * 1",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-22T00:00:25.554819",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 0.1,
-          "run_count": 1
-        }
-      ]
-    },
-    {
-      "id": "datasync_cloud",
-      "name": "Data Sync Cloud Agent",
-      "emoji": "📊",
-      "status": "error",
-      "description": "Tools: claude, bash | Modell: haiku",
-      "tools": [
-        "claude",
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "nightly_data_sync",
-          "description": "Nightly Data Sync — Parallel Synchronisierung von 5 Quellen (Gmail, Calendar, Dr",
-          "cron": "0 23 * * *",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-06-26T23:05:07.875347",
-          "last_status": "error",
-          "last_error": "error",
-          "last_duration_seconds": 266.4,
-          "run_count": 8
         }
       ]
     }
@@ -987,11 +648,18 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-06-27T06:45:39.332379",
+      "timestamp": "2026-06-27T06:50:39.980264",
       "agent": "admin_server_guard",
       "task": "admin_server_guard",
       "status": "success",
       "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-27T06:50:39.941888",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (0.6s)"
     },
     {
       "timestamp": "2026-06-27T06:45:39.298736",
@@ -999,13 +667,6 @@
       "task": "unified_index_rebuild",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-27T06:45:39.243818",
-      "agent": "sensor_sweep",
-      "task": "sensor_sweep",
-      "status": "success",
-      "message": "OK (3.3s)"
     },
     {
       "timestamp": "2026-06-27T06:30:31.768665",
@@ -1339,7 +1000,7 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 2,
+  "user_prompts_count": 4,
   "current_jobs": [],
   "queued_jobs": []
-}                                                                           
+}
