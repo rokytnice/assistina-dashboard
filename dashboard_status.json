@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14T09:37:16.964746",
+  "last_updated": "2026-07-14T09:53:20.451085",
   "public": true,
   "agents": [
     {
@@ -537,7 +537,34 @@
   ],
   "request_log": [],
   "user_prompts": [],
-  "user_prompts_count": 33,
-  "current_jobs": [],
-  "queued_jobs": []
+  "user_prompts_count": 34,
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
+  "queued_jobs": [
+    {
+      "id": 7,
+      "started_at": null,
+      "agent": ""
+    },
+    {
+      "id": 8,
+      "started_at": null,
+      "agent": ""
+    },
+    {
+      "id": 9,
+      "started_at": null,
+      "agent": ""
+    },
+    {
+      "id": 10,
+      "started_at": null,
+      "agent": ""
+    }
+  ]
 }
