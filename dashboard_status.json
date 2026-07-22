@@ -1,36 +1,7 @@
 {
-  "last_updated": "2026-07-22T09:26:39.679535",
+  "last_updated": "2026-07-22T09:27:39.984850",
   "public": true,
-  "agents": [
-    {
-      "id": "stock_monitor",
-      "name": "Aktien-Crash-Monitor",
-      "emoji": "📉",
-      "status": "success",
-      "description": "Tools: bash | Modell: haiku",
-      "tools": [
-        "bash"
-      ],
-      "model": "haiku",
-      "tasks": [
-        {
-          "id": "stock_crash_check",
-          "description": "Aktien-Crash-Check täglich um 9 Uhr (Mo-Fr, ~2.500 Ticker)",
-          "cron": "0 9 * * 1-5",
-          "enabled": true,
-          "task_type": "bash",
-          "silent": false,
-          "timeout": 300,
-          "detail": "",
-          "last_run": "2026-07-22T09:01:36.614872",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 94.9,
-          "run_count": 889
-        }
-      ]
-    }
-  ],
+  "agents": [],
   "sessions": [
     {
       "agent_id": "newsradar",
@@ -538,6 +509,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
