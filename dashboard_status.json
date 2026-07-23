@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-23T10:15:03.309385",
+  "last_updated": "2026-07-23T10:30:07.132564",
   "public": true,
   "agents": [
     {
       "id": "claude_usage_monitor",
       "name": "Claude Code Nutzungs-Monitor",
       "emoji": "📈",
-      "status": null,
+      "status": "success",
       "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
@@ -22,11 +22,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-07-23T10:15:07.016926",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 2.4,
+          "run_count": 1
         }
       ]
     }
@@ -184,6 +184,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-07-23T10:15:07.016926",
+      "agent": "claude_usage_check",
+      "task": "claude_usage_check",
+      "status": "success",
+      "message": "OK (2.4s)"
+    },
     {
       "timestamp": "2026-07-22T09:01:36.614872",
       "agent": "stock_crash_check",
@@ -526,13 +533,6 @@
       "task": "token_metrics_collect_5m",
       "status": "success",
       "message": "OK (0.0s)"
-    },
-    {
-      "timestamp": "2026-06-03T09:00:58.157915",
-      "agent": "token_monitor_daily_telegram",
-      "task": "token_monitor_daily_telegram",
-      "status": "success",
-      "message": "OK (0.4s)"
     }
   ],
   "request_log": [],
