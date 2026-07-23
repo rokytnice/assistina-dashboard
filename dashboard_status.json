@@ -1,7 +1,36 @@
 {
-  "last_updated": "2026-07-23T10:00:01.683212",
+  "last_updated": "2026-07-23T10:15:03.309385",
   "public": true,
-  "agents": [],
+  "agents": [
+    {
+      "id": "claude_usage_monitor",
+      "name": "Claude Code Nutzungs-Monitor",
+      "emoji": "📈",
+      "status": null,
+      "description": "Tools: bash | Modell: haiku",
+      "tools": [
+        "bash"
+      ],
+      "model": "haiku",
+      "tasks": [
+        {
+          "id": "claude_usage_check",
+          "description": "Claude-Code-Nutzungslimit-Check alle 15 Minuten (50%/75% Telegram-Alert)",
+          "cron": "*/15 * * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 60,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    }
+  ],
   "sessions": [
     {
       "agent_id": "newsradar",
