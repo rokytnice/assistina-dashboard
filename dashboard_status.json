@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-25T00:56:42.258232",
+  "last_updated": "2026-07-25T01:03:32.372418",
   "public": true,
   "agents": [
     {
       "id": "swiss_jobs",
       "name": "Schweiz-Jobs (Festanstellung)",
       "emoji": "🇨🇭",
-      "status": null,
+      "status": "success",
       "description": "Tools: claude, bash | Modell: sonnet",
       "tools": [
         "claude",
@@ -38,11 +38,11 @@
           "silent": false,
           "timeout": 280,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-07-25T01:03:32.256112",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 168.7,
+          "run_count": 1
         }
       ]
     },
@@ -235,6 +235,14 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "swiss_jobs",
+      "name": "Schweiz-Jobs (Festanstellung)",
+      "emoji": "🇨🇭",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "shopping": {
@@ -244,6 +252,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-07-25T01:03:32.256112",
+      "agent": "swiss_jobs_oneshot_20260725",
+      "task": "swiss_jobs_oneshot_20260725",
+      "status": "success",
+      "message": "OK (168.7s)"
+    },
     {
       "timestamp": "2026-07-24T16:15:51.406654",
       "agent": "claude_usage_check",
@@ -586,13 +601,6 @@
       "task": "profiling_daily_telegram",
       "status": "success",
       "message": "OK (0.7s)"
-    },
-    {
-      "timestamp": "2026-06-05T18:25:12.833082",
-      "agent": "token_metrics_collect_5m",
-      "task": "token_metrics_collect_5m",
-      "status": "success",
-      "message": "OK (0.0s)"
     }
   ],
   "request_log": [],
