@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T04:30:21.859244",
+  "last_updated": "2026-07-24T04:30:23.284038",
   "public": true,
   "agents": [
     {
@@ -22,11 +22,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-07-24T04:15:21.611239",
+          "last_run": "2026-07-24T04:30:23.281015",
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 1.4,
-          "run_count": 73
+          "run_count": 74
         }
       ]
     }
@@ -185,7 +185,7 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-07-24T04:15:21.611239",
+      "timestamp": "2026-07-24T04:30:23.281015",
       "agent": "claude_usage_check",
       "task": "claude_usage_check",
       "status": "error",
@@ -538,12 +538,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
