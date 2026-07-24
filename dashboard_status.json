@@ -1,7 +1,66 @@
 {
-  "last_updated": "2026-07-24T16:25:51.475321",
+  "last_updated": "2026-07-24T16:40:52.916263",
   "public": true,
-  "agents": [],
+  "agents": [
+    {
+      "id": "swiss_jobs",
+      "name": "Schweiz-Jobs (Festanstellung)",
+      "emoji": "🇨🇭",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: sonnet",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "swiss_jobs_weekly",
+          "description": "Wöchentliche Schweiz-Festanstellungs-Suche (Mo 01:00 nachts)",
+          "cron": "0 1 * * 1",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 280,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "rental_service_finder",
+      "name": "Vermietungs-Service-Finder",
+      "emoji": "🏠",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: sonnet",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "rental_service_monthly",
+          "description": "Monatliche Suche nach Vermietungs-Service-Anbietern (1. des Monats, 05:00 nachts",
+          "cron": "0 5 1 * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 280,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    }
+  ],
   "sessions": [
     {
       "agent_id": "newsradar",
