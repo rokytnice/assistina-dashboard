@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-24T04:00:18.367443",
+  "last_updated": "2026-07-24T04:00:19.952123",
   "public": true,
   "agents": [
     {
       "id": "claude_usage_monitor",
       "name": "Claude Code Nutzungs-Monitor",
       "emoji": "📈",
-      "status": "success",
+      "status": "error",
       "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
@@ -22,11 +22,11 @@
           "silent": true,
           "timeout": 60,
           "detail": "",
-          "last_run": "2026-07-24T03:45:18.171158",
-          "last_status": "success",
-          "last_error": null,
+          "last_run": "2026-07-24T04:00:19.794306",
+          "last_status": "error",
+          "last_error": "error",
           "last_duration_seconds": 1.4,
-          "run_count": 71
+          "run_count": 72
         }
       ]
     }
@@ -185,11 +185,11 @@
   },
   "activity_log": [
     {
-      "timestamp": "2026-07-24T03:45:18.171158",
+      "timestamp": "2026-07-24T04:00:19.794306",
       "agent": "claude_usage_check",
       "task": "claude_usage_check",
-      "status": "success",
-      "message": "OK (1.4s)"
+      "status": "error",
+      "message": "[error]"
     },
     {
       "timestamp": "2026-07-22T09:01:36.614872",
@@ -538,12 +538,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
