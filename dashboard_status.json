@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24T18:56:11.136045",
+  "last_updated": "2026-07-24T19:11:12.745632",
   "public": true,
   "agents": [
     {
@@ -18,6 +18,21 @@
           "id": "swiss_jobs_weekly",
           "description": "Wöchentliche Schweiz-Festanstellungs-Suche (Mo 01:00 nachts)",
           "cron": "0 1 * * 1",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 280,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "swiss_jobs_oneshot_20260725",
+          "description": "EINMALIG heute Nacht (Sa 25.07. 01:00) — wird danach automatisch entfernt",
+          "cron": "0 1 25 7 *",
           "enabled": true,
           "task_type": "claude",
           "silent": false,
@@ -47,6 +62,21 @@
           "id": "rental_service_monthly",
           "description": "Monatliche Suche nach Vermietungs-Service-Anbietern (1. des Monats, 05:00 nachts",
           "cron": "0 5 1 * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 280,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        },
+        {
+          "id": "rental_service_oneshot_20260725",
+          "description": "EINMALIG heute Nacht (Sa 25.07. 01:40) — wird danach automatisch entfernt",
+          "cron": "40 1 25 7 *",
           "enabled": true,
           "task_type": "claude",
           "silent": false,
