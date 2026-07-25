@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T01:40:36.652563",
+  "last_updated": "2026-07-25T02:00:22.262287",
   "public": true,
   "agents": [
     {
@@ -50,7 +50,7 @@
       "id": "rental_service_finder",
       "name": "Vermietungs-Service-Finder",
       "emoji": "🏠",
-      "status": null,
+      "status": "success",
       "description": "Tools: claude, bash | Modell: sonnet",
       "tools": [
         "claude",
@@ -82,11 +82,11 @@
           "silent": false,
           "timeout": 280,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-07-25T01:44:22.071995",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 225.4,
+          "run_count": 1
         }
       ]
     }
@@ -243,6 +243,14 @@
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
+    },
+    {
+      "agent_id": "rental_service_finder",
+      "name": "Vermietungs-Service-Finder",
+      "emoji": "🏠",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
     }
   ],
   "shopping": {
@@ -252,6 +260,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-07-25T01:44:22.071995",
+      "agent": "rental_service_oneshot_20260725",
+      "task": "rental_service_oneshot_20260725",
+      "status": "success",
+      "message": "OK (225.4s)"
+    },
     {
       "timestamp": "2026-07-25T01:03:32.256112",
       "agent": "swiss_jobs_oneshot_20260725",
@@ -594,24 +609,11 @@
       "task": "sync_contacts",
       "status": "success",
       "message": "OK (395.4s)"
-    },
-    {
-      "timestamp": "2026-06-06T09:05:38.775564",
-      "agent": "profiling_daily_telegram",
-      "task": "profiling_daily_telegram",
-      "status": "success",
-      "message": "OK (0.7s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
