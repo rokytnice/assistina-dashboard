@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-25T02:00:22.262287",
+  "last_updated": "2026-07-25T02:15:22.445620",
   "public": true,
   "agents": [
     {
       "id": "swiss_jobs",
       "name": "Schweiz-Jobs (Festanstellung)",
       "emoji": "🇨🇭",
-      "status": "success",
+      "status": null,
       "description": "Tools: claude, bash | Modell: sonnet",
       "tools": [
         "claude",
@@ -28,21 +28,6 @@
           "last_error": null,
           "last_duration_seconds": null,
           "run_count": 0
-        },
-        {
-          "id": "swiss_jobs_oneshot_20260725",
-          "description": "EINMALIG heute Nacht (Sa 25.07. 01:00) — wird danach automatisch entfernt",
-          "cron": "0 1 25 7 *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 280,
-          "detail": "",
-          "last_run": "2026-07-25T01:03:32.256112",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 168.7,
-          "run_count": 1
         }
       ]
     },
@@ -50,7 +35,7 @@
       "id": "rental_service_finder",
       "name": "Vermietungs-Service-Finder",
       "emoji": "🏠",
-      "status": "success",
+      "status": null,
       "description": "Tools: claude, bash | Modell: sonnet",
       "tools": [
         "claude",
@@ -72,21 +57,6 @@
           "last_error": null,
           "last_duration_seconds": null,
           "run_count": 0
-        },
-        {
-          "id": "rental_service_oneshot_20260725",
-          "description": "EINMALIG heute Nacht (Sa 25.07. 01:40) — wird danach automatisch entfernt",
-          "cron": "40 1 25 7 *",
-          "enabled": true,
-          "task_type": "claude",
-          "silent": false,
-          "timeout": 280,
-          "detail": "",
-          "last_run": "2026-07-25T01:44:22.071995",
-          "last_status": "success",
-          "last_error": null,
-          "last_duration_seconds": 225.4,
-          "run_count": 1
         }
       ]
     }
