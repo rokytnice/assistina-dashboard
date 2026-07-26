@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T14:33:50.407492",
+  "last_updated": "2026-07-26T14:37:05.453130",
   "public": true,
   "agents": [
     {
@@ -51,6 +51,34 @@
           "task_type": "claude",
           "silent": false,
           "timeout": 280,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "project_search_agent",
+      "name": "Freelance Projekt-Suche",
+      "emoji": "💼",
+      "status": null,
+      "description": "Tools: bash | Modell: haiku",
+      "tools": [
+        "bash"
+      ],
+      "model": "haiku",
+      "tasks": [
+        {
+          "id": "project_search_daily",
+          "description": "project_search_daily",
+          "cron": "0 8 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": false,
+          "timeout": 300,
           "detail": "",
           "last_run": null,
           "last_status": null,
