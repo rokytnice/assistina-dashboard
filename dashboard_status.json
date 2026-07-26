@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-27T01:00:50.923618",
+  "last_updated": "2026-07-27T01:20:13.092630",
   "public": true,
   "agents": [
     {
       "id": "swiss_jobs",
       "name": "Schweiz-Jobs (Festanstellung)",
       "emoji": "🇨🇭",
-      "status": null,
+      "status": "success",
       "description": "Tools: claude, bash | Modell: sonnet",
       "tools": [
         "claude",
@@ -23,11 +23,11 @@
           "silent": false,
           "timeout": 280,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-07-27T01:03:12.837187",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 141.9,
+          "run_count": 1
         }
       ]
     },
@@ -258,6 +258,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-07-27T01:03:12.837187",
+      "agent": "swiss_jobs_weekly",
+      "task": "swiss_jobs_weekly",
+      "status": "success",
+      "message": "OK (141.9s)"
+    },
     {
       "timestamp": "2026-07-25T01:44:22.071995",
       "agent": "rental_service_oneshot_20260725",
@@ -600,24 +607,11 @@
       "task": "data_analysis_8h",
       "status": "success",
       "message": "OK (104.9s)"
-    },
-    {
-      "timestamp": "2026-06-07T03:06:46.671727",
-      "agent": "sync_contacts",
-      "task": "sync_contacts",
-      "status": "success",
-      "message": "OK (395.4s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
