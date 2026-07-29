@@ -1,0 +1,617 @@
+{
+  "last_updated": "2026-07-29T11:07:27.104763",
+  "public": true,
+  "agents": [
+    {
+      "id": "swiss_jobs",
+      "name": "Schweiz-Jobs (Festanstellung)",
+      "emoji": "🇨🇭",
+      "status": "success",
+      "description": "Tools: claude, bash | Modell: sonnet",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "swiss_jobs_weekly",
+          "description": "Wöchentliche Schweiz-Festanstellungs-Suche (Mo 01:00 nachts)",
+          "cron": "0 1 * * 1",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 280,
+          "detail": "",
+          "last_run": "2026-07-27T01:03:12.837187",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 141.9,
+          "run_count": 1
+        }
+      ]
+    },
+    {
+      "id": "rental_service_finder",
+      "name": "Vermietungs-Service-Finder",
+      "emoji": "🏠",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: sonnet",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "rental_service_monthly",
+          "description": "Monatliche Suche nach Vermietungs-Service-Anbietern (1. des Monats, 05:00 nachts",
+          "cron": "0 5 1 * *",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 280,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
+        }
+      ]
+    },
+    {
+      "id": "project_search_agent",
+      "name": "Freelance Projekt-Suche",
+      "emoji": "💼",
+      "status": "success",
+      "description": "Tools: bash | Modell: haiku",
+      "tools": [
+        "bash"
+      ],
+      "model": "haiku",
+      "tasks": [
+        {
+          "id": "project_search_daily",
+          "description": "project_search_daily",
+          "cron": "0 8 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": false,
+          "timeout": 300,
+          "detail": "",
+          "last_run": "2026-07-29T08:00:55.648851",
+          "last_status": "success",
+          "last_error": null,
+          "last_duration_seconds": 23.7,
+          "run_count": 1
+        }
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "agent_id": "newsradar",
+      "name": "newsradar",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "videoradar",
+      "name": "videoradar",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "post_qa",
+      "name": "Post-Qualitätssicherung",
+      "emoji": "🔍",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "seo",
+      "name": "SEO & Crawler Optimizer",
+      "emoji": "🔍",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "news_stocks",
+      "name": "News → Stock Impact",
+      "emoji": "📊",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "freelance",
+      "name": "Freelance Manager",
+      "emoji": "💼",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "test",
+      "name": "test",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "test_agent",
+      "name": "test_agent",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "mailcheck",
+      "name": "E-Mail Wächter",
+      "emoji": "📧",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "taskprep",
+      "name": "Aufgaben-Vorbereiter",
+      "emoji": "📋",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "qa_agent",
+      "name": "Qualitätssicherung",
+      "emoji": "✅",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "datasync",
+      "name": "Daten-Synchronizer",
+      "emoji": "🔄",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "data_analyst",
+      "name": "Datenanalyse-Agent",
+      "emoji": "🔬",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "contentradar",
+      "name": "Content Radar (News + Video)",
+      "emoji": "📡",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "data_analysis",
+      "name": "data_analysis",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "airbnb",
+      "name": "Airbnb Manager",
+      "emoji": "🏠",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "self_improvement",
+      "name": "Self-Improvement Analyzer",
+      "emoji": "🧪",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "assistant",
+      "name": "Persönlicher Assistent",
+      "emoji": "🤖",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "swiss_jobs",
+      "name": "Schweiz-Jobs (Festanstellung)",
+      "emoji": "🇨🇭",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "rental_service_finder",
+      "name": "Vermietungs-Service-Finder",
+      "emoji": "🏠",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    }
+  ],
+  "shopping": {
+    "product_count": 1,
+    "active_count": 1,
+    "searches_total": 7,
+    "products": []
+  },
+  "activity_log": [
+    {
+      "timestamp": "2026-07-29T08:00:55.648851",
+      "agent": "project_search_daily",
+      "task": "project_search_daily",
+      "status": "success",
+      "message": "OK (23.7s)"
+    },
+    {
+      "timestamp": "2026-07-27T01:03:12.837187",
+      "agent": "swiss_jobs_weekly",
+      "task": "swiss_jobs_weekly",
+      "status": "success",
+      "message": "OK (141.9s)"
+    },
+    {
+      "timestamp": "2026-07-25T01:44:22.071995",
+      "agent": "rental_service_oneshot_20260725",
+      "task": "rental_service_oneshot_20260725",
+      "status": "success",
+      "message": "OK (225.4s)"
+    },
+    {
+      "timestamp": "2026-07-25T01:03:32.256112",
+      "agent": "swiss_jobs_oneshot_20260725",
+      "task": "swiss_jobs_oneshot_20260725",
+      "status": "success",
+      "message": "OK (168.7s)"
+    },
+    {
+      "timestamp": "2026-07-24T16:15:51.406654",
+      "agent": "claude_usage_check",
+      "task": "claude_usage_check",
+      "status": "success",
+      "message": "OK (3.9s)"
+    },
+    {
+      "timestamp": "2026-07-22T09:01:36.614872",
+      "agent": "stock_crash_check",
+      "task": "stock_crash_check",
+      "status": "success",
+      "message": "OK (94.9s)"
+    },
+    {
+      "timestamp": "2026-06-27T13:05:47.564108",
+      "agent": "admin_server_guard",
+      "task": "admin_server_guard",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-27T13:05:47.524780",
+      "agent": "sensor_sweep",
+      "task": "sensor_sweep",
+      "status": "success",
+      "message": "OK (2.1s)"
+    },
+    {
+      "timestamp": "2026-06-27T13:00:45.395590",
+      "agent": "qa_retrospective_sweep",
+      "task": "qa_retrospective_sweep",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-27T13:00:45.316858",
+      "agent": "unified_index_rebuild",
+      "task": "unified_index_rebuild",
+      "status": "success",
+      "message": "OK (0.0s)"
+    },
+    {
+      "timestamp": "2026-06-27T13:00:44.427847",
+      "agent": "chrome_health",
+      "task": "chrome_health",
+      "status": "success",
+      "message": "OK (1.2s)"
+    },
+    {
+      "timestamp": "2026-06-27T12:31:26.819333",
+      "agent": "email_check",
+      "task": "email_check",
+      "status": "success",
+      "message": "OK (3.7s)"
+    },
+    {
+      "timestamp": "2026-06-27T12:31:22.954661",
+      "agent": "sync_gmail",
+      "task": "sync_gmail",
+      "status": "success",
+      "message": "OK (25.3s)"
+    },
+    {
+      "timestamp": "2026-06-27T12:01:39.790649",
+      "agent": "qa_datasync",
+      "task": "qa_datasync",
+      "status": "success",
+      "message": "OK (76.2s)"
+    },
+    {
+      "timestamp": "2026-06-27T12:00:23.327496",
+      "agent": "sync_conversations",
+      "task": "sync_conversations",
+      "status": "success",
+      "message": "OK (6.2s)"
+    },
+    {
+      "timestamp": "2026-06-27T07:04:27.511152",
+      "agent": "forum_finder_agent",
+      "task": "forum_finder_agent",
+      "status": "success",
+      "message": "OK (224.9s)"
+    },
+    {
+      "timestamp": "2026-06-27T06:01:17.082282",
+      "agent": "taskprep_morning",
+      "task": "taskprep_morning",
+      "status": "success",
+      "message": "OK (17.8s)"
+    },
+    {
+      "timestamp": "2026-06-27T06:00:59.168710",
+      "agent": "sync_calendar",
+      "task": "sync_calendar",
+      "status": "success",
+      "message": "OK (27.2s)"
+    },
+    {
+      "timestamp": "2026-06-27T06:00:31.845353",
+      "agent": "daily_digest_cloud_agents",
+      "task": "daily_digest_cloud_agents",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-27T06:00:29.355887",
+      "agent": "forum_scout_agent",
+      "task": "forum_scout_agent",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-27T05:01:03.454442",
+      "agent": "sync_check24",
+      "task": "sync_check24",
+      "status": "success",
+      "message": "OK (26.6s)"
+    },
+    {
+      "timestamp": "2026-06-27T04:03:25.664536",
+      "agent": "sync_drive",
+      "task": "sync_drive",
+      "status": "success",
+      "message": "OK (158.7s)"
+    },
+    {
+      "timestamp": "2026-06-27T03:02:23.241310",
+      "agent": "nightly_self_audit",
+      "task": "nightly_self_audit",
+      "status": "success",
+      "message": "OK (96.5s)"
+    },
+    {
+      "timestamp": "2026-06-26T23:05:07.875347",
+      "agent": "nightly_data_sync",
+      "task": "nightly_data_sync",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
+      "timestamp": "2026-06-26T21:32:58.750951",
+      "agent": "qa_contentradar",
+      "task": "qa_contentradar",
+      "status": "success",
+      "message": "OK (120.0s)"
+    },
+    {
+      "timestamp": "2026-06-26T21:30:58.622531",
+      "agent": "daily_seo",
+      "task": "daily_seo",
+      "status": "success",
+      "message": "OK (36.1s)"
+    },
+    {
+      "timestamp": "2026-06-26T21:24:22.500051",
+      "agent": "daily_post_qa",
+      "task": "daily_post_qa",
+      "status": "success",
+      "message": "OK (22.5s)"
+    },
+    {
+      "timestamp": "2026-06-26T21:23:59.865171",
+      "agent": "daily_videos",
+      "task": "daily_videos",
+      "status": "success",
+      "message": "OK (266.9s)"
+    },
+    {
+      "timestamp": "2026-06-26T21:19:31.577381",
+      "agent": "daily_content",
+      "task": "daily_content",
+      "status": "success",
+      "message": "OK (1123.4s)"
+    },
+    {
+      "timestamp": "2026-06-26T20:02:07.693301",
+      "agent": "taskprep_evening",
+      "task": "taskprep_evening",
+      "status": "success",
+      "message": "OK (112.2s)"
+    },
+    {
+      "timestamp": "2026-06-26T19:01:51.994201",
+      "agent": "qa_daily_report",
+      "task": "qa_daily_report",
+      "status": "success",
+      "message": "OK (83.6s)"
+    },
+    {
+      "timestamp": "2026-06-26T18:01:01.485631",
+      "agent": "qa_stock_monitor",
+      "task": "qa_stock_monitor",
+      "status": "success",
+      "message": "OK (35.5s)"
+    },
+    {
+      "timestamp": "2026-06-26T17:01:50.318637",
+      "agent": "email_followup_tracker",
+      "task": "email_followup_tracker",
+      "status": "success",
+      "message": "OK (85.3s)"
+    },
+    {
+      "timestamp": "2026-06-26T14:00:55.690160",
+      "agent": "qa_mailcheck",
+      "task": "qa_mailcheck",
+      "status": "success",
+      "message": "OK (22.9s)"
+    },
+    {
+      "timestamp": "2026-06-26T08:03:53.816809",
+      "agent": "investor_research_agent",
+      "task": "investor_research_agent",
+      "status": "success",
+      "message": "OK (224.4s)"
+    },
+    {
+      "timestamp": "2026-06-25T00:00:20.694025",
+      "agent": "forum_responder_daily_analytics",
+      "task": "forum_responder_daily_analytics",
+      "status": "success",
+      "message": "OK (0.1s)"
+    },
+    {
+      "timestamp": "2026-06-22T07:31:18.979233",
+      "agent": "qa_taskprep",
+      "task": "qa_taskprep",
+      "status": "success",
+      "message": "OK (41.4s)"
+    },
+    {
+      "timestamp": "2026-06-22T00:00:25.554819",
+      "agent": "forum_responder_weekly_analytics",
+      "task": "forum_responder_weekly_analytics",
+      "status": "success",
+      "message": "OK (0.1s)"
+    },
+    {
+      "timestamp": "2026-06-21T18:00:43.057207",
+      "agent": "play_release_check_6h",
+      "task": "play_release_check_6h",
+      "status": "success",
+      "message": "OK (1.9s)"
+    },
+    {
+      "timestamp": "2026-06-21T09:00:53.831169",
+      "agent": "sync_elster",
+      "task": "sync_elster",
+      "status": "success",
+      "message": "OK (17.4s)"
+    },
+    {
+      "timestamp": "2026-06-20T02:02:18.699507",
+      "agent": "book_agent_night_tick",
+      "task": "book_agent_night_tick",
+      "status": "success",
+      "message": "OK (89.6s)"
+    },
+    {
+      "timestamp": "2026-06-18T08:00:57.835582",
+      "agent": "sync_ing_diba",
+      "task": "sync_ing_diba",
+      "status": "success",
+      "message": "OK (42.2s)"
+    },
+    {
+      "timestamp": "2026-06-16T19:00:54.054202",
+      "agent": "sync_sparkasse",
+      "task": "sync_sparkasse",
+      "status": "success",
+      "message": "OK (20.5s)"
+    },
+    {
+      "timestamp": "2026-06-15T09:00:53.320797",
+      "agent": "monthly_timesheet_reminder",
+      "task": "monthly_timesheet_reminder",
+      "status": "success",
+      "message": "OK (0.3s)"
+    },
+    {
+      "timestamp": "2026-06-14T08:03:37.039891",
+      "agent": "airbnb_morning",
+      "task": "airbnb_morning",
+      "status": "success",
+      "message": "OK (157.1s)"
+    },
+    {
+      "timestamp": "2026-06-13T10:01:41.742643",
+      "agent": "retouren_check",
+      "task": "retouren_check",
+      "status": "success",
+      "message": "OK (47.1s)"
+    },
+    {
+      "timestamp": "2026-06-13T09:00:29.640749",
+      "agent": "latency_monitor_daily",
+      "task": "latency_monitor_daily",
+      "status": "success",
+      "message": "OK (1.4s)"
+    },
+    {
+      "timestamp": "2026-06-13T08:00:57.881835",
+      "agent": "landhaus_watcher_daily",
+      "task": "landhaus_watcher_daily",
+      "status": "success",
+      "message": "OK (6.1s)"
+    },
+    {
+      "timestamp": "2026-06-10T09:02:34.703231",
+      "agent": "ustva_check",
+      "task": "ustva_check",
+      "status": "success",
+      "message": "OK (147.9s)"
+    },
+    {
+      "timestamp": "2026-06-09T12:46:50.887134",
+      "agent": "data_analysis",
+      "task": "data_analysis",
+      "status": "success",
+      "message": "OK (92.3s)"
+    }
+  ],
+  "request_log": [],
+  "user_prompts": [],
+  "user_prompts_count": 40,
+  "current_jobs": [],
+  "queued_jobs": []
+}
