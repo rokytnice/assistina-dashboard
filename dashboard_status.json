@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29T08:00:31.931304",
+  "last_updated": "2026-07-29T08:06:55.970134",
   "public": true,
   "agents": [
     {
@@ -64,7 +64,7 @@
       "id": "project_search_agent",
       "name": "Freelance Projekt-Suche",
       "emoji": "💼",
-      "status": null,
+      "status": "success",
       "description": "Tools: bash | Modell: haiku",
       "tools": [
         "bash"
@@ -80,11 +80,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-07-29T08:00:55.648851",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 23.7,
+          "run_count": 1
         }
       ]
     }
@@ -258,6 +258,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-07-29T08:00:55.648851",
+      "agent": "project_search_daily",
+      "task": "project_search_daily",
+      "status": "success",
+      "message": "OK (23.7s)"
+    },
     {
       "timestamp": "2026-07-27T01:03:12.837187",
       "agent": "swiss_jobs_weekly",
@@ -600,24 +607,11 @@
       "task": "data_analysis",
       "status": "success",
       "message": "OK (92.3s)"
-    },
-    {
-      "timestamp": "2026-06-08T08:02:40.518807",
-      "agent": "data_analysis_8h",
-      "task": "data_analysis_8h",
-      "status": "success",
-      "message": "OK (104.9s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
