@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T14:44:34.132045",
+  "last_updated": "2026-08-04T14:59:46.566185",
   "public": true,
   "agents": [
     {
@@ -103,7 +103,7 @@
         {
           "id": "vnr_mahnung_watch",
           "description": "vnr_mahnung_watch",
-          "cron": "0 */2 * * *",
+          "cron": "0 9 * * *",
           "enabled": true,
           "task_type": "bash",
           "silent": true,
