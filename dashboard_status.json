@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T14:29:32.743063",
+  "last_updated": "2026-08-04T14:44:34.132045",
   "public": true,
   "agents": [
     {
@@ -85,6 +85,35 @@
           "last_error": null,
           "last_duration_seconds": 19.0,
           "run_count": 3
+        }
+      ]
+    },
+    {
+      "id": "vnr_dispute",
+      "name": "Forderungs-Widerspruch (VNR)",
+      "emoji": "⚖️",
+      "status": null,
+      "description": "Tools: Bash, Read | Modell: sonnet",
+      "tools": [
+        "Bash",
+        "Read"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "vnr_mahnung_watch",
+          "description": "vnr_mahnung_watch",
+          "cron": "0 */2 * * *",
+          "enabled": true,
+          "task_type": "bash",
+          "silent": true,
+          "timeout": 300,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         }
       ]
     }
