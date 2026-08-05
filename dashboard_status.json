@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-05T09:00:51.080377",
+  "last_updated": "2026-08-05T09:17:00.185992",
   "public": true,
   "agents": [
     {
@@ -92,7 +92,7 @@
       "id": "vnr_dispute",
       "name": "Forderungs-Widerspruch (VNR)",
       "emoji": "⚖️",
-      "status": null,
+      "status": "success",
       "description": "Tools: Bash, Read | Modell: sonnet",
       "tools": [
         "Bash",
@@ -109,11 +109,11 @@
           "silent": true,
           "timeout": 300,
           "detail": "",
-          "last_run": null,
-          "last_status": null,
+          "last_run": "2026-08-05T09:01:00.101923",
+          "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": null,
-          "run_count": 0
+          "last_duration_seconds": 9.0,
+          "run_count": 1
         }
       ]
     }
@@ -287,6 +287,13 @@
     "products": []
   },
   "activity_log": [
+    {
+      "timestamp": "2026-08-05T09:01:00.101923",
+      "agent": "vnr_mahnung_watch",
+      "task": "vnr_mahnung_watch",
+      "status": "success",
+      "message": "OK (9.0s)"
+    },
     {
       "timestamp": "2026-08-05T08:00:46.563452",
       "agent": "project_search_daily",
@@ -629,24 +636,11 @@
       "task": "ustva_check",
       "status": "success",
       "message": "OK (147.9s)"
-    },
-    {
-      "timestamp": "2026-06-09T12:46:50.887134",
-      "agent": "data_analysis",
-      "task": "data_analysis",
-      "status": "success",
-      "message": "OK (92.3s)"
     }
   ],
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
