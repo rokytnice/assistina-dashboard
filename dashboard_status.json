@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-08T07:59:46.144547",
+  "last_updated": "2026-08-08T08:14:47.868352",
   "public": true,
   "agents": [
     {
@@ -80,11 +80,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-08-07T08:00:57.197463",
+          "last_run": "2026-08-08T08:00:47.613508",
           "last_status": "error",
           "last_error": "error",
           "last_duration_seconds": 0.1,
-          "run_count": 6
+          "run_count": 7
         }
       ]
     },
@@ -288,18 +288,18 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-08-08T08:00:47.613508",
+      "agent": "project_search_daily",
+      "task": "project_search_daily",
+      "status": "error",
+      "message": "[error]"
+    },
+    {
       "timestamp": "2026-08-07T09:01:08.397996",
       "agent": "vnr_mahnung_watch",
       "task": "vnr_mahnung_watch",
       "status": "success",
       "message": "OK (64.8s)"
-    },
-    {
-      "timestamp": "2026-08-07T08:00:57.197463",
-      "agent": "project_search_daily",
-      "task": "project_search_daily",
-      "status": "error",
-      "message": "[error]"
     },
     {
       "timestamp": "2026-07-27T01:03:12.837187",
