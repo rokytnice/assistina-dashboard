@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-08T10:00:16.579536",
+  "last_updated": "2026-08-08T10:05:05.558430",
   "public": true,
   "agents": [
     {
@@ -114,6 +114,35 @@
           "last_error": null,
           "last_duration_seconds": 78.9,
           "run_count": 4
+        }
+      ]
+    },
+    {
+      "id": "retro",
+      "name": "Retro-Agent",
+      "emoji": "🔁",
+      "status": null,
+      "description": "Tools: claude, bash | Modell: sonnet",
+      "tools": [
+        "claude",
+        "bash"
+      ],
+      "model": "sonnet",
+      "tasks": [
+        {
+          "id": "retro_monthly",
+          "description": "Monats-Retro Agenten/Skills/Steering (letzter Sonntag im Monat, 18:00)",
+          "cron": "0 18 25-31 * 0",
+          "enabled": true,
+          "task_type": "claude",
+          "silent": false,
+          "timeout": 280,
+          "detail": "",
+          "last_run": null,
+          "last_status": null,
+          "last_error": null,
+          "last_duration_seconds": null,
+          "run_count": 0
         }
       ]
     }
@@ -641,6 +670,12 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [],
+  "current_jobs": [
+    {
+      "id": "",
+      "started_at": null,
+      "agent": ""
+    }
+  ],
   "queued_jobs": []
 }
