@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T08:00:50.573242",
+  "last_updated": "2026-08-10T08:15:54.760841",
   "public": true,
   "agents": [
     {
@@ -80,11 +80,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-08-09T08:00:16.344660",
+          "last_run": "2026-08-10T08:00:54.513410",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 3.2,
-          "run_count": 8
+          "last_duration_seconds": 2.5,
+          "run_count": 9
         }
       ]
     },
@@ -345,6 +345,13 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-08-10T08:00:54.513410",
+      "agent": "project_search_daily",
+      "task": "project_search_daily",
+      "status": "success",
+      "message": "OK (2.5s)"
+    },
+    {
       "timestamp": "2026-08-10T01:02:42.747853",
       "agent": "swiss_jobs_weekly",
       "task": "swiss_jobs_weekly",
@@ -357,13 +364,6 @@
       "task": "vnr_mahnung_watch",
       "status": "success",
       "message": "OK (58.0s)"
-    },
-    {
-      "timestamp": "2026-08-09T08:00:16.344660",
-      "agent": "project_search_daily",
-      "task": "project_search_daily",
-      "status": "success",
-      "message": "OK (3.2s)"
     },
     {
       "timestamp": "2026-07-25T01:44:22.071995",
