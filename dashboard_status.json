@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T08:00:51.334310",
+  "last_updated": "2026-08-11T08:19:55.238423",
   "public": true,
   "agents": [
     {
@@ -80,11 +80,11 @@
           "silent": false,
           "timeout": 300,
           "detail": "",
-          "last_run": "2026-08-10T08:00:54.513410",
+          "last_run": "2026-08-11T08:00:54.989813",
           "last_status": "success",
           "last_error": null,
-          "last_duration_seconds": 2.5,
-          "run_count": 9
+          "last_duration_seconds": 3.7,
+          "run_count": 10
         }
       ]
     },
@@ -345,18 +345,18 @@
   },
   "activity_log": [
     {
+      "timestamp": "2026-08-11T08:00:54.989813",
+      "agent": "project_search_daily",
+      "task": "project_search_daily",
+      "status": "success",
+      "message": "OK (3.7s)"
+    },
+    {
       "timestamp": "2026-08-10T09:01:20.966909",
       "agent": "vnr_mahnung_watch",
       "task": "vnr_mahnung_watch",
       "status": "success",
       "message": "OK (78.9s)"
-    },
-    {
-      "timestamp": "2026-08-10T08:00:54.513410",
-      "agent": "project_search_daily",
-      "task": "project_search_daily",
-      "status": "success",
-      "message": "OK (2.5s)"
     },
     {
       "timestamp": "2026-08-10T01:02:42.747853",
@@ -698,12 +698,6 @@
   "request_log": [],
   "user_prompts": [],
   "user_prompts_count": 40,
-  "current_jobs": [
-    {
-      "id": "",
-      "started_at": null,
-      "agent": ""
-    }
-  ],
+  "current_jobs": [],
   "queued_jobs": []
 }
