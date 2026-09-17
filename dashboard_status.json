@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T19:14:55.293623",
+  "last_updated": "2026-09-17T19:30:01.572431",
   "public": true,
   "agents": [],
   "sessions": [
@@ -159,6 +159,22 @@
       "agent_id": "rental_service_finder",
       "name": "Vermietungs-Service-Finder",
       "emoji": "🏠",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "mcp_probe_8b69e1",
+      "name": "mcp_probe_8b69e1",
+      "emoji": "",
+      "session_id": "[hidden]",
+      "transcript_mb": 0,
+      "last_activity": null
+    },
+    {
+      "agent_id": "mcp_probe2_712c0f",
+      "name": "mcp_probe2_712c0f",
+      "emoji": "",
       "session_id": "[hidden]",
       "transcript_mb": 0,
       "last_activity": null
